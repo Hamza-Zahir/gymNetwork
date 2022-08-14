@@ -1,0 +1,54 @@
+
+$blueDark: #153151;
+$blueAccess :#2F6EB6;
+$blueLight: #EBF2FA;
+$pragClour: #808080;
+body{
+  padding: 0;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.fs-14{
+  font-size: 14px;
+}
+.cp{
+  cursor: pointer;
+}
+.bg-bd{
+background: $blueDark;
+}
+.text-bd{
+  color: $blueDark;
+  }
+.bg-ba{
+  background: $blueAccess;
+  }
+.bg-bl{
+  background: $blueLight;
+}
+.pc{
+color: $pragClour;
+}
+.bg_light{
+  background-color: $pragClour;
+  }
+.fw-600{
+ font-weight: 600;
+}
+.fw-500{
+  font-weight: 500;
+ }
+ .rounded-15{
+  border-radius: 15px;
+ }
+ .rounded-10{
+  border-radius: 10px;
+ }
+ .rounded-20{
+  border-radius: 20px;
+ }
+ .rounded-50{
+  border-radius: 50px;
+ }
