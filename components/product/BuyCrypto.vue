@@ -2,7 +2,7 @@
   <section class="BuyCrypto py-5 bg-light">
     <div class="container d-lg-flex align-items-center justify-content-around">
       <div class="text col-md-10 col-lg-6 mx-auto mx-lg-0">
-        <h1 class="my-3">GYM Networks easy way to buy crypto</h1>
+        <h1 class="my-3 fw-bolder">GYM Networks easy way to buy crypto</h1>
         <p class="pc">
           Use our Buy and Sell Crypto Service - almost 50 % of the Fees will be
           used to Buy and Burn 🔥 GYMNET token and support the price!
@@ -61,7 +61,7 @@
               >Sell</span
             >
           </div>
-          <span>
+          <span class="cp">
             <img src="~/assets/images/Button.png" alt="" />
           </span>
         </div>
@@ -75,6 +75,7 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 import BuycryptoCard from "./cards/BuycryptoCard.vue";
 export default {
   data() {
@@ -82,6 +83,13 @@ export default {
       Buy: true,
       Sell: false,
     };
+  },
+
+    mounted() {
+    this.getData();
+  },
+  methods: {
+    ...mapActions(["getData"]),
   },
   components: { BuycryptoCard },
 };

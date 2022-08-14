@@ -1,8 +1,11 @@
 
 $blueDark: #153151;
+$blueDark2:#0A1829;
 $blueAccess :#2F6EB6;
 $blueLight: #EBF2FA;
 $pragClour: #808080;
+$lightBG: #f4f4f4;
+
 body{
   padding: 0;
   margin: 0;
@@ -10,6 +13,14 @@ body{
 *{
   box-sizing: border-box;
 }
+.box-sh-l{
+  box-shadow: 5px 3px 8px 0px #272727;
+  transition: 0.5s;
+  &:hover{
+    transform: translateY(5px);
+  }
+}
+
 .fs-14{
   font-size: 14px;
 }
@@ -19,11 +30,17 @@ body{
 .bg-bd{
 background: $blueDark;
 }
+.bg-bd2{
+  background: $blueDark2;
+}
 .text-bd{
   color: $blueDark;
   }
 .bg-ba{
   background: $blueAccess;
+  }
+  .text-ba{
+    color:$blueAccess ;
   }
 .bg-bl{
   background: $blueLight;
@@ -33,6 +50,9 @@ color: $pragClour;
 }
 .bg_light{
   background-color: $pragClour;
+  }
+  .light-bg{
+background: $lightBG;
   }
 .fw-600{
  font-weight: 600;
@@ -52,3 +72,6 @@ color: $pragClour;
  .rounded-50{
   border-radius: 50px;
  }
+// ...............................
+
+

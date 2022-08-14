@@ -25,7 +25,7 @@
 
     <div class="">
       <span class="pc ps-3">Payment method</span>
-      <div class="rounded-50 border border-primary pc text-center py-2 mt-1">
+      <div class="rounded-50 border border-primary pc text-center py-2 mt-1 cp">
         <b-icon icon="credit-card-2-back-fill" class="m-0 p-0 text-bl"></b-icon>
         Credit card
       </div>
@@ -49,7 +49,7 @@
     </div>
 
     <div
-      class="bg-ba py-2 text-light text-center cp rounded-50 w-100 fw-500 mt-4"
+      class="bg-ba py-2 text-light text-center cp rounded-50 w-100 fw-500 mt-4 box-sh-l"
     >
       Buy BNB
     </div>
@@ -57,12 +57,6 @@
 </template>
 <script>
 export default {
-  props: {
-    data: {
-      required: true,
-      type: Object,
-    },
-  },
   data() {
     return {
       showContent: false,

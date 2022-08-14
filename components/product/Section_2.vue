@@ -2,7 +2,7 @@
   <section class="Section2 py-4 bg-light">
    <span class="GymnetLabel d-none d-sm-block" >Gymnet Gymnet Gymnet Gymnet</span>
     <div class="container py-3">
-      <h1 class="my-2 text-center">Produkte und Verdienstmöglichkeiten</h1>
+      <h1 class="my-2 text-center fw-bolder"> Products and earnings </h1>
       <div class="content">
         <div class="boxes mt-4 pt-3 col-md-10 col-lg-9 mx-auto pb-5">
           <div class="pb-3 box ps-sm-5" v-for="box in boxes" :key="`box-${box.id}`">
@@ -20,7 +20,7 @@
                 </p>
 
                 <div
-                  class="BTN bg-ba cp text-center py-2 px-3 rounded-20 text-light fw-500 mt-lg-3"
+                  class="BTN bg-ba cp text-center py-2 px-3 rounded-20 text-light fw-500 mt-lg-3 box-sh-l"
                 >
                   Read more
                 </div>
@@ -74,22 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 .Section2 {
-  // .content{
-  //    @media (min-width: 576px) {
-  //     position: relative;
-  //     &::before {
-  //       content: "";
-  //       width: 100%;
-  //       height: 50%;
-  //       background: #f8f8f8ad;
-  //       position: absolute;
-  //       bottom: 0;
-  //       left: 0;
-  //       right: 0;
-  //       z-index: 2;
-  //     }
-  //   }
-  // }
+
   position: relative;
   .GymnetLabel{
     position: absolute;

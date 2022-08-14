@@ -1,7 +1,7 @@
 <template>
   <section class="Products py-4 text-center">
     <div class="container py-3">
-      <h1 class="my-2">Products and earnings
+      <h1 class="my-2 fw-bolder">Products and earnings
 </h1>
       <div class="mt-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto">
         <div class="bg-ba rounded-20 box">

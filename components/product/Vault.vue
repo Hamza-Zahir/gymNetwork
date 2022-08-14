@@ -2,7 +2,7 @@
   <section class="Vault">
     <div class="content1 py-5">
       <div class="container py-3">
-        <h1 class="">Vault</h1>
+        <h1 class="fw-bolder">Vault</h1>
         <div class="text pc my-4 col-md-10 col-lg-8">
           <p>
             Want to earn high returns while keeping your coins liquid at all
@@ -36,7 +36,7 @@
               perfect combination of security, liquidity and high returns.
             </p>
             <div
-              class="bg-ba rounded-50 col col-sm-4 col-md-6 col-lg-5 col-xl-4 BTN text-light text-center mt-4"
+              class="bg-ba rounded-50 col col-sm-4 col-md-6 col-lg-5 col-xl-4 BTN fw-500 cp box-sh-l text-light text-center mt-4"
             >
               Jetzt starten
             </div>

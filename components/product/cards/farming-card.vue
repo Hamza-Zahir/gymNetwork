@@ -9,7 +9,7 @@
       <p v-for="(tex, i) in data.text" :key="`${data.title}-${i + 1}`">
         {{ tex }}
       </p>
-      <div class="bg-ba text-light py-2 text-center fw-600 col rounded-15 mt-4">Start now</div>
+      <div class="bg-ba text-light py-2 text-center fw-600 col rounded-15 mt-4 box-sh-l">Start now</div>
     </div>
   </div>
 </template>
