@@ -54,7 +54,6 @@
   .content2 {
     background: url("~/assets/images/vault_bg.png");
     .BTN {
-      // width: fit-content;
       padding: 12px 20px;
     }
   }

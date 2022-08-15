@@ -12,9 +12,6 @@ const actions = {
 
   async getData() {
 
- 
-
-
   },
 
 };

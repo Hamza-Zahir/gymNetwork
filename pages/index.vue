@@ -15,6 +15,10 @@
 </template>
 
 <script>
+
+
+
+// ...........................
 import Landing from "~/components/product/Landing.vue";
 import Products from "~/components/product/Products.vue";
 import Section_2 from "~/components/product/Section_2.vue";

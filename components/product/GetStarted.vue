@@ -19,7 +19,7 @@
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </nuxt-link>
           </div>
-          <div class="box-img rounded-15 d-none d-lg-block">
+          <div class="box-img rounded-15 d-none d-md-block">
             <img src="~/assets/images/getStarted1.png" class="w-100" alt="" />
           </div>
         </div>
@@ -38,7 +38,7 @@
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </nuxt-link>
           </div>
-          <div class="box-img rounded-15 d-none d-lg-block">
+          <div class="box-img rounded-15 d-none d-md-block">
             <img src="~/assets/images/getStarted2.png" class="w-100" alt="" />
           </div>
         </div>
@@ -60,7 +60,7 @@
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </nuxt-link>
           </div>
-          <div class="box-img rounded-15 d-none d-lg-block">
+          <div class="box-img rounded-15 d-none d-md-block">
             <img src="~/assets/images/getStarted3.png" class="w-100" alt="" />
           </div>
         </div>
@@ -83,6 +83,18 @@
     .box {
       position: relative;
       cursor: pointer;
+
+ &:hover {
+          .text {
+            transform: translateY(-10px);
+            background: #153151 !important;
+           * {
+            color: white !important;
+           }
+          }
+        }
+
+
       * {
         transition: all 0.5s ease;
       }
@@ -105,7 +117,23 @@
         }
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
+        &:hover {
+          .text {
+            transform: translateY(40px) rotate(7deg);
+            background: #153151 !important;
+            z-index: 9;
+           * {
+            color: white !important;
+           }
+          }
+          .box-img {
+            transform: translateY(-40px) rotate(-7deg);
+
+          }
+        }
+      }
+       @media (min-width: 992px) {
         &:hover {
           .text {
             transform: translateY(60px) rotate(10deg);

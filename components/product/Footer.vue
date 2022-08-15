@@ -83,15 +83,11 @@
 </template>
 
 <script>
-import BuycryptoCard from "./cards/BuycryptoCard.vue";
 export default {
   data() {
     return {
-      Buy: true,
-      Sell: false,
     };
   },
-  components: { BuycryptoCard },
 };
 </script>
 

@@ -32,9 +32,7 @@
             >
               Start now
               </div>
-           <!-- <div
-            class=""
-          >  </div> -->
+
 
         </div>
       </div>
@@ -136,7 +134,6 @@ export default {
         margin-top: 0px;
       }
       @media (min-width: 992px) {
-        // width: auto;
         .img-2 {
           width: 250px;
           transform: translate(-70%);
