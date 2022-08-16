@@ -1,8 +1,8 @@
 <template>
   <div class="app-default">
-<Header/>
-      <Nuxt />
-
+    <Header />
+    <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -10,6 +10,6 @@
 .app-default {
   overflow: hidden;
   position: relative;
-  min-height: 200vh;
+  min-height: 100vh;
 }
 </style>

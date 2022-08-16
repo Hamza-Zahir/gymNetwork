@@ -10,7 +10,6 @@
     <Holder />
     <GetStarted />
     <Telegram />
-    <Footer />
   </div>
 </template>
 
@@ -29,7 +28,6 @@ import AffiliateSystem from "~/components/product/AffiliateSystem.vue";
 import Holder from "~/components/product/Holder.vue";
 import GetStarted from "~/components/product/GetStarted.vue";
 import Telegram from "~/components/product/Telegram.vue";
-import Footer from "~/components/product/Footer.vue";
 export default {
   name: "IndexPage",
   components: {
@@ -43,7 +41,6 @@ export default {
     Holder,
     GetStarted,
     Telegram,
-    Footer,
   },
 };
 </script>

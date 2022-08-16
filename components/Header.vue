@@ -17,7 +17,7 @@
           <nuxt-link to="/blog" class="ms-4 ms-xl-5"> Blog </nuxt-link>
         </div>
         <div class="d-flex ms-4 ms-xl-5">
-          <nuxt-link to="/blog"> Launch to APP </nuxt-link>
+          <nuxt-link to=""> Launch to APP </nuxt-link>
           <div
             class="select fw-600 ms-4 ms-xl-5"
             @click="showLanguages = !showLanguages"
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="col col-sm-6 mx-auto">
-          <nuxt-link to="/blog" class="btn border rounded-15 my-3 w-100 py-2"> Launch to APP </nuxt-link>
+          <nuxt-link to="" class="btn border rounded-15 my-3 w-100 py-2"> Launch to APP </nuxt-link>
        </div> </div>
        </div>
 
