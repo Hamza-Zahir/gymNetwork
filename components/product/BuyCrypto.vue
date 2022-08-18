@@ -48,7 +48,7 @@
             margin: auto;
             max-width: 420px;
           "
-          :src="`https://widget.onramper.com?color=266677&apiKey=${APIKEY}`"
+          :src="`https://widget.onramper.com?color=266677&apiKey=pk_prod_VKe1va21M4bilD68fkZZzHiBpiE8kR84EDmsHoO05f40`"
           height="660px"
           width="482px"
           title="Onramper widget"
@@ -66,7 +66,7 @@
 </template>
 
 <script>
-const APIKEY =  process.env.baseUrl
+// const APIKEY =  process.env.baseUrl
 export default {
   data:{
   }
