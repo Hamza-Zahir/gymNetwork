@@ -31,7 +31,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     "bootstrap-vue/nuxt",
     "@nuxtjs/axios",
-    "@nuxtjs/separate-env",
+    '@nuxtjs/dotenv'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -39,11 +39,12 @@ export default {
   bootstrapVue: {
     icons: true,
   },
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
-  },
   target:"static",
   generate:{
     fallback: '404.html'
+  },
+  
+  publicRuntimeConfig: {
+    API_KEY: process.env.API_KEY
   },
 };

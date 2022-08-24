@@ -5,7 +5,6 @@
         class="text col-md-10 col-lg-6 mx-auto mx-lg-0 d-flex flex-column justify-content-around"
       >
         <h1 class="my-3 fw-bolder">GYM Networks easy way to buy crypto</h1>
-
         <div class="">
           <p class="pc">
             Use our Buy and Sell Crypto Service - almost 50 % of the Fees will
@@ -48,7 +47,7 @@
             margin: auto;
             max-width: 420px;
           "
-          :src="`https://widget.onramper.com?color=266677&apiKey=pk_prod_VKe1va21M4bilD68fkZZzHiBpiE8kR84EDmsHoO05f40`"
+          :src="`https://widget.onramper.com?color=266677&apiKey=${$config.API_KEY}`"
           height="660px"
           width="482px"
           title="Onramper widget"
@@ -57,8 +56,8 @@
         >
         </iframe>
       </div>
-
     </div>
+
     <div class="bg">
       <img src="~/assets/images/4001.png" class="w-100" alt="" />
     </div>
@@ -66,11 +65,7 @@
 </template>
 
 <script>
-// const APIKEY =  process.env.baseUrl
-export default {
-  data:{
-  }
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

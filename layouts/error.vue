@@ -1,7 +1,7 @@
 
 <template>
   <div class="error bg-bd text-light text-center">
-    <div class="container py-5">
+    <div class="container py-5 py-md-2">
       <div class="img">
         <img src="~/assets/images/error.png" class="img404 rounded-50" alt="" />
       </div>
