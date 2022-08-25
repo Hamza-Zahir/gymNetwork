@@ -1,6 +1,6 @@
 <template>
   <section class="bg-light py-5">
-    <div class="text-center container">
+    <div class="text-center container py-4">
       <h1 class="fw-bolder">Join our telegram group</h1>
       <p class="fw-600 py-3">
        Get all the latest news and answers to your questions about GYM Network!

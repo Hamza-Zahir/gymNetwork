@@ -1,5 +1,11 @@
 <template>
   <section class="GetStarted py-5 bg-light">
+    <span class="GymnetLabel Label-1 d-none d-sm-block"
+      >Gymnet Gymnet Gymnet Gymnet
+    </span>
+    <span class="GymnetLabel Label-2 d-none d-sm-block"
+      >Gymnet Gymnet Gymnet Gymnet Gymnet</span
+    >
     <div class="container py-3">
       <h1 class="my-2 pb-lg-4 fw-bolder text-center">
         How to get started with GYM Network
@@ -66,10 +72,10 @@
         </div>
       </div>
       <div class="bg bg-1">
-        <img src="~/assets/images/Colored.png" class="w-100" alt="" />
+        <img src="~/assets/images/4001.png" class="w-100" alt="" />
       </div>
       <div class="bg bg-2">
-        <img src="~/assets/images/Colored.png" class="w-100" alt="" />
+        <img src="~/assets/images/4007.png" class="w-100" alt="" />
       </div>
     </div>
   </section>
@@ -77,6 +83,23 @@
 <style lang="scss" scoped>
 .GetStarted {
   background: white;
+  position: relative;
+  z-index: 0;
+  .GymnetLabel {
+    position: absolute;
+  }
+  .Label-1 {
+    left: 0;
+    top: 20px;
+    transform-origin: left center;
+    transform: translateX(5%) rotate(90deg);
+  }
+  .Label-2 {
+    right: 0;
+    top: 30%;
+    transform-origin: left center;
+    transform: translateX(95%) rotate(90deg);
+  }
   .content {
     max-width: 820px;
 
@@ -154,50 +177,55 @@
   a {
     text-decoration: none;
   }
-  .container {
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    .bg {
-      z-index: -2;
-      position: absolute;
-      width: 200px;
-      opacity: 0.4;
-    }
 
+  .bg {
+    z-index: -3;
+    position: absolute;
+opacity: 0.8;
+
+  }
+
+  .bg-1 {
+    top: 100px;
+    left: -20px;
+    width: 200px;
+  }
+  .bg-2 {
+    bottom: 0px;
+    right: 0px;
+  }
+  @media (min-width: 576px) {
     .bg-1 {
-      top: 100px;
-      left: -20px;
+      width: 250px;
     }
-    .bg-2 {
-      bottom: 0px;
-      right: -10px;
-    }
-    @media (min-width: 576px) {
-      .bg {
-        width: 250px;
-      }
-    }
-    @media (min-width: 1000px) {
-      .bg-1 {
-        left: 10px;
-      }
-      .bg-2 {
-        width: 300px;
-        right: 100px;
-        bottom: -150px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .bg-1 {
-        left: 100px;
-      }
-      .bg-2 {
-        right: 0px;
-        bottom: -50px;
-      }
+     .bg-2 {
+      width: 400px;
     }
   }
-}
+  @media (min-width: 1000px) {
+    .bg-1 {
+      left: 10px;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+    .bg-1 {
+      left: 100px;
+    }
+    .bg-2 {
+      width: 700px;
+    }
+  }
+
+ @media (min-width: 2000px) {
+    .bg-1 {
+      left: 400px;
+    }
+    .bg-2 {
+      width: 900px;
+    }
+  }
+ }
+
 </style>

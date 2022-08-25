@@ -15,12 +15,12 @@
           "
           class="me-4 btnCard text-center m-0 text-light rounded-20 cp"
         >
-          <span >{{ BoxClosed.title }}</span>
+          <span>{{ BoxClosed.title }}</span>
         </h1>
 
         <div class="displyCards col">
           <div
-            :class="BoxOpen == SinglePool ? 'showCard' : ''"
+            :class="BoxOpen == Farming ? 'showCard' : ''"
             class="disply Farming bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-between"
           >
             <h1>{{ Farming.title }}</h1>
@@ -36,7 +36,7 @@
             </div>
           </div>
           <div
-            :class="BoxOpen == Farming ? 'showCard ' : ''"
+            :class="BoxOpen == SinglePool ? 'showCard ' : ''"
             class="disply SinglePool border border-info bg-bl rounded-20 p-4 col d-flex flex-column justify-content-between"
           >
             <h1>{{ SinglePool.title }}</h1>
@@ -117,12 +117,11 @@ export default {
         left: -190%;
         top: 0;
       }
-
     }
     .btnCard {
       background: url("~/assets/images/Rectangle_column.png");
       background-size: cover;
-overflow: hidden;
+      overflow: hidden;
       height: 100%;
       width: 150px;
       display: flex;
@@ -134,14 +133,15 @@ overflow: hidden;
         transform: rotate(-90deg);
         position: absolute;
         width: 300px;
-
       }
     }
-     .showCard {
-        left: 0 !important;
-      }
+    .showCard {
+      left: 0 !important;
+    }
     .BTN {
       width: fit-content;
+    transition: all 0.3s linear;
+
     }
   }
 }

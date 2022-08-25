@@ -1,46 +1,37 @@
 <template>
-  <div class="">
+  <div>
     <Landing />
-    <Products />
-    <Section_2 />
-    <Vault />
-    <Farming />
-    <BuyCrypto />
-    <AffiliateSystem />
-    <Holder />
+    <ListedOn />
+    <InvestmentSystem />
+    <Metaverse />
+    <StabilityProgram />
     <GetStarted />
-    <Telegram />
+    <AffiliateSystem />
+    <Telegram/>
   </div>
 </template>
 
 <script>
-
-
-
-// ...........................
-import Landing from "~/components/product/Landing.vue";
-import Products from "~/components/product/Products.vue";
-import Section_2 from "~/components/product/Section_2.vue";
-import Vault from "~/components/product/Vault.vue";
-import Farming from "~/components/product/Farming.vue";
-import BuyCrypto from "~/components/product/BuyCrypto.vue";
-import AffiliateSystem from "~/components/product/AffiliateSystem.vue";
-import Holder from "~/components/product/Holder.vue";
-import GetStarted from "~/components/product/GetStarted.vue";
+import Landing from "~/components/Home/Landing.vue";
+import ListedOn from "~/components/Home/ListedOn.vue";
+import InvestmentSystem from "~/components/Home/InvestmentSystem.vue";
+import Metaverse from "~/components/Home/Metaverse.vue";
+import StabilityProgram from "../components/Home/StabilityProgram.vue";
+import GetStarted from "~/components/Home/GetStarted.vue";
+import AffiliateSystem from "~/components/Home/AffiliateSystem.vue";
 import Telegram from "~/components/product/Telegram.vue";
 export default {
-  name: "IndexPage",
   components: {
     Landing,
-    Products,
-    Section_2,
-    Vault,
-    Farming,
-    BuyCrypto,
-    AffiliateSystem,
-    Holder,
+    ListedOn,
+    InvestmentSystem,
+    Metaverse,
+    StabilityProgram,
     GetStarted,
-    Telegram,
-  },
+    AffiliateSystem,
+    Telegram
+},
 };
 </script>
+
+<style lang="scss" scoped></style>
