@@ -1,0 +1,66 @@
+[
+  {
+    "question": "What is DeFi?",
+    "answers": [
+      [
+        "Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes the control banks and institutions have on money, financial products, and financial services."
+      ]
+    ]
+  },
+  {
+    "question": "What are Smart Contracts?",
+    "answers": [
+      [
+        "A smart contract is a computer program or a transaction protocol that is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement."
+      ],
+      [
+        "The objectives of smart contracts are the reduction of need for trusted intermediators, arbitrations costs, fraud losses, as well as the reduction of malicious and accidental exceptions."
+      ],
+      [
+        "Smart contracts are commonly associated with cryptocurrencies, and the smart contracts introduced by Ethereum are generally considered a fundamental building block for decentralized finance (DeFi) applications."
+      ],
+      [
+        "Vending machines are mentioned as the oldest piece of technology equivalent to smart contract implementation."
+      ],
+      [
+        "The original Ethereum white paper by Vitalik Buterin in 2014 describes the Bitcoin protocol as a weak version of the smart contract concept as originally defined by Nick Szabo, and proposes a stronger version based on the Solidity language, which is Turing complete. Since Bitcoin, various cryptocurrencies support scripting languages which allow for more advanced smart contracts between untrusted parties."
+      ],
+      [
+        " Smart contracts should be distinguished from smart legal contracts, where the latter refers to traditional natural-language legally-binding agreements that have selected terms expressed and implemented in machine-readable code"
+      ]
+    ]
+  },
+  {
+    "question": "What Is Liquidity Mining?",
+    "answers": [
+      [
+        "A decentralized exchange (DEX) such as Uniswap (CRYPTO:UNI) or SushiSwap (CRYPTO:SUSHI) lets buyers and sellers connect and swap different cryptocurrency tokens without the involvement of a third-party trading platform."
+      ],
+      [
+        "This is done by smart contracts on a platform such as Ethereum (CRYPTO:ETH) and Binance Coin (CRYPTO:BNB), never touching an outside server or database. "
+      ],
+      [
+        "Transactions made on these exchanges can be completely anonymous and will never involve a profit-seeking intermediary such as a bank or a financial services company. DEXes are seen as a crucial ingredient in truly decentralized finance (DeFi) systems."
+      ],
+      ["DEX exchanges need capital to execute their trading services."],
+      [
+        "This is provided by so-called liquidity pools, where investors can park their crypto assets to earn rewards in the form of crypto tokens or interest payments. The locked-in funds then serve as the lifeblood of the decentralized crypto exchange."
+      ],
+      [
+        "Without this liquid base of digital capital at their fingertips, the DEX trading systems would quickly grind to a halt.  "
+      ],
+      [
+        "In turn, the liquidity pools require the involvement of investors who are willing to lock in their crypto tokens in exchange for rewards. The investments end up facilitating trades on the DEX platform. "
+      ],
+      [
+        "The act of parking tokens in a DEX liquidity pool to qualify for rewards is known as liquidity mining."
+      ]
+    ]
+  },
+  {
+    "question": "What exactly are «liquidity pools»?",
+    "answers": [
+     ["Liquidity is the possibility to sell a product quickly at market value. The easier it is to sell a product, the higher its liquidity is. For cryptocurrencies, liquidity implies the ability to sell an asset quickly, and liquidity pools can be compared to reserve vaults in trading pairs. Each specific pool provides liquidity for an asset in relation to another asset — for example, the ability to sell or buy BTC for USDT."]
+    ]
+  }
+]

@@ -7,6 +7,8 @@
     <StabilityProgram />
     <GetStarted />
     <AffiliateSystem />
+    <Roadmap/>
+    <Questions/>
     <Telegram/>
   </div>
 </template>
@@ -19,7 +21,9 @@ import Metaverse from "~/components/Home/Metaverse.vue";
 import StabilityProgram from "../components/Home/StabilityProgram.vue";
 import GetStarted from "~/components/Home/GetStarted.vue";
 import AffiliateSystem from "~/components/Home/AffiliateSystem.vue";
+import Questions from "~/components/Home/Questions.vue";
 import Telegram from "~/components/product/Telegram.vue";
+import Roadmap from "../components/Home/Roadmap.vue";
 export default {
   components: {
     Landing,
@@ -29,7 +33,9 @@ export default {
     StabilityProgram,
     GetStarted,
     AffiliateSystem,
-    Telegram
+    Questions,
+    Telegram,
+    Roadmap
 },
 };
 </script>
