@@ -1,11 +1,21 @@
 <template>
-<div class="eco">
-  <h1>eco system</h1>
+<div class="">
+  <landing/>
+  <StreetMetaverse/>
+
 </div>
 </template>
-<style lang="scss" scoped>
-.eco{
-  height: 60vh;
-}
+<script>
+import Landing from "~/components/eco_system/Landing.vue";
+import StreetMetaverse from "~/components/eco_system/StreetMetaverse.vue";
 
-</style>
+export default {
+  components: {
+    Landing,
+    StreetMetaverse
+},
+};
+</script>
+
+<style lang="scss" scoped></style>
+

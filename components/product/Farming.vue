@@ -1,56 +1,79 @@
 <template>
-  <section class="Farming py-5">
-    <div class="container py-3">
+  <section id="SinglePool" class=" Farming py-5">
+    <div class="container py-3" id="Farming">
       <div class="d-md-none">
         <FarmingCard :data="Farming" />
         <FarmingCard :data="SinglePool" />
       </div>
-
-      <div class="cards-lg d-none d-md-flex mx-auto col-lg-10 col-xl-10">
-        <h1
-          @click="
-            () => {
-              chengeBoxes();
-            }
+      <div class="content-lg mx-auto d-flex d-none d-md-block">
+        <div
+          class="cards-lg d-flex mx-auto col-md-12 col-lg-10"
+          :style="
+            BoxOpen == SinglePool
+              ? 'left: 50%;transform: translateX(-50%);'
+              : 'left: 105%;transform: translateX(0%);'
           "
-          class="me-4 btnCard text-center m-0 text-light rounded-20 cp"
         >
-          <span>{{ BoxClosed.title }}</span>
-        </h1>
+          <h1
+            class="me-4 btnCard text-center m-0 text-light rounded-20 cp"
+            @click="chengeBoxes()"
+          >
+            <span>{{ Farming.title }}</span>
+          </h1>
 
-        <div class="displyCards col">
-          <div
-            :class="BoxOpen == Farming ? 'showCard' : ''"
-            class="disply Farming bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-between"
-          >
-            <h1>{{ Farming.title }}</h1>
-            <div class="mt-3">
-              <p v-for="(tex, i) in Farming.text" :key="i + 1">
-                {{ tex }}
-              </p>
-            </div>
+          <div class="displyCards col">
             <div
-              class="bg-ba BTN text-light py-2 px-5 cp text-center fw-600 rounded-15 mt-4 box-sh-l"
+              class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
             >
-              Start now
+              <h1>{{ SinglePool.title }}</h1>
+              <div class="mt-3">
+                <p v-for="(tex, i) in SinglePool.text" :key="i + 1">
+                  {{ tex }}
+                </p>
+              </div>
+              <div
+                class="bg-ba BTN text-light py-2 px-5 cp text-center fw-600 rounded-15 mt-4 box-sh-l"
+              >
+                Start now
+              </div>
             </div>
           </div>
-          <div
-            :class="BoxOpen == SinglePool ? 'showCard ' : ''"
-            class="disply SinglePool border border-info bg-bl rounded-20 p-4 col d-flex flex-column justify-content-between"
-          >
-            <h1>{{ SinglePool.title }}</h1>
-            <div class="mt-3">
-              <p v-for="(tex, i) in SinglePool.text" :key="i + 1">
-                {{ tex }}
-              </p>
-            </div>
+        </div>
+
+        <!-- ................................................ -->
+
+        <div
+          class="cards-lg d-flex mx-auto col-md-12 col-lg-10"
+          :style="
+            BoxOpen == Farming
+              ? 'left: 50%;transform: translateX(-50%); '
+              : 'left: 105%;transform: translateX(0%);'
+          "
+        >
+          <!-- flex-direction: row-reverse; -->
+          <div class="displyCards col">
             <div
-              class="bg-ba BTN text-light py-2 px-5 cp text-center fw-600 rounded-15 mt-4 box-sh-l"
+              class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
             >
-              Start now
+              <h1>{{ Farming.title }}</h1>
+              <div class="mt-3">
+                <p v-for="(tex, i) in Farming.text" :key="i + 1">
+                  {{ tex }}
+                </p>
+              </div>
+              <div
+                class="bg-ba BTN text-light py-2 px-5 cp text-center fw-600 rounded-15 mt-4 box-sh-l"
+              >
+                Start now
+              </div>
             </div>
           </div>
+          <h1
+            class="ms-4 btnCard text-center m-0 text-light rounded-20 cp"
+            @click="chengeBoxes()"
+          >
+            <span>{{ SinglePool.title }}</span>
+          </h1>
         </div>
       </div>
     </div>
@@ -102,10 +125,17 @@ export default {
 .Farming {
   background: white;
   * {
-    transition: all 1s linear;
+    transition: all 0.5s linear;
+  }
+  .content-lg {
+    position: relative;
+    height: 430px;
+    overflow: hidden;
   }
   .cards-lg {
-    height: 430px;
+    height: 100%;
+    position: absolute;
+    top: 0;
     .displyCards {
       position: relative;
       overflow: hidden;
@@ -113,9 +143,6 @@ export default {
         height: 100%;
         width: 100%;
         background: #ebf2fa;
-        position: absolute;
-        left: -190%;
-        top: 0;
       }
     }
     .btnCard {
@@ -127,7 +154,6 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-
       span {
         display: block;
         transform: rotate(-90deg);
@@ -135,13 +161,10 @@ export default {
         width: 300px;
       }
     }
-    .showCard {
-      left: 0 !important;
-    }
+
     .BTN {
       width: fit-content;
-    transition: all 0.3s linear;
-
+      transition: all 0.3s linear;
     }
   }
 }

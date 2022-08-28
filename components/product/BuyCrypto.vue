@@ -1,5 +1,5 @@
 <template>
-  <section class="BuyCrypto py-5 bg-light">
+  <section id="BuyCrypto" class="BuyCrypto py-5 bg-light">
     <div class="container d-lg-flex justify-content-around">
       <div
         class="text col-md-10 col-lg-6 mx-auto mx-lg-0 d-flex flex-column justify-content-around"

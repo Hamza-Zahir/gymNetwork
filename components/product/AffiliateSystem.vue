@@ -1,5 +1,5 @@
 <template>
-  <section class="AffiliateSystem pt-5">
+  <section id="AffiliateSystem" class="AffiliateSystem pt-5">
     <span class="GymnetLabel d-none d-sm-block"
       >Gymnet Gymnet Gymnet Gymnet</span
     >

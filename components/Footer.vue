@@ -67,12 +67,15 @@
         </div>
       </div>
       <div class="mb-3 mt-2">
-        <nuxt-link to="" class="me-1"
+        <a
+          href="https://twitter.com/GymNet_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          target="blank"
+          class="me-1"
           ><img src="~/assets/images/twitter.png" alt=""
-        /></nuxt-link>
-        <nuxt-link to="" class="ms-1"
+        /></a>
+        <a href="https://t.me/gymnetwork_english" target="blank" class="ms-1"
           ><img src="~/assets/images/telegram-circle.png" alt=""
-        /></nuxt-link>
+        /></a>
       </div>
       <div class="border-top border-secondary"></div>
     </div>
@@ -85,8 +88,7 @@
 <script>
 export default {
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>

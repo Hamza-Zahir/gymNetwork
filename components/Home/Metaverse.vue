@@ -11,11 +11,11 @@
           potential and design your new life in the Metaverse with GYM Street.
         </p>
 
-        <div
+        <nuxt-link to="/eco_system"
           class="BTN box-sh-l cp text-center rounded-50 bg-ba fw-600 text-light mt-4 col-sm-5 col-lg-4 col-xl-3 mt-lg-5"
         >
           Go to GYM Street
-        </div>
+        </nuxt-link>
       </div>
     </div>
     <div class="img pt-3">

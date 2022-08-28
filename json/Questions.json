@@ -1,66 +1,66 @@
 [
   {
     "question": "What is DeFi?",
-    "answers": [
-      [
-        "Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes the control banks and institutions have on money, financial products, and financial services."
-      ]
-    ]
+    "answers": "DeFi stands for “decentralized finance” which is an overall term to describe a variety of financial applications in cryptocurrency or blockchain - enabling application of decentralization on financial intermediaries such as banks. You're all aware of how centralized financial institutions operate. They hold all the money deposited by you and other customers and whenever you need to send the money to someone or a loan from the bank you’re subjected to a long, bureaucratic, and tedious process. Other than the inefficiency, the bank takes some percentage of the money in terms of transaction fee. What DeFi does is to make financial transactions faster, cheaper, and generally more efficient: A DeFi application makes it easy for people to transact money without the need to trust one another. That is, DeFi platforms are built on blockchain to help facilitate financial transactions with the help of smart contracts. DeFi is allowing crypto entrepreneurs to recreate traditional financial instruments in a decentralized architecture, outside of banks or central authorities' control."
   },
   {
     "question": "What are Smart Contracts?",
-    "answers": [
-      [
-        "A smart contract is a computer program or a transaction protocol that is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement."
-      ],
-      [
-        "The objectives of smart contracts are the reduction of need for trusted intermediators, arbitrations costs, fraud losses, as well as the reduction of malicious and accidental exceptions."
-      ],
-      [
-        "Smart contracts are commonly associated with cryptocurrencies, and the smart contracts introduced by Ethereum are generally considered a fundamental building block for decentralized finance (DeFi) applications."
-      ],
-      [
-        "Vending machines are mentioned as the oldest piece of technology equivalent to smart contract implementation."
-      ],
-      [
-        "The original Ethereum white paper by Vitalik Buterin in 2014 describes the Bitcoin protocol as a weak version of the smart contract concept as originally defined by Nick Szabo, and proposes a stronger version based on the Solidity language, which is Turing complete. Since Bitcoin, various cryptocurrencies support scripting languages which allow for more advanced smart contracts between untrusted parties."
-      ],
-      [
-        " Smart contracts should be distinguished from smart legal contracts, where the latter refers to traditional natural-language legally-binding agreements that have selected terms expressed and implemented in machine-readable code"
-      ]
-    ]
+    "answers": "Smart Contracts are automated applications that act as intermediaries. This is a piece of code in the blockchain that helps peers (humans and applications such as other smart contracts) to interact on the platform without the need to trust each other. The code of Smart Contracts is always available to the public, that's why the blockchain technology is often called “trustless”"
   },
   {
     "question": "What Is Liquidity Mining?",
-    "answers": [
-      [
-        "A decentralized exchange (DEX) such as Uniswap (CRYPTO:UNI) or SushiSwap (CRYPTO:SUSHI) lets buyers and sellers connect and swap different cryptocurrency tokens without the involvement of a third-party trading platform."
-      ],
-      [
-        "This is done by smart contracts on a platform such as Ethereum (CRYPTO:ETH) and Binance Coin (CRYPTO:BNB), never touching an outside server or database. "
-      ],
-      [
-        "Transactions made on these exchanges can be completely anonymous and will never involve a profit-seeking intermediary such as a bank or a financial services company. DEXes are seen as a crucial ingredient in truly decentralized finance (DeFi) systems."
-      ],
-      ["DEX exchanges need capital to execute their trading services."],
-      [
-        "This is provided by so-called liquidity pools, where investors can park their crypto assets to earn rewards in the form of crypto tokens or interest payments. The locked-in funds then serve as the lifeblood of the decentralized crypto exchange."
-      ],
-      [
-        "Without this liquid base of digital capital at their fingertips, the DEX trading systems would quickly grind to a halt.  "
-      ],
-      [
-        "In turn, the liquidity pools require the involvement of investors who are willing to lock in their crypto tokens in exchange for rewards. The investments end up facilitating trades on the DEX platform. "
-      ],
-      [
-        "The act of parking tokens in a DEX liquidity pool to qualify for rewards is known as liquidity mining."
-      ]
-    ]
+    "answers": "Liquidity mining means adding tokens to liquidity pools of DEXs (decentralized exchanges) such as Uniswap, Sushiswap or PancakeSwap. By providing liquidity to the market, you allow the decentralized exchange to function, and in return you are rewarded with cryptocurrency. Adding liquidity to decentralized exchanges is called “liquidity mining” because it can bring you profits just like mining cryptocurrencies such as Bitcoin or Ethereum. Both liquidity mining and mining crypto are excellent ways of generating blockchain-based passive income."
   },
   {
     "question": "What exactly are «liquidity pools»?",
-    "answers": [
-     ["Liquidity is the possibility to sell a product quickly at market value. The easier it is to sell a product, the higher its liquidity is. For cryptocurrencies, liquidity implies the ability to sell an asset quickly, and liquidity pools can be compared to reserve vaults in trading pairs. Each specific pool provides liquidity for an asset in relation to another asset — for example, the ability to sell or buy BTC for USDT."]
-    ]
+    "answers": "When you use a centralized exchange like Binance or Coinbase, the liquidity is provided by the company which owns the exchange. Since decentralized exchanges don't have their own reserves, liquidity is provided by the users who lock their own funds in liquidity pools. Simply put, liquidity pools are what allows you to buy and sell crypto on DEXs."
+  },
+  {
+    "question": "What is a Decentralized Autonomous Organization (DAO)?",
+    "answers": "A decentralized autonomous organization (DAO) is a software running on a blockchain that offers users a built-in model for the collective management of its code. DAOs differ from traditional organizations managed by boards, committees and executives. Rather than being governed by a limited group, DAOs use a set of rules written down in code and enforced by the network of computers running a shared software. To become a member of a DAO, users need to first join the DAO by buying its cryptocurrency. Holding the asset then generally gives users the power to vote on proposals and updates, proportional to the amount they hold."
+  },
+  {
+    "question": "What is DAO Governance?",
+    "answers": "DAO governance is coordinated using tokens or NFTs that grant voting powers. Admission to a DAO is limited to people who have a confirmed ownership of these governance tokens in a cryptocurrency wallet, and membership can be exchanged. Governance is conducted through a series of proposals that members vote on through the blockchain, and the possession of more governance tokens often translates to greater voting power."
+  },
+  {
+    "question": "How can I use GYM NETWORK?",
+    "answers": "You can use it as a Vault, as a Single Farm, and as Liquidity Mining. So you have three ways to get more out of your tokens. In parallel we are always working on the utility of the GYMNET Token. The more GYMNET Tokens you hold, the better access you get to future projects! See the Meta-networks.io roadmap. You will need GYMNET Token to get exclusive benefits and at the same time GYMNET Rewards. In summary it means: You can use GYM NETWORK as a DeFi platform and also as a constantly evolving metaverse. And of course, to make an affiliate career and earn lucrative commissions!"
+  },
+  {
+    "question": "Which wallets can I use to connect?",
+    "answers": "You can use Metamask, Truswallet and all offered wallets under the item WALLET CONNECT."
+  },
+  {
+    "question": "What is APY and APR?",
+    "answers": "APR represents the annual rate charged for earning or borrowing money. APY takes into account compounding, but APR does not."
+  },
+  {
+    "question": "Where do the rewards in the Vault come from?",
+    "answers": "Each Vault is connected to a well-known and already established DeFi protocol. In this case, the BNB/GYMNET Vault is connected to the Alpaca platform. There, for example, users can borrow money against an interest. This interest is the return for you as a user and comes from there. In addition, you get GYMNET tokens as a reward from our platform. This gives you an unbeatable advantage over users who use e.g. Alpaca directly without GYM NETWORK! https://www.alpacafinance.org/ Alpaca Finance is the largest lending protocol allowing leveraged yield farming on Binance Smart Chain. It helps lenders earn safe and stable yields, and offers borrowers undercollateralized loans for leveraged yield farming positions, vastly multiplying their farming principals and resulting profits."
+  },
+  {
+    "question": "Who or what is ALPACA?",
+    "answers": "Alpaca Finance is the largest lending protocol allowing leveraged yield farming on Binance Smart Chain. It helps lenders earn safe and stable yields, and offers borrowers undercollateralized loans for leveraged yield farming positions, vastly multiplying their farming principals and resulting profits."
+  },
+  {
+    "question": "What is Binance Smart Chain?",
+    "answers": "Binance Chain was launched by Binance in April 2019. Its primary focus is to facilitate fast, decentralized (or non-custodial) trading. Perhaps unsurprisingly, the biggest decentralized application (or DApp) on it is Binance DEX, one of the friendliest decentralized exchanges out there. You can use it via a web interface at binance.org or through its native integration with Trust Wallet."
+  },
+  {
+    "question": "What can I do with GYMNET Token?",
+    "answers": "The more GYMNET Tokens you hold, the better access you get to future projects! See the Meta-networks.io roadmap. You will need GYMNET Token to get exclusive benefits and at the same time GYMNET Rewards. The use cases are: You can use GYM NETWORK and its Reward Token GYMNET as a DeFi platform in the VAULT, the Single Farm, and for Liquidity Mining, as well as a constantly evolving metaverse."
+  },
+  {
+    "question": "Where is GYMNET Token listed?",
+    "answers": "You can find GYMNET on CoinMarketCap and CoinGecko. It is tradeable on PancakeSwap."
+  },
+  {
+    "question": "Where can I find Tutorials?",
+    "answers": "You can access all our video tutorials on our YouTube channel and also in the documentation on Gitbook."
+  },
+  {
+    "question": "How does the affiliate system work?",
+    "answers": "The affiliate system works directly through your wallet. Each wallet must be linked to a Telegram account when you sign up (only by invitation with an affiliate link). This is important for support requests and much more! After that you will be assigned your own affiliate link which you can use to become a member. If someone now signs up and invests in the Vault and gets rewards, you also get ''passive'' commissions. So whenever your referred investor (you have a referrer status) decides to use GYM NETWORK and gets his first VAULT rewards, you will get a commission. Over and over again, as long as the user leaves his investment in the Vault. This way you can build up a lucrative passive income. The affiliate system has a total of 16 levels and other highlights that will help you get started as a tipster! Take a look at the webinars or the presentation PDF or contact your sponsor for more details."
   }
 ]

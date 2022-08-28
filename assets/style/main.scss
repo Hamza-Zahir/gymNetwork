@@ -1,10 +1,10 @@
-
+// EFF5FB
 $blueDark: #153151;
 $blueDark2:#0A1829;
 $blueAccess :#2F6EB6;
 $blueLight: #EBF2FA;
 $pragClour: #808080;
-$lightBG: #f4f4f4;
+$lightBG: #EFF5FB;
 
 body{
   padding: 0;
@@ -13,7 +13,11 @@ body{
 *{
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 .box-sh-l{
+  display: block;
   box-shadow: 5px 3px 8px 0px #272727;
   transition: 0.5s;
   &:hover{

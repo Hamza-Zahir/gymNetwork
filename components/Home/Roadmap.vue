@@ -12,7 +12,7 @@
           class="boxs"
           @scroll="
             (e) => {
-              test(e);
+              changeColore(e);
             }
           "
         >
@@ -22,13 +22,15 @@
                 next(e);
               }
             "
-            class="next bg-bd btn_scrol rounded-circle"
+            class="next btn_scrol rounded-circle"
+            :class="left ? 'bg-bd' : 'bg-ba'"
           >
             <b-icon icon="arrow-right-short" class="h3 m-0"></b-icon>
           </span>
 
           <span
-            class="prev bg-bd btn_scrol rounded-circle"
+            class="prev btn_scrol rounded-circle"
+            :class="right ? 'bg-bd' : 'bg-ba'"
             @click="
               (e) => {
                 prev(e);
@@ -119,6 +121,8 @@ export default {
   data() {
     return {
       Roadmaps,
+      left: true,
+      right: false,
     };
   },
   methods: {
@@ -138,10 +142,21 @@ export default {
           e.target.parentElement.scrollLeft % 250;
       }
     },
-    test(e) {
+    changeColore(e) {
       let Borders = document.querySelectorAll(
         ".Roadmap .boxs .box .Border span"
       );
+      if (e.target.scrollLeft > 0) {
+        this.right = true;
+      } else {
+        this.right = false;
+      }
+
+      if (e.target.scrollLeft >= 250 * (Borders.length - 1)) {
+        this.left = false;
+      } else {
+        this.left = true;
+      }
       const endOfScroll = document.querySelector(".Roadmap .boxs .endOfScroll");
 
       endOfScroll.children[0].style.width = `${e.target.clientWidth - 250}px`;
@@ -248,6 +263,7 @@ export default {
       left: 0;
       color: white;
       margin: 0 20px;
+      cursor: pointer;
 
       &::before {
         content: "";
@@ -263,6 +279,9 @@ export default {
 
     .next {
       left: 40px;
+    }
+    .bg-ba {
+      background: #6993b4;
     }
   }
 }

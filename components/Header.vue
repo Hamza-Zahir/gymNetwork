@@ -1,6 +1,11 @@
 <template>
-  <div class="Header bg-bd text-light py-3">
-    <div class="container d-flex justify-content-between align-items-center">
+  <div class="Header bg-bd text-light">
+    <div v-if="$route.path == '/'" class="d-none d-lg-block">
+      <Links />
+    </div>
+    <div
+      class="container d-flex justify-content-between align-items-center py-3"
+    >
       <nuxt-link to="/" class="logo d-flex align-items-center">
         <span class="pe-2"><img src="~/assets/images/logo.png" alt="" /></span>
         <span class="fw-600"> Gym Network </span>
@@ -55,7 +60,6 @@
           icon="list"
           @click="showMenu = !showMenu"
           class="cp h1 m-0 p-0"
-
         ></b-icon>
         <b-icon
           v-if="showMenu"
@@ -63,7 +67,11 @@
           @click="showMenu = !showMenu"
           class="cp h5 m-0 p-0"
         ></b-icon>
-        <div  :class="showMenu ? 'ms-0' : ''" class="menu_sm bg-bd text-center">
+        <div :class="showMenu ? 'ms-0' : ''" class="menu_sm bg-bd text-center">
+          <div v-if="$route.path == '/'" class="p-2">
+            <Links class="rounded-20 container py-3" />
+          </div>
+
           <div class="px-5">
             <div class="" @click="showMenu = !showMenu">
               <nuxt-link to="/Product" class="d-block py-2 mb-2">
@@ -111,11 +119,7 @@
                 </div>
               </div>
               <div class="col col-sm-6 mx-auto" @click="showMenu = !showMenu">
-                <nuxt-link
-                  to=""
-                  class="btn border rounded-15 my-3 w-100 py-2"
-
-                >
+                <nuxt-link to="" class="btn border rounded-15 my-3 w-100 py-2">
                   Launch to APP
                 </nuxt-link>
               </div>
@@ -142,6 +146,7 @@ export default {
 .Header {
   z-index: 9999;
   position: relative;
+
   .logo {
     font-size: 19px;
     img {
@@ -174,9 +179,7 @@ export default {
     left: 0;
     box-shadow: 10px 10px 10px 0px black;
     transition: 0.7s;
-     margin-left: 100%;
- }
-
-
+    margin-left: 100%;
+  }
 }
 </style>

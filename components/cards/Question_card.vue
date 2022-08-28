@@ -1,11 +1,12 @@
 <template>
   <div class="">
-    <div class="border-bottom py-3">
+    <div class="border-bottom">
       <div
-        class="head cp d-flex justify-content-between"
-        @click="showAnswer = !showAnswer"
+        class="head cp d-flex justify-content-between py-4 px-2"
+        @click="ShowAnswer(`showAnswer-${id}`)"
+        :class="showAnswer ? `bg-bl showAnswer-${id}` : `showAnswer-${id}`"
       >
-        <h3 class="m-0">{{ question.question }}</h3>
+        <h4 class="m-0">{{ question.question }}</h4>
         <b-icon
           v-if="!showAnswer"
           icon="chevron-down"
@@ -18,19 +19,7 @@
         ></b-icon>
       </div>
       <div v-if="showAnswer" class="col-12 pt-3 pc">
-        <div v-for="(answer, i) in question.answers" :key="`answer-${i + 1}`">
-          <div class="">
-            <span class="" v-for="(ans, i) in answer" :key="`ans-${i + 1}`">
-              <span v-if="typeof ans == 'object'">
-                <a :href="ans.src">{{ ans.key }}</a>
-              </span>
-              <span v-if="typeof ans == 'string'">
-                {{ ans }}
-              </span>
-            </span>
-          </div>
-          <br />
-        </div>
+        <p class="p-2">{{ question.answers }}</p>
       </div>
     </div>
   </div>
@@ -42,12 +31,48 @@ export default {
       showAnswer: false,
     };
   },
+  methods: {
+    async headOptions(_class) {
+      document.addEventListener("click", (e) => {
+        if (!e.target.classList.contains(_class)) this.showAnswer = false;
+        console.log(e.target);
+      });
+    },
+    async ShowAnswer(_class) {
+      await this.headOptions(_class).then((this.showAnswer = !this.showAnswer));
+    },
+  },
   props: {
     question: {
       required: true,
       type: Object,
     },
+    id: {
+      required: true,
+      type: Number,
+    },
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+p {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  line-height: 1.6;
+}
+.head {
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+}
+.bg-bl {
+  background: #e4f5ff;
+}
+</style>

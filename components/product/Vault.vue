@@ -1,5 +1,5 @@
 <template>
-  <section class="Vault">
+  <section id="Vault" class="Vault">
     <div class="content1 py-5">
       <div class="container py-3">
         <h1 class="fw-bolder">Vault</h1>

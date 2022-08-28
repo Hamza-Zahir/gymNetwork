@@ -1,6 +1,6 @@
 <template>
   <section class="Landing bg-bd text-light py-5">
-    <div class="container">
+    <div class="container pb-5">
       <div class="d-md-flex justify-content-around">
         <div class="text col-sm-10 col-md-6 mx-auto mx-md-0 px-md-2">
           <h1 class="py-2 pt-lg-3 mt-md-3">

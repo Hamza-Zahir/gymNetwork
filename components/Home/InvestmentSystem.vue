@@ -14,11 +14,11 @@
           come to let your dreams become reality!
         </p>
 
-        <div
+        <nuxt-link to="/Product"
           class="BTN box-sh-l cp text-center rounded-50 bg-ba fw-500 text-light my-4 col-sm-5 col-lg-4 mt-lg-5"
         >
           Go to the products
-        </div>
+        </nuxt-link>
       </div>
     </div>
     <div class="img text-end">
@@ -80,9 +80,8 @@ export default {
       }
     }
     .text {
-      transform: translateY(40px);
       h1 {
-        font-size: 40px;
+        font-size: 50px;
       }
     }
   }
@@ -93,6 +92,7 @@ export default {
         margin-top: -220px;
       }
     }
+
   }
     @media (min-width: 2000px) {
     .img {
@@ -100,6 +100,11 @@ export default {
         width:50%;
         margin-top: -220px;
       }
+    }
+     .text {
+      transform: translateY(60px);
+
+
     }
   }
 }
