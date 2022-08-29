@@ -1,0 +1,245 @@
+<template>
+  <div id="AffiliateSystem" class="AffiliateSystem p-0 m-0">
+    <div class="Navigation container">
+      <div class="NavigationMenu text-light d-none d-lg-block pb-3">
+        <a href="#Gymstreet" class="Gymstreet">
+          <span class="Border"></span>
+          <span class="rounded-circle me-2 point"></span>
+          <span class="text"> Gymstreet.io</span>
+        </a>
+        <a href="#Metablocks" class="Metablocks">
+          <span class="Border"></span>
+          <span class="rounded-circle me-2 point"></span>
+          <span class="text"> Metablocks.io</span>
+        </a>
+        <a href="#CashFT" class="CashFT">
+          <span class="Border"></span>
+          <span class="rounded-circle me-2 point"></span>
+          <span class="text"> CashFT </span>
+        </a>
+        <a href="#zuckerland" class="zuckerland">
+          <span class="Border"></span>
+          <span class="rounded-circle me-2 point"></span>
+          <span class="text"> zuckerland.io </span>
+        </a>
+        <a href="#GymDex" class="GymDex">
+          <span class="Border"></span>
+          <span class="rounded-circle me-2 point"></span>
+          <span class="text"> GYM DEX </span>
+        </a>
+        <a href="#MetaverseCampus" class="MetaverseCampus">
+          <span class="Border"></span>
+          <span class="rounded-circle me-2 point"></span>
+          <span class="text w-75"> Metaverse Campus</span>
+        </a>
+      </div>
+    </div>
+    <div class="AffiliateSystemSections col-12">
+      <div id="Gymstreet" class="Section"><Gymstreet /></div>
+      <div id="Metablocks" class="Section"><Metablocks /></div>
+      <div id="CashFT" class="Section"><CashFT /></div>
+      <div id="zuckerland" class="Section"><Zuckerland /></div>
+      <div id="GymDex" class="Section"><GymDex /></div>
+      <div id="MetaverseCampus" class="Section"><MetaverseCampus /></div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Gymstreet from "./AffiliateSystemSections/Gymstreet.vue";
+import Metablocks from "./AffiliateSystemSections/Metablocks.vue";
+import CashFT from "./AffiliateSystemSections/CashFT.vue";
+import Zuckerland from "./AffiliateSystemSections/zuckerland.vue";
+import GymDex from "./AffiliateSystemSections/GymDex.vue";
+import MetaverseCampus from "./AffiliateSystemSections/MetaverseCampus.vue";
+export default {
+  components: {
+    Gymstreet,
+    Metablocks,
+    CashFT,
+    Zuckerland,
+    GymDex,
+    MetaverseCampus,
+  },
+  mounted() {
+    this.test();
+  },
+  methods: {
+    test() {
+      const sections = [
+        ...document.querySelectorAll(
+          "#AffiliateSystem .AffiliateSystemSections .Section"
+        ),
+      ];
+      const section = document.querySelector("#AffiliateSystem");
+      const NavigationMenu = document.querySelector(
+        "#AffiliateSystem .NavigationMenu"
+      );
+
+      addEventListener("scroll", (e) => {
+        const sectionOffsetBottom = section.offsetTop + section.offsetHeight;
+        const NavigationMenuOffsetBottom = NavigationMenu.offsetHeight;
+
+        if (
+          window.scrollY >=
+          sectionOffsetBottom - NavigationMenuOffsetBottom - 50
+        ) {
+          NavigationMenu.style.position = "absolute";
+          NavigationMenu.style.top = "auto";
+          NavigationMenu.style.bottom = "10px";
+        } else {
+          if (section.offsetTop <= window.scrollY) {
+            NavigationMenu.style.position = "fixed";
+            NavigationMenu.style.top = "50px";
+            NavigationMenu.style.bottom = "auto";
+          } else {
+            NavigationMenu.style.position = "absolute";
+            NavigationMenu.style.top = "50px";
+            NavigationMenu.style.bottom = "auto";
+          }
+        }
+        sections.map((e) => {
+          const sectionHeight = e.offsetHeight;
+          const sectionOffsetTop = e.offsetTop + section.offsetTop;
+          const link = document.querySelector(
+            `#AffiliateSystem .NavigationMenu a.${e.id}`
+          );
+          const height =
+            ((window.scrollY - sectionOffsetTop) * 100) / sectionHeight;
+          link.children[0].style.height = `${height}%`;
+          if (height > 0) {
+            link.children[1].style.background = "#ffffff";
+            link.style.color = " #ffffff";
+            link.style.fontWeight = "bold";
+          } else {
+            link.children[1].style.background = "#cacaca";
+            link.style.color = " #cacaca";
+            link.style.fontWeight = "normal";
+          }
+        });
+      });
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.AffiliateSystem {
+  background: url("~/assets/images/StreetMetaverse/AffiliateSystem/bg.png");
+  position: relative;
+  background-size: cover;
+  .NavigationMenu {
+    position: absolute;
+    width: 160px;
+    top: 50px;
+    z-index: 9;
+    a {
+      display: flex;
+      color: #cacaca;
+      height: 70px;
+      max-height: calc(70vh / 6);
+      position: relative;
+      overflow: hidden;
+
+      * {
+        transition: 0.5s;
+      }
+      .Border {
+        display: inline-block;
+        width: 7px;
+        position: absolute;
+        top: 0px;
+        left: calc(9px - (7px / 2));
+        background: #ffffff;
+      }
+      .point {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: #cacaca;
+        z-index: 2;
+      }
+      &:nth-child(1) {
+        color: #ffffff !important;
+        font-weight: bold !important;
+        .point {
+          background: #ffffff !important;
+        }
+      }
+
+      .text {
+        margin-top: -5px;
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: calc(9px - (7px / 2));
+        background: #cacaca;
+        z-index: -1;
+
+      }
+    }
+  }
+}
+
+:is(#Gymstreet, #CashFT, #MetaverseCampus) {
+  background: url("~/assets/images/StreetMetaverse/AffiliateSystem/bg-1.png");
+  background-repeat: no-repeat;
+  background-position: 120% 15%;
+  @media (min-width: 768px) {
+    background-position: 130% 15%;
+  }
+  @media (min-width: 1200px) {
+    background-position: 100% 15%;
+  }
+  @media (min-width: 2000px) {
+    background-position: 90% 15%;
+  }
+}
+
+:is(#Metablocks, #GymDex) {
+  background: url("~/assets/images/StreetMetaverse/AffiliateSystem/bg-3.png");
+  background-repeat: no-repeat;
+
+  background-size: 700px;
+
+  background-position: 100% 160px;
+  @media (min-width: 768px) {
+    background-size: 90%;
+    background-position: 100% 15%;
+  }
+
+  @media (min-width: 1400px) {
+    background-size: 70%;
+    background-position: 100% 30%;
+  }
+  @media (min-width: 2000px) {
+    background-size: 50%;
+    background-position: 100% 30%;
+  }
+}
+#zuckerland {
+  background: url("~/assets/images/StreetMetaverse/AffiliateSystem/bg-2.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 100% 18%;
+  @media (min-width: 768px) {
+    background-position: 110% 23%;
+  }
+  @media (min-width: 992px) {
+    background-position: 100% 10%;
+  }
+  @media (min-width: 1200px) {
+    background-size: 400px;
+    background-position: 105% 10%;
+  }
+  @media (min-width: 1600px) {
+    background-size: 500px;
+    background-position: 95% 10%;
+  }
+}
+</style>

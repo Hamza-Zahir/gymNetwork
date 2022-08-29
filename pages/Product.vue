@@ -23,7 +23,7 @@ import BuyCrypto from "~/components/product/BuyCrypto.vue";
 import AffiliateSystem from "~/components/product/AffiliateSystem.vue";
 import Holder from "~/components/product/Holder.vue";
 import GetStarted from "~/components/product/GetStarted.vue";
-import Telegram from "~/components/product/Telegram.vue";
+import Telegram from "~/components/Telegram.vue";
 export default {
   components: {
     Landing,

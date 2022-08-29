@@ -176,6 +176,7 @@ export default {
 
 <style lang="scss" scoped>
 .Roadmap {
+
   .conten {
     position: relative;
     padding-left: 30px;
@@ -194,6 +195,7 @@ export default {
     width: 100%;
     display: flex;
     overflow-x: scroll;
+scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
       display: none;

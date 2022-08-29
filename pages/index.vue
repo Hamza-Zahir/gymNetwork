@@ -22,7 +22,7 @@ import StabilityProgram from "../components/Home/StabilityProgram.vue";
 import GetStarted from "~/components/Home/GetStarted.vue";
 import AffiliateSystem from "~/components/Home/AffiliateSystem.vue";
 import Questions from "~/components/Home/Questions.vue";
-import Telegram from "~/components/product/Telegram.vue";
+import Telegram from "~/components/Telegram.vue";
 import Roadmap from "../components/Home/Roadmap.vue";
 export default {
   components: {
