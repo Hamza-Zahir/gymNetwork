@@ -3,18 +3,15 @@
     <div class="container py-lg-5">
       <h1 class="fw-bolder text-center">GYMNET is listed on</h1>
       <div class="mt-4 d-flex flex-wrap mt-5">
-        <a  v-for="(link, i) in links"
+        <div
+          v-for="(link, i) in links"
           :key="`logo-${i}`"
-          :href="link.link"
-          target="blank"
-           class="d-block p-2 col-6 col-sm-4 col-md-3 col-lg-2">
-        <img
-
-          :src="link.logo"
-          alt=""
-          class="w-100 "
-        />
+          class="d-block p-2 col-6 col-sm-4 col-md-3 col-lg-2"
+        >
+        <a :href="link.link" target="blank">
+          <img :src="link.logo" alt="" class="w-100" />
         </a>
+      </div>
       </div>
     </div>
   </section>

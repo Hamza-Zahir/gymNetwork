@@ -28,19 +28,19 @@
           <span class="text"> GYM DEX </span>
         </a>
         <a href="#MetaverseCampus" class="MetaverseCampus">
-          <span class="Border"></span>
+          <span class=""></span>
           <span class="rounded-circle me-2 point"></span>
           <span class="text w-75"> Metaverse Campus</span>
         </a>
       </div>
     </div>
     <div class="AffiliateSystemSections col-12">
-      <div id="Gymstreet" class="Section"><Gymstreet /></div>
-      <div id="Metablocks" class="Section"><Metablocks /></div>
-      <div id="CashFT" class="Section"><CashFT /></div>
-      <div id="zuckerland" class="Section"><Zuckerland /></div>
-      <div id="GymDex" class="Section"><GymDex /></div>
-      <div id="MetaverseCampus" class="Section"><MetaverseCampus /></div>
+      <div id="Gymstreet" class="Section pt-lg-5"><Gymstreet /></div>
+      <div id="Metablocks" class="Section pt-lg-5"><Metablocks /></div>
+      <div id="CashFT" class="Section pt-lg-5"><CashFT /></div>
+      <div id="zuckerland" class="Section pt-lg-5"><Zuckerland /></div>
+      <div id="GymDex" class="Section mt-lg-5"><GymDex /></div>
+      <div id="MetaverseCampus" class="Section pt-lg-5"><MetaverseCampus /></div>
     </div>
   </div>
 </template>
@@ -124,6 +124,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .AffiliateSystem {
   background: url("~/assets/images/StreetMetaverse/AffiliateSystem/bg.png");
   position: relative;
