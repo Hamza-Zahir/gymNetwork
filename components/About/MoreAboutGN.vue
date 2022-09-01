@@ -4,7 +4,7 @@
       <h1 class="text-center fw-bold">Even more about GYM Network</h1>
       <div class="content py-5">
         <div
-          class="box box-1 d-flex flex-column align-items-between rounded-20 text-light bg-bd my-3 my-lg-0"
+          class="box box-1 d-flex flex-column rounded-20 text-light bg-bd my-3 my-lg-0"
         >
           <div class="p-3">
             <h2 class="fw-bold">Documentation</h2>
@@ -19,7 +19,7 @@
           </nuxt-link>
         </div>
         <div
-          class="box box-2 d-flex flex-column align-items-between rounded-20 text-dark light-bg my-3 my-lg-0"
+          class="box box-2 d-flex flex-column rounded-20 text-dark light-bg my-3 my-lg-0"
         >
           <div class="p-3">
             <h2 class="fw-bold">Telegram</h2>
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div
-          class="box box-3 d-flex flex-column align-items-between rounded-20 text-light bg-bd my-3 my-lg-0"
+          class="box box-3 d-flex flex-column rounded-20 text-light bg-bd my-3 my-lg-0"
         >
           <div class="p-3">
             <h2 class="fw-bold">Blog & News</h2>
@@ -55,7 +55,7 @@
           </nuxt-link>
         </div>
         <div
-          class="box box-4 d-flex flex-column align-items-between rounded-20 text-dark light-bg my-3 my-lg-0"
+          class="box box-4 d-flex flex-column rounded-20 text-dark light-bg my-3 my-lg-0"
         >
           <div class="p-3">
             <h2 class="fw-bold">Twitter</h2>
@@ -76,7 +76,7 @@
           </div>
         </div>
         <div
-          class="box box-5 d-flex flex-column align-items-between rounded-20 text-light bg-ba my-3 my-lg-0"
+          class="box box-5 d-flex flex-column rounded-20 text-light bg-ba my-3 my-lg-0"
         >
           <div class="p-3">
             <h2 class="fw-bold">Newsletter</h2>
@@ -91,7 +91,7 @@
           </nuxt-link>
         </div>
         <div
-          class="box box-6 d-flex flex-column align-items-between rounded-20 text-dark light-bg my-3 my-lg-0"
+          class="box box-6 d-flex flex-column rounded-20 text-dark light-bg my-3 my-lg-0"
         >
           <div class="p-3">
             <h2 class="fw-bold">Support</h2>
@@ -128,7 +128,7 @@ justify-content: space-between;
     }
     @media (min-width: 992px) {
       display: grid;
-      grid-template-rows: repeat(5, 110px);
+      grid-template-rows: repeat(5, 115px);
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
 
@@ -151,6 +151,10 @@ justify-content: space-between;
         grid-area: 3/3/6/3;
       }
     }
+    @media (min-width: 1200px) {
+      grid-template-rows: repeat(5, 100px);
+
+  }
   }
 }
 </style>

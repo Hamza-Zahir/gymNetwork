@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "How can you earn money with GYM Network?",
+    "text": "Making money with staking, farming and liquidity mining? Learn how you can profit from GYM Network and generate lucrative DeFi earnings.",
+    "date": "11.08.2022",
+    "img": "earnMoney.jpg",
+    "link":"how-can-you-earn-money-with-gym-network"
+  },
+  {
+    "id": 2,
+    "title": "GYM Street and its ecosystem",
+    "text": "GYM Street's ecosystem offers unique DeFi solutions for those looking to dig deeper into Metaverse, NFT, and crypto.",
+    "date": "10.08.2022",
+    "img": "ecosystem.jpg",
+    "link":"gym-street-and-its-ecosystem"
+  },
+  {
+    "id": 3,
+    "title": "Metaverse and its potential",
+    "text": "The Metaverse will change our future life significantly. What exactly the Metaverse is and what potential it has, you will learn in this article.",
+    "date": "10.08.2022","img": "Metaverse.jpg",
+
+    "link":"metaverse-and-its-potential"
+  },
+  {
+    "id": 4,
+    "title": "What is GYM Network?",
+    "text": "What exactly is GYM Network and what makes it so unique, you will learn in this article.",
+    "date": "10.08.2022",
+ "img": "GYMNetwork.jpg",
+    "link":"what-is-gym-network"
+  }
+]

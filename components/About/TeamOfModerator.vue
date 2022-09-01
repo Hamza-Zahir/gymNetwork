@@ -2,12 +2,7 @@
   <div :id="`developer-${Moderator.id}`" class="container teamsOf py-5">
     <h2 class="fw-bold text-center">Team of {{ Moderator.name }}</h2>
     <div class="teams py-5">
-
-      <flickity
-        ref="flickity"
-        class="py-4"
-        :options="flickityOptions"
-      >
+      <flickity ref="flickity" class="py-4" :options="flickityOptions">
         <div
           v-for="developer in Moderator.team"
           :key="`dev-${developer.id}`"
@@ -32,7 +27,7 @@
 </template>
 
 <script>
-import Flickity from "vue-flickity";
+import Flickity from "~/node_modules/vue-flickity/src/flickity";
 export default {
   data() {
     return {
@@ -54,17 +49,14 @@ export default {
       type: Object,
     },
   },
-
-
 };
 </script>
 
 <style lang="scss" scoped>
 .teamsOf {
-  .carousel-cell{
+  .carousel-cell {
     min-height: 100%;
     display: flex;
-
   }
   .box {
     background: #ffffff;
@@ -76,6 +68,4 @@ export default {
 }
 
 // .................................
-
-
 </style>

@@ -7,7 +7,7 @@
     <Team />
     <KimYongGym />
     <Tokenomics />
-    <MoreAboutGN/>
+    <MoreAboutGN />
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
     Team,
     KimYongGym,
     Tokenomics,
-    MoreAboutGN
+    MoreAboutGN,
   },
 };
 </script>

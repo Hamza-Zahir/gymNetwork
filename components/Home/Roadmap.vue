@@ -1,5 +1,5 @@
 <template>
-  <section class="Roadmap py-4 bg-light">
+  <section id="Roadmap" class="Roadmap py-4 bg-light">
     <div class="container py-3">
       <div class="title">
         <h1 class="my-2 text-center fw-bolder">GYM Network Roadmap</h1>
