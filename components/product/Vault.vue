@@ -3,7 +3,7 @@
     <div class="content1 py-5">
       <div class="container py-3">
         <h1 class="fw-bolder">Vault</h1>
-        <div class="text pc my-4 col-md-10 col-lg-8">
+        <div class="text pc my-4 col-md-10  col-xl-9">
           <p>
             Want to earn high returns while keeping your coins liquid at all
             times? GYM Network's Vault combines lucrative APY's with maximum
@@ -36,7 +36,7 @@
               perfect combination of security, liquidity and high returns.
             </p>
             <div
-              class="bg-ba rounded-50 col col-sm-4 col-md-6 col-lg-5 col-xl-4 BTN fw-500 cp box-sh-l text-light text-center mt-4"
+              class="BTN bg-ba rounded-50  fw-600 cp box-sh-l text-light text-center mt-4 mt-lg-5"
             >
               Jetzt starten
             </div>
@@ -48,14 +48,35 @@
 </template>
 <style lang="scss" scoped>
 .Vault {
+
+
   .content1 {
     background: white;
   }
   .content2 {
     background: url("~/assets/images/vault_bg.png");
     .BTN {
-      padding: 12px 20px;
+      padding: 13px 35px;
+      font-size: 18px;
+
     }
   }
+  @media (min-width: 768px) {
+
+
+  .BTN{
+    font-size: 20px;
+    width: fit-content;
+  }
+}
+@media (min-width: 1200px) {
+   h1 {
+     font-size: 50px;
+  }
+  p{
+    font-size: 20px;
+  }
+
+}
 }
 </style>

@@ -1,18 +1,10 @@
 <template>
   <section class="GetStarted py-5 bg-light">
     <div class="container py-3">
-      <h1 class="my-2 fw-bolder text-center">
+      <h1 class="my-4 fw-bolder mx-auto text-center">
         How to get started with GYM Network
       </h1>
-       <div class="content mx-auto d-md-flex flex-wrap py-5 my-lg-5">
-        <div
-          v-for="item in data"
-          :key="item.id"
-          class="col col-md-4 p-2 p-lg-3"
-        >
-          <HoverCard :data="item" />
-        </div>
-      </div>
+      <GetStarted />
       <div class="bg bg-1">
         <img src="~/assets/images/Colored.png" class="w-100" alt="" />
       </div>
@@ -23,124 +15,32 @@
   </section>
 </template>
 <script>
-import HoverCard from "../cards/HoverCard.vue";
-const data = [
-  {
-    id: 1,
-    title: "Choose a crypto wallet",
-    text: "like MetaMask or Trust Wallet",
-    img: require("~/assets/images/getStarted1.png"),
-    link: {
-      url: "",
-      text: "Watch tutorial",
-    },
-  },
-  {
-    id: 2,
-    title: "Transfer BNB",
-    text: "to your wallet",
-    img: require("~/assets/images/getStarted2.png"),
-    link: {
-      url: "",
-      text: "Watch tutorial",
-    },
-  },
-  {
-    id: 3,
-    title: "Connect your wallet",
-    text: "to the website and make your first deposit into the Vault (from 0.051 BNB)",
-    img: require("~/assets/images/getStarted3.png"),
-    link: {
-      url: "",
-      text: "Watch tutorial",
-    },
-  }
-];
+import GetStarted from "../GetStarted.vue";
+
 export default {
   data() {
     return {
-      data,
     };
   },
   components: {
-    HoverCard,
-  },
+    GetStarted
+},
 };
 </script>
 <style lang="scss" scoped>
 .GetStarted {
   background: white;
-  .content {
-    max-width: 820px;
-
-    .box {
-      position: relative;
-      cursor: pointer;
-
-      &:hover {
-        .text {
-          transform: translateY(-10px);
-          background: #153151 !important;
-          * {
-            color: white !important;
-          }
-        }
-      }
-
-      * {
-        transition: all 0.5s ease;
-      }
-
-      .text {
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-      }
-      .box-img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0px;
-        overflow: hidden;
-        img {
-          height: 100%;
-        }
-      }
-
-      @media (min-width: 768px) {
-        &:hover {
-          .text {
-            transform: translateY(40px) rotate(7deg);
-            background: #153151 !important;
-            z-index: 9;
-            * {
-              color: white !important;
-            }
-          }
-          .box-img {
-            transform: translateY(-40px) rotate(-7deg);
-          }
-        }
-      }
-      @media (min-width: 992px) {
-        &:hover {
-          .text {
-
-            transform:  rotate(10deg) translateY(7px);
-            background: #153151 !important;
-            * {
-              color: white !important;
-            }
-          }
-          .box-img {
-            transform: translateY(-70px) rotate(-10deg);
-          }
-        }
-      }
+  h1 {
+    font-size: 34px;
+    max-width: 700px;
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+    @media (min-width: 992px) {
+      font-size: 50px;
     }
   }
+  
 
   .bg-white {
     background: white;

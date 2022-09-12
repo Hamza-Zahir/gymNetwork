@@ -1,25 +1,10 @@
 <template>
-  <section class="GetStarted py-5 bg-light">
-    <span class="GymnetLabel Label-1 d-none d-sm-block"
-      >Gymnet Gymnet Gymnet Gymnet
-    </span>
-    <span class="GymnetLabel Label-2 d-none d-sm-block"
-      >Gymnet Gymnet Gymnet Gymnet Gymnet</span
-    >
+  <section id="GetStarted" class="GetStarted py-5 bg-light">
     <div class="container py-3">
-      <h1 class="my-2 fw-bolder text-center">
-        How to get started with GYM Network
+      <h1 class="my-2 fw-bold text-center mx-auto">
+       {{content.gym_network_title}}
       </h1>
-       <div class="content mx-auto d-md-flex flex-wrap py-5 my-lg-5">
-        <div
-          v-for="item in data"
-          :key="item.id"
-          class="col col-md-4 p-2 p-lg-3"
-        >
-          <HoverCard :data="item" />
-        </div>
-      </div>
-
+      <GetStarted />
       <div class="bg bg-1">
         <img src="~/assets/images/4001.png" class="w-100" alt="" />
       </div>
@@ -31,48 +16,16 @@
 </template>
 
 <script>
-import HoverCard from "../cards/HoverCard.vue";
-const data = [
-  {
-    id: 1,
-    title: "Choose a crypto wallet",
-    text: "like MetaMask or Trust Wallet",
-    img: require("~/assets/images/getStarted1.png"),
-    link: {
-      url: "",
-      text: "Watch tutorial",
-    },
-  },
-  {
-    id: 2,
-    title: "Transfer BNB",
-    text: "to your wallet",
-    img: require("~/assets/images/getStarted2.png"),
-    link: {
-      url: "",
-      text: "Watch tutorial",
-    },
-  },
-  {
-    id: 3,
-    title: "Connect your wallet",
-    text: "to the website and make your first deposit into the Vault (from 0.051 BNB)",
-    img: require("~/assets/images/getStarted3.png"),
-    link: {
-      url: "",
-      text: "Watch tutorial",
-    },
-  }
-];
+import { mapGetters } from "vuex";
+import GetStarted from "../GetStarted.vue";
+
 export default {
-  data() {
-    return {
-      data,
-    };
+  computed: {
+    ...mapGetters(["content"]),
   },
   components: {
-    HoverCard,
-  },
+    GetStarted
+},
 };
 </script>
 
@@ -81,38 +34,14 @@ export default {
   background: white;
   position: relative;
   z-index: 0;
-  .GymnetLabel {
-    position: absolute;
-  }
-  .Label-1 {
-    left: 0;
-    top: 20px;
-    transform-origin: left center;
-    transform: translateX(5%) rotate(90deg);
-  }
-  .Label-2 {
-    right: 0;
-    top: 30%;
-    transform-origin: left center;
-    transform: translateX(95%) rotate(90deg);
-  }
-  .content {
-    max-width: 820px;
 
 
-  }
 
-  .bg-white {
-    background: white;
-  }
-  a {
-    text-decoration: none;
-  }
 
   .bg {
     z-index: -3;
     position: absolute;
-opacity: 0.8;
+    opacity: 0.8;
 
   }
 
@@ -121,18 +50,22 @@ opacity: 0.8;
     left: -20px;
     width: 200px;
   }
+
   .bg-2 {
     bottom: 0px;
     right: 0px;
   }
+
   @media (min-width: 576px) {
     .bg-1 {
       width: 250px;
     }
-     .bg-2 {
+
+    .bg-2 {
       width: 400px;
     }
   }
+
   @media (min-width: 1000px) {
     .bg-1 {
       left: 10px;
@@ -142,21 +75,31 @@ opacity: 0.8;
 
   @media (min-width: 1200px) {
     .bg-1 {
-      left: 100px;
+      left: 80px;
+      top: 20px;
+      width: 300px;
     }
+
     .bg-2 {
       width: 700px;
     }
   }
 
- @media (min-width: 2000px) {
+  @media (min-width: 2000px) {
     .bg-1 {
       left: 400px;
     }
+
     .bg-2 {
       width: 900px;
     }
   }
- }
+  @media (min-width: 1200px) {
+     h1{
+  font-size: 50px;
+  max-width: 700px;
 
+}
+    }
+}
 </style>

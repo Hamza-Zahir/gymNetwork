@@ -1,11 +1,6 @@
 <template>
   <section id="StreetMetaverse" class="StreetMetaverse py-5 bg-light">
-    <span class="GymnetLabel Label-1 d-none d-sm-block"
-      >Gymnet Gymnet Gymnet Gymnet
-    </span>
-    <span class="GymnetLabel Label-2 d-none d-sm-block"
-      >Gymnet Gymnet Gymnet Gymnet Gymnet</span
-    >
+
     <div class="container py-3">
       <h1 class="my-0 pb-lg-4 fw-bolder text-center">
         The GYM Street Metaverse ecosystem
@@ -19,7 +14,14 @@
           :key="item.id"
           class="col col-md-4 p-2 p-lg-3"
         >
-          <HoverCard :data="item" />
+        <HoverCard
+        :_id="item.id"
+        :link_url="item.link.url"
+        :link_text="item.link.text"
+        :title="item.title"
+        :text="item.text"
+        :img="item.img"
+      />
         </div>
       </div>
     </div>
@@ -32,7 +34,7 @@
   </section>
 </template>
 <script>
-import HoverCard from "../cards/HoverCard.vue";
+import HoverCard from "../cards/GetStartedCard.vue";
 const data = [
   {
     id: 1,
@@ -116,23 +118,9 @@ export default {
   h1 {
     letter-spacing: 1px;
   }
-  .GymnetLabel {
-    position: absolute;
-  }
-  .Label-1 {
-    left: 0;
-    top: 20px;
-    transform-origin: left center;
-    transform: translateX(5%) rotate(90deg);
-  }
-  .Label-2 {
-    right: 0;
-    top: 30%;
-    transform-origin: left center;
-    transform: translateX(95%) rotate(90deg);
-  }
+
   .content {
-    max-width: 850px;
+    max-width: 1000px;
   }
 
   .bg-white {

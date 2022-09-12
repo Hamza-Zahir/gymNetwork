@@ -77,12 +77,13 @@ export default {
       );
 
       addEventListener("scroll", (e) => {
+        const HeadApphight = document.getElementById("HeadApp");
         const sectionOffsetBottom = section.offsetTop + section.offsetHeight;
         const NavigationMenuOffsetBottom = NavigationMenu.offsetHeight;
 
         if (
           window.scrollY >=
-          sectionOffsetBottom - NavigationMenuOffsetBottom - 50
+          sectionOffsetBottom - NavigationMenuOffsetBottom - HeadApphight.offsetHeight + 50
         ) {
           NavigationMenu.style.position = "absolute";
           NavigationMenu.style.top = "auto";
@@ -90,11 +91,11 @@ export default {
         } else {
           if (section.offsetTop <= window.scrollY) {
             NavigationMenu.style.position = "fixed";
-            NavigationMenu.style.top = "50px";
+            NavigationMenu.style.top = `${HeadApphight.offsetHeight  + 50}px`;
             NavigationMenu.style.bottom = "auto";
           } else {
             NavigationMenu.style.position = "absolute";
-            NavigationMenu.style.top = "50px";
+            NavigationMenu.style.top = `${HeadApphight.offsetHeight + 50}px`;
             NavigationMenu.style.bottom = "auto";
           }
         }

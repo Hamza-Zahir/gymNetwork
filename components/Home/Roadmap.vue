@@ -1,10 +1,12 @@
 <template>
-  <section id="Roadmap" class="Roadmap py-4 bg-light">
-    <div class="container py-3">
-      <div class="title">
-        <h1 class="my-2 text-center fw-bolder">GYM Network Roadmap</h1>
-        <p class="text-center pc">
-          Our vision for the future and what we have implemented to date
+  <section id="Roadmap" class="Roadmap py-5 bg-light">
+    <div class="container py-3 py-md-5">
+      <div class="title pb-4">
+        <h1 class="my-2 text-center fw-bolder">
+          {{ content.roadmap_title }}
+        </h1>
+        <p class="text-center pc py-4">
+          {{ content.roadmap_desc }}
         </p>
       </div>
       <div class="conten pb-5">
@@ -39,100 +41,97 @@
           >
             <b-icon icon="arrow-left-short" class="h3 m-0"></b-icon>
           </span>
-          <div
-            v-for="(Roadmap, i) in Roadmaps"
-            :key="`Roadmap-${i + 1}`"
-            class="box h-100"
-          >
-            <div class="Border" :class="`Border-${i + 1}`"><span></span></div>
 
-            <div class="content" :class="i % 2 > 0 ? 'box_down' : 'box_up'">
-              <div class="img text-center">
-                <img :src="Roadmap.img" alt="" />
-              </div>
-              <div class="">
-                <span class="text-secondary fw-600">{{ Roadmap.date }}</span>
-                <h4>{{ Roadmap.title }}</h4>
-                <p class="pc">{{ Roadmap.text }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="endOfScroll">
-            <span></span>
-          </div>
+          <RoudMapCard
+            _id="1"
+            :img="imges[0]"
+            date="Q1-2022"
+            :title="content.gymnet_vault"
+            :text="content.gymnet_vault_desc"
+          />
+          <RoudMapCard
+            _id="2"
+            :img="imges[1]"
+            date="Q2-2022"
+            :title="content.yield_farming"
+            :text="content.yield_farming_desc"
+          />
+          <RoudMapCard
+            _id="3"
+            :img="imges[2]"
+            date="Q3-2022"
+            :title="content.metaverse"
+            :text="content.metaverse_slide_desc"
+          />
+          <RoudMapCard
+            _id="4"
+            :img="imges[3]"
+            date="Q4-2022"
+            :title="content.earn_crypto"
+            :text="content.earn_crypto_desc"
+          />
+          <RoudMapCard
+            _id="5"
+            :img="imges[4]"
+            date="Q1-2023"
+            :title="content.launchpad"
+            :text="content.launchpad_desc"
+          />
+          <RoudMapCard
+            _id="6"
+            :img="imges[5]"
+            date="Q2-2023"
+            :title="content.play_earn"
+            :text="content.play_earn_desc"
+          />
+          <RoudMapCard
+            _id="7"
+            :img="imges[6]"
+            date="Q3-2023"
+            :title="content.ntf_marketplace"
+            :text="content.ntf_marketplace_desc"
+          />
+          <RoudMapCard
+            _id="8"
+            :img="imges[7]"
+            date="Q4-2023"
+            :title="content.ar_app"
+            :text="content.ar_app"
+          />
         </div>
       </div>
     </div>
   </section>
 </template>
-
 <script>
-const Roadmaps = [
-  {
-    img: require("~/assets/images/roadmap/img-1.png"),
-    date: "Q1-2022",
-    title: "Gymnet Vault",
-    text: "Earn the best interest in the most popular crypto assets and receive unique token rewards",
-  },
-  {
-    img: require("~/assets/images/roadmap/img-2.png"),
-    date: "Q2-2022",
-    title: "Yield Farming",
-    text: "Find the best and most lucrative farming deals in DeFi",
-  },
-  {
-    img: require("~/assets/images/roadmap/img-3.png"),
-    date: "Q3-2022",
-    title: "Metaverse",
-    text: "Buy land to get exclusive access to all future products and use them in our virtual world",
-  },
-  {
-    img: require("~/assets/images/roadmap/img-4.png"),
-    date: "Q4-2022",
-    title: "Earn Crypto",
-    text: "Earn attractive returns on Bitcoin, ETH, BNB, DOGE, Stablecoins and more.",
-  },
-  {
-    img: require("~/assets/images/roadmap/img-5.png"),
-    date: "Q1-2023",
-    title: "Launchpad",
-    text: "Be among the first to get access to new projects before they hit the market",
-  },
-  {
-    img: require("~/assets/images/roadmap/img-6.png"),
-    date: "Q2-2023",
-    title: "Play & Earn",
-    text: "Play online games and earn rewards, like the No-Loss Lottery, an absolutely unique DeFi-based lottery",
-  },
-  {
-    img: require("~/assets/images/roadmap/img-7.png"),
-    date: "Q3-2023",
-    title: "NFT Marketplace",
-    text: "Invest, collect and trade valuable NFTs on zuckerland.io, the NFT marketplace.",
-  },
-  {
-    img: require("~/assets/images/roadmap/img-8.png"),
-    date: "Q4-2023",
-    title: "AR APP",
-    text: "Augmented reality meets blockchain! Train in a virtual GYM while earning rewards for completing exercises",
-  },
+import { mapGetters } from "vuex";
+import RoudMapCard from "./cards/RoudMapCard.vue";
+
+const imges = [
+  require("~/assets/images/roadmap/img-1.png"),
+  require("~/assets/images/roadmap/img-2.png"),
+  require("~/assets/images/roadmap/img-3.png"),
+  require("~/assets/images/roadmap/img-4.png"),
+  require("~/assets/images/roadmap/img-5.png"),
+  require("~/assets/images/roadmap/img-6.png"),
+  require("~/assets/images/roadmap/img-7.png"),
+  require("~/assets/images/roadmap/img-8.png"),
 ];
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
   data() {
     return {
-      Roadmaps,
       left: true,
       right: false,
+      imges,
     };
   },
   methods: {
     next(e) {
-      if (e.target.parentElement.scrollLeft % 250 == 0) {
-        e.target.parentElement.scrollLeft += 250;
-      } else {
-        e.target.parentElement.scrollLeft +=
-          250 - (e.target.parentElement.scrollLeft % 250);
-      }
+      e.target.parentElement.scrollLeft +=
+        250 - (e.target.parentElement.scrollLeft % 250);
     },
     prev(e) {
       if (e.target.parentElement.scrollLeft % 250 == 0) {
@@ -151,19 +150,17 @@ export default {
       } else {
         this.right = false;
       }
-
-      if (e.target.scrollLeft >= 250 * (Borders.length - 1)) {
+      if (
+        e.target.scrollLeft >=
+        250 * Borders.length - (e.target.clientWidth + 16)
+      ) {
         this.left = false;
       } else {
         this.left = true;
       }
-      const endOfScroll = document.querySelector(".Roadmap .boxs .endOfScroll");
-
-      endOfScroll.children[0].style.width = `${e.target.clientWidth - 250}px`;
-
       Array.from(Borders).map((el, i) => {
-        const index = Math.floor(e.target.scrollLeft / 250);
-        if (i <= index + 1) {
+        const index = Math.floor(e.target.clientWidth / 250);
+        if (i <= index + 3) {
           el.style.background = "#021547";
         } else {
           el.style.background = "#9b9b9b";
@@ -171,22 +168,22 @@ export default {
       });
     },
   },
+  components: { RoudMapCard },
 };
 </script>
 
 <style lang="scss" scoped>
 .Roadmap {
-
   .conten {
     position: relative;
     padding-left: 30px;
     &::before {
       content: "";
-      width: 280px;
+      width: 100%;
       height: 6px;
       background: #021547;
       position: absolute;
-      top: 265px;
+      top: 285px;
       left: 0;
       z-index: 9;
     }
@@ -195,62 +192,14 @@ export default {
     width: 100%;
     display: flex;
     overflow-x: scroll;
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
       display: none;
     }
-
-    // ...........................
     .endOfScroll {
       span {
         display: block;
-      }
-    }
-
-    // ...........................
-    .box {
-      position: relative;
-      .Border {
-        width: 100%;
-        height: 6px;
-        background: #9b9b9b;
-        position: absolute;
-        top: 265px;
-        span {
-          width: 14px;
-          height: 14px;
-          position: absolute;
-          top: -4px;
-          left: 0px;
-          background: inherit;
-          border-radius: 50%;
-        }
-      }
-      .Border-1,
-      .Border-2 {
-        span {
-          background: #021547;
-        }
-      }
-    }
-    .content {
-      width: 250px;
-      img {
-        width: 120px;
-      }
-    }
-    .box_up {
-      img {
-        margin-bottom: -15px;
-      }
-    }
-    .box_down {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: 285px;
-      img {
-        margin-top: -15px;
       }
     }
 
@@ -284,6 +233,16 @@ scroll-behavior: smooth;
     }
     .bg-ba {
       background: #6993b4;
+    }
+  }
+  @media (min-width: 768px) {
+    .title {
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 23px;
+      }
     }
   }
 }

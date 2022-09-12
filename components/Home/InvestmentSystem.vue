@@ -1,23 +1,19 @@
 <template>
   <section class="investmentSystem pt-5">
     <div class="container">
-      <div class="text col-md-9 col-lg-7">
+      <div class="text col-md-9 col-lg-8 col-lg">
         <h1 class="fw-bold">
-          Gym Network — A DeFi Aggregator Investment System
-        </h1>
+       {{content.investment_system_title}}
+      </h1>
 
-        <p class="pc mt-3 mt-lg-4">
-          GYM Network is a DeFi Aggregator Investment System that combines the
-          best yields with high rewards for its users. Thus providing easy
-          access and saving you a lot of precious time. Imagine getting the best
-          yields in the DeFi space directly into your wallet. Now the time has
-          come to let your dreams become reality!
+        <p class="pc mt-3 col-md-10 mt-xxl-5 pt-3">
+         {{content.investment_system_description}}
         </p>
 
         <nuxt-link to="/Product"
-          class="BTN box-sh-l cp text-center rounded-50 bg-ba fw-500 text-light my-4 col-sm-5 col-lg-4 mt-lg-5"
+          class="BTN box-sh-l cp text-center rounded-50 bg-ba fw-500 text-light my-4 mt-lg-5"
         >
-          Go to the products
+       {{content.go_to_the_products}}
         </nuxt-link>
       </div>
     </div>
@@ -26,14 +22,15 @@
     </div>
   </section>
 </template>
-
 <script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
+  import { mapGetters } from "vuex";
+
+    export default {
+  computed: {
+      ...mapGetters(["content"]),
+    },
+    }
+  </script>
 
 <style lang="scss" scoped>
 .investmentSystem {
@@ -41,7 +38,9 @@ export default {
   position: relative;
   overflow: hidden;
   .BTN {
-    padding: 10px 20px;
+    width: fit-content;
+    padding: 12px 26px;
+    // font-size: 18px;
   }
   .text {
     z-index: 1;
@@ -65,34 +64,44 @@ export default {
     .img {
       img {
         width: 80%;
-        margin-top: -160px;
+        margin-top: -170px;
       }
     }
     .text {
       transform: translateY(40px);
     }
+    p{
+      font-size: 18px;
+    }
+    .BTN {
+    padding: 13px 26px;
+    font-size: 18px;
+  }
   }
   @media (min-width: 1200px) {
     .img {
       img {
         width: 70%;
-        margin-top: -200px;
+        margin-top: -230px;
       }
     }
     .text {
       h1 {
         font-size: 50px;
       }
+
     }
   }
   @media (min-width: 1700px) {
     .img {
       img {
         width:60%;
-        margin-top: -220px;
+        margin-top: -270px;
       }
     }
-
+    p{
+      font-size: 20px;
+    }
   }
     @media (min-width: 2000px) {
     .img {

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <section id="AffiliateSystem" class="AffiliateSystem pt-5">
     <span class="GymnetLabel d-none d-sm-block"
       >Gymnet Gymnet Gymnet Gymnet</span
@@ -158,4 +158,4 @@ export default {
     }
   }
 }
-</style>
+</style> -->

@@ -6,15 +6,21 @@ $blueLight: #EBF2FA;
 $pragClour: #808080;
 $lightBG: #EFF5FB;
 
+
 body{
   padding: 0;
   margin: 0;
+  font-family: "Inter", Sans-serif;
 }
 *{
   box-sizing: border-box;
+  letter-spacing: 1px;
 }
 a{
   text-decoration: none;
+}
+.bg-wh{
+background:white;
 }
 .box-sh-l{
   display: block;
@@ -76,6 +82,7 @@ background: $lightBG;
  .rounded-50{
   border-radius: 50px;
  }
+
 // ...............................
 
 

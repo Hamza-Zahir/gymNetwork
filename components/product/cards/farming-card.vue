@@ -1,31 +1,70 @@
 <template>
-  <div class="box rounded-20 border border-info mt-2">
-    <h1 class="d-flex justify-content-between align-items-center m-0 text-light">
+  <div class="box rounded-20 border border-info mt-2"   >
+    <h1
+      class="d-flex cp justify-content-between align-items-center m-0 text-light"
+:class="position"
+      @click="
+        () => {
+          ShowContent(position);
+        }
+      "
+    >
       <span>{{ data.title }}</span>
-      <b-icon v-if="showContent" icon="chevron-up" @click="showContent = !showContent" class="m-0 p-0"></b-icon>
-      <b-icon v-if="!showContent" icon="chevron-down" @click="showContent = !showContent" class="m-0 p-0"></b-icon>
+      <span :style="showContent ? 'transform: rotate(-180deg);' : ''">
+      <b-icon  icon="chevron-down" class="m-0 p-0"  ></b-icon>
+    </span>
+      <!--  -->
     </h1>
-    <div class="bg-bl px-3 py-3 fw-500" v-if="showContent">
-      <p v-for="(tex, i) in data.text" :key="`${data.title}-${i + 1}`">
+    <div class="bg-bl fw-500 Content" :class="showContent ? 'showContent' : ''" >
+      <p
+        class=""
+        v-for="(tex, i) in data.text"
+        :key="`${data.title}-${i + 1}`"
+      >
         {{ tex }}
       </p>
-      <div class="bg-ba text-light py-2 text-center fw-600 col rounded-15 mt-4 box-sh-l">Start now</div>
+      <div
+        class="bg-ba text-light py-2 text-center fw-600 col rounded-15 mt-4 box-sh-l"
+      >
+        Start now
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
+
   props: {
     data: {
       required: true,
       type: Object,
+    },
+    position:{
+      required: true,
+      type: String,
     }
-
   },
   data() {
     return {
-      showContent: false,
+      showContent:false,
     };
+  },
+  methods: {
+    async headContent(_class) {
+
+
+
+      document.addEventListener("click", (e) => {
+        if (!e.target.classList.contains(_class)){
+          this.showContent = false;
+        }
+      });
+    },
+    async ShowContent(_class) {
+
+     await this.headContent(_class);
+      this.showContent = !this.showContent;
+    },
   },
 };
 </script>
@@ -33,10 +72,41 @@ export default {
 <style lang="scss" scoped>
 .box {
   overflow: hidden;
-  h1{
+  * {
+    transition: 0.2s ease-out;
+  }
+  h1 {
     background: url("~/assets/images/Rectangle.png");
     background-size: cover;
     padding: 30px 20px;
+    position: relative;
+    &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+
+
+  }
+
+  .Content {
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    overflow: hidden;
+  }
+  .showContent {
+    max-height: 800px;
+    transition: max-height 0.35s ease-in;
+    padding: 20px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 </style>

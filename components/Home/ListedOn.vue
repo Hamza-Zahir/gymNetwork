@@ -1,13 +1,16 @@
 <template>
   <section class="py-5 bg-light">
     <div class="container py-lg-5">
-      <h1 class="fw-bolder text-center">GYMNET is listed on</h1>
-      <div class="mt-4 d-flex flex-wrap mt-5">
+      <h1 class="fw-bold text-center">
+{{content.listed_on}}
+        </h1>
+      <div class="mt-4 d-flex flex-wrap mt-5 links">
         <div
           v-for="(link, i) in links"
           :key="`logo-${i}`"
-          class="d-block p-2 col-6 col-sm-4 col-md-3 col-lg-2"
+          class="d-block p-2 link"
         >
+        <!-- col-6 col-sm-4 col-md-3 col-lg-2 -->
         <a :href="link.link" target="blank">
           <img :src="link.logo" alt="" class="w-100" />
         </a>
@@ -18,6 +21,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 const links = [
   {
     link: "https://crypto.com/price/gym-network",
@@ -48,7 +53,7 @@ const links = [
     logo: require("~/assets/images/ListedOn/poocoin_chart_black.png"),
   },
   {
-    link: "https://www.dextools.io/app/bsc/pair-explorer/0x627f27705c8c283194ee9a85709f7bd9e38a1663",
+    link: "https://www.dextools.io/app/bnb/pair-explorer/0xf5d3cba24783586db9e7f35188ec0747ffb55f9b",
     logo: require("~/assets/images/ListedOn/dextools_black.png"),
   },
   {
@@ -62,7 +67,26 @@ export default {
       links
     };
   },
+  computed: {
+    ...mapGetters(["content"]),
+  },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  @media (min-width: 1200px) {
+    font-size: 50px;
+  }
+}
+  .link{
+    width: 50%;
+    @media (min-width:367px) {
+      width: auto;
+margin: 0 auto;
+    }
+    @media (min-width:992px) {
+margin: 0 ;
+    }
+  }
+</style>

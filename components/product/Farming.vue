@@ -1,13 +1,13 @@
 <template>
-  <section id="SinglePool" class=" Farming py-5">
-    <div class="container py-3" id="Farming">
+  <section id="SinglePool" class="Farming py-5">
+    <div class="container py-3 py-lg-5" id="Farming">
       <div class="d-md-none">
-        <FarmingCard :data="Farming" />
-        <FarmingCard :data="SinglePool" />
+        <FarmingCard :data="Farming" position="data_Farming" />
+        <FarmingCard :data="SinglePool" position="data_SinglePool" />
       </div>
-      <div class="content-lg mx-auto d-flex d-none d-md-block">
+      <div class="content-lg mx-auto d-none d-md-block">
         <div
-          class="cards-lg d-flex mx-auto col-md-12 col-lg-10"
+          class="cards-lg d-flex mx-auto col-md-12"
           :style="
             BoxOpen == SinglePool
               ? 'left: 50%;transform: translateX(-50%);'
@@ -25,14 +25,14 @@
             <div
               class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
             >
-              <h1>{{ SinglePool.title }}</h1>
+              <h1 class="fw-bold">{{ SinglePool.title }}</h1>
               <div class="mt-3">
                 <p v-for="(tex, i) in SinglePool.text" :key="i + 1">
                   {{ tex }}
                 </p>
               </div>
               <div
-                class="bg-ba BTN text-light py-2 px-5 cp text-center fw-600 rounded-15 mt-4 box-sh-l"
+                class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
               >
                 Start now
               </div>
@@ -40,29 +40,26 @@
           </div>
         </div>
 
-        <!-- ................................................ -->
-
         <div
-          class="cards-lg d-flex mx-auto col-md-12 col-lg-10"
+          class="cards-lg d-flex mx-auto col-md-12"
           :style="
             BoxOpen == Farming
               ? 'left: 50%;transform: translateX(-50%); '
               : 'left: 105%;transform: translateX(0%);'
           "
         >
-          <!-- flex-direction: row-reverse; -->
           <div class="displyCards col">
             <div
               class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
             >
-              <h1>{{ Farming.title }}</h1>
+              <h1 class="fw-bold">{{ Farming.title }}</h1>
               <div class="mt-3">
                 <p v-for="(tex, i) in Farming.text" :key="i + 1">
                   {{ tex }}
                 </p>
               </div>
               <div
-                class="bg-ba BTN text-light py-2 px-5 cp text-center fw-600 rounded-15 mt-4 box-sh-l"
+                class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
               >
                 Start now
               </div>
@@ -129,8 +126,9 @@ export default {
   }
   .content-lg {
     position: relative;
-    height: 430px;
+    height: 500px;
     overflow: hidden;
+    max-width: 1100px;
   }
   .cards-lg {
     height: 100%;
@@ -164,8 +162,14 @@ export default {
 
     .BTN {
       width: fit-content;
+      padding: 13px 35px;
       transition: all 0.3s linear;
     }
+  }
+  @media (min-width:1200px) {
+p {
+  font-size:20px ;
+}
   }
 }
 </style>

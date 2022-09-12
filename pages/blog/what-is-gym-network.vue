@@ -1,14 +1,18 @@
 <template>
-  <div class="container py-4 ">
-    <div class="Head d-flex align-items-center justify-content-between fw-600 py-2">
+  <div class="container py-4" :style="` margin-top : ${marginTop}`">
+    <div
+      class="Head d-flex align-items-center justify-content-between fw-600 py-2"
+    >
       <div class="phat">
         <span class="text-secondary">Blog</span> / What is GYM Network?
       </div>
-      <div class="next-btn border border-dark border-2 p-2 px-sm-4 cp d-flex align-items-center">
+      <nuxt-link to="/blog/how-can-you-earn-money-with-gym-network"
+        class="next-btn border border-dark border-2 p-2 px-sm-4 cp d-flex align-items-center text-dark"
+      >
         <span class="d-none d-sm-inline">Next article</span>
 
         <b-icon icon="arrow-right-short" class="h4 m-0 ms-sm-2"></b-icon>
-      </div>
+      </nuxt-link>
     </div>
 
     <div class="Body py-5 d-lg-flex">
@@ -17,7 +21,7 @@
           <h1 class="fw-bold">What is GYM Network?</h1>
           <div class="text-secondary fw-600 text-end">
             <b-icon icon="calendar-event"></b-icon>
-            06.07.22
+            10.08.22
           </div>
         </div>
         <img src="~/assets/images/blog/GYMNetwork.jpg" alt="" class="w-100" />
@@ -35,7 +39,9 @@
         <h2>Contents</h2>
         <ul>
           <li>
-            <a href="#GymNetwork">GYM Network - A DeFi Aggregator Investment System</a>
+            <a href="#GymNetwork"
+              >GYM Network - A DeFi Aggregator Investment System</a
+            >
           </li>
           <li><a href="#Mission">The Mission of GYM Network</a></li>
           <li>
@@ -58,28 +64,43 @@
           <h2>GYM Network - A DeFi Aggregator Investment System</h2>
           <p>
             As a
-            <a href="https://coinmarketcap.com/alexandria/article/what-is-a-defi-aggregator-and-why-should-i-care"
-              target="blank">
-              DeFi Aggregator</a>, GYM Network combines high yields with a very easy entry into the
+            <a
+              href="https://coinmarketcap.com/alexandria/article/what-is-a-defi-aggregator-and-why-should-i-care"
+              target="blank"
+            >
+              DeFi Aggregator</a
+            >, GYM Network combines high yields with a very easy entry into the
             crypto world.
           </p>
           <p>
-            A DeFi aggregator is a system that aggregates trading across different
-            <a href="https://www.coinbase.com/learn/crypto-basics/what-is-defi" target="blank">
-              decentralized finance (DeFi) platforms</a>
-            in one place. The result is the greatest possible yield, combined with
-            the saving of time-consuming searches for new staking or farming
-            opportunities.
+            A DeFi aggregator is a system that aggregates trading across
+            different
+            <a
+              href="https://www.coinbase.com/learn/crypto-basics/what-is-defi"
+              target="blank"
+            >
+              decentralized finance (DeFi) platforms</a
+            >
+            in one place. The result is the greatest possible yield, combined
+            with the saving of time-consuming searches for new staking or
+            farming opportunities.
           </p>
           <p>
             The biggest problem for many users who want to increase their coins
             through
-            <a href="https://coinmarketcap.com/alexandria/article/what-is-yield-farming" target="blank">
-              yield farming, staking</a>
+            <a
+              href="https://coinmarketcap.com/alexandria/article/what-is-yield-farming"
+              target="blank"
+            >
+              yield farming, staking</a
+            >
             or other methods are the sometimes very complicated and many steps
             that have to be taken on decentralized exchanges (DEX), such as
-            <a href="https://pancakeswap.finance/info/token/0x3a0d9d7764fae860a659eb96a500f1323b411e68"
-              target="blank">pancakeswap</a>.
+            <a
+              href="https://pancakeswap.finance/info/token/0x3a0d9d7764fae860a659eb96a500f1323b411e68"
+              target="blank"
+              >pancakeswap</a
+            >.
           </p>
           <p>
             Without proper instruction from an expert, you can easily burn money
@@ -89,10 +110,14 @@
           </p>
 
           <p>
-            GYM Network was aware of this problem, so they created different ways
-            to generate lucrative income with just a few clicks. At the same time,
-            GYM Network enables above-average
-            <a href="https://dailycoin.com/what-is-apy-in-crypto/" target="blank">APYs</a>
+            GYM Network was aware of this problem, so they created different
+            ways to generate lucrative income with just a few clicks. At the
+            same time, GYM Network enables above-average
+            <a
+              href="https://dailycoin.com/what-is-apy-in-crypto/"
+              target="blank"
+              >APYs</a
+            >
             .
           </p>
         </div>
@@ -100,77 +125,81 @@
           <h2>The Mission of GYM Network</h2>
 
           <p>
-            The mission of GYM Network is to help shape a world in which everyone
-            can be a part of the digital future and, as an investor, shape their
-            financial freedom themselves.
+            The mission of GYM Network is to help shape a world in which
+            everyone can be a part of the digital future and, as an investor,
+            shape their financial freedom themselves.
           </p>
           <p>
             In doing so, GYM Network creates nothing less than the solutions of
-            tomorrow, driven by their passion for Blockchain, DeFi and Metaverse.
+            tomorrow, driven by their passion for Blockchain, DeFi and
+            Metaverse.
           </p>
         </div>
         <div class="py-1" id="Services">
-
           <h2>Services provided by GYM Network</h2>
           <p>
-            The solutions of tomorrow are reflected in the unique services of GYM
-            Network.
+            The solutions of tomorrow are reflected in the unique services of
+            GYM Network.
           </p>
         </div>
         <div class="py-1" id="GymVault">
           <h2>GYM Vault</h2>
 
           <p>
-            With the vault from GYM you can generate income with your coins at the
-            same time and transfer them back to your wallet at any time without
-            having to pay extra fees. The Vault is the most flexible GYM Network
-            product and is particularly suitable for people who value security and
-            liquidity.
+            With the vault from GYM you can generate income with your coins at
+            the same time and transfer them back to your wallet at any time
+            without having to pay extra fees. The Vault is the most flexible GYM
+            Network product and is particularly suitable for people who value
+            security and liquidity.
           </p>
 
           <p>
             The BNB or other coins used are held by
             <a href="https://www.alpacafinance.org/" target="blank">ALPACA</a> ,
             one of the most respected and secure DeFi yield farming platforms.
-            There they produce GYMNET in real time, which you can have paid out to
-            your wallet at any time.
+            There they produce GYMNET in real time, which you can have paid out
+            to your wallet at any time.
           </p>
           <p>
             GYMNET, the coin from GYM Network, is already listed on numerous
             platforms and exchanges and can be sold again, for example via
             pancakeswap. So with the GYMNET you don't get just any coin that you
-            can't do anything with, but you can switch it directly to other coins
-            or use it for the following products.
+            can't do anything with, but you can switch it directly to other
+            coins or use it for the following products.
           </p>
 
           <p>
-            Want to try the Vault right away? In the GYM Vault you can start with
-            small amounts.
+            Want to try the Vault right away? In the GYM Vault you can start
+            with small amounts.
           </p>
 
-          <nuxt-link to="/product/#Vault"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
-            To the Vault</nuxt-link>
+          <nuxt-link
+            to="/product/#Vault"
+            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center"
+          >
+            To the Vault</nuxt-link
+          >
         </div>
         <div class="py-1" id="GymFarming">
           <h2>GYM Farming</h2>
           <p>
             Farming GYM Network is another lucrative way to generate GYMNET. In
-            farming, you combine GYMNET with, for example, BNB and provide them to
-            the platform as liquidity. For this you get daily rewards in GYMNET.
+            farming, you combine GYMNET with, for example, BNB and provide them
+            to the platform as liquidity. For this you get daily rewards in
+            GYMNET.
           </p>
           <p>
-            You can remove your coins at any time, just like in the vault, so you
-            are completely flexible.
+            You can remove your coins at any time, just like in the vault, so
+            you are completely flexible.
           </p>
         </div>
         <div class="py-1" id="SinglePool">
           <h2>Single Pool</h2>
 
           <p>
-            The GYM Network single pool offers the opportunity to further increase
-            your GYMNET. By locking them for a period of time and making them
-            available for staking, you get profitable rewards.
+            The GYM Network single pool offers the opportunity to further
+            increase your GYMNET. By locking them for a period of time and
+            making them available for staking, you get profitable rewards.
           </p>
 
           <p>
@@ -184,47 +213,62 @@
           <p>
             If you are enthusiastic about GYM Network and its services, you can
             even build up your own passive income with the extensive affiliate
-            system. GYM Network offers one of the first affiliate systems based on
-            Blockchain and Smart Contracts. This always ensures that your
+            system. GYM Network offers one of the first affiliate systems based
+            on Blockchain and Smart Contracts. This always ensures that your
             commissions, which you receive by recommending GYM Network and its
             services, are automatically distributed to you.
           </p>
           <p>
-            You can easily become an affiliate partner by starting with the Vault.
-            You will then automatically receive an affiliate link that you can
-            pass on to others.
+            You can easily become an affiliate partner by starting with the
+            Vault. You will then automatically receive an affiliate link that
+            you can pass on to others.
           </p>
           <p>
-            If they then start with the Vault or another GYM Network product, you
-            will receive a reward for the yields produced by your customers every
-            time. You earn recurring income while your affiliates and clients do
-            too. A win-win situation.
+            If they then start with the Vault or another GYM Network product,
+            you will receive a reward for the yields produced by your customers
+            every time. You earn recurring income while your affiliates and
+            clients do too. A win-win situation.
           </p>
 
-          <nuxt-link to="" class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center">
-            Start now</nuxt-link>
+          <nuxt-link
+            to="/product/#AffiliateSystem"
+            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center"
+          >
+            Start now</nuxt-link
+          >
         </div>
         <div class="py-1" id="Makes">
           <h2>What makes GYM Network so unique?</h2>
 
           <p>
-            Security, transparency, flexibility and high DeFi yields are the focus
-            of GYM Network. Only through independently verified audits and
+            Security, transparency, flexibility and high DeFi yields are the
+            focus of GYM Network. Only through independently verified audits and
             security protocols, such as from
-            <a href="https://www.certik.com/projects/gym-network" target="blank">Certik</a>
+            <a href="https://www.certik.com/projects/gym-network" target="blank"
+              >Certik</a
+            >
             or
-            <a href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Gymnet-v1.0.pdf"
-              target="blank">PeckShield</a>, can the greatest possible security be guaranteed for customers.
+            <a
+              href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Gymnet-v1.0.pdf"
+              target="blank"
+              >PeckShield</a
+            >, can the greatest possible security be guaranteed for customers.
           </p>
 
           <p>
             Transparency is an important value at GYM Network, lived through
             regular AMAs (Ask me anything) with the GYM Network team. The
-            <a href="https://bscscan.com/token/0x3a0d9d7764FAE860A659eb96A500F1323b411e68" target="blank">Smart
-              Contract</a>
+            <a
+              href="https://bscscan.com/token/0x3a0d9d7764FAE860A659eb96A500F1323b411e68"
+              target="blank"
+              >Smart Contract</a
+            >
             and detailed
-            <a href="https://docs.gymnetwork.io/language-index" target="blank">Documentation on Github</a>
-            also provide GYM Network customers with a high level of transparency.
+            <a href="https://docs.gymnetwork.io/language-index" target="blank"
+              >Documentation on Github</a
+            >
+            also provide GYM Network customers with a high level of
+            transparency.
           </p>
 
           <p>
@@ -235,28 +279,35 @@
             user always has the coins he uses liquid.
           </p>
           <p>
-            The combination of flexibility, security, transparency and high yields
-            make GYM Network one of the most exciting projects when it comes to
-            yield farming, staking or building a crypto fortune. But beyond that,
-            the GYM Network team is not satisfied with the achieved goals. They
-            have big plans in their roadmap.
+            The combination of flexibility, security, transparency and high
+            yields make GYM Network one of the most exciting projects when it
+            comes to yield farming, staking or building a crypto fortune. But
+            beyond that, the GYM Network team is not satisfied with the achieved
+            goals. They have big plans in their roadmap.
           </p>
 
-          <nuxt-link to="/#Roadmap" class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center">
-            To the roadmap</nuxt-link>
+          <nuxt-link
+            to="/#Roadmap"
+            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center"
+          >
+            To the roadmap</nuxt-link
+          >
         </div>
         <div class="py-1" id="Getstarted">
-
           <h2>How do I get started with GYM Network?</h2>
 
           <p>
-            Very simple: With a click on the button you get to the application of
-            GYM Network, which you can connect to your wallet and put your first
-            coins directly into the vault.
+            Very simple: With a click on the button you get to the application
+            of GYM Network, which you can connect to your wallet and put your
+            first coins directly into the vault.
           </p>
 
-          <nuxt-link to="" class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center">
-            Start now</nuxt-link>
+          <nuxt-link
+            to="/#GetStarted"
+            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center"
+          >
+            Start now</nuxt-link
+          >
         </div>
         <div class="py-1" id="Conclusion">
           <h2>Conclusion on GYM Network</h2>
@@ -270,156 +321,43 @@
 
           <p>
             Would you like more exciting information about GYM Network,
-            Blockchain, DeFi, Metaverse and other future technologies? Then have a
-            look at our blog:
+            Blockchain, DeFi, Metaverse and other future technologies? Then have
+            a look at our blog:
           </p>
-          <nuxt-link to="/blog" class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center">
-            To the blog</nuxt-link>
+          <nuxt-link
+            to="/blog"
+            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 w-fc my-3 text-center"
+          >
+            To the blog</nuxt-link
+          >
         </div>
       </div>
-      <div class="sidbar my-4 col-lg-4 p-lg-3 mt-lg-5 pt-lg-5 px-xl-5">
-        <div v-if="showlink" class="w-fc box-sh p-3 rounded-15">
-          <h5 class="d-flex fw-bold justify-content-between py-2 border-bottom">
-            Share link
-            <b-icon icon="x-circle-fill" class="h4 m-0 ms-sm-2 text-bl cp" @click="showlink = false"></b-icon>
-          </h5>
-          <div class="p-1 fw-500">Copy and share link</div>
-
-          <div class="phat d-flex bg-light py-3 px-2 rounded-15">
-            <span class="me-2">{{ phat }}</span>
-            <b-icon icon="files" class="h4 m-0 ms-sm-2 cp" @click="copyPhat()"></b-icon>
-            <div v-if="linkCopied" class="p-1 rounded" :class="linkCopied ? 'linkCopied' : ''">
-              link Copied
-            </div>
-          </div>
-        </div>
+      <div class="sidbar my-4 col-lg-4 p-lg-3 pe-lg-0 mt-lg-5 pt-lg-5 ps-xl-5">
+        <CopyLink/>
       </div>
     </div>
+    <InterestedArticles _id="4" />
   </div>
 </template>
 
 <script>
+       import { mapActions, mapGetters } from "vuex";
+ 
+import InterestedArticles from "~/components/Blog/InterestedArticles.vue";
+import CopyLink from "~/components/Blog/CopyLink.vue";
+
 export default {
-  data() {
-    return {
-      phat: "",
-      linkCopied: false,
-      showlink: true,
-    };
-  },
-  mounted() {
-    this.getPhat();
-  },
+mounted() {this.getmarginTop()},
   methods: {
-    getPhat() {
-      this.phat = window.location;
-    },
-    async copyPhat() {
-      this.linkCopied = false;
-      await navigator.clipboard.writeText(this.phat);
-      this.linkCopied = true;
-    },
+    ...mapActions(["getmarginTop"]),
   },
+  computed: {
+    ...mapGetters(["marginTop"]),
+  },
+  components: { InterestedArticles, CopyLink },
 };
 </script>
 
 <style lang="scss" scoped>
-.Head {
-  .next-btn {
-    border-radius: 50%;
-  }
-
-  @media (min-width: 576px) {
-    .next-btn {
-      border-radius: 25px;
-    }
-
-    .phat {
-      font-size: 20px;
-    }
-  }
-}
-
-.Body {
-  img {
-    margin: 30px auto;
-    border-radius: 20px;
-  }
-
-  h2 {
-    font-weight: bold;
-    margin: 20px auto;
-  }
-
-  p {
-    margin: 20px auto;
-
-  }
-
-  ul {
-    font-size: 20px;
-
-    // padding: 0;
-    li {
-      margin: 5px 0;
-    }
-  }
-
-  @media (min-width: 576px) {
-    p {
-      font-size: 18px;
-
-    }
-  }
-}
-
-.sidbar {
-  .box-sh {
-    box-shadow: 0px 0px 8px 0px #424242c9;
-  }
-
-  .text-bl {
-    color: #b9e9f8;
-  }
-
-  .phat {
-    position: relative;
-
-
-    span {
-      overflow: hidden;
-      display: -webkit-box;
-      display: -moz-box;
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      text-overflow: ellipsis;
-      -webkit-line-clamp: 1;
-      line-clamp: 1;
-      font-size: 14px;
-    }
-
-    .linkCopied {
-      position: absolute;
-      bottom: calc(100% + 5px);
-      right: 20px;
-      width: 100px;
-      background: #f0f0f0;
-      text-align: center;
-      animation: hide 3s forwards;
-      opacity: 1;
-
-      @keyframes hide {
-        to {
-          opacity: 0;
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-.w-fc {
-  width: fit-content;
-  max-width: 100%;
-}
+@import "~/assets/style/blog.scss";
 </style>

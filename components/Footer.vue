@@ -1,97 +1,83 @@
 <template>
   <footer class="Footer bg-bd2 pt-5 text-light">
-    <div class="container">
-      <div class="d-lg-flex">
-        <div class="col-lg-4 pe-lg-5 mt-lg-4">
-          <div class="logo d-flex align-items-center">
-            <span class="pe-2"
-              ><img src="~/assets/images/logo.png" alt=""
-            /></span>
-            <span class="fw-600"> Gym Network </span>
+    <div class="container text-center text-lg-start ">
+      <div class="d-lg-flex py-lg-5">
+        <div class="col-lg-5 pe-lg-5 mt-lg-4">
+          <div class="">
+            <div class="logo d-flex align-items-center justify-content-center justify-content-lg-start">
+              <span class="pe-2"><img src="~/assets/images/logo.png" alt="" /></span>
+              <span class="fw-600"> Gym Network </span>
+            </div>
+            <p class="my-3">
+             {{content.footer_info}}
+            </p>
           </div>
-          <p class="my-3 fs-14">
-            The union of Metaverse and DeFi Aggregator Investment System.
-            Lucrative returns in DeFi, Yield Farming, Staking, NFTs and more.
-          </p>
+
+          <div class="my-3 mt-lg-5">
+            <a href="https://twitter.com/GymNet_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="blank" class="me-2"><img src="~/assets/images/twitter.png" alt="" /></a>
+            <a href="https://t.me/gymnetwork_english" target="blank" class="ms-2"><img
+                src="~/assets/images/telegram-circle.png" alt="" /></a>
+          </div>
         </div>
-        <div class="links d-flex flex-wrap col">
-          <div class="my-3 col-6 col-md-3">
-            <div class="box mx-auto">
-              <span class="fw-bold">About</span>
-              <br />
-              <br />
+        <div class="border-bottom border-secondary mx-auto col-6 d-md-none"></div>
 
-              <nuxt-link to="">Support</nuxt-link>
-              <nuxt-link to="">Newsletter</nuxt-link>
-              <nuxt-link to="">Community</nuxt-link>
-              <nuxt-link to="">Blog & News</nuxt-link>
-              <nuxt-link to="">Smart Contract</nuxt-link>
-              <nuxt-link to="">Documentation</nuxt-link>
-            </div>
-          </div>
-          <div class="my-3 col-6 col-md-3">
+        <div class="links d-md-flex col ms-lg-3 ms-xl-5">
+          <div class="my-3 col-md-4">
             <div class="box mx-auto">
-              <span class="fw-bold">Eco-System</span>
+              <h5 class="fw-bold mb-lg-3">{{content.products}}</h5>
               <br />
-              <br />
-              <nuxt-link to="">CashFT </nuxt-link>
-              <nuxt-link to="">Exchange</nuxt-link>
-              <nuxt-link to="">Gymstreet</nuxt-link>
-              <nuxt-link to="">Zuckerland</nuxt-link>
-              <nuxt-link to="">Metablocks </nuxt-link>
-              <nuxt-link to="">Metaverse Campus</nuxt-link>
+              <nuxt-link to="/Product/#Vault">{{content.vault}}</nuxt-link>
+              <nuxt-link to="/Product/#Farming">{{content.farming}}</nuxt-link>
+              <nuxt-link to="/Product/#SinglePool">{{content.single_pool}}</nuxt-link>
+              <nuxt-link to="/Product/#BuyCrypto">{{content.buy_GYMNET}}</nuxt-link>
             </div>
           </div>
+          <div class="border-bottom border-secondary mx-auto col-6 d-md-none"></div>
+          <div class="my-3 col-md-4">
+            <div class="box mx-auto">
+              <h5 class="fw-bold mb-lg-3">{{content.eco_system}}</h5>
+              <br />
+              <nuxt-link to="/eco_system/#Gymstreet">{{content.gymstreet}} </nuxt-link>
+              <nuxt-link to="/eco_system/#Metablocks">{{content.metablocks}}</nuxt-link>
+              <nuxt-link to="/eco_system/#CashFT">{{content.cashFT}}</nuxt-link>
+              <nuxt-link to="/eco_system/#zuckerland">{{content.zuckerland}}</nuxt-link>
+              <nuxt-link to="/eco_system/#GymDex">{{content.gymDex}} </nuxt-link>
+              <nuxt-link to="/eco_system/#MetaverseCampus">{{content.metaverse_campus}}</nuxt-link>
+              <a href="https://gymnetwork.b-cdn.net/GYMNET_Whitepaper.pdf" target="blank">{{content.whitepaper}}</a>
+            </div>
+          </div>
+          <div class="border-bottom border-secondary mx-auto col-6 d-md-none"></div>
 
-          <div class="my-3 col-6 col-md-3">
+          <div class="my-3 col-md-4">
             <div class="box mx-auto">
-              <span class="fw-bold">Products</span>
-              <br />
-              <br />
-              <nuxt-link to="">Vault</nuxt-link>
-              <nuxt-link to="">Farming</nuxt-link>
-              <nuxt-link to="">Single Pool</nuxt-link>
-              <nuxt-link to="">Buy GYMNET</nuxt-link>
-              <nuxt-link to="">Affiliate System</nuxt-link>
-            </div>
-          </div>
-          <div class="my-3 col-6 col-md-3">
-            <div class="box mx-auto">
-              <span class="fw-bold">Help</span>
-              <br />
-              <br />
-              <nuxt-link to="">Guide </nuxt-link>
-              <nuxt-link to="">Support</nuxt-link>
+              <h5 class="fw-bold mb-lg-3">{{content.about}}</h5>
+              <br>
+              <nuxt-link to="/Blog">{{content.blog_news}}</nuxt-link>
+              <a href="https://docs.gymnetwork.io/support-and-contact-us/customer-support" target="blank">{{content.support}}</a>
+              <a href="https://docs.gymnetwork.io/" target="blank">{{content.guide}}</a>
+              <a href="https://docs.gymnetwork.io/introduction/tokenomics" target="blank">{{content.tokenContract}}</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="mb-3 mt-2">
-        <a
-          href="https://twitter.com/GymNet_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-          target="blank"
-          class="me-1"
-          ><img src="~/assets/images/twitter.png" alt=""
-        /></a>
-        <a href="https://t.me/gymnetwork_english" target="blank" class="ms-1"
-          ><img src="~/assets/images/telegram-circle.png" alt=""
-        /></a>
-      </div>
+
       <div class="border-top border-secondary"></div>
     </div>
-    <div class="text-center py-3 pc fs-14">
-      <span class="h6 m-0 p-0">©</span> Gym Network 2022
+    <div class="text-center py-3 pc">
+      <span class="h6 m-0 p-0">©</span> {{content.gym_network}} 2022
     </div>
   </footer>
 </template>
 
 <script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+  };
+  </script>
 
 <style lang="scss" scoped>
 .Footer {
@@ -100,18 +86,32 @@ export default {
       width: 30px;
     }
   }
+p{
+  // font-size: 15px;
+}
+  a {
+    img {
+      width: 35px;
+    }
+  }
+
   .links {
     .box {
       width: fit-content;
     }
+
     a {
       display: block;
       color: white;
       text-decoration: none;
-      transition: 0.5s;
+      transition: 0.2s;
+
       &:hover {
-        transform: scale(1.1) translate(7px);
+        transform: scale(1.1);
+        color: blue;
+
       }
+
     }
   }
 }

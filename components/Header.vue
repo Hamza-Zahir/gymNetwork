@@ -4,7 +4,7 @@
       <Links />
     </div>
     <div
-      class="container d-flex justify-content-between align-items-center py-3"
+      class="container d-flex justify-content-between align-items-center py-4"
     >
       <nuxt-link to="/" class="logo d-flex align-items-center">
         <span class="pe-2"><img src="~/assets/images/logo.png" alt="" /></span>
@@ -14,15 +14,17 @@
         class="menu_lg col ms-4 ms-xl-5 d-none d-lg-flex justify-content-between align-items-center"
       >
         <div class="links col-8 d-flex">
-          <nuxt-link to="/Product" class="ms-4 ms-xl-5"> Products </nuxt-link>
+          <nuxt-link to="/Product" class="ms-4 ms-xl-5"> {{content.products}} </nuxt-link>
           <nuxt-link to="/eco_system" class="ms-4 ms-xl-5">
-            Eco-system
+            {{content.eco_system}}
           </nuxt-link>
-          <nuxt-link to="/about" class="ms-4 ms-xl-5"> About </nuxt-link>
-          <nuxt-link to="/blog" class="ms-4 ms-xl-5"> Blog </nuxt-link>
+          <nuxt-link to="/about" class="ms-4 ms-xl-5"> {{content.about}} </nuxt-link>
+          <nuxt-link to="/blog" class="ms-4 ms-xl-5"> {{content.blog}} </nuxt-link>
         </div>
         <div class="d-flex ms-4 ms-xl-5">
-          <nuxt-link to=""> Launch to APP </nuxt-link>
+          <a href="https://gymnetwork.io/dashboard" class="fw-600"
+            >{{content.launch_to_app}}</a
+          >
           <div
             class="select fw-600 ms-4 ms-xl-5"
             @click="showLanguages = !showLanguages"
@@ -44,7 +46,11 @@
               <div
                 v-for="lang in languages"
                 :key="lang"
-                @click="language = lang"
+                @click="()=>{
+                  stourContent(lang);
+                // language = lang;
+
+                }"
                 class="border-top py-2"
                 :class="language === lang ? '' : 'text-secondary'"
               >
@@ -67,7 +73,7 @@
           @click="showMenu = !showMenu"
           class="cp h5 m-0 p-0"
         ></b-icon>
-        <div :class="showMenu ? 'ms-0' : ''" class="menu_sm bg-bd text-center">
+        <div :class="showMenu ? 'ms-0' : ''" class="menu_sm bg-bd text-center pb-5">
           <div v-if="$route.path == '/'" class="p-2">
             <Links class="rounded-20 container py-3" />
           </div>
@@ -75,15 +81,15 @@
           <div class="px-5">
             <div class="" @click="showMenu = !showMenu">
               <nuxt-link to="/Product" class="d-block py-2 mb-2">
-                Products
+                {{content.products}}
               </nuxt-link>
               <nuxt-link to="/eco_system" class="d-block py-2 my-2">
-                Eco-system
+                {{content.eco_system}}
               </nuxt-link>
               <nuxt-link to="/about" class="d-block py-2 my-2">
-                About
+                {{content.about}}
               </nuxt-link>
-              <nuxt-link to="/blog" class="d-block py-2 my-2"> Blog </nuxt-link>
+              <nuxt-link to="/blog" class="d-block py-2 my-2"> {{content.blog}} </nuxt-link>
             </div>
             <div class="my-3">
               <div
@@ -110,7 +116,11 @@
                   <div
                     v-for="lang in languages"
                     :key="lang"
-                    @click="language = lang"
+                    @click="()=>{
+                  stourContent(lang);
+                // language = lang;
+
+                }"
                     class="border-top py-2"
                     :class="language === lang ? '' : 'text-secondary'"
                   >
@@ -120,7 +130,7 @@
               </div>
               <div class="col col-sm-6 mx-auto" @click="showMenu = !showMenu">
                 <nuxt-link to="" class="btn border rounded-15 my-3 w-100 py-2">
-                  Launch to APP
+                  {{content.launch_to_app}}
                 </nuxt-link>
               </div>
             </div>
@@ -131,15 +141,26 @@
   </div>
 </template>
 <script>
+import { mapActions, mapGetters } from "vuex";
+
 export default {
   data() {
     return {
-      language: "EN",
-      languages: ["EN", "DE", "ES", "ID", "JA"],
+      languages: ["EN", "JA", "KO", "TH", "ZH"],
       showLanguages: false,
       showMenu: false,
     };
   },
+
+  methods: {
+    ...mapActions(["stourContent","getContent"]),
+  },
+  computed: {
+    ...mapGetters(["content","language"]),
+  },
+  mounted(){
+    this.getContent()
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -173,6 +194,8 @@ export default {
     }
   }
   .menu_sm {
+    max-height: 450px;
+    overflow: scroll;
     width: 100%;
     position: absolute;
     top: 100%;
@@ -180,6 +203,9 @@ export default {
     box-shadow: 10px 10px 10px 0px black;
     transition: 0.7s;
     margin-left: 100%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 </style>

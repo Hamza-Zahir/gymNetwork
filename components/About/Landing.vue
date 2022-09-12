@@ -8,12 +8,13 @@
             We make DeFi, Crypto, finance and Metaverse easy to use for everyone
           </p>
           <div class="col-md-8 col-lg-6 col-xl- mb-3 mt-5 mx-auto mx-sm-0 m">
-            <nuxt-link
-              to=""
+            <a
+              href="https://gymnetwork.io/dashboard/"
+              target="blank"
               class="btn rounded-50 bg-ba fw-500 text-light w-100 box-sh-l"
             >
             Start now
-            </nuxt-link>
+          </a>
           </div>
         </div>
 

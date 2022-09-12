@@ -1,101 +1,101 @@
 <template>
-  <section class="Landing bg-bd text-light py-5">
-    <div class="container pb-5">
-      <div class="d-md-flex justify-content-around">
-        <div class="text col-sm-10 col-md-6 mx-auto mx-md-0 px-md-2">
-          <h1 class="py-2 pt-lg-3 mt-md-3">
-            The perfect workout for your tokens!
+  <section class="Landing bg-bd text-light pb-5">
+    <div class="container">
+      <div class="d-lg-flex justify-content-around align-items-center">
+        <div class="text col-sm-12 col-lg-7 mx-auto mx-lg-0 px-md-2 pe-xl-4 pt-3 mt-lg-5">
+          <h1 class="py-2 pt-lg-3 mt-md-3 fw-bold">
+            <!-- The perfect workout for your tokens! -->
+            {{content.header_title}}
           </h1>
           <p class="col col-lg-11 mt-md-4">
-            We give you access to the best DeFi returns. The hard work is on us,
-            you just get the results.
+            {{  content.header_description}}
           </p>
-          <div class="col-md-8 col-lg-6 col-xl- my-4 mx-auto mx-sm-0 mt-md-5">
-            <nuxt-link
-              to=""
-              class="btn rounded-50 bg-ba fw-500 text-light w-100 box-sh-l"
+          <div class="col-lg-6 my-4 mx-auto mx-lg-0 mt-md-5">
+            <a
+              href="https://gymnetwork.io/dashboard"
+              class="BTN text-center rounded-50 bg-ba fw-500 text-light box-sh-l"
+              >{{content.launch_to_app}}</a
             >
-              Launch to APP
-            </nuxt-link>
           </div>
         </div>
 
         <div
-          class="form col-sm-10 col-md-6 col-lg-5 col-xl-4 bg-light fw-600 mx-auto mx-md-0 rounded-20 text-dark p-4"
+          class="form col-sm-10 col-lg-5 col-xl-4 fw-600 mx-auto mx-lg-0 rounded p-4"
         >
           <div class="">
-            <h5 class="fw-bold">
-              <span><img src="~/assets/images/bnb.png" alt="" /></span>
-              <span
-                >BNB <b-icon icon="chevron-down" class="m-0 p-0"></b-icon
-              ></span>
-            </h5>
-            <input type="number" name="" id="" class="w-100 mt-2 p-2 rounded" />
-            <div class="fs-14 text-secondary">
-              <span>1 BNB </span> = <span> ~342,13$</span>
-            </div>
-          </div>
-          <div class="d-flex my-4 align-items-center text-secondary">
-            <span class="col border"></span>
-            <b-icon icon="arrow-down-up" class="h5 m-0 p-0 mx-2"></b-icon>
-
-            <span class="col border"></span>
-          </div>
-          <div class="">
-            <h5 class="fw-bold">
-              <span><img src="~/assets/images/logo.png" alt="" /></span>
-              <span>GYMNET</span>
-            </h5>
-            <input type="number" name="" id="" class="w-100 mt-2 p-2 rounded" />
-            <div class="fs-14 text-secondary">
-              <span>1 GYMNET</span> = <span>~0.66$</span>
-            </div>
-          </div>
-
-          <div
-            class="rounded-20 border border-dark box-sh-l mt-4 text-center cp fw-600 py-2"
-          >
-            Swap
-            <b-icon icon="arrow-up-right" class="m-0 p-0"></b-icon>
+            Old community members can transfer their holdings and assets to the
+            new version via
+            <a
+              href="http://old.gymnetwork.io/dashboard/community-transfer/"
+              target="blank"
+              >Start Transfer</a
+            >
+            link
           </div>
         </div>
       </div>
-      <div
-        class="boxes border border-secondary p-2 mt-5 rounded-20 d-flex flex-wrap"
-      >
+      <div class="boxes p-2 p-xxl-3 mt-5 mt-lg-2 rounded-20 d-flex flex-wrap ">
         <div
-          class="col-6 col-md px-2 ps-sm-4 ps-lg-5 my-2 border-end border-secondary"
+          class="box1 col-12 col-md-6 col-xl text-center text-xl-start px-2 ps-sm-4 ps-lg-5 my-3"
         >
-          <span class="fs-14 text-secondary">Total burnt</span>
-          <div class="d-flex align-items-center mt-2 fw-bold">
+          <span class="pc fw-bold">{{content.total_burnt}}</span>
+          <div
+            class="d-flex align-items-center justify-content-center justify-content-xl-start mt-2 fw-bold fs-4 mt-3"
+          >
             <img src="~/assets/images/logo.png" alt="" /><span>
-              3,581,690
+              5,882,590.38
             </span>
           </div>
         </div>
-        <div class="col px-2 ps-sm-4 ps-lg-5 my-2 ps-md-4">
-          <span class="fs-14 text-secondary">GYMNET price</span>
-          <div class="mt-2 fw-bold">$ 0.06717452</div>
+        <div
+          class="border-bottom d-md-none border-secondary col-12 col-md"
+        ></div>
+        <div
+          class="box2 col-12 col-md-6 col-xl text-center text-xl-start px-2 ps-sm-4 ps-lg-5 my-3 ps-md-4"
+        >
+          <span class="pc fw-bold">{{content.gymnet_price}}</span>
+          <div class="mt-2 fw-bold fs-4 mt-3">$ 0.0940</div>
         </div>
-        <div class="border-start my-2 border-secondary d-none d-md-block"></div>
+        <div class="border-bottom d-md-none border-secondary col-12"></div>
 
         <div
-          class="col-6 col-md px-2 px-sm-3 ps-lg-5 ps-sm-4 my-2 border-end border-secondary"
+          class="box3 col-12 col-md-6 col-xl text-center text-xl-start px-2 px-sm-3 ps-lg-5 ps-sm-4 my-3"
         >
-          <span class="fs-14 text-secondary">Total supply</span>
-          <div class="d-flex align-items-center mt-2 fw-bold">
+          <span class="pc fw-bold">{{content.total_supply}}</span>
+          <div
+            class="d-flex align-items-center justify-content-center justify-content-xl-start mt-2 fw-bold fs-4 mt-3"
+          >
             <img src="~/assets/images/logo.png" alt="" />
-            <span>304,788,450</span>
+            <span>419,377,410.62 </span>
           </div>
         </div>
-        <div class="col px-2 ps-sm-4 ps-lg-5 my-2 col-md">
-          <span class="fs-14 text-secondary">Total value locked</span>
-          <div class="d-flex align-items-center mt-2 fw-bold">$ 22,463,351</div>
+        <div class="border-bottom d-md-none border-secondary col-12"></div>
+
+        <div
+          class="col-12 col-md-6 col-xl text-center text-xl-start px-2 ps-sm-4 ps-lg-5 my-3 col-md"
+        >
+          <span class="pc fw-bold fw-600">{{content.total_value_locked}}</span>
+          <div class="mt-3 fw-bold fs-4">$ 29,118,207.49</div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+
+<script>
+import { mapGetters } from "vuex";
+
+  export default {
+computed: {
+    ...mapGetters(["content"]),
+  },
+  }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
 <style lang="scss" scoped>
 .Landing {
   z-index: 0;
@@ -118,8 +118,9 @@
       background-size: 100% 80%;
     }
 
-    @media (min-width: 1000px) {
-      background-size: 70% 100%;
+    @media (min-width: 1200px) {
+      background-size: 1000px 700px;
+
     }
   }
 
@@ -127,7 +128,10 @@
     h1 {
       font-size: 30px;
     }
-
+    .BTN {
+      font-size: 20px;
+      padding: 15px 40px;
+    }
     @media (min-width: 576px) {
       h1 {
         font-size: 33px;
@@ -142,16 +146,19 @@
       h1 {
         font-size: 50px;
       }
+      p {
+        font-size: 20px;
+      }
+      .BTN {
+        width: fit-content;
+      }
     }
     @media (min-width: 1200px) {
       h1 {
-        font-size: 55px;
+        font-size: 65px;
       }
       p {
-        font-size: 18px;
-      }
-      .btn {
-        font-size: 20px;
+        // font-size: 18px;
       }
     }
     @media (min-width: 2000px) {
@@ -163,24 +170,22 @@
         font-size: 24px;
       }
     }
-    .btn {
-      letter-spacing: 0.5px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+
   }
   .form {
-    img {
-      width: 35px;
+    color: #055160;
+    background: #cff4fc;
+    a{
+      line-break: none;
+      text-decoration: underline;
     }
-    input {
-      background: #dee5ed;
-      border: none;
-      outline: none;
-    }
+    // font-size: 18px;
   }
   .boxes {
     position: relative;
+    .pc {
+      color: #b4b4b4;
+    }
 
     &::before {
       content: "";
@@ -191,15 +196,25 @@
       left: 0;
       border-radius: inherit;
       background: #153151b7;
-            backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
       z-index: -1;
     }
     img {
       width: 25px;
       margin-right: 5px;
+    }
 
+    @media (min-width: 768px) {
+      .box1,
+      .box3 {
+        border-right: 1px solid #999898;
+      }
+    }
+    @media (min-width: 1200px) {
+      .box2 {
+        border-right: 1px solid #999898;
+      }
     }
   }
-
 }
 </style>

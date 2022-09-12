@@ -1,32 +1,30 @@
 <template>
-  <section class="Section2 py-4 bg-light">
-    <span class="GymnetLabel d-none d-sm-block"
-      >Gymnet Gymnet Gymnet Gymnet</span
-    >
-    <div class="container py-3">
+  <section class="Section2 py-5 bg-light">
+
+    <div class="container py-5">
       <h1 class="my-2 text-center fw-bolder">Products and earnings</h1>
       <div class="content">
-        <div class="boxes mt-4 pt-3 col-md-10 col-lg-9 mx-auto pb-5">
+        <div class="boxes mt-5 pt-3 col-md-10 col-lg-9 mx-auto pb-5">
           <div
-            class="pb-3 box ps-sm-5"
+            class="pb-4 box ps-md-5"
             v-for="box in boxes"
             :key="`box-${box.id}`"
           >
             <span class="label bg-bd rounded-circle fw-600">{{ box.id }}</span>
             <div
-              class="d-sm-flex align-items-center justify-content-between rounded-15 border border-info bg-bl p-3 ms-md-3"
+              class="d-md-flex align-items-center justify-content-between rounded-15 border border-info bg-bl p-3 ms-md-3"
             >
-              <div class="img rounded-15 col-sm-5 col-lg-4">
+              <div class="img rounded-15 col-lg-4 text-center">
                 <img :src="box.img" alt="" />
               </div>
-              <div class="text mt-3 mt-sm-0 ms-sm-2 col-md-7">
-                <h4 class="m-0">{{ box.title }}</h4>
+              <div class="text mt-3 mt-md-0 col-md-7 ms-md-3">
+                <h4 class="m-0 fw-bold">{{ box.title }}</h4>
                 <p class="text-secondary mt-2 my-sm-1 my-lg-2">
                   {{ box.text }}
                 </p>
                 <a
                   :href="`#${box.link}`"
-                  class="BTN bg-ba cp text-center py-2 px-3 rounded-20 text-light fw-500 mt-lg-3 box-sh-l"
+                  class="BTN bg-ba cp text-center px-4 mt-3 mt-md-0 rounded-20 text-light fw-500 mt-lg-3 box-sh-l"
                 >
                   Read more</a
                 >
@@ -62,7 +60,7 @@ export default {
           id: 3,
           img: require("~/assets/images/SinglePool.png"),
           title: "Single Pool",
-          text: "Platziere GYMNET, um Provisionen über mehrere Ebenen zu verdienen und/oder vermehre deine GYMNET Token, indem du sie für einen gewissen Zeitraum sperrst.",
+          text: "ncrease your GYMNET tokens by locking them for a period of time.",
           link: "SinglePool",
         },
 
@@ -70,16 +68,10 @@ export default {
           id: 4,
           img: require("~/assets/images/BuyGYMNET.png"),
           title: "Buy GYMNET",
-          text: "Kaufe GYMNET zu attraktiven Gebühren einfach über alle gängigen Zahlungsmöglichkeiten.",
+          text: "Buy GYMNET at attractive fees easily through all major payment methods.",
           link: "BuyCrypto",
         },
-        {
-          id: 5,
-          img: require("~/assets/images/AffiliateSystem.png"),
-          title: "Affiliate System",
-          text: "Baue dir dein eigenes Krypto Empfehlungsbusiness und ein langfristiges passives Einkommen auf.",
-          link: "AffiliateSystem",
-        },
+
       ],
     };
   },
@@ -89,19 +81,13 @@ export default {
 <style lang="scss" scoped>
 .Section2 {
   position: relative;
-  .GymnetLabel {
-    position: absolute;
-    right: 0;
-
-    top: 0;
-    width: fit-content;
-
-    transform-origin: left center;
-    transform: translateX(95%) rotate(90deg);
+  h1 {
+  @media (min-width: 1200px) {
+    font-size: 50px;
   }
+}
   .boxes {
     @media (min-width: 576px) {
-      max-height: 380px;
       overflow-y: scroll;
 
       &::-webkit-scrollbar {
@@ -109,28 +95,20 @@ export default {
       }
     }
 
-    @media (min-width: 768px) {
-      max-height: 410px;
-    }
-
     @media (min-width: 992px) {
-      max-height: 425px;
+      max-height: 600px;
+
     }
 
-    @media (min-width: 1200px) {
-      max-height: 480px;
-    }
 
-    @media (min-width: 1400px) {
-      max-height: 545px;
-    }
   }
 
   .box {
     position: relative;
-    max-width: 300px;
     margin: 0 auto;
-
+    .BTN {
+        padding: 8px 0;
+      }
     .label {
       display: flex;
       align-items: center;
@@ -148,29 +126,18 @@ export default {
       overflow: hidden;
 
       img {
-        width: 100%;
+        max-width: 100%;
+
       }
     }
 
-    @media (min-width: 576px) {
-      max-width: 100%;
-
-      .label {
+    @media (min-width: 768px) {
+     .label {
         top: 17px;
         left: 0;
         box-shadow: 0px 0px 0px 5px #f9f9f9;
       }
-
-      p,
-      .BTN {
-        font-size: 14px;
-      }
-
-      .BTN {
-        width: fit-content;
-      }
-
-      &::before {
+       &::before {
         content: "";
         width: 0%;
         height: 100%;
@@ -179,12 +146,18 @@ export default {
         top: 0%;
         left: 17px;
       }
-    }
-
-    @media (min-width: 768px) {
-      p,
+      p{
+         font-size: 14px;
+      }
       .BTN {
-        font-size: 16px;
+         font-size: 14px;
+        width: fit-content;
+
+      }
+    }
+    @media (min-width: 992px) {
+      p,.BTN{
+         font-size: 16px;
       }
     }
   }

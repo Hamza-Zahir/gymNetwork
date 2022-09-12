@@ -1,18 +1,19 @@
 <template>
-  <section class="Products py-4 text-center">
-    <div class="container py-3">
-      <h1 class="my-2 fw-bolder">Products and earnings
-</h1>
-      <div class="mt-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto">
-        <div class="bg-ba rounded-20 box">
-          <img src="~/assets/images/Certik.png" class="" alt="" />
-        </div>
-        <div class="d-flex my-3">
-          <div class="rounded-20 col bg_light box me-2">
-            <img src="~/assets/images/SecuritScore.png" alt="" />
+  <section class="Products text-center">
+    <div class="container py-5">
+      <div class="py-5">
+        <h1 class="my-2 fw-bold mb-md-4">Products and earnings</h1>
+        <div class="mt-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto py-5">
+          <div class="bg-ba rounded-20 box">
+            <img src="~/assets/images/Certik.png" class="" alt="" />
           </div>
-          <div class="rounded-20 col bg-bd box ms-2">
-            <img src="~/assets/images/peckShield.png" alt="" />
+          <div class="d-flex my-3">
+            <div class="rounded-20 col bg_light box me-2">
+              <img src="~/assets/images/SecuritScore.png" alt="" />
+            </div>
+            <div class="rounded-20 col bg-bd box ms-2">
+              <img src="~/assets/images/peckShield.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -47,8 +48,10 @@
       top: 50px;
       left: 0;
       @media (min-width: 1000px) {
-        top: 60px;
-        left: 150px;
+        top: 80px;
+        left: 90px;
+        width: 300px;
+
       }
     }
     .bg-2 {
@@ -56,19 +59,18 @@
       right: -10px;
 
       @media (min-width: 1000px) {
-        width: 350px;
-        right: 100px;
-        bottom: -150px;
+        width: 600px;
+        right:50px;
+        bottom: -350px;
       }
-      @media (min-width: 1200px) {
-        right: 160px;
-      }
+     
     }
     .bg_light {
       background: #ebf2fa;
     }
+
     .box {
-      height: 130px;
+      height: 150px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -76,6 +78,14 @@
         max-width: 90%;
       }
     }
+    h1{
+      font-size: 45px;
+    }
+    h1 {
+  @media (min-width: 1200px) {
+    font-size: 50px;
+  }
+}
   }
 }
 </style>

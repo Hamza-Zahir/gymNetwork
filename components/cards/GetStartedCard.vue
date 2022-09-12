@@ -1,20 +1,20 @@
 <template>
   <div class="box h-100">
-    <div
-      class="text col border rounded-15 bg-white text-bd p-3 d-flex flex-column justify-content-between"
+    <a :href="link_url"  target="blank"
+      class="text col border border-dark rounded-15 bg-white text-bd  d-flex flex-column justify-content-between p-4"
     >
       <div class="">
-        <h1 class="text-end fw-bolder">/0{{ data.id }}</h1>
-        <h4 class="fw-bold my-3">{{ data.title }}</h4>
-        <p class="pc my-3">{{ data.text }}</p>
+        <h1 class="text-end fw-bolder">/0{{ _id }}</h1>
+        <h4 class="fw-bold my-3">{{ title }}</h4>
+        <p class="pc my-3">{{ text }}</p>
       </div>
-      <a :href="data.link.url" class="text-dark fs-14 fw-600 text-end mt-3">
-        {{ data.link.text }}
+      <a :href="link_url" class="text-dark fs-14 fw-600 text-end mt-3">
+        {{ link_text }}
         <b-icon icon="arrow-up-right" class="m-0"></b-icon>
       </a>
-    </div>
+    </a>
     <div class="box-img rounded-15 d-none d-md-block">
-      <img :src="data.img" class="w-100" alt="" />
+      <img :src="img" class="w-100" alt="" />
     </div>
   </div>
 </template>
@@ -22,10 +22,31 @@
 <script>
 export default {
   props: {
-    data: {
+    link_url: {
       required: true,
-      type: Object,
+      type: String,
     },
+    title: {
+      required: true,
+      type: String,
+    },
+    link_text: {
+      required: true,
+      type: String,
+    },
+    text: {
+      required: true,
+      type: String,
+    },
+    img: {
+      required: true,
+      type: String,
+    },
+    _id: {
+      required: true,
+      type: String,
+    },
+
   },
 };
 </script>
@@ -48,7 +69,7 @@ export default {
   }
 
   * {
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
   }
 
   .text {
@@ -71,32 +92,39 @@ export default {
 
   @media (min-width: 768px) {
     min-height: 270px;
+   font-size: 20px;
+a{
+  font-size: 20px;
+
+}
     &:hover {
       .text {
         transform: translateY(40px) rotate(7deg);
         background: #153151 !important;
         z-index: 9;
+
         * {
           color: white !important;
         }
       }
       .box-img {
+        transition: all 0.7s ease;
         transform: translateY(-40px) rotate(-7deg);
       }
     }
   }
   @media (min-width: 992px) {
-    min-height: 300px;
+    min-height: 350px;
     &:hover {
       .text {
-        transform: rotate(10deg) translateY(7px);
+        transform: rotate(10deg) translateY(5px);
         background: #153151 !important;
         * {
           color: white !important;
         }
       }
       .box-img {
-        transform: translateY(-70px) rotate(-10deg);
+        transform: translateY(-90px) rotate(-10deg);
       }
     }
   }

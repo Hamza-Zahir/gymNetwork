@@ -1,25 +1,29 @@
 <template>
   <div class="">
-    <div class="border-bottom">
+    <div class="border-bottom question">
       <div
         class="head cp d-flex justify-content-between py-4 px-2"
-        @click="ShowAnswer(`showAnswer-${id}`)"
-        :class="showAnswer ? `bg-bl showAnswer-${id}` : `showAnswer-${id}`"
+        @click="
+          () => {
+            ShowAnswer(`showAnswer-${id}`);
+          }
+        "
+        :class="`showAnswer-${id}`"
+
       >
-        <h4 class="m-0">{{ question.question }}</h4>
+        <span class="bg-bl" :style="showAnswer ? 'height: 100%;' : ''"></span>
+        <h4 class="m-0">{{ question }}</h4>
         <b-icon
-          v-if="!showAnswer"
           icon="chevron-down"
+          :style="showAnswer ? 'transform: rotate(-180deg);' : ''"
           class="h4 m-0 p-0 text-secondary"
         ></b-icon>
-        <b-icon
-          v-if="showAnswer"
-          icon="x-lg"
-          class="m-0 p-0 text-secondary"
-        ></b-icon>
       </div>
-      <div v-if="showAnswer" class="col-12 pt-3 pc">
-        <p class="p-2">{{ question.answers }}</p>
+      <div
+        class="col-12 pc pt-1 Answer"
+        :class="showAnswer ? 'showAnswer' : ''"
+      >
+        <p class="p-3 pt-4">{{ answers }}</p>
       </div>
     </div>
   </div>
@@ -35,33 +39,39 @@ export default {
     async headOptions(_class) {
       document.addEventListener("click", (e) => {
         if (!e.target.classList.contains(_class)) this.showAnswer = false;
-        console.log(e.target);
       });
     },
     async ShowAnswer(_class) {
-      await this.headOptions(_class).then((this.showAnswer = !this.showAnswer));
+
+      this.headOptions(_class);
+      this.showAnswer = !this.showAnswer;
     },
   },
   props: {
     question: {
       required: true,
-      type: Object,
+      type: String,
     },
     id: {
       required: true,
       type: Number,
+    },
+    answers: {
+      required: true,
+      type: String,
     },
   },
 };
 </script>
 <style lang="scss" scoped>
 p {
-  font-size: 17px;
-  letter-spacing: 0.6px;
-  line-height: 1.6;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.7;
 }
 .head {
   position: relative;
+  z-index: 0;
   &::before {
     content: "";
     width: 100%;
@@ -70,9 +80,38 @@ p {
     left: 0;
     top: 0;
     z-index: 3;
+    // transform: rotate(160deg);
+  }
+  span.bg-bl {
+    background: #e4f5ff;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    // transition:  0.5s ease-out;
   }
 }
-.bg-bl {
-  background: #e4f5ff;
+
+.question {
+
+  * {
+    transition: 0.2s ease-out;
+  }
+
+  .Answer {
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    overflow: hidden;
+  }
+  .showAnswer {
+    max-height: 1000px;
+    transition: max-height 0.35s ease-in;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 </style>
