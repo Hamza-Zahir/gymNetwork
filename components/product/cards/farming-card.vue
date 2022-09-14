@@ -13,7 +13,7 @@
       <span :style="showContent ? 'transform: rotate(-180deg);' : ''">
       <b-icon  icon="chevron-down" class="m-0 p-0"  ></b-icon>
     </span>
-      <!--  -->
+
     </h1>
     <div class="bg-bl fw-500 Content" :class="showContent ? 'showContent' : ''" >
       <p
@@ -23,11 +23,13 @@
       >
         {{ tex }}
       </p>
-      <div
+      <a
+      href="https://gymnetwork.io/dashboard/"
+      target="_blank"
         class="bg-ba text-light py-2 text-center fw-600 col rounded-15 mt-4 box-sh-l"
       >
         Start now
-      </div>
+    </a>
     </div>
   </div>
 </template>

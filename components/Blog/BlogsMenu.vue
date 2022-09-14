@@ -1,60 +1,66 @@
 <template>
-  <div class="container py-2">
-    <div
-      class="sort-btn bg-ba ms-md-4 rounded-15 cp"
-      @click="showSort = !showSort"
-    >
+  <div class="py-2 pb-5">
+    <div class="container">
       <div
-        class="BTN rounded-15 border border-primary text-ba fw-600 px-3 py-1 bg-light"
+        class="sort-btn bg-ba ms-md-4 rounded-15 cp"
+        @click="showSort = !showSort"
       >
-        {{ sort }}
-        <b-icon v-if="!showSort" icon="sort-down" class="h5 m-0 ms-2"></b-icon>
-        <b-icon v-if="showSort" icon="sort-up" class="h5 m-0 ms-2"></b-icon>
+        <div
+          class="BTN rounded-50 border border-primary text-ba fw-600 bg-light"
+        >
+          {{ sort }}
+          <b-icon
+            v-if="!showSort"
+            icon="sort-down"
+            class="h3 m-0 ms-2"
+          ></b-icon>
+          <b-icon v-if="showSort" icon="sort-up" class="h3 m-0 ms-2"></b-icon>
+        </div>
+        <ul v-if="showSort" class="m-0 p-0 fw-600 text-bd">
+          <li
+            class="border-bottom rounded-15"
+            :class="sort === 'Newest first' ? 'text-secondary' : ''"
+            @click="
+              () => {
+                blogs = Blogs;
+                sort = 'Newest first';
+              }
+            "
+          >
+            Newest first
+          </li>
+          <li
+            class="border-bottom rounded-15"
+            :class="sort === 'Latest articles' ? 'text-secondary' : ''"
+            @click="
+              () => {
+                blogs = BlogBlogsLatest;
+                sort = 'Latest articles';
+              }
+            "
+          >
+            Latest articles
+          </li>
+          <li
+            class="border-bottom rounded-15"
+            :class="sort === 'Most popular' ? 'text-secondary' : ''"
+            @click="
+              () => {
+                blogs = BlogMostPopular;
+                sort = 'Most popular';
+              }
+            "
+          >
+            Most popular
+          </li>
+        </ul>
       </div>
-      <ul v-if="showSort" class="m-0 p-0 fw-600 text-center">
-        <li
-          class="p-2 border-bottom rounded-15 t"
-          :class="sort === 'Newest first' ? 'text-secondary':''"
-          @click="
-            () => {
-              blogs = Blogs;
-              sort = 'Newest first';
-            }
-          "
-        >
-          Newest first
-        </li>
-        <li
-          class="p-2 border-bottom rounded-15"
-          :class="sort === 'Latest articles' ? 'text-secondary':''"
-          @click="
-            () => {
-              blogs = BlogBlogsLatest;
-              sort = 'Latest articles';
-            }
-          "
-        >
-          Latest articles
-        </li>
-        <li
-          class="p-2 border-bottom rounded-15"
-          :class="sort === 'Most popular' ? 'text-secondary':''"
-          @click="
-            () => {
-              blogs = BlogMostPopular;
-              sort = 'Most popular';
-            }
-          "
-        >
-          Most popular
-        </li>
-      </ul>
     </div>
-    <div class="my-4 d-flex flex-wrap">
+    <div class="cards px-2 col-sm-11 col-lg-12 mx-sm-auto my-5 d-flex flex-wrap">
       <div
         v-for="blog in blogs"
         :key="`blog-${blog.id}`"
-        class="py-3 p-md-3 col-12 col-md-6 col-lg-4 col-xxl-3"
+        class="py-3 p-sm-3 p-xl-4 col-12 col-md-6 col-lg-4"
       >
         <BlogCard :blog="blog" />
       </div>
@@ -67,8 +73,8 @@ import Blogs from "~/json/Blogs.json";
 
 import BlogCard from "./BlogCard.vue";
 
-const BlogBlogsLatest = [... Blogs].reverse()
-const BlogMostPopular = [... Blogs].sort(() => 0.6 - Math.random())
+const BlogBlogsLatest = [...Blogs].reverse();
+const BlogMostPopular = [...Blogs].sort(() => 0.6 - Math.random());
 export default {
   data() {
     return {
@@ -93,12 +99,17 @@ export default {
 
   position: relative;
   z-index: 10;
+
+  .BTN {
+    font-size: 23px;
+    padding: 12px 30px;
+  }
   @media (min-width: 768px) {
     width: fit-content;
   }
   .BTN {
     text-align: center;
-    // width: fit-content;
+    // font-size: 20px;
   }
 
   ul {
@@ -112,7 +123,17 @@ export default {
     li {
       list-style: none;
       cursor: pointer;
+      font-size: 23px;
+      padding: 12px 30px;
+      &:hover {
+        background: #eef8fc;
+      }
     }
+  }}
+  .cards{
+    max-width: 1300px;
+
+
   }
-}
+
 </style>

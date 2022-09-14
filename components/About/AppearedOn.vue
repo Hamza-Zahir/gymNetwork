@@ -1,7 +1,7 @@
 <template>
   <section class="py-5 bg-light">
     <div class="container py-lg-5 my-lg-5">
-      <h1 class="fw-bolder text-center">Appeared on</h1>
+      <h1 class="fw-bold text-center pb-lg-4">Appeared on</h1>
       <div class="mt-4 d-flex flex-wrap mt-5">
         <div
           v-for="(link, i) in links_1"
@@ -88,10 +88,7 @@ const links_2 = [
     link: "https://crypto.news/gym-network-the-first-ever-defiplatform-with-integrated-affiliate-system-exceeded-all-expectations-at-its-launch/",
     logo: require("~/assets/images/AppearedOn/cryptonews.png"),
   },
-  // {
-  //   link: "",
-  //   logo: require("~/assets/images/AppearedOn/coinQuora.png"),
-  // },
+ 
 ];
 export default {
   data() {
@@ -103,4 +100,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+@media (min-width: 768px) {
+    h1 {
+      font-size: 50px;
+    }
+
+  }
+</style>

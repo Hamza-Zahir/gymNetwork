@@ -12,12 +12,13 @@
       <div class="conten pb-5">
         <div
           class="boxs"
-          @scroll="
+
+        >
+        <!-- @scroll="
             (e) => {
               changeColore(e);
             }
-          "
-        >
+          " -->
           <span
             @click="
               (e) => {
@@ -142,30 +143,30 @@ export default {
       }
     },
     changeColore(e) {
-      let Borders = document.querySelectorAll(
-        ".Roadmap .boxs .box .Border span"
-      );
-      if (e.target.scrollLeft > 0) {
-        this.right = true;
-      } else {
-        this.right = false;
-      }
-      if (
-        e.target.scrollLeft >=
-        250 * Borders.length - (e.target.clientWidth + 16)
-      ) {
-        this.left = false;
-      } else {
-        this.left = true;
-      }
-      Array.from(Borders).map((el, i) => {
-        const index = Math.floor(e.target.clientWidth / 250);
-        if (i <= index + 3) {
-          el.style.background = "#021547";
-        } else {
-          el.style.background = "#9b9b9b";
-        }
-      });
+    //   let Borders = document.querySelectorAll(
+    //     ".Roadmap .boxs .box .Border span"
+    //   );
+    //   if (e.target.scrollLeft > 0) {
+    //     this.right = true;
+    //   } else {
+    //     this.right = false;
+    //   }
+    //   if (
+    //     e.target.scrollLeft >=
+    //     250 * Borders.length - (e.target.clientWidth + 16)
+    //   ) {
+    //     this.left = false;
+    //   } else {
+    //     this.left = true;
+    //   }
+    //   Array.from(Borders).map((el, i) => {
+    //     const index = Math.floor(e.target.clientWidth / 250);
+    //     if (i <= index + 3) {
+    //       el.style.background = "#021547";
+    //     } else {
+    //       el.style.background = "#9b9b9b";
+    //     }
+    //   });
     },
   },
   components: { RoudMapCard },

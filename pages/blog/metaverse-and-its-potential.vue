@@ -1,19 +1,20 @@
 <template>
-  <div class="container py-4" :style="` margin-top : ${marginTop}`">
+  <div class="bg-wh " :style="` margin-top : ${marginTop}`">
+    <div class="container py-4">
     <div class="Head d-flex align-items-center justify-content-between fw-600 py-2">
       <div class="phat">
         <span class="text-secondary">Blog</span> / Metaverse and its potential
       </div>
       <nuxt-link to="/blog/what-is-gym-network"
-        class="next-btn border border-dark border-2 p-2 px-md-4 cp d-flex align-items-center text-dark">
+        class="next-btn border border-secondary border-2 p-2 px-md-4 cp d-flex align-items-center text-secondary">
         <span class="d-none d-md-inline">Next article</span>
 
         <b-icon icon="arrow-right-short" class="h4 m-0 md-sm-2"></b-icon>
       </nuxt-link>
     </div>
 
-    <div class="Body py-5 d-lg-flex">
-      <div class="content col-lg-8">
+    <div class="Body py-5 d-xl-flex">
+      <div class="content col-xl-8">
         <div class="d-md-flex justify-content-between align-items-center">
           <h1 class="fw-bold">Metaverse and its potential</h1>
           <div class="text-secondary fw-600 text-end">
@@ -27,9 +28,9 @@
           <b>Metaverse</b> is the future! It will change the world as
           comprehensively as the Internet did back then. If you believe some
           experts on new technology, such as
-          <a href="https://en.wikipedia.org/wiki/Blockchain" target="blank">blockchain</a>
+          <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank">blockchain</a>
           ,
-          <a href="https://www.coinbase.com/learn/crypto-basics/what-is-defi" target="blank">DeFi</a>
+          <a href="https://www.coinbase.com/learn/crypto-basics/what-is-defi" target="_blank">DeFi</a>
           and crypto, this will be Metaverse, the
           <b>new technology of the future.</b>
         </p>
@@ -65,9 +66,9 @@
             The hype around the <b>Metaverse</b> really took off when Facebook
             changed its name to Meta. Even though some companies had already
             built up their own metaverses, such as
-            <a href="https://en.wikipedia.org/wiki/Decentraland" target="blank">“Decentraland”</a>
+            <a href="https://en.wikipedia.org/wiki/Decentraland" target="_blank">“Decentraland”</a>
             or
-            <a href="https://medium.com/sandbox-game/what-is-the-sandbox-850de68d893e" target="blank">“The Sandbox”</a>,
+            <a href="https://medium.com/sandbox-game/what-is-the-sandbox-850de68d893e" target="_blank">“The Sandbox”</a>,
             many people first heard about Metaverse when Facebook announced
             that it would establish its own metaverse.
           </p>
@@ -126,7 +127,7 @@
           <p>
             People can explore the world with avatars, like in a video game, and
             also purchase <b>digital land</b> in the form of
-            <a href="https://en.wikipedia.org/wiki/Non-fungible_token">NFTs</a>.
+            <a href="https://en.wikipedia.org/wiki/Non-fungible_token" target="_blank" >NFTs</a>.
             People can then create virtual spaces on their own land. This can be
             anything, such as a gallery where you exhibit your pictures or a
             social media platform.
@@ -135,13 +136,13 @@
             The Sandbox takes a similar approach to Decentraland. It is a video
             game with a trading place and a meanwhile very large community. With
             its own cryptocurrency “SAND” it is, as of July 2022,
-            <a href="https://coinmarketcap.com/currencies/the-sandbox/">
+            <a href="https://coinmarketcap.com/currencies/the-sandbox/" target="_blank">
               ranked #35 on coinmarketcap</a>
             with over $1.5 billion.
           </p>
           <p>
             Decentraland is
-            <a href="https://coinmarketcap.com/currencies/decentraland/" target="blank">ranked 31st</a>, of the largest
+            <a href="https://coinmarketcap.com/currencies/decentraland/" target="_blank">ranked 31st</a>, of the largest
             cryptocurrencies on coinmarketcap (July 2022).
           </p>
         </div>
@@ -233,7 +234,7 @@
             and experts.
           </p>
           <p>Want to know more about GYM Street? Then check out the website.</p>
-          <nuxt-link to="/eco_system/#StreetMetaverse" class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+          <nuxt-link to="/eco_system/#StreetMetaverse" class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             Go to GYM Street</nuxt-link>
         </div>
 
@@ -272,27 +273,30 @@
             Want more exciting info on GYM Network, Blockchain, DeFi, Metaverse
             and other future technologies? Then check out our blog:
           </p>
-          <nuxt-link to="/blog" class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+          <nuxt-link to="/blog" class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             To the Blog
           </nuxt-link>
         </div>
+        <ShareLink title="Metaverse and its potential" />
       </div>
-      <div class="sidbar my-4 col-lg-4 p-lg-3 pe-lg-0 mt-lg-5 pt-lg-5 ps-xl-5">
+      <div class="sidbar my-4 col-xl-4 p-lg-3 pe-lg-0 mt-lg-5 pt-lg-5 ps-xl-5">
         <CopyLink/>
       </div>
     </div>
+  </div>
     <InterestedArticles _id="3" />
   </div>
 </template>
 
 <script>
        import { mapActions, mapGetters } from "vuex";
- 
+
 import InterestedArticles from "~/components/Blog/InterestedArticles.vue";
 import CopyLink from "~/components/Blog/CopyLink.vue";
+import ShareLink from "~/components/Blog/ShareLink.vue";
 export default {
 
-  components: { InterestedArticles,CopyLink },
+  components: { InterestedArticles,CopyLink,ShareLink },
   mounted() {this.getmarginTop()},
   methods: {
     ...mapActions(["getmarginTop"]),

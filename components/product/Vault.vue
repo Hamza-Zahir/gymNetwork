@@ -1,6 +1,6 @@
 <template>
-  <section id="Vault" class="Vault">
-    <div class="content1 py-5">
+  <section  class="Vault py-5">
+    <div id="Vault" class="content1 py-5">
       <div class="container py-3">
         <h1 class="fw-bolder">Vault</h1>
         <div class="text pc my-4 col-md-10  col-xl-9">
@@ -17,8 +17,8 @@
         </div>
       </div>
     </div>
-    <div class="content2 py-4 text-light py-5">
-      <div class="container">
+    <div class="content2 text-light py-5">
+      <div class="container py-3">
         <div
           class="w-100 d-md-flex flex-row-reverse align-items-center justify-content-between"
         >
@@ -35,11 +35,13 @@
               but at the same time do not want to miss out on good returns. The
               perfect combination of security, liquidity and high returns.
             </p>
-            <div
+            <a
+            href="https://gymnetwork.io/dashboard/"
+            target="_blank"
               class="BTN bg-ba rounded-50  fw-600 cp box-sh-l text-light text-center mt-4 mt-lg-5"
             >
-              Jetzt starten
-            </div>
+              Start now
+          </a>
           </div>
         </div>
       </div>

@@ -1,27 +1,19 @@
 <template>
   <section id="StreetMetaverse" class="StreetMetaverse py-5 bg-light">
 
-    <div class="container py-3">
-      <h1 class="my-0 pb-lg-4 fw-bolder text-center">
-        The GYM Street Metaverse ecosystem
-      </h1>
-      <p class="text-center pc">
-        Get access to cutting-edge DeFi technologies.
-      </p>
+    <div class="container py-3 py-lg-5">
+      <div class="tetxTitle mx-auto">
+        <h1 class="my-0 pb-lg-4 fw-bold text-center ">
+          The GYM Street Metaverse ecosystem
+        </h1>
+        <p class="text-center pc pt-3">
+          Get access to cutting-edge DeFi technologies.
+        </p>
+      </div>
       <div class="content mx-auto d-md-flex flex-wrap py-5 my-lg-5">
-        <div
-          v-for="item in data"
-          :key="item.id"
-          class="col col-md-4 p-2 p-lg-3"
-        >
-        <HoverCard
-        :_id="item.id"
-        :link_url="item.link.url"
-        :link_text="item.link.text"
-        :title="item.title"
-        :text="item.text"
-        :img="item.img"
-      />
+        <div v-for="item in data" :key="item.id" class="col col-md-4  p-2 p-lg-3 p-xl-4">
+          <HoverCard :_id="item.id" :link_url="item.link.url" :link_text="item.link.text" :title="item.title"
+            :text="item.text" :img="item.img" />
         </div>
       </div>
     </div>
@@ -37,64 +29,64 @@
 import HoverCard from "../cards/GetStartedCard.vue";
 const data = [
   {
-    id: 1,
+    id: "1",
     title: "Gymstreet.io",
     text: "Our unique DeFi Metaverse",
     img: require("~/assets/images/StreetMetaverse/img-1.png"),
     link: {
-      url: "",
-      text: "Watch tutorial",
+      url: "http://gymstreet.io/",
+      text: "More about Gymstreet",
     },
   },
   {
-    id: 2,
+    id: "2",
     title: "Metablocks.io",
     text: "NFT Miner specially designed for metaverses",
     img: require("~/assets/images/StreetMetaverse/img-2.png"),
     link: {
-      url: "",
-      text: "Watch tutorial",
+      url: "https://metablocks21.com/",
+      text: "More about metablocks",
     },
   },
   {
-    id: 3,
+    id: '3',
     title: "cashFT",
     text: "The crypto and NFT debit card",
     img: require("~/assets/images/StreetMetaverse/img-3.png"),
     link: {
       url: "",
-      text: "Watch tutorial",
+      text: "Coming Soon",
     },
   },
   {
-    id: 4,
+    id: '4',
     title: "zuckerland.io",
     text: "Marketplace for NFTs",
     img: require("~/assets/images/StreetMetaverse/img-4.png"),
 
     link: {
       url: "",
-      text: "Watch tutorial",
+      text: "Coming Soon",
     },
   },
   {
-    id: 5,
+    id: '5',
     title: "Exchange",
     text: "Easily and intuitively exchange coins",
     img: require("~/assets/images/StreetMetaverse/img-5.png"),
     link: {
-      url: "",
-      text: "Watch tutorial",
+      url: "https://gymnetwork.io/dashboard/",
+      text: "Go to Gym DEX",
     },
   },
   {
-    id: 6,
+    id: '6',
     title: "Metaverse Campus",
     text: "Learn how DeFi, Metaverse and co. work",
-    img: require("~/assets/images/StreetMetaverse/img-6.png"),
+    img: require("~/assets/images/StreetMetaverse/img-6.jpg"),
     link: {
       url: "",
-      text: "Watch tutorial",
+      text: "Coming Soon",
     },
   },
 ];
@@ -115,12 +107,29 @@ export default {
   position: relative;
   z-index: 0;
   overflow: hidden;
-  h1 {
-    letter-spacing: 1px;
+
+  .tetxTitle {
+    max-width: 600px;
+
+    @media (min-width: 1000px) {
+
+      h1 {
+        font-size: 50px;
+
+      }
+
+      p {
+        font-size: 20px;
+
+      }
+    }
+
+
   }
 
+
   .content {
-    max-width: 1000px;
+    max-width: 1100px;
   }
 
   .bg-white {
@@ -137,29 +146,31 @@ export default {
     top: 100px;
     left: -20px;
   }
+
   .bg-2 {
     bottom: -50px;
     right: -20px;
   }
+
   @media (min-width: 576px) {
     .bg-1 {
       width: 250px;
     }
+
     .bg-2 {
       width: 400px;
       bottom: -150px;
     }
   }
+
   @media (min-width: 1000px) {
     .bg-1 {
-      left: 10px;
+      width: 350px;
     }
+
   }
 
   @media (min-width: 1200px) {
-    .bg-1 {
-      left: 100px;
-    }
     .bg-2 {
       width: 600px;
       bottom: -200px;
@@ -169,8 +180,9 @@ export default {
 
   @media (min-width: 2000px) {
     .bg-1 {
-      left: 400px;
+      left: 200px;
     }
+
     .bg-2 {
       width: 900px;
       bottom: -300px;

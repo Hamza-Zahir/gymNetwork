@@ -1,19 +1,20 @@
 <template>
-  <div class="container py-4 bg-wh" :style="` margin-top : ${marginTop}`">
+  <div class="bg-wh" :style="` margin-top : ${marginTop}`">
+    <div class="container py-4 ">
     <div class="Head d-flex align-items-center justify-content-between fw-600 py-2">
       <div class="phat">
         <span class="text-secondary">Blog</span> / GYM Street and its ecosystem
       </div>
       <nuxt-link to="/blog/metaverse-and-its-potential"
-        class="next-btn border border-dark border-2 p-2 px-md-4 cp d-flex align-items-center text-dark">
+        class="next-btn border border-secondary border-2 p-2 px-md-4 cp d-flex align-items-center text-secondary">
         <span class="d-none d-md-inline">Next article</span>
 
         <b-icon icon="arrow-right-short" class="h4 m-0 ms-md-2"></b-icon>
       </nuxt-link>
     </div>
 
-    <div class="Body py-5 d-lg-flex">
-      <div class="content col-lg-8">
+    <div class="Body py-5 d-xl-flex">
+      <div class="content col-xl-8">
         <div class="d-md-flex justify-content-between align-items-center">
           <h1 class="fw-bold">GYM Street and its ecosystem</h1>
           <div class="text-secondary fw-600 text-end">
@@ -82,7 +83,7 @@
           </p>
           <p><b>GYM Street's goals are:</b></p>
 
-          <ul>
+          <ul class="style">
             <li>Creating digital jobs</li>
             <li>To build a diverse blockchain & crypto ecosystem</li>
             <li>
@@ -94,7 +95,7 @@
           <p>You can learn even more about GYM Street on their website:</p>
 
           <nuxt-link to="/eco_system/#StreetMetaverse"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+            class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l my-3 w-fc">
             To GYM Street</nuxt-link>
         </div>
 
@@ -173,7 +174,7 @@
             companies establish miners for their own metaverse.
           </p>
           <nuxt-link to="/eco_system/#Metablocks"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+            class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             Go to Metablocks.io</nuxt-link>
         </div>
         <div class="py-1" id="cashFT">
@@ -198,7 +199,7 @@
             cashFT is more than just a debit card with NFT function, it is an
             <b>NFT lifestyle club</b> where users can …
           </p>
-          <ul>
+          <ul class="style">
             <li>Pay worldwide and withdraw and transfer money in real time</li>
             <li>receive NFTs as rewards</li>
             <li>learn more about NFTs</li>
@@ -207,7 +208,7 @@
             <li>and much more!</li>
           </ul>
           <nuxt-link to="/eco_system/#CashFT"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+            class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             Go to cashFT</nuxt-link>
         </div>
         <img src="~/assets/images/blog/ecosystem_3.png" alt="" class="w-100" />
@@ -228,7 +229,7 @@
             as a virtual land.
           </p>
           <nuxt-link to="/eco_system/#zuckerland"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+          class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             Go to zuckerland.io</nuxt-link>
         </div>
         <div class="py-1" id="dex">
@@ -241,7 +242,7 @@
             so you can manage and exchange your cryptocurrencies from there.
           </p>
           <nuxt-link to="/eco_system/#GymDex"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+          class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             To the DEX</nuxt-link>
         </div>
         <div class="py-1" id="campus">
@@ -257,8 +258,8 @@
             <b> Blockchain, DeFi, NFTs,</b> Finance, and other related topics.
           </p>
           <nuxt-link to="/eco_system/#MetaverseCampus"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
-            Go to Metaverses Campus</nuxt-link>
+          class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
+                      Go to Metaverses Campus</nuxt-link>
         </div>
         <div class="py-1" id="conclusion">
           <h2>Conclusion on the GYM Street ecosystem</h2>
@@ -286,7 +287,7 @@
             first to join by <b>starting with GYM Network</b> today.
           </p>
           <nuxt-link to="/#GetStarted"
-            class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+          class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             Start now</nuxt-link>
         </div>
         <div class="py-1">
@@ -294,25 +295,28 @@
             Want more exciting info on GYM Street, Blockchain, DeFi, Metaverse
             and other future technologies? Then check out our blog:
           </p>
-          <nuxt-link to="/blog" class="text-light bg-ba fw-600 rounded-20 box-sh-l px-4 py-2 my-3 w-fc text-center">
+          <nuxt-link to="/blog"  class="BTN text-light bg-ba fw-600 rounded-50 box-sh-l w-fc">
             To the Blog</nuxt-link>
         </div>
+        <ShareLink title="GYM Street and its ecosystem" />
       </div>
-      <div class="sidbar my-4 col-lg-4 p-lg-3 pe-lg-0 mt-lg-5 pt-lg-5 ps-xl-5">
+      <div class="sidbar my-4 col-xl-4 p-lg-3 pe-lg-0 mt-lg-5 pt-lg-5 ps-xl-5">
         <CopyLink />
       </div>
     </div>
+  </div>
     <InterestedArticles _id="2" />
   </div>
 </template>
 
 <script>
         import { mapActions, mapGetters } from "vuex";
-  
+
 import InterestedArticles from "~/components/Blog/InterestedArticles.vue";
 import CopyLink from "~/components/Blog/CopyLink.vue";
+import ShareLink from "~/components/Blog/ShareLink.vue";
 export default {
-  components: { InterestedArticles, CopyLink },
+  components: { InterestedArticles, CopyLink, ShareLink },
   mounted() {this.getmarginTop()},
   methods: {
     ...mapActions(["getmarginTop"]),

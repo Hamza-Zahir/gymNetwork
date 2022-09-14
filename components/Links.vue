@@ -18,21 +18,21 @@
       <div class="col d-flex flex-wrap">
         <a
           href="https://www.certik.com/projects/gym-network"
-          target="blank"
+          target="_blank"
           class="d-block col-6 p-2 col-lg"
           ><img src="~/assets/images/links/certik.png" alt="" class="" />
           <small>{{content.audited}}</small></a
         >
         <a
           href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Gymnet-v1.0.pdf"
-          target="blank"
+          target="_blank"
           class="d-block col-6 p-2 col-lg"
           ><img src="~/assets/images/links/peckShield.png" alt="" class="" />
           <small>{{content.audited}}</small></a
         >
         <a
           href="https://t.me/gymnetwork_english"
-          target="blank"
+          target="_blank"
           class="d-block col-6 p-2 col-lg"
           ><img
             src="~/assets/images/links/officialTelegram.png"
@@ -43,7 +43,7 @@
         </a>
         <a
           href="https://www.alpacafinance.org/"
-          target="blank"
+          target="_blank"
           class="d-block col-6 p-2 col-lg"
           ><img src="~/assets/images/links/alpaca.png" alt="" class="" />
           <small>{{content.official_partner}}</small>

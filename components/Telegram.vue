@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .BTN {
   width: fit-content;
-  padding: 15px 25px;
+  padding: 13px 35px;
 }
 @media (min-width: 1200px) {
   h1 {

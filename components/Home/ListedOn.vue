@@ -10,8 +10,7 @@
           :key="`logo-${i}`"
           class="d-block p-2 link"
         >
-        <!-- col-6 col-sm-4 col-md-3 col-lg-2 -->
-        <a :href="link.link" target="blank">
+        <a :href="link.link" target="_blank">
           <img :src="link.logo" alt="" class="w-100" />
         </a>
       </div>

@@ -22,7 +22,8 @@
           <nuxt-link to="/blog" class="ms-4 ms-xl-5"> {{content.blog}} </nuxt-link>
         </div>
         <div class="d-flex ms-4 ms-xl-5">
-          <a href="https://gymnetwork.io/dashboard" class="fw-600"
+          <a href="https://gymnetwork.io/dashboard"
+          target="_blank" class="fw-600"
             >{{content.launch_to_app}}</a
           >
           <div
@@ -129,9 +130,9 @@
                 </div>
               </div>
               <div class="col col-sm-6 mx-auto" @click="showMenu = !showMenu">
-                <nuxt-link to="" class="btn border rounded-15 my-3 w-100 py-2">
+                <a href="https://gymnetwork.io/dashboard/" target="_blank" class="btn border rounded-15 my-3 w-100 py-2">
                   {{content.launch_to_app}}
-                </nuxt-link>
+                </a>
               </div>
             </div>
           </div>
@@ -167,7 +168,7 @@ export default {
 .Header {
   z-index: 9999;
   position: relative;
-
+box-shadow: 5px 5px 10px 0px #0a0a0a59;
   .logo {
     font-size: 19px;
     img {

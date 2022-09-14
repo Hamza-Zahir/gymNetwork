@@ -1,17 +1,20 @@
 <template>
   <div class="box h-100">
-    <a :href="link_url"  target="blank"
-      class="text col border border-dark rounded-15 bg-white text-bd  d-flex flex-column justify-content-between p-4"
-    >
-      <div class="">
+    <a
+      :href="link_url"
+      :target="link_url ? '_blank' : ''"
+      class="text col border border-dark rounded-15 bg-white text-bd d-flex flex-column justify-content-between p-4 px-md-2 py-md-3 p-lg-4"
+
+      >
+      <div class="" >
         <h1 class="text-end fw-bolder">/0{{ _id }}</h1>
         <h4 class="fw-bold my-3">{{ title }}</h4>
         <p class="pc my-3">{{ text }}</p>
       </div>
-      <a :href="link_url" class="text-dark fs-14 fw-600 text-end mt-3">
-        {{ link_text }}
-        <b-icon icon="arrow-up-right" class="m-0"></b-icon>
-      </a>
+      <div class="fs-14 fw-600 text-end mt-4 pc">
+        {{link_url? link_text : "Coming Soon"}}
+        <b-icon v-if="link_url" icon="arrow-up-right" class="m-0"></b-icon>
+      </div>
     </a>
     <div class="box-img rounded-15 d-none d-md-block">
       <img :src="img" class="w-100" alt="" />
@@ -46,7 +49,6 @@ export default {
       required: true,
       type: String,
     },
-
   },
 };
 </script>
@@ -69,7 +71,7 @@ export default {
   }
 
   * {
-    transition: all 0.4s ease;
+    transition: transform 0.4s ease;
   }
 
   .text {
@@ -91,15 +93,9 @@ export default {
   }
 
   @media (min-width: 768px) {
-    min-height: 270px;
-   font-size: 20px;
-a{
-  font-size: 20px;
-
-}
     &:hover {
       .text {
-        transform: translateY(40px) rotate(7deg);
+        transform: translateY(10px) rotate(5deg);
         background: #153151 !important;
         z-index: 9;
 
@@ -108,25 +104,24 @@ a{
         }
       }
       .box-img {
-        transition: all 0.7s ease;
-        transform: translateY(-40px) rotate(-7deg);
+        transition: 0.7s ease;
+        transform: translateY(-80px) rotate(-5deg);
       }
     }
   }
   @media (min-width: 992px) {
     min-height: 350px;
+    font-size: 18px;
+    a {
+      font-size: 18px;
+    }
+
     &:hover {
-      .text {
-        transform: rotate(10deg) translateY(5px);
-        background: #153151 !important;
-        * {
-          color: white !important;
-        }
-      }
       .box-img {
-        transform: translateY(-90px) rotate(-10deg);
+        transform: translateY(-100px) rotate(-5deg);
       }
     }
   }
+
 }
 </style>

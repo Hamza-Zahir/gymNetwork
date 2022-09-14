@@ -14,13 +14,13 @@
           />
         </div>
 
-          <div class="text p-2 p-sm-3">
+          <div class="text p-2 p-sm-3 py-lg-1 my-xl-4 mt-lg-3">
             <div class="h5 my-3 my-sm-2 text-bd fw-bold ">{{ blog.title }}</div>
-            <p class="pc">{{ blog.text }}</p>
+            <p class="pc pt-lg-2 py-xl-3">{{ blog.text }}</p>
           </div>
         </div>
 
-         <div class="foter pc text-end fw-600 m-2 mx-3">
+         <div class="foter pc text-end fw-600 m-3 mt-lg-0">
             <small>{{ blog.date }}</small>
           </div>
       </nuxt-link>
@@ -56,6 +56,16 @@
       min-width: 100%;
       max-width: 170%;
     }
+  }
+  @media (min-width: 992px) {
+
+font-size: 18px;
+}
+  @media (min-width: 768px) {
+    min-height: 450px;
+  }
+  @media (min-width: 1200px) {
+    min-height: 500px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="section container text-light py-5">
+  <div class="section containe text-light py-5">
     <h4 class="NavigationName d-lg-none">
       <span class="rounded-circle me-2"></span> Gymstreet.io
     </h4>
@@ -31,10 +31,11 @@
           even more significantly. Everything we do in the real world today, we
           will do in the Metaverse in the future.
         </p>
-        <nuxt-link
-          to=""
-          class="BTN bg-primary text-light py-2 px-4 fw-600 box-sh-l rounded-20"
-          >To gymstreet.io</nuxt-link
+        <a
+          href="http://gymstreet.io/"
+          target="_blank"
+          class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
+          >To gymstreet.io</a
         >
       </div>
       <div class="img d-none text-center d-md-block col-4">

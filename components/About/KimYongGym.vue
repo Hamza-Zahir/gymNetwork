@@ -1,15 +1,16 @@
 <template>
-  <section class="KimYongGym py-5">
-    <div class="container">
+  <section class="KimYongGym py-5 ">
+    <div class="container py-5">
       <div
-        class="content px-2 py-5 rounded-20 d-sm-flex align-items-center justify-content-center"
+        class="content px-2 my-xl-4 py-5 rounded-20 d-sm-flex align-items-center justify-content-center justify-content-md-evenly"
       >
         <h1
-          class="text-light text-center text-sm-start px-5 py-4 p-sm-0 col-sm-6 col-md-5 col-lg-4 pe-xl-3"
+          class="text-light text-center text-sm-start px-5 py-4 p-sm-0 col-sm-6 col-md-4 col-lg-4 pe-xl-3"
         >
-          Let's welcome Kim Yong Gym
+         Let's welcome
+          Kim Yong Gym
         </h1>
-        <div class="img pb-4 pb-sm-0 col-sm-5 col-md-4 col-lg-5">
+        <div class="img pb-4 pb-sm-0 col-sm-5 col-md-5 col-lg-5">
           <img src="~/assets/images/KimYongGym_img.png" alt="" class="w-100" />
         </div>
       </div>
@@ -31,17 +32,30 @@ export default {};
     }
     @media (min-width: 576px) {
       background-size: 100% 100%;
+      h1 {
+        font-size: 34px;
+      }
     }
     @media (min-width: 992px) {
+      padding: 70px 0 !important;
       h1 {
-        font-size: 42px;
+        font-size: 45px;
+        font-weight: 600;
       }
     }
     @media (min-width: 1200px) {
+      padding: 80px 0 !important;
       h1 {
         font-size: 50px;
       }
     }
+     @media (min-width: 1400px) {
+      h1 {
+        font-size: 60px;
+      }
+
   }
+  }
+
 }
 </style>

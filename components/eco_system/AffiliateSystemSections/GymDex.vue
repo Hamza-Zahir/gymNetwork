@@ -1,5 +1,5 @@
 <template>
-  <div class="section container text-light py-5">
+  <div class="section containe text-light py-5">
     <h4 class="NavigationName d-lg-none">
       <span class="rounded-circle me-2"></span> GYM DEX
     </h4>
@@ -17,10 +17,11 @@
           Through a decentralized exchange (DEX), we enable users to easily
           exchange their coins in the future.
         </p>
-        <nuxt-link
-          to=""
-          class="BTN bg-primary text-light py-2 px-4 fw-600 box-sh-l rounded-20"
-          >More about GYM DEX</nuxt-link
+        <a
+          href="https://gymnetwork.io/dashboard/"
+          target="_blank"
+          class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
+          >More about GYM DEX</a
         >
       </div>
       <div class="img d-none text-center d-md-block col-4">

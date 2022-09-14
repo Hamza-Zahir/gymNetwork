@@ -36,7 +36,16 @@ export default {
   z-index: 0;
 
 
-
+  h1 {
+    font-size: 34px;
+    max-width: 700px;
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+    @media (min-width: 992px) {
+      font-size: 50px;
+    }
+  }
 
   .bg {
     z-index: -3;

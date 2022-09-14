@@ -2,7 +2,7 @@
   <section class="GetStarted py-5 bg-light">
     <div class="container py-3">
       <h1 class="my-4 fw-bolder mx-auto text-center">
-        How to get started with GYM Network
+        {{content.gym_network_title}}
       </h1>
       <GetStarted />
       <div class="bg bg-1">
@@ -14,19 +14,22 @@
     </div>
   </section>
 </template>
+
 <script>
+import { mapGetters } from "vuex";
 import GetStarted from "../GetStarted.vue";
 
+
 export default {
-  data() {
-    return {
-    };
+  computed: {
+    ...mapGetters(["content"]),
   },
   components: {
     GetStarted
 },
 };
 </script>
+
 <style lang="scss" scoped>
 .GetStarted {
   background: white;
@@ -40,7 +43,7 @@ export default {
       font-size: 50px;
     }
   }
-  
+
 
   .bg-white {
     background: white;

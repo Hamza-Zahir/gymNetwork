@@ -1,5 +1,4 @@
 export default {
-  
   dashboard: 'Dashboard',
   my_dashboard: 'My Dashboard',
   balance: 'Balance',

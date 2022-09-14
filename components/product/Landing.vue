@@ -15,7 +15,7 @@
         <!-- <div class="col-10 col-sm-5 col-md-4 col-xl-4  mx-auto mx-sm-0"></div> -->
           <a
             href="https://gymnetwork.io/dashboard/"
-            target="blank"
+            target="_blank"
             class="BTN my-4 my-sm-5 text-center rounded-50 bg-ba fw-600 text-light w-100 mt-xxl-4 box-sh-l"
           >
             Launch APP
@@ -73,7 +73,7 @@
         font-size: 22px;
       }
     }
-   
+
 
 
   }

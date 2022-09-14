@@ -1,76 +1,78 @@
 <template>
-  <section id="SinglePool" class="Farming py-5">
-    <div class="container py-3 py-lg-5" id="Farming">
-      <div class="d-md-none">
-        <FarmingCard :data="Farming" position="data_Farming" />
-        <FarmingCard :data="SinglePool" position="data_SinglePool" />
-      </div>
-      <div class="content-lg mx-auto d-none d-md-block">
-        <div
-          class="cards-lg d-flex mx-auto col-md-12"
-          :style="
-            BoxOpen == SinglePool
-              ? 'left: 50%;transform: translateX(-50%);'
-              : 'left: 105%;transform: translateX(0%);'
-          "
-        >
-          <h1
-            class="me-4 btnCard text-center m-0 text-light rounded-20 cp"
-            @click="chengeBoxes()"
-          >
-            <span>{{ Farming.title }}</span>
-          </h1>
-
-          <div class="displyCards col">
+  <section class="Farming py-5">
+    <div class="container py-5">
+      <div id="Farming" class="py-xl-5">
+        <div class="" id="SinglePool">
+          <div class="d-md-none">
+            <FarmingCard :data="Farming" position="data_Farming" />
+            <FarmingCard :data="SinglePool" position="data_SinglePool" />
+          </div>
+          <div class="content-lg mx-auto d-none d-md-block">
             <div
-              class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
+              class="card-1 d-flex mx-auto col-md-12"
+              :style="BoxOpen == SinglePool ? 'width: 100%;' : 'width: 0%;'"
             >
-              <h1 class="fw-bold">{{ SinglePool.title }}</h1>
-              <div class="mt-3">
-                <p v-for="(tex, i) in SinglePool.text" :key="i + 1">
-                  {{ tex }}
-                </p>
-              </div>
-              <div
-                class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
+              <h1
+                class="me-4 btnCard text-center m-0 text-light rounded-20 cp"
+                @click="chengeBoxes()"
+                :style="BoxOpen !== SinglePool ? 'width: 0%;' : ''"
               >
-                Start now
+                <span>{{ Farming.title }}</span>
+              </h1>
+
+              <div class="displyCards col">
+                <div
+                  class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
+                >
+                  <h1 class="fw-bold">{{ SinglePool.title }}</h1>
+                  <div class="mt-3">
+                    <p v-for="(tex, i) in SinglePool.text" :key="i + 1">
+                      {{ tex }}
+                    </p>
+                  </div>
+                  <a
+                    href="https://gymnetwork.io/dashboard/"
+                    target="_blank"
+                    class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
+                  >
+                    Start now
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div
-          class="cards-lg d-flex mx-auto col-md-12"
-          :style="
-            BoxOpen == Farming
-              ? 'left: 50%;transform: translateX(-50%); '
-              : 'left: 105%;transform: translateX(0%);'
-          "
-        >
-          <div class="displyCards col">
             <div
-              class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
+              class="card-2 d-flex mx-auto col-md-12"
+              :style="BoxOpen == Farming ? 'width: 100%;' : 'width: 0%;'"
             >
-              <h1 class="fw-bold">{{ Farming.title }}</h1>
-              <div class="mt-3">
-                <p v-for="(tex, i) in Farming.text" :key="i + 1">
-                  {{ tex }}
-                </p>
+              <div class="displyCards col">
+                <div
+                  class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
+                >
+                  <h1 class="fw-bold">{{ Farming.title }}</h1>
+                  <div class="mt-3">
+                    <p v-for="(tex, i) in Farming.text" :key="i + 1">
+                      {{ tex }}
+                    </p>
+                  </div>
+                  <a
+                    href="https://gymnetwork.io/dashboard/"
+                    target="_blank"
+                    class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
+                  >
+                    Start now
+                  </a>
+                </div>
               </div>
-              <div
-                class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
+              <h1
+                class="ms-4 btnCard text-center m-0 text-light rounded-20 cp"
+                @click="chengeBoxes()"
+                :style="BoxOpen !== Farming ? 'width: 0%;' : ''"
               >
-                Start now
-              </div>
+                <span>{{ SinglePool.title }}</span>
+              </h1>
             </div>
           </div>
-          <h1
-            class="ms-4 btnCard text-center m-0 text-light rounded-20 cp"
-            @click="chengeBoxes()"
-          >
-            <span>{{ SinglePool.title }}</span>
-          </h1>
         </div>
       </div>
     </div>
@@ -122,7 +124,7 @@ export default {
 .Farming {
   background: white;
   * {
-    transition: all 0.5s linear;
+    transition: all 0.3s ease-out;
   }
   .content-lg {
     position: relative;
@@ -130,10 +132,13 @@ export default {
     overflow: hidden;
     max-width: 1100px;
   }
-  .cards-lg {
+  .card-1,
+  .card-2 {
     height: 100%;
     position: absolute;
     top: 0;
+    width: 0%;
+    overflow: hidden;
     .displyCards {
       position: relative;
       overflow: hidden;
@@ -147,7 +152,6 @@ export default {
       background: url("~/assets/images/Rectangle_column.png");
       background-size: cover;
       overflow: hidden;
-      height: 100%;
       width: 150px;
       display: flex;
       align-items: center;
@@ -166,10 +170,18 @@ export default {
       transition: all 0.3s linear;
     }
   }
-  @media (min-width:1200px) {
-p {
-  font-size:20px ;
-}
+
+  .card-1 {
+    right: 0;
+  }
+  .card-2 {
+    left: 0;
+  }
+
+  @media (min-width: 1200px) {
+    p {
+      font-size: 20px;
+    }
   }
 }
 </style>

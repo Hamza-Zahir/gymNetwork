@@ -1,6 +1,6 @@
 <template>
   <div id="AffiliateSystem" class="AffiliateSystem p-0 m-0">
-    <div class="Navigation container">
+    <div class="Navigation mx-auto">
       <div class="NavigationMenu text-light d-none d-lg-block pb-3">
         <a href="#Gymstreet" class="Gymstreet">
           <span class="Border"></span>
@@ -36,7 +36,7 @@
     </div>
     <div class="AffiliateSystemSections col-12">
       <div id="Gymstreet" class="Section pt-lg-5"><Gymstreet /></div>
-      <div id="Metablocks" class="Section pt-lg-5"><Metablocks /></div>
+      <div id="Metablocks" class="Section pt-lg-5 "><Metablocks /></div>
       <div id="CashFT" class="Section pt-lg-5"><CashFT /></div>
       <div id="zuckerland" class="Section pt-lg-5"><Zuckerland /></div>
       <div id="GymDex" class="Section mt-lg-5"><GymDex /></div>
@@ -77,13 +77,14 @@ export default {
       );
 
       addEventListener("scroll", (e) => {
+
         const HeadApphight = document.getElementById("HeadApp");
         const sectionOffsetBottom = section.offsetTop + section.offsetHeight;
         const NavigationMenuOffsetBottom = NavigationMenu.offsetHeight;
 
         if (
           window.scrollY >=
-          sectionOffsetBottom - NavigationMenuOffsetBottom - HeadApphight.offsetHeight + 50
+          sectionOffsetBottom - NavigationMenuOffsetBottom - HeadApphight.offsetHeight - 50
         ) {
           NavigationMenu.style.position = "absolute";
           NavigationMenu.style.top = "auto";
@@ -91,11 +92,11 @@ export default {
         } else {
           if (section.offsetTop <= window.scrollY) {
             NavigationMenu.style.position = "fixed";
-            NavigationMenu.style.top = `${HeadApphight.offsetHeight  + 50}px`;
+            NavigationMenu.style.top = `${HeadApphight.offsetHeight  + 80}px`;
             NavigationMenu.style.bottom = "auto";
           } else {
             NavigationMenu.style.position = "absolute";
-            NavigationMenu.style.top = `${HeadApphight.offsetHeight + 50}px`;
+            NavigationMenu.style.top = `${HeadApphight.offsetHeight + 80}px`;
             NavigationMenu.style.bottom = "auto";
           }
         }
@@ -106,7 +107,7 @@ export default {
             `#AffiliateSystem .NavigationMenu a.${e.id}`
           );
           const height =
-            ((window.scrollY - sectionOffsetTop) * 100) / sectionHeight;
+            ((window.scrollY - sectionOffsetTop + 120) * 100) / sectionHeight ;
           link.children[0].style.height = `${height}%`;
           if (height > 0) {
             link.children[1].style.background = "#ffffff";
@@ -125,11 +126,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .AffiliateSystem {
   background: url("~/assets/images/StreetMetaverse/AffiliateSystem/bg.png");
   position: relative;
   background-size: cover;
+.Navigation{
+  max-width: 1400px;
+padding: 30px;
+}
+// min-height
   .NavigationMenu {
     position: absolute;
     width: 160px;
@@ -138,20 +143,20 @@ export default {
     a {
       display: flex;
       color: #cacaca;
-      height: 70px;
-      max-height: calc(70vh / 6);
+      height: 60px;
+      max-height: calc(60vh / 6);
       position: relative;
       overflow: hidden;
 
       * {
-        transition: 0.5s;
+        transition: 0.5s ease-in;
       }
       .Border {
         display: inline-block;
-        width: 7px;
+        width: 4px;
         position: absolute;
         top: 0px;
-        left: calc(9px - (7px / 2));
+        left: 7px;
         background: #ffffff;
       }
       .point {
@@ -171,32 +176,45 @@ export default {
 
       .text {
         margin-top: -5px;
+        font-weight: 600;
       }
       &::before {
         content: "";
         display: inline-block;
-        width: 7px;
+        width: 4px;
         height: 100%;
         position: absolute;
         top: 0px;
-        left: calc(9px - (7px / 2));
+        left: 7px;
         background: #cacaca;
         z-index: -1;
 
       }
+
+    }
+    a.MetaverseCampus{
+      &::before {
+        display: none;
+      }
     }
   }
+
+
+
 }
 
 :is(#Gymstreet, #CashFT, #MetaverseCampus) {
   background: url("~/assets/images/StreetMetaverse/AffiliateSystem/bg-1.png");
   background-repeat: no-repeat;
   background-position: 120% 15%;
+
   @media (min-width: 768px) {
     background-position: 130% 15%;
   }
+
   @media (min-width: 1200px) {
     background-position: 100% 15%;
+
   }
   @media (min-width: 2000px) {
     background-position: 90% 15%;
@@ -243,5 +261,9 @@ export default {
     background-size: 500px;
     background-position: 95% 10%;
   }
+}
+.Section{
+  min-height: 40vh;
+
 }
 </style>

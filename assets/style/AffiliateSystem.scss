@@ -1,61 +1,85 @@
-
 .section {
-  min-height: 600px;
-overflow: hidden;
-padding-left: 30px;
- position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
 
- &::before {
-      content: "";
-      width: 3px;
-      height: 100%;
+  &::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #b3b3b3;
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+  }
+
+  .NavigationName {
+    position: absolute;
+    left: calc(7px + (3px / 2));
+    span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
       background: #b3b3b3;
-      position: absolute;
-      left: 15px;
-      bottom: 0px;
     }
+  }
+  .content {
+    height: 100%;
+    align-items: center;
 
-    .NavigationName {
-      position: absolute;
-      left: calc(7px + (3px / 2));
-      span {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        background: #b3b3b3;
-      }
-    }
-    .content {
-      height: 100%;
-      align-items: center;
-
- .text {
-
+    .text {
       h1 {
         font-weight: 700;
+        text-align: center;
+        // font-size: 30px;
       }
       .BTN {
-        width: fit-content;
+        // width: fit-content;
         text-align: center;
-        letter-spacing: 0.5px;
+        letter-spacing: 1px;
+        padding: 14px 35px;
+      }
+
+      @media (min-width: 768px) {
+        h1 {
+          text-align: left;
+        }
+        .BTN {
+          width: fit-content;
+
+        }
+      }
+      @media (min-width: 1200px) {
+        h1{
+          font-size: 45px;
+        }
+       p, ul, .BTN{
+        font-size: 20px;
+       }
+
       }
     }
-
-
-
-      .img {
+    .img {
       img {
         max-width: 100%;
+        // min-width: 310px;
       }
     }
-}
+  }
 
- @media (min-width: 992px) {
-      padding-left: 170px;
-
-      &::before {
-        display: none;
-      }
+  @media (min-width: 992px) {
+    padding-left: 200px;
+    h1 {
+      text-align: right;
     }
-
+    &::before {
+      display: none;
+    }
+  }
+  @media (min-width: 1120px) {
+    padding-left: 260px;
+  }
 }

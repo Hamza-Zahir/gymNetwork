@@ -102,12 +102,12 @@ p {
 
   .Answer {
     max-height: 0;
-    transition: max-height 0.25s ease-out;
+    transition: max-height 0.4s ease-out;
     overflow: hidden;
   }
   .showAnswer {
     max-height: 1000px;
-    transition: max-height 0.35s ease-in;
+    transition: max-height 0.5s ease-in;
     overflow: scroll;
     &::-webkit-scrollbar {
       display: none;

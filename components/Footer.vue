@@ -15,8 +15,8 @@
 
           <div class="my-3 mt-lg-5">
             <a href="https://twitter.com/GymNet_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              target="blank" class="me-2"><img src="~/assets/images/twitter.png" alt="" /></a>
-            <a href="https://t.me/gymnetwork_english" target="blank" class="ms-2"><img
+              target="_blank" class="me-2"><img src="~/assets/images/twitter.png" alt="" /></a>
+            <a href="https://t.me/gymnetwork_english" target="_blank" class="ms-2"><img
                 src="~/assets/images/telegram-circle.png" alt="" /></a>
           </div>
         </div>
@@ -44,7 +44,7 @@
               <nuxt-link to="/eco_system/#zuckerland">{{content.zuckerland}}</nuxt-link>
               <nuxt-link to="/eco_system/#GymDex">{{content.gymDex}} </nuxt-link>
               <nuxt-link to="/eco_system/#MetaverseCampus">{{content.metaverse_campus}}</nuxt-link>
-              <a href="https://gymnetwork.b-cdn.net/GYMNET_Whitepaper.pdf" target="blank">{{content.whitepaper}}</a>
+              <a href="https://gymnetwork.b-cdn.net/GYMNET_Whitepaper.pdf" target="_blank">{{content.whitepaper}}</a>
             </div>
           </div>
           <div class="border-bottom border-secondary mx-auto col-6 d-md-none"></div>
@@ -54,9 +54,9 @@
               <h5 class="fw-bold mb-lg-3">{{content.about}}</h5>
               <br>
               <nuxt-link to="/Blog">{{content.blog_news}}</nuxt-link>
-              <a href="https://docs.gymnetwork.io/support-and-contact-us/customer-support" target="blank">{{content.support}}</a>
-              <a href="https://docs.gymnetwork.io/" target="blank">{{content.guide}}</a>
-              <a href="https://docs.gymnetwork.io/introduction/tokenomics" target="blank">{{content.tokenContract}}</a>
+              <a href="https://docs.gymnetwork.io/support-and-contact-us/customer-support" target="_blank">{{content.support}}</a>
+              <a href="https://docs.gymnetwork.io/" target="_blank">{{content.guide}}</a>
+              <a href="https://docs.gymnetwork.io/introduction/tokenomics" target="_blank">{{content.tokenContract}}</a>
             </div>
           </div>
         </div>
