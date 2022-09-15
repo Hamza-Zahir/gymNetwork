@@ -50,14 +50,10 @@ export default {
       window.open(
         `https://twitter.com/intent/tweet?text=${this.title} ${this.url}`,
         "_blank",
-        "width=600,height=500,top=100,left=800 "
+        "width=600,height=500,top=100,left=200 "
       );
     },
-    async copyPhat() {
-      this.linkCopied = false;
-      await navigator.clipboard.writeText(this.url);
-      this.linkCopied = true;
-    },
+
   },
 };
 </script>

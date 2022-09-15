@@ -26,7 +26,7 @@ a{
 background:white;
 }
 .box-sh-l{
-  display: block;
+  display: inline-block;
   box-shadow: 5px 3px 8px 0px #272727;
   transition: 0.5s;
   &:hover{

@@ -45,6 +45,11 @@ export default {
     getPhat() {
       this.url = window.location;
     },
+    async copyPhat() {
+      this.linkCopied = false;
+      await navigator.clipboard.writeText(this.url);
+      this.linkCopied = true;
+    },
 
   },
 };

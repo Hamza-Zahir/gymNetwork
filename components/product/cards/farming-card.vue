@@ -26,7 +26,7 @@
       <a
       href="https://gymnetwork.io/dashboard/"
       target="_blank"
-        class="bg-ba text-light py-2 text-center fw-600 col rounded-15 mt-4 box-sh-l"
+        class="BTN bg-ba col-12 text-light text-center fw-600 rounded-20 mt-4 box-sh-l"
       >
         Start now
     </a>
@@ -91,9 +91,6 @@ export default {
     top: 0;
     z-index: 3;
   }
-
-
-
   }
 
   .Content {
@@ -109,6 +106,9 @@ export default {
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+  .BTN{
+    padding: 11px 30px;
   }
 }
 </style>

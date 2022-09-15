@@ -63,12 +63,14 @@
           </div>
         </div>
       </div>
-      <nuxt-link
+     <div class="text-center">
+       <nuxt-link
         to=""
-        class="BTN cp mx-auto bg-ba rounded-50 text-light text-center mt-4 fw-600 box-sh-l"
+        class="BTN cp bg-ba rounded-50 text-light text-center mt-4 fw-600 box-sh-l"
       >
         Start directly
     </nuxt-link>
+    </div>
     </div>
   </section>
 </template>
@@ -94,6 +96,7 @@ export default {
   z-index: 0;
   .BTN {
     padding: 12px 35px;
+    font-size: 18px;
   }
 
 
@@ -104,9 +107,7 @@ export default {
     h1 {
       font-size: 40px;
     }
-    .BTN {
-      width: fit-content;
-    }
+
   }
 
   h1 {

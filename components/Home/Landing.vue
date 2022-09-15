@@ -110,7 +110,7 @@ export default {
 
     .BTN {
       font-size: 20px;
-      padding: 15px 40px;
+      padding: 13px 40px;
     }
 
     @media (min-width: 576px) {
