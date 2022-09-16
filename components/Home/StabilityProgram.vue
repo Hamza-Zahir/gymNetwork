@@ -6,7 +6,6 @@
       </h1>
       <div class="content">
         <div class="boxes d-lg-flex flex-wrap mt-4 pt-3 pb-5">
-         
           <StabilityProgramCard
             :title="content.farm_sp"
             :text="content.farm_sp_desc"
@@ -55,7 +54,6 @@ export default {
         require("~/assets/images/BuyGYMNET.png"),
         require("~/assets/images/Rectangle_stability_3.png"),
       ],
-
     };
   },
 };

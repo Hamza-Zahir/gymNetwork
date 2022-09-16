@@ -12,14 +12,8 @@
 </template>
 
 <script>
-      import { mapActions, mapGetters } from "vuex";
-// mounted() {this.getmarginTop()},
-//   methods: {
-//     ...mapActions(["getmarginTop"]),
-//   },
-//   computed: {
-//     ...mapGetters(["marginTop"]),
-//   },
+import { mapActions, mapGetters } from "vuex";
+
 import Landing from "~/components/About/Landing.vue";
 import AppearedOn from "~/components/About/AppearedOn.vue";
 import Mission from "~/components/About/Mission.vue";
@@ -39,7 +33,9 @@ export default {
     Tokenomics,
     MoreAboutGN,
   },
-  mounted() {this.getmarginTop()},
+  mounted() {
+    this.getmarginTop();
+  },
   methods: {
     ...mapActions(["getmarginTop"]),
   },

@@ -4,7 +4,7 @@
       <span class="rounded-circle me-2"></span> GYM DEX
     </h4>
     <div class="content d-md-flex align-items-center my-5">
-      <div class="text col-md-8 pe-md-3 align-self-start">
+      <div class="text col-md-8 pe-md-3">
         <h1 class="my-4">GYM DEX</h1>
 
         <div class="img text-center d-md-none my-3">

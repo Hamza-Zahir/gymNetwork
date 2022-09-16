@@ -2,7 +2,14 @@
   <section id="BuyCrypto" class="BuyCrypto py-5 bg-light">
     <div class="container d-lg-flex justify-content-around">
       <div
-        class="text col-md-10 col-lg-6 mx-auto mx-lg-0 d-flex flex-column justify-content-around"
+        class="
+          text
+          col-md-10 col-lg-6
+          mx-auto mx-lg-0
+          d-flex
+          flex-column
+          justify-content-around
+        "
       >
         <h1 class="my-3 fw-bolder">GYM Networks easy way to buy crypto</h1>
         <div class="">

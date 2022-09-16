@@ -4,15 +4,14 @@
       :href="link_url"
       :target="link_url ? '_blank' : ''"
       class="text col border border-dark rounded-15 bg-white text-bd d-flex flex-column justify-content-between p-4 px-md-2 py-md-3 p-lg-4"
-
-      >
-      <div class="" >
+    >
+      <div class="">
         <h1 class="text-end fw-bolder">/0{{ _id }}</h1>
         <h4 class="fw-bold my-3">{{ title }}</h4>
         <p class="pc my-3">{{ text }}</p>
       </div>
       <div class="fs-14 fw-600 text-end mt-4 pc">
-        {{link_url? link_text : "Coming Soon"}}
+        {{ link_url ? link_text : "Coming Soon" }}
         <b-icon v-if="link_url" icon="arrow-up-right" class="m-0"></b-icon>
       </div>
     </a>
@@ -71,7 +70,7 @@ export default {
   }
 
   * {
-    transition: transform 0.4s ease;
+    transition: all 0.4s ease;
   }
 
   .text {
@@ -122,6 +121,5 @@ export default {
       }
     }
   }
-
 }
 </style>

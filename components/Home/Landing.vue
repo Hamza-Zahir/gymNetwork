@@ -2,7 +2,17 @@
   <section class="Landing bg-bd text-light pb-5">
     <div class="container">
       <div class="d-lg-flex justify-content-around align-items-center">
-        <div class="text col-sm-12 col-lg-7 mx-auto mx-lg-0 px-md-2 pe-xl-4 pt-3 mt-lg-5">
+        <div
+          class="
+            text
+            col-sm-12 col-lg-7
+            mx-auto mx-lg-0
+            px-md-2
+            pe-xl-4
+            pt-3
+            mt-lg-5
+          "
+        >
           <h1 class="py-2 pt-lg-3 mt-md-3 fw-bold">
             {{ content.header_title }}
           </h1>
@@ -10,51 +20,135 @@
             {{ content.header_description }}
           </p>
           <div class="col-lg-6 my-4 mx-auto mx-lg-0 mt-md-5">
-            <a href="https://gymnetwork.io/dashboard"
-            target="_blank"
-              class="BTN text-center rounded-50 bg-ba fw-500 text-light box-sh-l">{{ content.launch_to_app }}</a>
+            <a
+              href="https://gymnetwork.io/dashboard"
+              target="_blank"
+              class="
+                BTN
+                text-center
+                rounded-50
+                bg-ba
+                fw-600
+                text-light
+                box-sh-l
+                col-12
+              "
+              >{{ content.launch_to_app }}</a
+            >
           </div>
         </div>
 
-        <div class="form col-sm-10 col-lg-5 col-xl-4 fw-600 mx-auto mx-lg-0 rounded p-4">
+        <div
+          class="
+            form
+            col-sm-10 col-lg-5 col-xl-4
+            fw-600
+            mx-auto mx-lg-0
+            rounded
+            p-4
+          "
+        >
           <div class="">
             Old community members can transfer their holdings and assets to the
             new version via
-            <a href="http://old.gymnetwork.io/dashboard/community-transfer/" target="_blank">Start Transfer</a>
+            <a
+              href="http://old.gymnetwork.io/dashboard/community-transfer/"
+              target="_blank"
+              >Start Transfer</a
+            >
             link
           </div>
         </div>
       </div>
       <div class="boxes p-2 p-xxl-3 mt-5 mt-lg-2 rounded-20 d-flex flex-wrap">
-        <div class="box1 col-12 col-md-6 col-xl text-center text-xl-start px-2 ps-sm-4 ps-lg-5 my-3">
+        <div
+          class="
+            box1
+            col-12 col-md-6 col-xl
+            text-center text-xl-start
+            px-2
+            ps-sm-4 ps-lg-5
+            my-3
+          "
+        >
           <span class="pc fw-bold">{{ content.total_burnt }}</span>
-          <div class="d-flex align-items-center justify-content-center justify-content-xl-start mt-2 fw-bold fs-4 mt-3">
+          <div
+            class="
+              d-flex
+              align-items-center
+              justify-content-center justify-content-xl-start
+              mt-2
+              fw-bold
+              fs-4
+              mt-3
+            "
+          >
             <img src="~/assets/images/logo.png" alt="" /><span>
-              5,882,590.38
+              {{ TotalBurnt }}
             </span>
           </div>
         </div>
-        <div class="border-bottom d-md-none border-secondary col-12 col-md"></div>
-        <div class="box2 col-12 col-md-6 col-xl text-center text-xl-start px-2 ps-sm-4 ps-lg-5 my-3 ps-md-4">
+        <div
+          class="border-bottom d-md-none border-secondary col-12 col-md"
+        ></div>
+        <div
+          class="
+            box2
+            col-12 col-md-6 col-xl
+            text-center text-xl-start
+            px-2
+            ps-sm-4 ps-lg-5
+            my-3
+            ps-md-4
+          "
+        >
           <span class="pc fw-bold">{{ content.gymnet_price }}</span>
-          <div class="mt-2 fw-bold fs-4 mt-3">$ 0.0940</div>
+          <div class="mt-2 fw-bold fs-4 mt-3">$ {{ GYMNETPrice }}</div>
         </div>
         <div class="border-bottom d-md-none border-secondary col-12"></div>
 
-        <div class="box3 col-12 col-md-6 col-xl text-center text-xl-start px-2 px-sm-3 ps-lg-5 ps-sm-4 my-3">
+        <div
+          class="
+            box3
+            col-12 col-md-6 col-xl
+            text-center text-xl-start
+            px-2 px-sm-3
+            ps-lg-5 ps-sm-4
+            my-3
+          "
+        >
           <span class="pc fw-bold">{{ content.total_supply }}</span>
-          <div class="d-flex align-items-center justify-content-center justify-content-xl-start mt-2 fw-bold fs-4 mt-3">
+          <div
+            class="
+              d-flex
+              align-items-center
+              justify-content-center justify-content-xl-start
+              mt-2
+              fw-bold
+              fs-4
+              mt-3
+            "
+          >
             <img src="~/assets/images/logo.png" alt="" />
-            <span>419,377,410.62 </span>
+            <span>{{ TotalSupply }} </span>
           </div>
         </div>
         <div class="border-bottom d-md-none border-secondary col-12"></div>
 
-        <div class="col-12 col-md-6 col-xl text-center text-xl-start px-2 ps-sm-4 ps-lg-5 my-3 col-md">
+        <div
+          class="
+            col-12 col-md-6 col-xl
+            text-center text-xl-start
+            px-2
+            ps-sm-4 ps-lg-5
+            my-3
+            col-md
+          "
+        >
           <span class="pc fw-bold fw-600">{{
-          content.total_value_locked
+            content.total_value_locked
           }}</span>
-          <div class="mt-3 fw-bold fs-4">$ 29,118,207.49</div>
+          <div class="mt-3 fw-bold fs-4">$ {{ TotalValueLocked }}</div>
         </div>
       </div>
     </div>
@@ -62,18 +156,30 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   computed: {
-    ...mapGetters(["content"]),
+    ...mapGetters([
+      "content",
+      "TotalBurnt",
+      "GYMNETPrice",
+      "TotalSupply",
+      "TotalValueLocked",
+    ]),
+  },
+  methods: {
+    ...mapActions(["LoadBlockchainData"]),
+  },
+  mounted() {
+    setInterval(() => {
+      this.LoadBlockchainData();
+    }, 1000 * 30);
+    this.LoadBlockchainData();
   },
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
 <style lang="scss" scoped>
 .Landing {
   z-index: 0;
@@ -93,71 +199,15 @@ export default {
     background-size: 100% 50%;
     background-repeat: no-repeat;
     background-position: 100% 100%;
-
-    @media (min-width: 762px) {
-      background-size: 100% 80%;
-    }
-
-    @media (min-width: 1200px) {
-      background-size: 1000px 700px;
-    }
   }
 
   .text {
     h1 {
       font-size: 30px;
     }
-
     .BTN {
       font-size: 20px;
-      padding: 13px 40px;
-    }
-
-    @media (min-width: 576px) {
-      h1 {
-        font-size: 33px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 39px;
-      }
-    }
-
-    @media (min-width: 992px) {
-      h1 {
-        font-size: 50px;
-      }
-
-      p {
-        font-size: 20px;
-      }
-
-      .BTN {
-        width: fit-content;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      h1 {
-        font-size: 65px;
-      }
-
-      p {
-        // font-size: 18px;
-      }
-    }
-
-    @media (min-width: 2000px) {
-      h1 {
-        font-size: 64px;
-        font-weight: bold;
-      }
-
-      p {
-        font-size: 24px;
-      }
+      padding: 12px 40px;
     }
   }
 
@@ -169,13 +219,10 @@ export default {
       line-break: none;
       text-decoration: underline;
     }
-
-    // font-size: 18px;
   }
 
   .boxes {
     position: relative;
-
     .pc {
       color: #b4b4b4;
     }
@@ -194,21 +241,81 @@ export default {
     }
 
     img {
-      width: 25px;
+      width: 30px;
       margin-right: 5px;
     }
+  }
 
-    @media (min-width: 768px) {
+  @media (min-width: 762px) {
+    &::before {
+      background-size: 100% 80%;
+    }
+  }
+  @media (min-width: 576px) {
+    .text {
+      h1 {
+        font-size: 33px;
+      }
+    }
+  }
 
+  @media (min-width: 768px) {
+    .boxes {
       .box1,
       .box3 {
         border-right: 1px solid #999898;
       }
     }
 
-    @media (min-width: 1200px) {
+    .text {
+      h1 {
+        font-size: 39px;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .text {
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .BTN {
+        width: fit-content;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .boxes {
       .box2 {
         border-right: 1px solid #999898;
+      }
+    }
+
+    .text {
+      h1 {
+        font-size: 65px;
+      }
+    }
+    &::before {
+      background-size: 1000px 700px;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .text {
+      h1 {
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 24px;
       }
     }
   }

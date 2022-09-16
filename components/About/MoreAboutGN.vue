@@ -1,11 +1,20 @@
 <template>
   <div class="MoreAboutGN py-5">
-    <div class="py-4 ">
+    <div class="py-4">
       <h1 class="container text-center fw-bold mx-auto">
         Even more about GYM Network
       </h1>
       <div
-        class="content mt-3 col-sm-11 col-md-12 mx-sm-auto px-3 mx-2 mz-lg-auto py-5"
+        class="
+          content
+          mt-3
+          col-sm-11 col-md-12
+          mx-sm-auto
+          px-3
+          mx-2
+          mz-lg-auto
+          py-5
+        "
       >
         <div class="box box-1 d-flex flex-column rounded-20 text-light bg-bd">
           <div class="p-3 p-lg-4">
@@ -73,7 +82,7 @@
             <img src="~/assets/images/Twitter-bg.png" alt="" />
           </div>
         </div>
-       
+
         <div class="box box-6 d-flex flex-column rounded-20 text-dark light-bg">
           <div class="p-3 p-lg-4">
             <h2 class="fw-bold">Support</h2>
@@ -81,9 +90,7 @@
               Our support is available 24 hours a day for important questions
             </p>
           </div>
-          <div
-            class=" d-flex justify-content-between align-items-end"
-          >
+          <div class="d-flex justify-content-between align-items-end">
             <a
               href="https://gymnetwork.gitbook.io/english/support-and-contact-us/costumer-support"
               target="_blank"
@@ -146,9 +153,9 @@ export default {};
       .box-2 {
         grid-area: 1/2/6/3;
         img {
-        max-width: 40%;
-        height: 200px;
-      }
+          max-width: 40%;
+          height: 200px;
+        }
       }
       .box-3 {
         grid-area: 1/3/3/4;
@@ -165,15 +172,14 @@ export default {};
     }
     @media (min-width: 992px) {
       grid-template-rows: repeat(5, 130px);
-      .box{
+      .box {
         font-size: 16px;
       }
       .box-2 {
-
         img {
-        max-width: 40%;
-        height: auto;
-      }
+          max-width: 40%;
+          height: auto;
+        }
       }
     }
   }

@@ -23,9 +23,7 @@
           As an entrepreneur, you can cooperate with us and build a miner series
           for your own metaverse.
         </p>
-        <nuxt-link
-          to=""
-          class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
+        <nuxt-link to="" class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
           >Coming Soon</nuxt-link
         >
       </div>

@@ -10,7 +10,7 @@
       <a
         href="https://t.me/gymnetwork_english"
         target="blank"
-        class="BTN cp  bg-ba rounded-50 text-light mt-4 fw-600 box-sh-l"
+        class="BTN cp bg-ba rounded-50 text-light mt-4 fw-600 box-sh-l"
       >
         {{ content.join_now }}
         <img src="~/assets/images/telegram.png" class="telegram-img" alt="" />

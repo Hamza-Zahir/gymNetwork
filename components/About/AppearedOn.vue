@@ -88,7 +88,6 @@ const links_2 = [
     link: "https://crypto.news/gym-network-the-first-ever-defiplatform-with-integrated-affiliate-system-exceeded-all-expectations-at-its-launch/",
     logo: require("~/assets/images/AppearedOn/cryptonews.png"),
   },
- 
 ];
 export default {
   data() {
@@ -101,11 +100,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @media (min-width: 768px) {
-    h1 {
-      font-size: 50px;
-    }
-
+  h1 {
+    font-size: 50px;
   }
+}
 </style>

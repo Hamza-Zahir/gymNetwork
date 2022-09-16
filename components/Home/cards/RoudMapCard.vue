@@ -42,48 +42,46 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .box {
-      position: relative;
-      .Border {
-        width: 100%;
-        height: 6px;
-        background: #9b9b9b;
-        position: absolute;
-        top: 285px;
-        span {
-          width: 14px;
-          height: 14px;
-          position: absolute;
-          top: -4px;
-          left: 0px;
-          background: #021547;
-          border-radius: 50%;
-        }
-      }
-      .Border-1,
-      .Border-2 {
-        span {
-          background: #021547;
-        }
-      }
+.box {
+  position: relative;
+
+  .Border {
+    position: absolute;
+    top: 285px;
+
+    span {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: -4px;
+      left: 0px;
+      background: #021547;
+      border-radius: 50%;
     }
-    .content {
-      width: 250px;
-      img {
-        width: 120px;
-      }
-    }
-    .box_up {
-      img {
-        margin-bottom: -15px;
-      }
-    }
-    .box_down {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: 300px;
-      img {
-        margin-top: -15px;
-      }
-    }
+  }
+}
+
+.content {
+  width: 250px;
+
+  img {
+    width: 120px;
+  }
+}
+
+.box_up {
+  img {
+    margin-bottom: -15px;
+  }
+}
+
+.box_down {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 300px;
+
+  img {
+    margin-top: -15px;
+  }
+}
 </style>

@@ -9,12 +9,30 @@
           class="box py-2 p-md-2 p-lg-3 mx-auto mx-md-0"
         >
           <div
-            class="border border-info bg-bl rounded-20 p-3 d-sm-flex align-items-center h-100"
+            class="
+              border border-info
+              bg-bl
+              rounded-20
+              p-3
+              d-sm-flex
+              align-items-center
+              h-100
+            "
           >
-            <div class="img col-sm-4  text-center rounded-15 py-4 py-sm-0">
+            <div class="img col-sm-4 text-center rounded-15 py-4 py-sm-0">
               <img :src="mission.img" alt="" class="" />
             </div>
-            <div class="text col pc mt-4 mt-sm-0 py-lg-2 m-sm-0 ps-sm-4 ps-lg-3 ps-xl-5">
+            <div
+              class="
+                text
+                col
+                pc
+                mt-4 mt-sm-0
+                py-lg-2
+                m-sm-0
+                ps-sm-4 ps-lg-3 ps-xl-5
+              "
+            >
               {{ mission.text }}
             </div>
           </div>
@@ -54,26 +72,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 50px;
-    }
-
+@media (min-width: 768px) {
+  h1 {
+    font-size: 50px;
   }
+}
 .box {
-
-  .img
-  {
+  .img {
     background: url("~/assets/images/mission-bg.png");
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: stretch;
-    img{
-    max-width: 70%;
-
-  }
+    img {
+      max-width: 70%;
+    }
   }
 
   @media (min-width: 576px) {
@@ -85,7 +99,6 @@ export default {
     min-height: 230px;
   }
   @media (min-width: 1200px) {
-
     font-size: 18px;
   }
 }

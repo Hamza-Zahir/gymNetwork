@@ -1,18 +1,20 @@
 <template>
-  <div :id="`Team-${Moderator.id}`" class="container teamsOf py-5 " @mouseenter="
-            () => {
-              handelScrolling();
-            }
-          "
-          >
-    <h1 class="fw-bold text-center mt-lg-5" >Team {{ Moderator.title }}</h1>
+  <div
+    :id="`Team-${Moderator.id}`"
+    class="container teamsOf py-5"
+    @mouseenter="
+      () => {
+        handelScrolling();
+      }
+    "
+  >
+    <h1 class="fw-bold text-center mt-lg-5">Team {{ Moderator.title }}</h1>
     <div class="teams py-5">
       <div class="d-flex flickity py-2 m-0">
         <div
           v-for="developer in Moderator.team"
           :key="`dev-${developer.id}`"
           class="m-0 px-2 px-md-3 px-xxl-4 col-12 col-md-6 col-xl-4"
-
         >
           <div class="box border rounded-20 p-3 mx-auto">
             <div class="d-flex align-items-center">
@@ -38,7 +40,6 @@
           :class="pageScroll == i ? 'bg-ba' : ''"
         >
         </span>
-
       </div>
     </div>
   </div>
@@ -51,7 +52,6 @@ import plugins from "~/plugins/index";
 export default {
   data() {
     return {
-
       pages: 1,
       pageScroll: 1,
     };
@@ -59,7 +59,6 @@ export default {
   mounted() {
     this.handelScrolling();
     this.Scrolling();
-
   },
   methods: {
     scrollTo(i) {
@@ -68,7 +67,7 @@ export default {
       flickity.scrollLeft = (i - 1) * cheldren[0].clientWidth;
       this.pageScroll = i;
     },
-    Scrolling(){
+    Scrolling() {
       plugins.Scrolling();
     },
 
@@ -78,26 +77,24 @@ export default {
       const _cheldrenLength = cheldren.length;
       let _pages =
         _cheldrenLength - flickity.clientWidth / cheldren[0].clientWidth;
-let _scrollLeft = flickity.scrollLeft;
+      let _scrollLeft = flickity.scrollLeft;
 
-        this.pages = _pages + 1;
+      this.pages = _pages + 1;
 
- this.pageScroll = Math.ceil(
-          (Math.floor(_scrollLeft) + cheldren[0].clientWidth) /
-            cheldren[0].clientWidth
-        );
+      this.pageScroll = Math.ceil(
+        (Math.floor(_scrollLeft) + cheldren[0].clientWidth) /
+          cheldren[0].clientWidth
+      );
       flickity.addEventListener("scroll", () => {
-         _scrollLeft = flickity.scrollLeft;
-  _pages =
-        _cheldrenLength - flickity.clientWidth / cheldren[0].clientWidth;
+        _scrollLeft = flickity.scrollLeft;
+        _pages =
+          _cheldrenLength - flickity.clientWidth / cheldren[0].clientWidth;
 
         this.pageScroll = Math.ceil(
           (Math.floor(_scrollLeft) + cheldren[0].clientWidth) /
             cheldren[0].clientWidth
         );
-
       });
-
     },
   },
 

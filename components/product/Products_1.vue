@@ -51,7 +51,6 @@
         top: 80px;
         left: 90px;
         width: 300px;
-
       }
     }
     .bg-2 {
@@ -60,10 +59,9 @@
 
       @media (min-width: 1000px) {
         width: 600px;
-        right:50px;
+        right: 50px;
         bottom: -350px;
       }
-     
     }
     .bg_light {
       background: #ebf2fa;
@@ -78,14 +76,14 @@
         max-width: 90%;
       }
     }
-    h1{
+    h1 {
       font-size: 45px;
     }
     h1 {
-  @media (min-width: 1200px) {
-    font-size: 50px;
-  }
-}
+      @media (min-width: 1200px) {
+        font-size: 50px;
+      }
+    }
   }
 }
 </style>

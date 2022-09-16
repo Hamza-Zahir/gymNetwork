@@ -5,11 +5,22 @@
         {{ content.gym_network_title }}
       </h1>
 
-
-      <div class="content mx-auto d-md-flex flex-wrap py-5 ">
+      <div class="content mx-auto d-md-flex flex-wrap py-5">
         <div class="col col-md-4 p-2 p-lg-4">
           <div
-            class="box box-1 text-light rounded-15 h-100 d-flex flex-column justify-content-between p-4 px-md-2 py-md-3 p-lg-4"
+            class="
+              box box-1
+              text-light
+              rounded-15
+              h-100
+              d-flex
+              flex-column
+              justify-content-between
+              p-4
+              px-md-2
+              py-md-3
+              p-lg-4
+            "
           >
             <div class="img">
               <img src="~/assets/images/logoRotetLeft-2.png" alt="" />
@@ -31,7 +42,20 @@
         </div>
         <div class="col col-md-4 p-2 p-lg-4">
           <div
-            class="box box-2 bg-bl text-bd rounded-15 h-100 d-flex flex-column justify-content-between p-4 px-md-2 py-md-3 p-lg-4"
+            class="
+              box box-2
+              bg-bl
+              text-bd
+              rounded-15
+              h-100
+              d-flex
+              flex-column
+              justify-content-between
+              p-4
+              px-md-2
+              py-md-3
+              p-lg-4
+            "
           >
             <div class="">
               <h1 class="text-end fw-bolder">/02</h1>
@@ -45,7 +69,20 @@
         </div>
         <div class="col col-md-4 p-2 p-lg-4">
           <div
-            class="box box-2 bg-bl text-bd rounded-15 h-100 d-flex flex-column justify-content-between p-4 px-md-2 py-md-3 p-lg-4"
+            class="
+              box box-2
+              bg-bl
+              text-bd
+              rounded-15
+              h-100
+              d-flex
+              flex-column
+              justify-content-between
+              p-4
+              px-md-2
+              py-md-3
+              p-lg-4
+            "
           >
             <div class="">
               <h1 class="text-end fw-bolder">/03</h1>
@@ -63,14 +100,24 @@
           </div>
         </div>
       </div>
-     <div class="text-center">
-       <nuxt-link
-        to=""
-        class="BTN cp bg-ba rounded-50 text-light text-center mt-4 fw-600 box-sh-l"
-      >
-        Start directly
-    </nuxt-link>
-    </div>
+      <div class="text-center">
+        <nuxt-link
+          to=""
+          class="
+            BTN
+            col-12
+            cp
+            bg-ba
+            rounded-50
+            text-light text-center
+            mt-4
+            fw-600
+            box-sh-l
+          "
+        >
+          Start directly
+        </nuxt-link>
+      </div>
     </div>
   </section>
 </template>
@@ -99,15 +146,15 @@ export default {
     font-size: 18px;
   }
 
-
-
-
-
   @media (min-width: 768px) {
     h1 {
       font-size: 40px;
     }
+    .BTN {
+   width: fit-content;
+   font-size: 20px;
 
+  }
   }
 
   h1 {

@@ -1,18 +1,15 @@
 <template>
-  <div class="app-default" :class="$route.path == '/' ? 'bg-bd' :''">
-
+  <div class="app-default" :class="$route.path == '/' ? 'bg-bd' : ''">
     <div id="HeadApp" class="">
-      <contractLinks  v-if="$route.path == '/'"/>
+      <contractLinks v-if="$route.path == '/'" />
 
       <Header />
     </div>
     <div class="content">
-
       <Nuxt />
     </div>
 
     <Footer />
-
   </div>
 </template>
 
@@ -32,22 +29,5 @@
 </style>
 
 <script>
-
-export default {
-  data() {
-    return {
-
-    };
-  },
-
-  // methods: {
-  //   getTopSpising() {
-  //     const hight = document.getElementById("HeadApp");
-  //     this.marginTop = `${hight.offsetHeight}px`;
-  //   },
-  // },
-  // mounted() {
-  //   this.getTopSpising();
-  // },
-};
+export default {};
 </script>

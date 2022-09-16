@@ -2,7 +2,14 @@
   <div class="bg-wh" :style="` margin-top : ${marginTop}`">
     <div class="container py-4">
       <div
-        class="Head d-flex align-items-center justify-content-between fw-600 py-2"
+        class="
+          Head
+          d-flex
+          align-items-center
+          justify-content-between
+          fw-600
+          py-2
+        "
       >
         <div class="phat">
           <span class="text-secondary">Blog</span> / How can you earn money with
@@ -10,7 +17,16 @@
         </div>
         <nuxt-link
           to="/blog/gym-street-and-its-ecosystem"
-          class="next-btn border border-secondary border-2 p-2 px-lg-4 cp d-flex align-items-center text-secondary"
+          class="
+            next-btn
+            border border-secondary border-2
+            p-2
+            px-lg-4
+            cp
+            d-flex
+            align-items-center
+            text-secondary
+          "
         >
           <span class="d-none d-lg-inline">Next article</span>
 

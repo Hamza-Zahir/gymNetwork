@@ -26,9 +26,7 @@
         <p class="py-3">
           cashFT combines traditional banking with the future of finance
         </p>
-        <nuxt-link
-          to=""
-          class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
+        <nuxt-link to="" class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
           >Coming Soon</nuxt-link
         >
       </div>

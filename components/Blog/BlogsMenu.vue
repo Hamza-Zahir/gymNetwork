@@ -56,7 +56,9 @@
         </ul>
       </div>
     </div>
-    <div class="cards px-2 col-sm-11 col-lg-12 mx-sm-auto my-5 d-flex flex-wrap">
+    <div
+      class="cards px-2 col-sm-11 col-lg-12 mx-sm-auto my-5 d-flex flex-wrap"
+    >
       <div
         v-for="blog in blogs"
         :key="`blog-${blog.id}`"
@@ -129,11 +131,9 @@ export default {
         background: #eef8fc;
       }
     }
-  }}
-  .cards{
-    max-width: 1300px;
-
-
   }
-
+}
+.cards {
+  max-width: 1300px;
+}
 </style>

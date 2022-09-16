@@ -1,20 +1,31 @@
 <template>
-  <div class="ContractLinks ">
+  <div class="ContractLinks">
     <div class="contracts mx-2 mx-md-3 mx-xxl-auto">
       <div
-        class="text-center text-secondary p-1 d-sm-flex justify-content-between align-items-center"
+        class="
+          text-center text-secondary
+          p-1
+          d-sm-flex
+          justify-content-between
+          align-items-center
+        "
       >
         <div class="col-sm-6 pe-sm-2">
-          <div class="Contract justify-content-lg-start fs-14 my-1 " style="position: relative">
-              <img
-                src="~/assets/images/logo.png"
-                alt=""
-                style="width: 30px"
-                class="me-2"
-              />
+          <div
+            class="Contract justify-content-lg-start fs-14 my-1"
+            style="position: relative"
+          >
+            <img
+              src="~/assets/images/logo.png"
+              alt=""
+              style="width: 30px"
+              class="me-2"
+            />
 
             <span class="fw-600 text-dark">GYMNET</span>
-            <span class="px-1 d-none d-lg-block">Contract<span class="o-0">_</span>Address: </span>
+            <span class="px-1 d-none d-lg-block"
+              >Contract<span class="o-0">_</span>Address:
+            </span>
             <span class="address mx-1 d-block">
               0x0012365F0a1E5F30a5046c680DCB21D07b15FcF7
             </span>
@@ -41,16 +52,21 @@
         </div>
         <div class="border align-self-stretch"></div>
         <div class="col-sm-6 ps-sm-2">
-          <div class="Contract justify-content-lg-end fs-14 my-1" style="position: relative">
-              <img
+          <div
+            class="Contract justify-content-lg-end fs-14 my-1"
+            style="position: relative"
+          >
+            <img
               src="https://gymnetwork.io/_nuxt/img/VBTC.f3c0e5e.svg"
-                alt=""
-                style="width: 45px"
-                class="me-2"
-              />
+              alt=""
+              style="width: 45px"
+              class="me-2"
+            />
 
             <span class="fw-600 text-dark">VBTC</span>
-            <span class="px-1 d-none d-lg-block">Contract<span class="o-0">_</span>Address: </span>
+            <span class="px-1 d-none d-lg-block"
+              >Contract<span class="o-0">_</span>Address:
+            </span>
             <span class="address mx-1 d-block">
               0x268bb0f44ab880be59ccd2b96bfa138211e27a20
             </span>
@@ -75,7 +91,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -112,11 +127,9 @@ export default {
 <style lang="scss" scoped>
 .ContractLinks {
   background: #ffffff;
-  .contracts{
-
-   max-width: 1400px;
+  .contracts {
+    max-width: 1400px;
   }
-
 
   span.address {
     overflow: hidden;

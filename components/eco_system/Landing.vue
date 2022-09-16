@@ -11,13 +11,33 @@
             ranges from NFT Market, NFT Miner, crypto debit card and DEX, to its
             own metaverse.
           </p>
-          <a href="https://gymnetwork.io/dashboard"
-          target="_blank"
-            class="BTN text-center rounded-50 bg-ba fw-500 text-light box-sh-l my-4 my-xxl-5">{{ content.launch_to_app
-            }}</a>
+          <a
+            href="https://gymnetwork.io/dashboard"
+            target="_blank"
+            class="
+              BTN
+              col-12
+              text-center
+              rounded-50
+              bg-ba
+              fw-600
+              text-light
+              box-sh-l
+              my-4 my-xxl-5
+            "
+            >{{ content.launch_to_app }}</a
+          >
         </div>
 
-        <div class="col-sm-10 col-md-8 col-lg mx-auto me-md-0 mt-md-4 mt-lg-0 text-center">
+        <div
+          class="
+            col-sm-10 col-md-8 col-lg
+            mx-auto
+            me-md-0
+            mt-md-4 mt-lg-0
+            text-center
+          "
+        >
           <img src="~/assets/images/Total_Balance.png" alt="" />
         </div>
       </div>

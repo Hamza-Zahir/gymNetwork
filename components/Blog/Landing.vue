@@ -1,7 +1,13 @@
 <template>
   <div class="container py-3 py-lg-5">
     <div
-      class="d-md-flez py-5 d-lg-flex justify-content-between justify-content-xxl-around align-items-center"
+      class="
+        d-md-flez
+        py-5
+        d-lg-flex
+        justify-content-between justify-content-xxl-around
+        align-items-center
+      "
     >
       <div class="text-box col-lg-4 col-xl-4 pe-lg-3">
         <h1 class="fw-bold">Blog</h1>
@@ -11,10 +17,25 @@
       </div>
       <nuxt-link
         :to="`/blog/${Blog[0].link}`"
-        class="Card col-lg-8 col-xl-8 col-xxl-7 d-block d-md-flex d-lg-block d-xl-flex bg-bl p-2 p-sm-3 border rounded-20 mt-4 mt-lg-0"
+        class="
+          Card
+          col-lg-8 col-xl-8 col-xxl-7
+          d-block d-md-flex d-lg-block d-xl-flex
+          bg-bl
+          p-2 p-sm-3
+          border
+          rounded-20
+          mt-4 mt-lg-0
+        "
       >
         <div
-          class="img col-md-5 col-lg-12 col-xl-5  d-flex justify-content-center align-items-center"
+          class="
+            img
+            col-md-5 col-lg-12 col-xl-5
+            d-flex
+            justify-content-center
+            align-items-center
+          "
         >
           <img
             :src="require(`~/assets/images/blog/${Blog[0].img}`)"
@@ -23,7 +44,7 @@
           />
         </div>
         <div class="text col-md-7 col-lg-12 col-xl-7 ps-md-5 p-lg-2 ps-xl-4">
-          <div class=" ">
+          <div class="">
             <h4 class="my-3 text-dark fw-600">{{ Blog[0].title }}</h4>
             <p class="pc">{{ Blog[0].text }}</p>
           </div>
@@ -50,13 +71,12 @@ export default {
 
 <style lang="scss" scoped>
 .text-box {
-  h1{
+  h1 {
     font-size: 40px;
   }
   p {
-      font-size: 18px;
-
-    }
+    font-size: 18px;
+  }
   @media (min-width: 768px) {
     h1 {
       font-size: 50px;

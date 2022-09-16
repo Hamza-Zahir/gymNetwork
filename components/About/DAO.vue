@@ -2,9 +2,7 @@
   <section class="DAO pt-5 text-light">
     <div class="container pt-5">
       <h1 class="fw-bold text-md-center mx-auto mt-lg-4 pb-lg-4">
-Decentralized
-Autonomous
-Organization
+        Decentralized Autonomous Organization
       </h1>
 
       <div class="text col-md-7 col-lg-6 col-xxl-7 pe-xxl-5 mt-5">
@@ -55,8 +53,7 @@ export default {
     }
   }
 
-    .text {
-
+  .text {
     @media (min-width: 1200px) {
       font-size: 18px;
     }

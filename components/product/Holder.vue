@@ -4,7 +4,9 @@
       <h1 class="my-2 fw-bold text-center">GYMNET Holder Benefits</h1>
       <div class="content mt-5 col-md-12 mx-auto">
         <div class="d-md-flex">
-          <div class="box p-3 p-lg-4 bg-bd text-light rounded-15 my-4 m-md-3 col">
+          <div
+            class="box p-3 p-lg-4 bg-bd text-light rounded-15 my-4 m-md-3 col"
+          >
             <h5 class="fw-bold">3% GYMNET</h5>
             <div class="mt-2 mt-lg-3">
               from DEX fees on each sale for GYM holders by pools of 2500 GYM or
@@ -12,26 +14,36 @@
             </div>
           </div>
           <div class="box light-bg p-3 p-lg-4 rounded-15 my-4 m-md-3 col">
-            <h5 class="fw-bold text-dark">2% GYMNET Moon Fund </h5>
+            <h5 class="fw-bold text-dark">2% GYMNET Moon Fund</h5>
             <div class="pc mt-2 mt-lg-3">
               (Marketing, PR, Cooperations, Management) on SELL and BUY on a DE
             </div>
           </div>
         </div>
         <div class="d-md-flex">
-          <div class="box p-3 p-lg-4 bg-ba text-light rounded-15 my-4 m-md-3 col">
-            <h5 class="fw-bold">3% GYMNET Metaverse Development </h5>
-            <div class="mt-2 mt-lg-4 d-flex justify-content-between align-items-center">
+          <div
+            class="box p-3 p-lg-4 bg-ba text-light rounded-15 my-4 m-md-3 col"
+          >
+            <h5 class="fw-bold">3% GYMNET Metaverse Development</h5>
+            <div
+              class="
+                mt-2 mt-lg-4
+                d-flex
+                justify-content-between
+                align-items-center
+              "
+            >
               <span class="">
-              Fund <br />
-              on SELL and BUY on a DEX
+                Fund <br />
+                on SELL and BUY on a DEX
               </span>
-              <span><img src="~/assets/images/point.png" alt=""></span>
+              <span><img src="~/assets/images/point.png" alt="" /></span>
             </div>
           </div>
-          <div class="box bg-bd text-light p-3 p-lg-4 rounded-15 my-4 m-md-3 col">
-            <h5 class="fw-bold">1% GYMNET Community Support Fund
-            </h5>
+          <div
+            class="box bg-bd text-light p-3 p-lg-4 rounded-15 my-4 m-md-3 col"
+          >
+            <h5 class="fw-bold">1% GYMNET Community Support Fund</h5>
             <div class="mt-2 mt-lg-4">
               (Airdrop, Bounty, Incentives) on SELL and BUY on a DEX
             </div>
@@ -45,19 +57,18 @@
 .Holder {
   background: white;
 
-h5{
-  color: #ffffff;
-}
+  h5 {
+    color: #ffffff;
+  }
 
-
-.content {
+  .content {
     max-width: 900px;
-    img{
+    img {
       width: 50px;
     }
-    .box{
+    .box {
       min-height: 140px;
-      display: flex ;
+      display: flex;
       flex-direction: column;
       justify-content: space-around;
     }
@@ -65,12 +76,11 @@ h5{
 
   @media (min-width: 1200px) {
     h1 {
-       font-size: 50px;
+      font-size: 50px;
+    }
+    .content {
+      font-size: 20px;
+    }
   }
-.content {
-font-size: 20px;
-}
-
-}
 }
 </style>

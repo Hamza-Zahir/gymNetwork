@@ -1,5 +1,6 @@
 .Head {
   margin-top: 20px;
+
   .next-btn {
     border-radius: 50%;
   }
@@ -8,7 +9,6 @@
     .next-btn {
       border-radius: 25px;
       font-size: 20px;
-
     }
 
     .phat {
@@ -32,57 +32,57 @@
     margin: 20px auto;
     font-weight: normal !important;
     font-size: 20px;
-
   }
-.BTN{
-  padding: 12px 30px;
-  margin: 15px 0;
-}
+
+  .BTN {
+    padding: 12px 30px;
+    margin: 15px 0;
+  }
+
   ul {
     font-size: 20px;
 
     li {
       margin: 5px 0;
-      color: #2F6EB6;
-    font-size: 22px;
-    margin-top: 15px;
-a{
-  font-weight: normal !important;
+      color: #2f6eb6;
+      font-size: 22px;
+      margin-top: 15px;
 
-}
-
-  }
-
-  }
-ul:not(.style){
-  padding: 5px;
- li {
-list-style: none;
-
+      a {
+        font-weight: normal !important;
+      }
     }
-}
+  }
+
+  ul:not(.style) {
+    padding: 5px;
+
+    li {
+      list-style: none;
+    }
+  }
 
   a {
     color: #2f6eb6;
     font-weight: 600;
+  }
 
-  }
   @media (min-width: 576px) {
-    p {
-      // font-size: 18px;
-    }
   }
+
   @media (min-width: 1200px) {
     p {
       font-size: 20px;
     }
   }
+
   @media (min-width: 1500px) {
     p {
       font-size: 22px;
     }
   }
 }
+
 .w-fc {
   width: fit-content;
   max-width: 100%;

@@ -2,18 +2,18 @@
   <section class="py-5 bg-light">
     <div class="container py-lg-5">
       <h1 class="fw-bold text-center">
-{{content.listed_on}}
-        </h1>
+        {{ content.listed_on }}
+      </h1>
       <div class="mt-4 d-flex flex-wrap mt-5 links">
         <div
           v-for="(link, i) in links"
           :key="`logo-${i}`"
           class="d-block p-2 link"
         >
-        <a :href="link.link" target="_blank">
-          <img :src="link.logo" alt="" class="w-100" />
-        </a>
-      </div>
+          <a :href="link.link" target="_blank">
+            <img :src="link.logo" alt="" class="w-100" />
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -63,7 +63,7 @@ const links = [
 export default {
   data() {
     return {
-      links
+      links,
     };
   },
   computed: {
@@ -78,14 +78,14 @@ h1 {
     font-size: 50px;
   }
 }
-  .link{
-    width: 50%;
-    @media (min-width:367px) {
-      width: auto;
-margin: 0 auto;
-    }
-    @media (min-width:992px) {
-margin: 0 ;
-    }
+.link {
+  width: 50%;
+  @media (min-width: 367px) {
+    width: auto;
+    margin: 0 auto;
   }
+  @media (min-width: 992px) {
+    margin: 0;
+  }
+}
 </style>

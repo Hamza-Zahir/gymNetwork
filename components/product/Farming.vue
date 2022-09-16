@@ -22,7 +22,18 @@
 
               <div class="displyCards col">
                 <div
-                  class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
+                  class="
+                    disply
+                    bg-bl
+                    parent
+                    border border-info
+                    rounded-20
+                    p-4
+                    col
+                    d-flex
+                    flex-column
+                    justify-content-around
+                  "
                 >
                   <h1 class="fw-bold">{{ SinglePool.title }}</h1>
                   <div class="mt-3">
@@ -33,7 +44,17 @@
                   <a
                     href="https://gymnetwork.io/dashboard/"
                     target="_blank"
-                    class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
+                    class="
+                      bg-ba
+                      BTN
+                      text-light
+                      cp
+                      text-center
+                      fw-600
+                      rounded-20
+                      mt-4
+                      box-sh-l
+                    "
                   >
                     Start now
                   </a>
@@ -47,7 +68,18 @@
             >
               <div class="displyCards col">
                 <div
-                  class="disply bg-bl parent border border-info rounded-20 p-4 col d-flex flex-column justify-content-around"
+                  class="
+                    disply
+                    bg-bl
+                    parent
+                    border border-info
+                    rounded-20
+                    p-4
+                    col
+                    d-flex
+                    flex-column
+                    justify-content-around
+                  "
                 >
                   <h1 class="fw-bold">{{ Farming.title }}</h1>
                   <div class="mt-3">
@@ -58,7 +90,17 @@
                   <a
                     href="https://gymnetwork.io/dashboard/"
                     target="_blank"
-                    class="bg-ba BTN text-light cp text-center fw-600 rounded-20 mt-4 box-sh-l"
+                    class="
+                      bg-ba
+                      BTN
+                      text-light
+                      cp
+                      text-center
+                      fw-600
+                      rounded-20
+                      mt-4
+                      box-sh-l
+                    "
                   >
                     Start now
                   </a>
@@ -166,7 +208,7 @@ export default {
 
     .BTN {
       width: fit-content;
-      padding: 13px 35px;
+      padding: 12px 35px;
       transition: all 0.3s linear;
     }
   }

@@ -1,7 +1,17 @@
 <template>
   <div class="box col-lg-3 mt-4 mt-sm-0 p-sm-3">
     <div
-      class="content d-sm-flex d-lg-block align-items-center justify-content-between rounded-20 border border-info bg-bl p-3 h-100"
+      class="
+        content
+        d-sm-flex d-lg-block
+        align-items-center
+        justify-content-between
+        rounded-20
+        border border-info
+        bg-bl
+        p-3
+        h-100
+      "
     >
       <span class="label bg-bd rounded-circle fw-600">{{ _id }}</span>
       <div class="img rounded-15 col-sm-5 col-lg-12">

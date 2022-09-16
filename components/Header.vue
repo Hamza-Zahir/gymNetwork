@@ -11,20 +11,35 @@
         <span class="fw-600"> Gym Network </span>
       </nuxt-link>
       <div
-        class="menu_lg col ms-4 ms-xl-5 d-none d-lg-flex justify-content-between align-items-center"
+        class="
+          menu_lg
+          col
+          ms-4 ms-xl-5
+          d-none d-lg-flex
+          justify-content-between
+          align-items-center
+        "
       >
         <div class="links col-8 d-flex">
-          <nuxt-link to="/Product" class="ms-4 ms-xl-5"> {{content.products}} </nuxt-link>
-          <nuxt-link to="/eco_system" class="ms-4 ms-xl-5">
-            {{content.eco_system}}
+          <nuxt-link to="/Product" class="ms-4 ms-xl-5">
+            {{ content.products }}
           </nuxt-link>
-          <nuxt-link to="/about" class="ms-4 ms-xl-5"> {{content.about}} </nuxt-link>
-          <nuxt-link to="/blog" class="ms-4 ms-xl-5"> {{content.blog}} </nuxt-link>
+          <nuxt-link to="/eco_system" class="ms-4 ms-xl-5">
+            {{ content.eco_system }}
+          </nuxt-link>
+          <nuxt-link to="/about" class="ms-4 ms-xl-5">
+            {{ content.about }}
+          </nuxt-link>
+          <nuxt-link to="/blog" class="ms-4 ms-xl-5">
+            {{ content.blog }}
+          </nuxt-link>
         </div>
         <div class="d-flex ms-4 ms-xl-5">
-          <a href="https://gymnetwork.io/dashboard"
-          target="_blank" class="fw-600"
-            >{{content.launch_to_app}}</a
+          <a
+            href="https://gymnetwork.io/dashboard"
+            target="_blank"
+            class="fw-600"
+            >{{ content.launch_to_app }}</a
           >
           <div
             class="select fw-600 ms-4 ms-xl-5"
@@ -47,11 +62,12 @@
               <div
                 v-for="lang in languages"
                 :key="lang"
-                @click="()=>{
-                  stourContent(lang);
-                // language = lang;
-
-                }"
+                @click="
+                  () => {
+                    stourContent(lang);
+                    // language = lang;
+                  }
+                "
                 class="border-top py-2"
                 :class="language === lang ? '' : 'text-secondary'"
               >
@@ -74,7 +90,10 @@
           @click="showMenu = !showMenu"
           class="cp h5 m-0 p-0"
         ></b-icon>
-        <div :class="showMenu ? 'ms-0' : ''" class="menu_sm bg-bd text-center pb-5">
+        <div
+          :class="showMenu ? 'ms-0' : ''"
+          class="menu_sm bg-bd text-center pb-5"
+        >
           <div v-if="$route.path == '/'" class="p-2">
             <Links class="rounded-20 container py-3" />
           </div>
@@ -82,15 +101,17 @@
           <div class="px-5">
             <div class="" @click="showMenu = !showMenu">
               <nuxt-link to="/Product" class="d-block py-2 mb-2">
-                {{content.products}}
+                {{ content.products }}
               </nuxt-link>
               <nuxt-link to="/eco_system" class="d-block py-2 my-2">
-                {{content.eco_system}}
+                {{ content.eco_system }}
               </nuxt-link>
               <nuxt-link to="/about" class="d-block py-2 my-2">
-                {{content.about}}
+                {{ content.about }}
               </nuxt-link>
-              <nuxt-link to="/blog" class="d-block py-2 my-2"> {{content.blog}} </nuxt-link>
+              <nuxt-link to="/blog" class="d-block py-2 my-2">
+                {{ content.blog }}
+              </nuxt-link>
             </div>
             <div class="my-3">
               <div
@@ -117,11 +138,12 @@
                   <div
                     v-for="lang in languages"
                     :key="lang"
-                    @click="()=>{
-                  stourContent(lang);
-                // language = lang;
-
-                }"
+                    @click="
+                      () => {
+                        stourContent(lang);
+                        // language = lang;
+                      }
+                    "
                     class="border-top py-2"
                     :class="language === lang ? '' : 'text-secondary'"
                   >
@@ -130,8 +152,12 @@
                 </div>
               </div>
               <div class="col col-sm-6 mx-auto" @click="showMenu = !showMenu">
-                <a href="https://gymnetwork.io/dashboard/" target="_blank" class="btn border rounded-15 my-3 w-100 py-2">
-                  {{content.launch_to_app}}
+                <a
+                  href="https://gymnetwork.io/dashboard/"
+                  target="_blank"
+                  class="btn border rounded-15 my-3 w-100 py-2"
+                >
+                  {{ content.launch_to_app }}
                 </a>
               </div>
             </div>
@@ -154,21 +180,21 @@ export default {
   },
 
   methods: {
-    ...mapActions(["stourContent","getContent"]),
+    ...mapActions(["stourContent", "getContent"]),
   },
   computed: {
-    ...mapGetters(["content","language"]),
+    ...mapGetters(["content", "language"]),
   },
-  mounted(){
-    this.getContent()
-  }
+  mounted() {
+    this.getContent();
+  },
 };
 </script>
 <style lang="scss" scoped>
 .Header {
   z-index: 9999;
   position: relative;
-box-shadow: 5px 5px 10px 0px #0a0a0a59;
+  box-shadow: 5px 5px 10px 0px #0a0a0a59;
   .logo {
     font-size: 19px;
     img {

@@ -3,7 +3,16 @@
     <div class="py-5 px-2 mb-md-3 col-lg-11 mx-lg-auto">
       <h1 class="fw-bold text-center my-3">Tokenomics</h1>
       <div
-        class="content mx-auto mt-5 pt-5 mb-lg-3 d-md-flex justify-content-center align-items-center"
+        class="
+          content
+          mx-auto
+          mt-5
+          pt-5
+          mb-lg-3
+          d-md-flex
+          justify-content-center
+          align-items-center
+        "
       >
         <div class="boxs col-md me-md-4 me-lg-5 pe-xl-5">
           <div class="box TOTAL_SUPPLY border border-info rounded-20 bg-bl">

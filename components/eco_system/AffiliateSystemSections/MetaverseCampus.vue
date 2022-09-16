@@ -25,9 +25,7 @@
           If you want to educate yourself in the new digital world, you can do
           it easily and intuitively with GYM Street.
         </p>
-        <nuxt-link
-          to=""
-          class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
+        <nuxt-link to="" class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
           >Coming Soon</nuxt-link
         >
       </div>

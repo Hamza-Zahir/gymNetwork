@@ -1,8 +1,15 @@
 <template>
-  <div class="box rounded-20 border border-info mt-2"   >
+  <div class="box rounded-20 border border-info mt-2">
     <h1
-      class="d-flex cp justify-content-between align-items-center m-0 text-light"
-:class="position"
+      class="
+        d-flex
+        cp
+        justify-content-between
+        align-items-center
+        m-0
+        text-light
+      "
+      :class="position"
       @click="
         () => {
           ShowContent(position);
@@ -11,60 +18,59 @@
     >
       <span>{{ data.title }}</span>
       <span :style="showContent ? 'transform: rotate(-180deg);' : ''">
-      <b-icon  icon="chevron-down" class="m-0 p-0"  ></b-icon>
-    </span>
-
+        <b-icon icon="chevron-down" class="m-0 p-0"></b-icon>
+      </span>
     </h1>
-    <div class="bg-bl fw-500 Content" :class="showContent ? 'showContent' : ''" >
-      <p
-        class=""
-        v-for="(tex, i) in data.text"
-        :key="`${data.title}-${i + 1}`"
-      >
+    <div class="bg-bl fw-500 Content" :class="showContent ? 'showContent' : ''">
+      <p class="" v-for="(tex, i) in data.text" :key="`${data.title}-${i + 1}`">
         {{ tex }}
       </p>
       <a
-      href="https://gymnetwork.io/dashboard/"
-      target="_blank"
-        class="BTN bg-ba col-12 text-light text-center fw-600 rounded-20 mt-4 box-sh-l"
+        href="https://gymnetwork.io/dashboard/"
+        target="_blank"
+        class="
+          BTN
+          bg-ba
+          col-12
+          text-light text-center
+          fw-600
+          rounded-20
+          mt-4
+          box-sh-l
+        "
       >
         Start now
-    </a>
+      </a>
     </div>
   </div>
 </template>
 <script>
 export default {
-
   props: {
     data: {
       required: true,
       type: Object,
     },
-    position:{
+    position: {
       required: true,
       type: String,
-    }
+    },
   },
   data() {
     return {
-      showContent:false,
+      showContent: false,
     };
   },
   methods: {
     async headContent(_class) {
-
-
-
       document.addEventListener("click", (e) => {
-        if (!e.target.classList.contains(_class)){
+        if (!e.target.classList.contains(_class)) {
           this.showContent = false;
         }
       });
     },
     async ShowContent(_class) {
-
-     await this.headContent(_class);
+      await this.headContent(_class);
       this.showContent = !this.showContent;
     },
   },
@@ -83,14 +89,14 @@ export default {
     padding: 30px 20px;
     position: relative;
     &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 3;
-  }
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3;
+    }
   }
 
   .Content {
@@ -107,7 +113,7 @@ export default {
       display: none;
     }
   }
-  .BTN{
+  .BTN {
     padding: 11px 30px;
   }
 }

@@ -1,23 +1,30 @@
 <template>
-  <section class="Landing bg-bd text-light pt-3 pt-md-5">
-    <div class="container mb-5 pb-5 pt-3   mt-md-4 my-lg-5 ">
+  <section class="Landing bg-bd text-light pt-5">
+    <div class="container mb-5 pb-5 pt-3 mt-md-4 my-lg-5">
       <div class="mt-lg-5">
         <div class="text mx-auto mx-sm-0 px-md-2">
-          <h1 class="py-2  pt-lg-3 mt-md-3 fw-bold">About GYM Network</h1>
-          <p class="col col-sm-8 col-md-6 col-lg-5  my-3 mt-md-4">
+          <h1 class="py-2 pt-lg-3 mt-md-3 fw-bold">About GYM Network</h1>
+          <p class="col col-sm-8 col-md-6 col-lg-5 my-3 mt-md-4">
             We make DeFi, Crypto, finance and Metaverse easy to use for everyone
           </p>
-            <a
-              href="https://gymnetwork.io/dashboard/"
-              target="_blank"
-              class="BTN text-center rounded-50 bg-ba mt-5 fw-500 text-light box-sh-l"
-            >
+          <a
+            href="https://gymnetwork.io/dashboard/"
+            target="_blank"
+            class="
+              BTN
+              col-12
+              text-center
+              rounded-50
+              bg-ba
+              mt-5
+              fw-500
+              text-light
+              box-sh-l
+            "
+          >
             Start now
           </a>
-
         </div>
-
-
       </div>
     </div>
   </section>
@@ -26,22 +33,18 @@
 .Landing {
   z-index: 0;
   position: relative;
-padding-bottom: 150px;
+  padding-bottom: 150px;
 
+  @media (min-width: 576px) {
+    padding-bottom: 200px;
+  }
 
-@media (min-width: 576px) {
-  padding-bottom: 200px;
-    }
-
-
-    @media (min-width: 992px) {
-      padding-bottom: 200px;
-
-}
-@media (min-width: 1200px) {
-      padding-bottom: 240px;
-
-}
+  @media (min-width: 992px) {
+    padding-bottom: 200px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 240px;
+  }
   &::before {
     content: "";
     width: 100%;
@@ -61,18 +64,14 @@ padding-bottom: 150px;
     }
 
     @media (min-width: 576px) {
-
       background-size: 800px 500px;
-
     }
     @media (min-width: 768px) {
-
-background-size: 900px 600px;
-
-}
-@media (min-width: 992px) {
-background-size: 900px 600px;
-}
+      background-size: 900px 600px;
+    }
+    @media (min-width: 992px) {
+      background-size: 900px 600px;
+    }
     @media (min-width: 1200px) {
       background-size: 1100px 700px;
     }
@@ -128,7 +127,5 @@ background-size: 900px 600px;
       }
     }
   }
-
-
 }
 </style>

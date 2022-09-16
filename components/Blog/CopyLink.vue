@@ -25,7 +25,6 @@
         link Copied
       </div>
     </div>
-
   </div>
 </template>
 
@@ -50,7 +49,6 @@ export default {
       await navigator.clipboard.writeText(this.url);
       this.linkCopied = true;
     },
-
   },
 };
 </script>

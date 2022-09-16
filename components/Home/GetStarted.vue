@@ -2,7 +2,7 @@
   <section id="GetStarted" class="GetStarted py-5 bg-light">
     <div class="container py-3">
       <h1 class="my-2 fw-bold text-center mx-auto">
-       {{content.gym_network_title}}
+        {{ content.gym_network_title }}
       </h1>
       <GetStarted />
       <div class="bg bg-1">
@@ -24,8 +24,8 @@ export default {
     ...mapGetters(["content"]),
   },
   components: {
-    GetStarted
-},
+    GetStarted,
+  },
 };
 </script>
 
@@ -35,13 +35,14 @@ export default {
   position: relative;
   z-index: 0;
 
-
   h1 {
     font-size: 34px;
     max-width: 700px;
+
     @media (min-width: 768px) {
       font-size: 40px;
     }
+
     @media (min-width: 992px) {
       font-size: 50px;
     }
@@ -51,7 +52,6 @@ export default {
     z-index: -3;
     position: absolute;
     opacity: 0.8;
-
   }
 
   .bg-1 {
@@ -79,7 +79,6 @@ export default {
     .bg-1 {
       left: 10px;
     }
-
   }
 
   @media (min-width: 1200px) {
@@ -103,12 +102,12 @@ export default {
       width: 900px;
     }
   }
-  @media (min-width: 1200px) {
-     h1{
-  font-size: 50px;
-  max-width: 700px;
 
-}
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 50px;
+      max-width: 700px;
     }
+  }
 }
 </style>

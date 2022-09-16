@@ -11,7 +11,7 @@
       </div>
 
       <div class="content my-5">
-        <div class="boxs d-sm-flex flex-wrap mx-auto justify-content-around ">
+        <div class="boxs d-sm-flex flex-wrap mx-auto justify-content-around">
           <div
             class="box p-2 p-sm-3 p-md-2 col-sm-6 col-md-5 col-lg-3 py-md-4"
             v-for="developer in team"
@@ -62,7 +62,7 @@ const team = [
     name: "Alberto Mera",
     jobTitle: "System Designer",
     img: require("~/assets/images/team/AlbertoMera.png"),
-    title:"",
+    title: "",
     team: [],
   },
   {
@@ -70,7 +70,7 @@ const team = [
     name: "Lewis Mhlanga",
     jobTitle: "Moderator",
     img: require("~/assets/images/team/LewisMhlanga.png"),
-    title:"",
+    title: "",
     team: [],
   },
   {
@@ -78,7 +78,7 @@ const team = [
     name: "Timur Öztürk",
     jobTitle: "Moderator",
     img: require("~/assets/images/team/TimurÖztürk.png"),
-    title:"",
+    title: "",
     team: [],
   },
   {
@@ -86,7 +86,7 @@ const team = [
     name: "Diana Kasprovych",
     jobTitle: "Lead designer UX/UI",
     img: require("~/assets/images/team/diana.jpg"),
-    title:"UX/UI",
+    title: "UX/UI",
     team: [
       {
         id: 1,
@@ -127,10 +127,9 @@ export default {
 <style lang="scss" scoped>
 .Team {
   background: #ffffff;
-  .Team-container{
+  .Team-container {
     padding: 0 20px;
     max-width: 1400px;
-
   }
   .title {
     max-width: 700px;

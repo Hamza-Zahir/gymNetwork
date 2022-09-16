@@ -9,7 +9,6 @@
           }
         "
         :class="`showAnswer-${id}`"
-
       >
         <span class="bg-bl" :style="showAnswer ? 'height: 100%;' : ''"></span>
         <h4 class="m-0">{{ question }}</h4>
@@ -80,7 +79,6 @@ p {
     left: 0;
     top: 0;
     z-index: 3;
-    // transform: rotate(160deg);
   }
   span.bg-bl {
     background: #e4f5ff;
@@ -90,16 +88,13 @@ p {
     left: 0;
     top: 0;
     z-index: -1;
-    // transition:  0.5s ease-out;
   }
 }
 
 .question {
-
   * {
     transition: 0.2s ease-out;
   }
-
   .Answer {
     max-height: 0;
     transition: max-height 0.4s ease-out;

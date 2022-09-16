@@ -1,91 +1,86 @@
-// EFF5FB
 $blueDark: #153151;
-$blueDark2:#0A1829;
-$blueAccess :#2F6EB6;
-$blueLight: #EBF2FA;
+$blueDark2: #0a1829;
+$blueAccess: #2f6eb6;
+$blueLight: #ebf2fa;
 $pragClour: #808080;
-$lightBG: #EFF5FB;
+$lightBG: #eff5fb;
 
 html {
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
   font-family: "Inter", Sans-serif;
 }
-*{
+* {
   box-sizing: border-box;
   letter-spacing: 1px;
 }
-a{
+a {
   text-decoration: none;
 }
-.bg-wh{
-background:white;
+.bg-wh {
+  background: white;
 }
-.box-sh-l{
+.box-sh-l {
   display: inline-block;
   box-shadow: 5px 3px 8px 0px #272727;
   transition: 0.5s;
-  &:hover{
+  &:hover {
     transform: translateY(5px);
   }
 }
 
-.fs-14{
+.fs-14 {
   font-size: 14px;
 }
-.cp{
+.cp {
   cursor: pointer;
 }
-.bg-bd{
-background: $blueDark;
+.bg-bd {
+  background: $blueDark;
 }
-.bg-bd2{
+.bg-bd2 {
   background: $blueDark2;
 }
-.text-bd{
+.text-bd {
   color: $blueDark;
-  }
-.bg-ba{
+}
+.bg-ba {
   background: $blueAccess;
-  }
-  .text-ba{
-    color:$blueAccess ;
-  }
-.bg-bl{
+}
+.text-ba {
+  color: $blueAccess;
+}
+.bg-bl {
   background: $blueLight;
 }
-.pc{
-color: $pragClour;
+.pc {
+  color: $pragClour;
 }
-.bg_light{
+.bg_light {
   background-color: $pragClour;
-  }
-  .light-bg{
-background: $lightBG;
-  }
-.fw-600{
- font-weight: 600;
 }
-.fw-500{
+.light-bg {
+  background: $lightBG;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-500 {
   font-weight: 500;
- }
- .rounded-15{
+}
+.rounded-15 {
   border-radius: 15px;
- }
- .rounded-10{
+}
+.rounded-10 {
   border-radius: 10px;
- }
- .rounded-20{
+}
+.rounded-20 {
   border-radius: 20px;
- }
- .rounded-50{
+}
+.rounded-50 {
   border-radius: 50px;
- }
-
-// ...............................
-
-
+}

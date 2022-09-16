@@ -1,9 +1,8 @@
 <template>
   <section id="StreetMetaverse" class="StreetMetaverse py-5 bg-light">
-
     <div class="container py-3 py-lg-5">
       <div class="tetxTitle mx-auto">
-        <h1 class="my-0 pb-lg-4 fw-bold text-center ">
+        <h1 class="my-0 pb-lg-4 fw-bold text-center">
           The GYM Street Metaverse ecosystem
         </h1>
         <p class="text-center pc pt-3">
@@ -11,9 +10,19 @@
         </p>
       </div>
       <div class="content mx-auto d-md-flex flex-wrap py-5 my-lg-5">
-        <div v-for="item in data" :key="item.id" class="col col-md-4  p-2 p-lg-3 p-xl-4">
-          <HoverCard :_id="item.id" :link_url="item.link.url" :link_text="item.link.text" :title="item.title"
-            :text="item.text" :img="item.img" />
+        <div
+          v-for="item in data"
+          :key="item.id"
+          class="col col-md-4 p-2 p-lg-3 p-xl-4"
+        >
+          <HoverCard
+            :_id="item.id"
+            :link_url="item.link.url"
+            :link_text="item.link.text"
+            :title="item.title"
+            :text="item.text"
+            :img="item.img"
+          />
         </div>
       </div>
     </div>
@@ -49,7 +58,7 @@ const data = [
     },
   },
   {
-    id: '3',
+    id: "3",
     title: "cashFT",
     text: "The crypto and NFT debit card",
     img: require("~/assets/images/StreetMetaverse/img-3.png"),
@@ -59,7 +68,7 @@ const data = [
     },
   },
   {
-    id: '4',
+    id: "4",
     title: "zuckerland.io",
     text: "Marketplace for NFTs",
     img: require("~/assets/images/StreetMetaverse/img-4.png"),
@@ -70,7 +79,7 @@ const data = [
     },
   },
   {
-    id: '5',
+    id: "5",
     title: "Exchange",
     text: "Easily and intuitively exchange coins",
     img: require("~/assets/images/StreetMetaverse/img-5.png"),
@@ -80,7 +89,7 @@ const data = [
     },
   },
   {
-    id: '6',
+    id: "6",
     title: "Metaverse Campus",
     text: "Learn how DeFi, Metaverse and co. work",
     img: require("~/assets/images/StreetMetaverse/img-6.jpg"),
@@ -112,21 +121,15 @@ export default {
     max-width: 600px;
 
     @media (min-width: 1000px) {
-
       h1 {
         font-size: 50px;
-
       }
 
       p {
         font-size: 20px;
-
       }
     }
-
-
   }
-
 
   .content {
     max-width: 1100px;
@@ -167,7 +170,6 @@ export default {
     .bg-1 {
       width: 350px;
     }
-
   }
 
   @media (min-width: 1200px) {

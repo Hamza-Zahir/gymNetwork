@@ -12,13 +12,12 @@
       <div class="conten pb-5">
         <div
           class="boxs"
-
-        >
-        <!-- @scroll="
+          @scroll="
             (e) => {
               changeColore(e);
             }
-          " -->
+          "
+        >
           <span
             @click="
               (e) => {
@@ -107,7 +106,6 @@
 <script>
 import { mapGetters } from "vuex";
 import RoudMapCard from "./cards/RoudMapCard.vue";
-
 const imges = [
   require("~/assets/images/roadmap/img-1.png"),
   require("~/assets/images/roadmap/img-2.png"),
@@ -126,6 +124,7 @@ export default {
     return {
       left: true,
       right: false,
+      scrollEnded: false,
       imges,
     };
   },
@@ -143,30 +142,22 @@ export default {
       }
     },
     changeColore(e) {
-    //   let Borders = document.querySelectorAll(
-    //     ".Roadmap .boxs .box .Border span"
-    //   );
-    //   if (e.target.scrollLeft > 0) {
-    //     this.right = true;
-    //   } else {
-    //     this.right = false;
-    //   }
-    //   if (
-    //     e.target.scrollLeft >=
-    //     250 * Borders.length - (e.target.clientWidth + 16)
-    //   ) {
-    //     this.left = false;
-    //   } else {
-    //     this.left = true;
-    //   }
-    //   Array.from(Borders).map((el, i) => {
-    //     const index = Math.floor(e.target.clientWidth / 250);
-    //     if (i <= index + 3) {
-    //       el.style.background = "#021547";
-    //     } else {
-    //       el.style.background = "#9b9b9b";
-    //     }
-    //   });
+      let Borders = document.querySelectorAll(
+        ".Roadmap .boxs .box .Border span"
+      );
+      if (e.target.scrollLeft > 0) {
+        this.right = true;
+      } else {
+        this.right = false;
+      }
+      if (
+        e.target.scrollLeft >=
+        250 * Borders.length - (e.target.clientWidth + 16)
+      ) {
+        this.left = false;
+      } else {
+        this.left = true;
+      }
     },
   },
   components: { RoudMapCard },
@@ -194,7 +185,6 @@ export default {
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
-
     &::-webkit-scrollbar {
       display: none;
     }
@@ -203,7 +193,6 @@ export default {
         display: block;
       }
     }
-
     .btn_scrol {
       width: 30px;
       height: 30px;
@@ -216,7 +205,6 @@ export default {
       color: white;
       margin: 0 20px;
       cursor: pointer;
-
       &::before {
         content: "";
         width: 100%;
@@ -228,7 +216,6 @@ export default {
         border-radius: inherit;
       }
     }
-
     .next {
       left: 40px;
     }

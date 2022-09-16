@@ -1,14 +1,29 @@
 <template>
-  <section class="KimYongGym py-5 ">
+  <section class="KimYongGym py-5">
     <div class="container py-5">
       <div
-        class="content px-2 my-xl-4 py-5 rounded-20 d-sm-flex align-items-center justify-content-center justify-content-md-evenly"
+        class="
+          content
+          px-2
+          my-xl-4
+          py-5
+          rounded-20
+          d-sm-flex
+          align-items-center
+          justify-content-center justify-content-md-evenly
+        "
       >
         <h1
-          class="text-light text-center text-sm-start px-5 py-4 p-sm-0 col-sm-6 col-md-4 col-lg-4 pe-xl-3"
+          class="
+            text-light text-center text-sm-start
+            px-5
+            py-4
+            p-sm-0
+            col-sm-6 col-md-4 col-lg-4
+            pe-xl-3
+          "
         >
-         Let's welcome
-          Kim Yong Gym
+          Let's welcome Kim Yong Gym
         </h1>
         <div class="img pb-4 pb-sm-0 col-sm-5 col-md-5 col-lg-5">
           <img src="~/assets/images/KimYongGym_img.png" alt="" class="w-100" />
@@ -49,13 +64,11 @@ export default {};
         font-size: 50px;
       }
     }
-     @media (min-width: 1400px) {
+    @media (min-width: 1400px) {
       h1 {
         font-size: 60px;
       }
-
+    }
   }
-  }
-
 }
 </style>

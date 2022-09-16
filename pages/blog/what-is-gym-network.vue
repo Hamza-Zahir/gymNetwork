@@ -2,7 +2,14 @@
   <div class="bg-wh" :style="` margin-top : ${marginTop}`">
     <div class="container py-4">
       <div
-        class="Head d-flex align-items-center justify-content-between fw-600 py-2"
+        class="
+          Head
+          d-flex
+          align-items-center
+          justify-content-between
+          fw-600
+          py-2
+        "
       >
         <div class="phat mt-3">
           <span class="text-secondary">Blog</span> / What is GYM Network?

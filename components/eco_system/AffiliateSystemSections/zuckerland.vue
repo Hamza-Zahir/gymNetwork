@@ -24,9 +24,7 @@
           Thus, we create a platform where new users, professionals, and also
           real estate agents can easily find their way around.
         </p>
-        <nuxt-link
-          to=""
-          class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
+        <nuxt-link to="" class="BTN bg-ba text-light fw-600 box-sh-l rounded-50"
           >Coming Soon</nuxt-link
         >
       </div>
