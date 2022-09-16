@@ -24,14 +24,14 @@
                 next(e);
               }
             "
-            class="next btn_scrol rounded-circle"
+            class="next btn_scrol rounded-circle d-none d-md-flex"
             :class="left ? 'bg-bd' : 'bg-ba'"
           >
             <b-icon icon="arrow-right-short" class="h3 m-0"></b-icon>
           </span>
 
           <span
-            class="prev btn_scrol rounded-circle"
+            class="prev btn_scrol rounded-circle d-none d-md-flex"
             :class="right ? 'bg-bd' : 'bg-ba'"
             @click="
               (e) => {
@@ -169,24 +169,28 @@ export default {
   .conten {
     position: relative;
     padding-left: 30px;
-    &::before {
-      content: "";
-      width: 100%;
-      height: 6px;
-      background: #021547;
-      position: absolute;
-      top: 285px;
-      left: 0;
-      z-index: 9;
+    @media (min-width: 768px) {
+      &::before {
+        content: "";
+        width: 100%;
+        height: 6px;
+        background: #021547;
+        position: absolute;
+        top: 285px;
+        left: 0;
+        z-index: 9;
+      }
     }
   }
   .boxs {
     width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    &::-webkit-scrollbar {
-      display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
     .endOfScroll {
       span {
@@ -196,7 +200,6 @@ export default {
     .btn_scrol {
       width: 30px;
       height: 30px;
-      display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;

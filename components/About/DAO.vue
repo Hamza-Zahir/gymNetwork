@@ -5,20 +5,16 @@
         Decentralized Autonomous Organization
       </h1>
 
-      <div class="text col-md-7 col-lg-6 col-xxl-7 pe-xxl-5 mt-5">
+      <div class="text col-md-7 col-lg-6 col-xxl-5 mt-5 ">
         <p class="">
-          GYM NETWORK is owned by the users. Everyone of you has voting power in
-          the measure of your GYMNET token holdings.
+          GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.
         </p>
-        <p class="col-lg-11">
-          Owning GYMNET means that you will be able to propose new “Exercise
-          Routines” (proposals to improve the system) and vote on the routines
-          proposed by others.
+        <p class="col-lg-11 col-xxl-12">
+          Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.
         </p>
 
-        <p class="col-md-9">
-          This is how the Network will be managed once 75% of GYMNET tokens have
-          been distributed to you, the users.
+        <p class="col-md-9 col-xxl-12">
+          This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.
         </p>
       </div>
     </div>
@@ -46,7 +42,7 @@ export default {
     font-size: 34px;
     max-width: 800px;
     @media (min-width: 768px) {
-      font-size: 40px;
+      // font-size: 40px;
     }
     @media (min-width: 992px) {
       font-size: 55px;
@@ -54,19 +50,18 @@ export default {
   }
 
   .text {
+    line-height: 1.7;
     @media (min-width: 1200px) {
       font-size: 18px;
     }
-    @media (min-width: 1400px) {
-      font-size: 20px;
-    }
+
     @media (min-width: 2000px) {
-      font-size: 25px;
-      padding-top: 50px;
+      padding: 50px 0 60px 0;
     }
   }
 
   .img {
+    overflow: hidden;
     img {
       width: 100%;
       max-width: 900px;
@@ -78,13 +73,42 @@ export default {
     }
 
     @media (min-width: 768px) {
-      margin-top: -110px;
+      margin-top: -220px;
+      img {
+        width: 130%;
+        min-height: 400px;
+        margin-right: -250px;
+        margin-bottom: -40px;
+      }
     }
     @media (min-width: 992px) {
-      margin-top: -240px;
+      margin-top: -250px;
     }
     @media (min-width: 1200px) {
-      margin-top: -240px;
+      margin-top: -260px;
+      img {
+        // width: 130%;
+        // margin-right: -200px;
+        margin-bottom: -50px;
+      }
+    }
+    @media (min-width: 1400px) {
+      margin-top: -300px;
+      img {
+        width: 100%;
+        margin-right: -100px;
+        margin-bottom: -40px;
+        min-height: 500px;
+      }
+    }
+    @media (min-width: 1500px) {
+      margin-top: -300px;
+      img {
+        width: 90%;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        min-height: 350px;
+      }
     }
     @media (min-width: 2000px) {
       margin-top: -350px;

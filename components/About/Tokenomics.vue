@@ -1,185 +1,293 @@
 <template>
-  <div class="Tokenomics py-5 bg-light">
-    <div class="py-5 px-2 mb-md-3 col-lg-11 mx-lg-auto">
-      <h1 class="fw-bold text-center my-3">Tokenomics</h1>
-      <div
-        class="
-          content
-          mx-auto
-          mt-5
-          pt-5
-          mb-lg-3
-          d-md-flex
-          justify-content-center
-          align-items-center
-        "
-      >
-        <div class="boxs col-md me-md-4 me-lg-5 pe-xl-5">
-          <div class="box TOTAL_SUPPLY border border-info rounded-20 bg-bl">
-            <span class="text-secondary fs-14">TOTAL SUPPLY</span>
-            <div class="d-flex align-items-center text-ba mt-1">
-              <span
-                ><img src="~/assets/images/logo.png" alt="" class="me-2"
-              /></span>
-              <span class="fw-bold fs-5">419,306,325.81</span>
-            </div>
-          </div>
-          <div
-            class="box SINGLE_FARM border border-info rounded-20 bg-bl text-ba"
-          >
-            <span class="text-secondary fs-14">SINGLE FARM</span>
-            <div class="fw-bold mt-1 fs-5">
-              <span> 7.25% </span>
-              <span> 29M </span>
-            </div>
-          </div>
-          <div class="box VAULTS border border-info rounded-20 bg-bl text-ba">
-            <span class="text-secondary fs-14">VAULTS</span>
-            <div class="fw-bold mt-1 fs-5">
-              <span> 22% </span>
-              <span> 88M</span>
-            </div>
-          </div>
+  <div class="py-4">
 
-          <img
-            src="~/assets/images/logoRotetLeft-1.png"
-            class="imgLogo"
-            alt=""
-          />
-        </div>
-        <div class="text mt-5 mt-md-0 pc col-md-6 col-xl-5">
-          <p>
-            GYMNET Tokenomics gives every user the opportunity to earn long-term
-            rewards over and over again.
-          </p>
+  <div id="Tokenomics" class="Tokenomics bg-light d-lg-flex">
+    <div class="information_box col-lg-6">
+      <h1 class="fw-bold mt-5">Tokenomics</h1>
+      <h3 class="d-sm-flex fw-bold my-4">
+        <span class="text-bd me-3">Total supply</span>
+        <span class="d-flex my-3 my-sm-0 TotalSupply"
+          ><img src="~/assets/images/logo.png" class="me-2" />594 000 000</span
+        >
+      </h3>
+      <div class="listContent my-5">
+        <span class="border_left"></span>
+        <div class="list text-bd">
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+            <span class="px-3 px-sm-4">01</span>
+            <span class=""
+              >Token holders v 1.5
+              <br />
+              <small class="fw-500 text-secondary">21% 124M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
 
-          <p>
-            In this way, the user always gets access to absolutely unique
-            opportunities by holding GYMNET tokens and at the same time is
-            rewarded with GYMNET for taking advantage of these opportunities.
-          </p>
+            <span class="px-3 px-sm-4">02</span>
+            <span class=""
+              >Vault BNB
+              <br />
+              <small class="fw-500 text-secondary">11% 65M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+
+            <span class="px-3 px-sm-4">03</span>
+            <span class=""
+              >Vault BUSD
+              <br />
+              <small class="fw-500 text-secondary">11% 65M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+
+            <span class="px-3 px-sm-4">04</span>
+            <span class=""
+              >Farm BNB/ Gymnet
+              <br />
+              <small class="fw-500 text-secondary">17% 100M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+
+            <span class="px-3 px-sm-4">05</span>
+            <span class=""
+              >Farm BUSD/ Gymnet
+              <br />
+              <small class="fw-500 text-secondary">17% 100M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+
+            <span class="px-3 px-sm-4">06</span>
+            <span class=""
+              >Single Pool
+              <br />
+              <small class="fw-500 text-secondary">10% 60M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+
+            <span class="px-3 px-sm-4">07</span>
+            <span class=""
+              >Launchpad
+              <br />
+              <small class="fw-500 text-secondary">3% 20M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+
+            <span class="px-3 px-sm-4">08</span>
+            <span class=""
+              >Card APY
+              <br />
+              <small class="fw-500 text-secondary">2% 10M</small>
+            </span>
+          </h4>
+          <h4 class="fw-bold d-flex py-3 border-bottom">
+            <span class="point"></span>
+
+            <span class="px-3 px-sm-4">09</span>
+            <span class=""
+              >Community Fund
+              <br />
+              <small class="fw-500 text-secondary">8% 50M</small>
+            </span>
+          </h4>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="img_box bg-bl col-lg-6">
+      <img src="~/assets/images/bg-tokenomics.jpg" alt="" class="w-100" />
+    </div>
+  </div></div>
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.handelScroling();
+  },
+  methods: {
+    handelScroling() {
+      const cards = [
+        ...document.querySelectorAll("#Tokenomics .information_box .list h4"),
+      ];
+      const list = document.querySelector("#Tokenomics .information_box .list");
+
+      const border_left = document.querySelector(
+        "#Tokenomics .information_box .listContent .border_left"
+      );
+
+      list.addEventListener("scroll", (e) => {
+        const listHight = cards[0].offsetHeight * cards.length;
+
+        const border_left_height =
+          (list.scrollTop * 100) / (listHight - list.offsetHeight);
+        border_left.style.height = `${border_left_height}%`;
+        const index = +(
+          list.scrollTop /
+          ((listHight - list.offsetHeight) / cards.length)
+        ).toFixed(0);
+
+        cards.map((e, i) => {
+          if (index > i) {
+            e.children[0].style.background = "#245b99";
+          } else {
+            e.children[0].style.background = "#a8b1bb";
+          }
+        });
+      });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .Tokenomics {
   position: relative;
-  z-index: 0;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    background: url("~/assets/images/4001.png");
-    background-repeat: no-repeat;
-    background-position: -100px 200px;
-    background-size: 400px;
-    z-index: -1;
-    opacity: 0.7;
-    @media (min-width: 500px) {
-      background-size: 450px;
-      background-position: -100px 150px;
-    }
-
-    @media (min-width: 992px) {
-      background-size: 600px;
-      background-position: -150px 200px;
-    }
-    @media (min-width: 1200px) {
-      background-size: 600px;
-      background-position: -150px 200px;
-    }
-    @media (min-width: 1400px) {
-      background-size: 700px;
-      background-position: -100px 160px;
-    }
+  .bg-bl{
+background: #a2c8f867;
   }
-
-  h1 {
-    font-size: 50px;
-  }
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 60px;
+  .information_box {
+    padding: 15px;
+    .TotalSupply {
+      color: #245b99;
     }
-  }
-  .content {
-    padding: 10px;
-    max-width: 1300px;
-
-    .boxs {
-      z-index: 0;
+    h3 {
+      img {
+        width: 30px;
+      }
+    }
+    .listContent {
       position: relative;
-      min-height: 200px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-      .imgLogo {
-        width: 200px;
+      overflow: hidden;
+      .border_left {
         position: absolute;
-        z-index: -1;
-        left: 0;
-        top: -100px;
+        display: inline-block;
+        left: 7px;
+        top: 0;
+        width: 2px;
+        height: 0;
+        background: #245b99;
+        z-index: 2;
+      }
 
-        @media (min-width: 500px) {
-          left: calc(100% - 450px);
+      .list {
+        max-height: 350px;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
         }
-        @media (min-width: 768px) {
-          left: -50px;
+
+        h4 {
+          position: relative;
+          margin: 0;
+          margin-left: 8px;
+          font-size: 20px;
+          .point {
+            display: inline-block;
+            position: absolute;
+            left: -4px;
+            top: calc(50% - 4px);
+            width: 8px;
+            height: 8px;
+            background: #a8b1bb;
+            border-radius: 50%;
+            z-index: 3;
+            box-shadow: 0px 0px 0px 2px #f3f3f3;
+          }
+          &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: -1px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #a8b1bb;
+            z-index: 1;
+          }
         }
-        @media (min-width: 1000px) {
-          left: calc(100% - 500px);
-        }
-        @media (min-width: 1200px) {
-          left: calc(100% - 550px);
-        }
-      }
-      .box {
-        width: fit-content;
-        padding: 20px 15px;
-        img {
-          width: 30px;
-        }
-      }
-      .TOTAL_SUPPLY {
-        margin-right: 60px;
-      }
-      .SINGLE_FARM {
-        margin-top: -15px;
-      }
-      .VAULTS {
-        margin-right: 110px;
-        margin-top: -15px;
-        z-index: -1;
       }
     }
+  }
+  .img_box {
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      // align-self: stretch;
+min-height: 100%;
+    }
+  }
 
-    @media (min-width: 992px) {
-      p {
-        font-size: 18px;
+  @media (min-width: 576px) {
+    .information_box {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
+  @media (min-width: 992px) {
+    .information_box {
+      padding-left: 40px;
+      padding-right: 30px;
+    }
+    .img_box {
+      position: absolute;
+      min-height: 100%;
+      right: 0;
+      top: 0;
+      img {
+        min-height: 100%;
       }
-      .boxs {
-        .box {
-          padding: 20px 30px;
+    }
+    .information_box {
+      .listContent {
+        .list {
+          h4 {
+            font-size: 25px;
+          }
         }
       }
     }
-    @media (min-width: 1200px) {
-      p {
-        font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 50px;
+    }
+    .information_box {
+      padding-top: 60px;
+      padding-left: 100px;
+
+
+      .list {
+        max-height: 400px;
+      }
+    }
+  }
+  @media (min-width: 1400px) {
+    .information_box {
+      padding-left: 150px;
+    }
+  }
+  @media (min-width: 2000px) {
+    .information_box {
+      padding-left: 290px;
+      .list {
+        max-height: 470px;
       }
     }
   }

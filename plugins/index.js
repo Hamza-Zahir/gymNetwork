@@ -6,20 +6,24 @@ const scrolling = () => {
   const flickity = document.querySelector(".flickity");
   const cheldren = flickity.children;
   const _cheldrenLength = cheldren.length;
-  const _pages =
-    _cheldrenLength - flickity.clientWidth / cheldren[0].clientWidth;
-  const scrollingInterval = setInterval(() => {
-    const _scrollLeft = flickity.scrollLeft;
 
-    if (_scrollLeft < _pages * cheldren[0].clientWidth) {
+    const scrollingInterval = setInterval(() => {
+    const _pages =
+    _cheldrenLength - flickity.clientWidth / cheldren[0].clientWidth;
+ const _scrollLeft = flickity.scrollLeft;
+
+    if (_scrollLeft < _pages * cheldren[0].clientWidth - _pages) {
       flickity.scrollLeft += cheldren[0].clientWidth;
     } else {
       flickity.scrollLeft = 0;
     }
-  }, 2000);
+  }, 2500);
   flickity.addEventListener("mouseenter", () => {
     clearInterval(scrollingInterval);
   });
+
+
+
 };
 
 export default {

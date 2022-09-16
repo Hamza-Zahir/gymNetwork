@@ -64,10 +64,10 @@ export default {
     MetaverseCampus,
   },
   mounted() {
-    this.test();
+    this.handelScroling();
   },
   methods: {
-    test() {
+    handelScroling() {
       const sections = [
         ...document.querySelectorAll(
           "#AffiliateSystem .AffiliateSystemSections .Section"
@@ -78,7 +78,7 @@ export default {
         "#AffiliateSystem .NavigationMenu"
       );
 
-      addEventListener("scroll", (e) => {
+      addEventListener("scroll", () => {
         const HeadApphight = document.getElementById("HeadApp");
         const sectionOffsetBottom = section.offsetTop + section.offsetHeight;
         const NavigationMenuOffsetBottom = NavigationMenu.offsetHeight;

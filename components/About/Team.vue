@@ -1,6 +1,6 @@
 <template>
-  <section class="Team pt-5">
-    <div class="Team-container mx-auto py-5">
+  <section class="Team py-5">
+    <div class="Team-container mx-auto pt-5">
       <div class="title mx-auto text-center">
         <h1 class="text-center fw-bold">GYM Network Team</h1>
         <p class="pc mt-4">
@@ -23,7 +23,11 @@
               @click="
                 () => {
                   if (developer.team.length) {
-                    developerAccess = developer;
+                    if (developerAccess === developer) {
+                      developerAccess = {};
+                    } else {
+                      developerAccess = developer;
+                    }
                   }
                 }
               "
@@ -33,7 +37,7 @@
                   :src="developer.img"
                   alt=""
                   class="w-100"
-                  :class="developerAccess == developer ? 'filter' : ''"
+                  :class="developerAccess === developer ? 'filter' : ''"
                 />
               </div>
               <div class="p-3">
@@ -41,6 +45,8 @@
                 <span class="text-secondary">{{ developer.jobTitle }}</span>
               </div>
             </a>
+             
+            <div v-if="developerAccess == developer" class="Signal bg-bl d-none d-lg-block"> </div>
           </div>
         </div>
       </div>
@@ -117,7 +123,7 @@ export default {
   data() {
     return {
       team,
-      developerAccess: team[3],
+      developerAccess: {},
     };
   },
   components: { TeamOfModerator },
@@ -127,10 +133,12 @@ export default {
 <style lang="scss" scoped>
 .Team {
   background: #ffffff;
+
   .Team-container {
     padding: 0 20px;
     max-width: 1400px;
   }
+
   .title {
     max-width: 700px;
 
@@ -142,10 +150,12 @@ export default {
       h1 {
         font-size: 40px;
       }
+
       p {
         font-size: 18px;
       }
     }
+
     @media (min-width: 992px) {
       h1 {
         font-size: 55px;
@@ -155,26 +165,40 @@ export default {
 
   .boxs {
     .box {
+      position: relative;
       a {
         max-width: 280px;
         overflow: hidden;
         border-radius: 25px;
         box-shadow: 0px 0px 2px 0px #9797979a;
         transition: all 0.4s;
+
         img {
           filter: grayscale(1);
         }
+
         .filter {
           filter: grayscale(0) !important;
         }
+
         &:hover {
           box-shadow: 0px 0px 8px 0px #979797;
           transform: translateY(-10px);
+
           img {
             filter: grayscale(0);
           }
         }
       }
+    }
+    .Signal{
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 100%;
+      right: 20%;
+      clip-path: polygon(50% 0%, 100% 100%, 0 100%);
+
     }
   }
 

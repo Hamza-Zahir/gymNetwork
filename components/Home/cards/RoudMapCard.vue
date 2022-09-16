@@ -1,6 +1,8 @@
 <template>
   <div class="box h-100">
-    <div class="Border" :class="`Border-${_id}`"><span></span></div>
+    <div class="Border d-none d-md-block" :class="`Border-${_id}`">
+      <span></span>
+    </div>
 
     <div class="content" :class="(_id - 1) % 2 > 0 ? 'box_down' : 'box_up'">
       <div class="img text-center">
@@ -44,44 +46,52 @@ export default {
 <style lang="scss" scoped>
 .box {
   position: relative;
-
-  .Border {
-    position: absolute;
-    top: 285px;
-
-    span {
-      width: 14px;
-      height: 14px;
-      position: absolute;
-      top: -4px;
-      left: 0px;
-      background: #021547;
-      border-radius: 50%;
+  .content {
+    margin-top: 30px;
+    img {
+      max-width: 150px;
     }
   }
-}
+  @media (min-width: 768px) {
+    .Border {
+      position: absolute;
+      top: 285px;
 
-.content {
-  width: 250px;
+      span {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: -4px;
+        left: 0px;
+        background: #021547;
+        border-radius: 50%;
+      }
+    }
 
-  img {
-    width: 120px;
-  }
-}
+    .content {
+      width: 250px;
+      margin-top: 0px;
 
-.box_up {
-  img {
-    margin-bottom: -15px;
-  }
-}
+      img {
+        width: 120px;
+      }
+    }
 
-.box_down {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-top: 300px;
+    .box_up {
+      img {
+        margin-bottom: -15px;
+      }
+    }
 
-  img {
-    margin-top: -15px;
+    .box_down {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 300px;
+
+      img {
+        margin-top: -15px;
+      }
+    }
   }
 }
 </style>

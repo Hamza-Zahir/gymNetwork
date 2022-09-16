@@ -7,7 +7,9 @@
         handelScrolling();
       }
     "
+
   >
+
     <h1 class="fw-bold text-center mt-lg-5">Team {{ Moderator.title }}</h1>
     <div class="teams py-5">
       <div class="d-flex flickity py-2 m-0">
