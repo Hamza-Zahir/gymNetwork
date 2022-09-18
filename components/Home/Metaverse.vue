@@ -2,13 +2,12 @@
   <section class="Metaverse bg-light">
     <div class="container py-5">
       <div class="text col-md-10 mt-lg-2 py-xl-4">
-        <h1 class="fw-bold">
-          {{ content.gymstreet_title }}
-        </h1>
+        <h1 class="fw-bold" v-html="content.gymstreet_title"></h1>
 
-        <p class="paragraph pc mt-3 mt-lg-4 pt-lg-4">
-          {{ content.gymstreet_description }}
-        </p>
+        <p
+          class="paragraph pc mt-3 mt-lg-4 pt-lg-4"
+          v-html="content.gymstreet_description"
+        ></p>
 
         <nuxt-link
           to="/eco_system/#Gymstreet"
@@ -25,9 +24,8 @@
             col-12
             mt-lg-5
           "
+          v-html="content.go_to_gymstreet"
         >
-          <!-- col-sm-5 col-lg-4 col-xl-3 -->
-          {{ content.go_to_gymstreet }}
         </nuxt-link>
       </div>
     </div>
@@ -42,9 +40,8 @@
             align-self-center
             col col-lg-6
           "
-        >
-          {{ content.metaverse_desc }}
-        </div>
+          v-html="content.metaverse_desc"
+        ></div>
         <div class="col-9 col-sm-7 col-md-4 col-lg-6">
           <img src="~/assets/images/Metaverse_img.png" alt="" class="w-100" />
         </div>

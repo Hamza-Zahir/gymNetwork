@@ -3,6 +3,9 @@ import ja from "~/plugins/ja";
 import ko from "~/plugins/ko";
 import th from "~/plugins/th";
 import zh from "~/plugins/zh";
+import ec from "~/plugins/ec";
+import pt from "~/plugins/pt";
+import ru from "~/plugins/ru";
 import plugins from "~/plugins/index.js";
 const text_content = {
   EN: en,
@@ -10,6 +13,9 @@ const text_content = {
   KO: ko,
   TH: th,
   ZH: zh,
+  EC: ec,
+  PT: pt,
+  RU: ru,
 };
 const state = {
   language:"EN",

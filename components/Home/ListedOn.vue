@@ -1,9 +1,7 @@
 <template>
   <section class="py-5 bg-light">
     <div class="container py-lg-5">
-      <h1 class="fw-bold text-center">
-        {{ content.listed_on }}
-      </h1>
+      <h1 class="fw-bold text-center" v-html="content.listed_on_title"></h1>
       <div class="mt-4 d-flex flex-wrap mt-5 links">
         <div
           v-for="(link, i) in links"

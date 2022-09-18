@@ -11,7 +11,7 @@
         <p class="pc my-3">{{ text }}</p>
       </div>
       <div class="fs-14 fw-600 text-end mt-4 pc">
-        {{ link_url ? link_text : "Coming Soon" }}
+         {{link_text}}
         <b-icon v-if="link_url" icon="arrow-up-right" class="m-0"></b-icon>
       </div>
     </a>

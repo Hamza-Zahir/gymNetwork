@@ -96,7 +96,7 @@
             :img="imges[7]"
             date="Q4-2023"
             :title="content.ar_app"
-            :text="content.ar_app"
+            :text="content.ar_app_desc"
           />
         </div>
       </div>
@@ -176,7 +176,7 @@ export default {
         height: 6px;
         background: #021547;
         position: absolute;
-        top: 285px;
+        top: 325px;
         left: 0;
         z-index: 9;
       }

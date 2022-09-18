@@ -2,12 +2,10 @@
   <section class="investmentSystem pt-5">
     <div class="container">
       <div class="text col-md-9 col-lg-8 col-lg">
-        <h1 class="fw-bold">
-          {{ content.investment_system_title }}
+        <h1 class="fw-bold" v-html="content.investment_system_title">
         </h1>
 
-        <p class="pc mt-3 col-md-10 mt-xxl-5 pt-3">
-          {{ content.investment_system_description }}
+        <p class="pc mt-3 col-md-10 mt-xxl-5 pt-3" v-html="content.investment_system_description">
         </p>
 
         <nuxt-link
@@ -25,8 +23,8 @@
             my-4
             mt-lg-5
           "
-        >
-          {{ content.go_to_the_products }}
+      v-html="content.go_to_the_products"  >
+
         </nuxt-link>
       </div>
     </div>

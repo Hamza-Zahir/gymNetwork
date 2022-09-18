@@ -13,12 +13,14 @@
             mt-lg-5
           "
         >
-          <h1 class="py-2 pt-lg-3 mt-md-3 fw-bold">
-            {{ content.header_title }}
-          </h1>
-          <p class="col col-lg-11 mt-md-4">
-            {{ content.header_description }}
-          </p>
+          <h1
+            class="py-2 pt-lg-3 mt-md-3 fw-bold"
+            v-html="content.header_title"
+          ></h1>
+          <p
+            class="col col-lg-11 mt-md-4"
+            v-html="content.header_description"
+          ></p>
           <div class="col-lg-6 my-4 mx-auto mx-lg-0 mt-md-5">
             <a
               href="https://gymnetwork.io/dashboard"
@@ -33,8 +35,8 @@
                 box-sh-l
                 col-12
               "
-              >{{ content.launch_to_app }}</a
-            >
+              v-html="content.launch_to_app"
+            ></a>
           </div>
         </div>
 
@@ -48,16 +50,7 @@
             p-4
           "
         >
-          <div class="">
-            Old community members can transfer their holdings and assets to the
-            new version via
-            <a
-              href="http://old.gymnetwork.io/dashboard/community-transfer/"
-              target="_blank"
-              >Start Transfer</a
-            >
-            link
-          </div>
+          <div class="r" v-html="content.header_info"></div>
         </div>
       </div>
       <div class="boxes p-2 p-xxl-3 mt-5 mt-lg-2 rounded-20 d-flex flex-wrap">
@@ -71,7 +64,7 @@
             my-3
           "
         >
-          <span class="pc fw-bold">{{ content.total_burnt }}</span>
+          <span class="pc fw-bold" v-html="content.total_burnt"></span>
           <div
             class="
               d-flex
@@ -83,8 +76,8 @@
               mt-3
             "
           >
-            <img src="~/assets/images/logo.png" alt="" /><span>
-              {{ TotalBurnt }}
+            <img src="~/assets/images/logo.png" alt="" /><span
+            >{{TotalBurnt}}
             </span>
           </div>
         </div>
@@ -102,8 +95,8 @@
             ps-md-4
           "
         >
-          <span class="pc fw-bold">{{ content.gymnet_price }}</span>
-          <div class="mt-2 fw-bold fs-4 mt-3">$ {{ GYMNETPrice }}</div>
+          <span class="pc fw-bold" v-html="content.gymnet_price"></span>
+          <div class="mt-2 fw-bold fs-4 mt-3"> {{GYMNETPrice}}</div>
         </div>
         <div class="border-bottom d-md-none border-secondary col-12"></div>
 
@@ -117,7 +110,7 @@
             my-3
           "
         >
-          <span class="pc fw-bold">{{ content.total_supply }}</span>
+          <span class="pc fw-bold" v-html="content.total_supply"></span>
           <div
             class="
               d-flex
@@ -145,9 +138,7 @@
             col-md
           "
         >
-          <span class="pc fw-bold fw-600">{{
-            content.total_value_locked
-          }}</span>
+          <span class="pc fw-bold fw-600" v-html="content.total_value_locked"></span>
           <div class="mt-3 fw-bold fs-4">$ {{ TotalValueLocked }}</div>
         </div>
       </div>
@@ -157,8 +148,8 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-
 export default {
+
   computed: {
     ...mapGetters([
       "content",
@@ -170,6 +161,7 @@ export default {
   },
   methods: {
     ...mapActions(["LoadBlockchainData"]),
+
   },
   mounted() {
     setInterval(() => {
@@ -215,10 +207,13 @@ export default {
     color: #055160;
     background: #cff4fc;
 
-    a {
+      .a{
       line-break: none;
       text-decoration: underline;
     }
+
+
+
   }
 
   .boxes {

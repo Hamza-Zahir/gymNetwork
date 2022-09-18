@@ -28,14 +28,14 @@
           target="_blank"
           class="d-block col-6 p-2 col-lg"
           ><img src="~/assets/images/links/certik.png" alt="" class="" />
-          <small>{{ content.audited }}</small></a
+          <small v-html="content.audited"></small></a
         >
         <a
           href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Gymnet-v1.0.pdf"
           target="_blank"
           class="d-block col-6 p-2 col-lg"
           ><img src="~/assets/images/links/peckShield.png" alt="" class="" />
-          <small>{{ content.audited }}</small></a
+          <small v-html="content.audited"></small></a
         >
         <a
           href="https://t.me/gymnetwork_english"
@@ -46,14 +46,14 @@
             alt=""
             class="telegram"
           />
-          <small class="fs-10">{{ content.our_official_telegram }}</small>
+          <small class="fs-10" v-html="content.our_official_telegram"></small>
         </a>
         <a
           href="https://www.alpacafinance.org/"
           target="_blank"
           class="d-block col-6 p-2 col-lg"
           ><img src="~/assets/images/links/alpaca.png" alt="" class="" />
-          <small>{{ content.official_partner }}</small>
+          <small v-html="content.official_partner"></small>
         </a>
       </div>
     </div>

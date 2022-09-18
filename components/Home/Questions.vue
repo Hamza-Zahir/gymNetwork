@@ -10,8 +10,8 @@
             <div v-for="i in questionsKeys.length" :key="`question-${i}`">
               <Question_card
                 v-if="showMoreQuestion || i < 5"
-                :question="Encontent[questionsKeys[i - 1][0]]"
-                :answers="Encontent[questionsKeys[i - 1][1]]"
+                :question="content[questionsKeys[i - 1][0]]"
+                :answers="content[questionsKeys[i - 1][1]]"
                 :id="i"
               />
             </div>
@@ -30,8 +30,8 @@
 <script>
 import { mapGetters } from "vuex";
 
-import Question_card from "../cards/Question_card.vue";
-import Encontent from "~/plugins/en";
+import Question_card from "./cards/Question_card.vue";
+// import Encontent from "~/plugins/en";
 const questionsKeys = [
   ["what_defi", "what_defi_desc"],
   ["what_smart_contract", "what_smart_contract_desc"],
@@ -58,7 +58,7 @@ export default {
     return {
       questionsKeys,
       showMoreQuestion: false,
-      Encontent,
+      // Encontent,
     };
   },
   components: { Question_card },

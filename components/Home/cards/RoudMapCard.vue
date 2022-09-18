@@ -55,7 +55,7 @@ export default {
   @media (min-width: 768px) {
     .Border {
       position: absolute;
-      top: 285px;
+      top: 325px;
 
       span {
         width: 14px;
@@ -86,7 +86,7 @@ export default {
     .box_down {
       display: flex;
       flex-direction: column-reverse;
-      margin-top: 300px;
+      margin-top: 350px;
 
       img {
         margin-top: -15px;

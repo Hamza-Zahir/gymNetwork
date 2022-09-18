@@ -21,10 +21,9 @@
               style="width: 30px"
               class="me-2"
             />
-
             <span class="fw-600 text-dark">GYMNET</span>
-            <span class="px-1 d-none d-lg-block"
-              >Contract<span class="o-0">_</span>Address:
+            <span class="px-1 d-none d-lg-inline-block contractAddressWourd"
+             v-html="content.contract_address + ':'" >
             </span>
             <span class="address mx-1 d-block">
               0x0012365F0a1E5F30a5046c680DCB21D07b15FcF7
@@ -64,8 +63,8 @@
             />
 
             <span class="fw-600 text-dark">VBTC</span>
-            <span class="px-1 d-none d-lg-block"
-              >Contract<span class="o-0">_</span>Address:
+            <span class="px-1 d-none d-lg-inline-block contractAddressWourd"
+             v-html="content.contract_address + ':'" >
             </span>
             <span class="address mx-1 d-block">
               0x268bb0f44ab880be59ccd2b96bfa138211e27a20
@@ -97,12 +96,17 @@
 </template>
 
 <script>
+  import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
       addressCopied_1: false,
       addressCopied_2: false,
     };
+  },
+   computed: {
+    ...mapGetters(["content"]),
   },
   methods: {
     async copyAddress(_Address, _addressCopied) {
@@ -129,6 +133,10 @@ export default {
   background: #ffffff;
   .contracts {
     max-width: 1400px;
+    .contractAddressWourd{
+
+      min-width: fit-content;
+    }
   }
 
   span.address {
@@ -141,7 +149,6 @@ export default {
     -webkit-line-clamp: 1;
     line-clamp: 1;
     font-size: 12px;
-
     @media (min-width: 500px) {
       font-size: 14px;
     }

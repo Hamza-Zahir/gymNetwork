@@ -14,7 +14,7 @@
       <HoverCard
         _id="2"
         link_url=""
-        :link_text="content.watch_tutorial"
+        :link_text="content.coming_soon"
         :title="content.transfer_bnb"
         :text="content.transfer_bnb_desc"
         :img="images[1]"
@@ -24,7 +24,7 @@
       <HoverCard
         _id="3"
         link_url=""
-        :link_text="content.watch_tutorial"
+        :link_text="content.coming_soon"
         :title="content.connect_your_wallet"
         :text="content.connect_your_wallet_desc"
         :img="images[2]"

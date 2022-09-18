@@ -11,7 +11,7 @@
         :class="`showAnswer-${id}`"
       >
         <span class="bg-bl" :style="showAnswer ? 'height: 100%;' : ''"></span>
-        <h4 class="m-0">{{ question }}</h4>
+        <h4 class="m-0" v-html="question"></h4>
         <b-icon
           icon="chevron-down"
           :style="showAnswer ? 'transform: rotate(-180deg);' : ''"
@@ -22,7 +22,7 @@
         class="col-12 pc pt-1 Answer"
         :class="showAnswer ? 'showAnswer' : ''"
       >
-        <p class="p-3 pt-4">{{ answers }}</p>
+        <div class="p-3 pt-4 paragraph" v-html="answers"></div>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-p {
+.paragraph {
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.7;
