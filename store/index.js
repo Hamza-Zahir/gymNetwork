@@ -3,7 +3,7 @@ import ja from "~/plugins/ja";
 import ko from "~/plugins/ko";
 import th from "~/plugins/th";
 import zh from "~/plugins/zh";
-import ec from "~/plugins/ec";
+import es from "~/plugins/es";
 import pt from "~/plugins/pt";
 import ru from "~/plugins/ru";
 import plugins from "~/plugins/index.js";
@@ -12,8 +12,8 @@ const text_content = {
   JA: ja,
   KO: ko,
   TH: th,
-  ZH: zh,
-  EC: ec,
+  中文: zh,
+  ES: es,
   PT: pt,
   RU: ru,
 };
@@ -48,15 +48,25 @@ const actions = {
 
     commit("setContent", text_content[lang]);
     commit("setLanguage", lang);
-    localStorage.setItem("text_content", lang);
+    localStorage.setItem("language", lang);
 
   },
   getContent({ commit }) {
-    if (localStorage.getItem("text_content")) {
-      commit("setContent", text_content[localStorage.getItem("text_content")]);
-      commit("setLanguage", localStorage.getItem("text_content"));
 
-    }
+      const lang = localStorage.getItem("language")
+      if(
+        lang == "EN" ||
+        lang == "JA" ||
+        lang == "KO" ||
+        lang == "TH" ||
+        lang == "中文" ||
+        lang == "ES" ||
+        lang == "PT" ||
+        lang == "RU"
+       ){
+      commit("setContent", text_content[lang]);
+      commit("setLanguage", lang);
+}
   },
 
  async LoadBlockchainData({commit}){

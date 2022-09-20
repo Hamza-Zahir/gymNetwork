@@ -156,10 +156,10 @@ export default {
 
   // .................     end Questions  ...........................................
 
-  join_telegram_group: "Únete a nuestro grupo de telegramas",
-  join_telegram_group_desc: "¡Recibe todas las últimas noticias y respuestas a tus preguntas sobre GYM Network!",
-  join_now: "Unirse ahora",
-  footer_info: "La unión de Metaverse y DeFi Aggregator Investment System. Rentabilidades lucrativas en DeFi, Yield Farming, Staking, NFTs y más.",
+  join_telegram_group: "Únase a nuestro grupo de Telegram",
+  join_telegram_group_desc: "Obtenga las últimas noticias y respuestas a sus preguntas sobre la GYM Network!",
+  join_now: "Únete ahora",
+  footer_info: "La unión del Metaverso y el sistema de inversión con agregador DeFi. Rendimientos lucrativos en DeFi, Yield Farming, Staking, NFTs y más.",
   vault: "Bóveda",
   farming: "Agricultura",
   single_pool: "Single Pool",
@@ -178,3 +178,5 @@ export default {
   gym_network: "Gym Network",
 
 };
+
+

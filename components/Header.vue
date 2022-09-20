@@ -173,7 +173,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   data() {
     return {
-      languages: ["EN", "JA", "KO", "TH", "ZH", "RU", "PT", "EC"],
+      languages: ["EN", "ES", "JA", "KO", "PT",  "RU", "TH", "中文"],
       showLanguages: false,
       showMenu: false,
     };
