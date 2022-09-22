@@ -10,7 +10,7 @@
 
   >
 
-    <h1 class="fw-bold text-center mt-lg-5">Team {{ Moderator.title }}</h1>
+    <h1 class="fw-bold text-center mt-lg-5">{{content.team}} {{ Moderator.title }}</h1>
     <div class="teams py-5">
       <div class="d-flex flickity py-2 m-0">
         <div
@@ -23,11 +23,11 @@
               <div class="img me-3"><img :src="developer.img" alt="" /></div>
               <div class="">
                 <h5 class="fw-bold text-bd">{{ developer.name }}</h5>
-                <span class="text-secondary">{{ developer.jobTitle }}</span>
+                <span class="text-secondary">{{ content[developer.jobTitle] }}</span>
               </div>
             </div>
             <div class="pc mt-4">
-              {{ developer.text }}
+              {{ content[developer.text] }}
             </div>
           </div>
         </div>
@@ -49,9 +49,14 @@
 
 <script>
 // import Flickity from "~/node_modules/vue-flickity/src/flickity";
+import { mapGetters } from "vuex";
+
 import plugins from "~/plugins/index";
 
 export default {
+  computed: {
+      ...mapGetters(["content"]),
+    },
   data() {
     return {
       pages: 1,

@@ -11,18 +11,10 @@
           justify-content-around
         "
       >
-        <h1 class="my-3 fw-bolder">GYM Networks easy way to buy crypto</h1>
-        <div class="">
-          <p class="pc">
-            Use our Buy and Sell Crypto Service - almost 50 % of the Fees will
-            be used to Buy and Burn 🔥 GYMNET token and support the price!
-          </p>
-          <p class="pc">
-            Users can easily buy BNB and other cryptocurrencies using a wide
-            range of payment options, Apple Pay, Google Pay, credit and debit
-            card.
-          </p>
-        </div>
+        <h1 class="my-3 fw-bolder">{{content.easy_way_to_buy_crypto}}</h1>
+       
+          <div class="paragraph pc" v-html="content.easy_way_to_buy_crypto_desc"></div>
+
         <div class="col-sm-10 col-lg-12 mx-auto mt-5">
           <div class="d-flex">
             <span v-for="i in 4" :key="`img-${i}`" class="cp col">
@@ -72,8 +64,16 @@
 </template>
 
 <script>
-export default {};
-</script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+
+
+  };
+  </script>
+
 
 <style lang="scss" scoped>
 section {
@@ -97,7 +97,7 @@ section {
       h1 {
         font-size: 55px;
       }
-      p {
+      .paragraph {
         font-size: 20px;
       }
     }

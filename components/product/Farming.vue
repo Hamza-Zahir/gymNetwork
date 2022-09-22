@@ -17,7 +17,7 @@
                 @click="chengeBoxes()"
                 :style="BoxOpen !== SinglePool ? 'width: 0%;' : ''"
               >
-                <span>{{ Farming.title }}</span>
+                <span class="fw-bold">{{ content[Farming.title] }}</span>
               </h1>
 
               <div class="displyCards col">
@@ -35,11 +35,9 @@
                     justify-content-around
                   "
                 >
-                  <h1 class="fw-bold">{{ SinglePool.title }}</h1>
+                  <h1 class="fw-bold text-bd">{{ content[SinglePool.title] }}</h1>
                   <div class="mt-3">
-                    <p v-for="(tex, i) in SinglePool.text" :key="i + 1">
-                      {{ tex }}
-                    </p>
+                    <div class="paragrapf"  v-html="content[SinglePool.text]"></div>
                   </div>
                   <a
                     href="https://gymnetwork.io/dashboard/"
@@ -56,7 +54,7 @@
                       box-sh-l
                     "
                   >
-                    Start now
+                    {{ content.start_now }}
                   </a>
                 </div>
               </div>
@@ -81,11 +79,9 @@
                     justify-content-around
                   "
                 >
-                  <h1 class="fw-bold">{{ Farming.title }}</h1>
+                  <h1 class="fw-bold text-bd">{{ content[Farming.title] }}</h1>
                   <div class="mt-3">
-                    <p v-for="(tex, i) in Farming.text" :key="i + 1">
-                      {{ tex }}
-                    </p>
+                    <div class="paragrapf" v-html="content[Farming.text]"></div>
                   </div>
                   <a
                     href="https://gymnetwork.io/dashboard/"
@@ -102,7 +98,7 @@
                       box-sh-l
                     "
                   >
-                    Start now
+                    {{ content.start_now }}
                   </a>
                 </div>
               </div>
@@ -111,7 +107,7 @@
                 @click="chengeBoxes()"
                 :style="BoxOpen !== Farming ? 'width: 0%;' : ''"
               >
-                <span>{{ SinglePool.title }}</span>
+                <span class="fw-bold">{{ content[SinglePool.title] }}</span>
               </h1>
             </div>
           </div>
@@ -121,27 +117,24 @@
   </section>
 </template>
 
+
 <script>
+import { mapGetters } from "vuex";
+
 import FarmingCard from "./cards/farming-card.vue";
 
 const Farming = {
-  title: "Farming",
-  text: [
-    "Earn high returns with GYM Network's Yield farming.",
-    "By connecting GYMNET and BNB and providing them as liquidity, you will receive GYMNET tokens as rewards every day.",
-    "The returns are often higher than in the Vault. Also, in farming, you can transfer your deployed coins and earnings to your wallet at any time.",
-    "A 4% deposit fee goes to the buyback and burn program, which stabilizes the price of GYMNET.",
-  ],
+  title: "farming",
+  text: "farming_desc",
 };
 const SinglePool = {
-  title: "Single Pool",
-  text: [
-    "Through the Single Pool you can not only use your GYMNET to increase them through staking.",
-    "You lock GYMNET in the Single Pool for a certain period of time and thereby increase your GYMNET with high APY.",
-    "Additionally, earn Governance Tokens for different locking periods, which even allow you to participate in NFT earnings.",
-  ],
+  title: "single_pool",
+  text: "single_pool_desc",
 };
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
   data() {
     return {
       BoxOpen: SinglePool,
@@ -167,6 +160,9 @@ export default {
   background: white;
   * {
     transition: all 0.3s ease-out;
+  }
+  .paragrapf{
+color: #153151;
   }
   .content-lg {
     position: relative;
@@ -221,7 +217,7 @@ export default {
   }
 
   @media (min-width: 1200px) {
-    p {
+    .paragrapf {
       font-size: 20px;
     }
   }

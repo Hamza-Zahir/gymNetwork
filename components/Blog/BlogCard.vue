@@ -21,8 +21,10 @@
       </div>
 
       <div class="text p-2 p-sm-3 py-lg-1 my-xl-4 mt-lg-3">
-        <div class="h5 my-3 my-sm-2 text-bd fw-bold">{{ blog.title }}</div>
-        <p class="pc pt-lg-2 py-xl-3">{{ blog.text }}</p>
+        <div class="h5 my-3 my-sm-2 text-bd fw-bold">
+          {{ content[blog.title] }}
+        </div>
+        <p class="pc pt-lg-2 py-xl-3">{{ content[blog.text] }}</p>
       </div>
     </div>
 
@@ -33,7 +35,12 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
   props: {
     blog: {
       required: true,

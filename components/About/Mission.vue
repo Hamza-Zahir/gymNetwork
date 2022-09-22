@@ -1,7 +1,7 @@
 <template>
   <section class="py-5">
     <div class="container py-lg-5">
-      <h1 class="fw-bolder text-center pb-lg-4">Our Mission</h1>
+      <h1 class="fw-bolder text-center pb-lg-4">{{content.our_mission}}</h1>
       <div class="mt-5 d-sm-flex flex-wrap">
         <div
           v-for="(mission, i) in missions"
@@ -33,7 +33,7 @@
                 ps-sm-4 ps-lg-3 ps-xl-5
               "
             >
-              {{ mission.text }}
+              {{ content[mission.text] }}
             </div>
           </div>
         </div>
@@ -42,27 +42,33 @@
   </section>
 </template>
 
+
 <script>
+  import { mapGetters } from "vuex";
+
 const missions = [
   {
     img: require("~/assets/images/mission-1.png"),
-    text: "Security, transparency, flexibility and high returns don't work together? At GYM Network they do, because we combine values that would be impossible in the conventional financial world.",
+    text: "our_mission_desc_1",
   },
   {
     img: require("~/assets/images/mission-2.png"),
-    text: "With GYM Network we create a DeFi Metaverse, where every investor can build his own financial freedom.",
+    text: "our_mission_desc_2",
   },
   {
     img: require("~/assets/images/mission-3.png"),
-    text: "We combine the possibilities to achieve high returns through staking and yield farming with the certainty that your coins are available at any time. We are maximally transparent and disclose all information.",
+    text: "our_mission_desc_3",
   },
   {
     img: require("~/assets/images/mission-4.png"),
-    text: "We want to live in a world where everyone can successfully create their own financial future through easy access to future technologies, such as DeFi, NFTs and Metaverse. This is our mission!",
+    text: "our_mission_desc_4",
   },
 ];
 
 export default {
+  computed: {
+      ...mapGetters(["content"]),
+    },
   data() {
     return {
       missions,

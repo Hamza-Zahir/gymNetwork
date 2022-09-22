@@ -45,8 +45,11 @@ export default {
   generate:{
     fallback: '404.html'
   },
-
+  env: {
+    URL: process.env.URL,
+  },
   publicRuntimeConfig: {
-    API_KEY: process.env.API_KEY
+    API_KEY: process.env.API_KEY,
+    // URL: process.env.URL,
   },
 };

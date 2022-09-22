@@ -2,20 +2,12 @@
   <section class="DAO pt-5 text-light">
     <div class="container pt-5">
       <h1 class="fw-bold text-md-center mx-auto mt-lg-4 pb-lg-4">
-        Decentralized Autonomous Organization
+       {{content.decentralized_autonomous_organization}}
       </h1>
 
-      <div class="text col-md-7 col-lg-6 col-xxl-5 mt-5 ">
-        <p class="">
-          GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.
-        </p>
-        <p class="col-lg-11 col-xxl-12">
-          Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.
-        </p>
+      <div class="text col-md-7 col-lg-6 col-xxl-5 mt-5" v-html="content.decentralized_autonomous_organization_desc">
 
-        <p class="col-md-9 col-xxl-12">
-          This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.
-        </p>
+
       </div>
     </div>
     <div class="img col-sm-10 col-md-8 col-lg-7 ms-auto text-end">
@@ -25,12 +17,14 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+
+  };
+  </script>
 
 <style lang="scss" scoped>
 .DAO {
@@ -41,9 +35,7 @@ export default {
   h1 {
     font-size: 34px;
     max-width: 800px;
-    @media (min-width: 768px) {
-      // font-size: 40px;
-    }
+
     @media (min-width: 992px) {
       font-size: 55px;
     }
@@ -87,8 +79,6 @@ export default {
     @media (min-width: 1200px) {
       margin-top: -260px;
       img {
-        // width: 130%;
-        // margin-right: -200px;
         margin-bottom: -50px;
       }
     }

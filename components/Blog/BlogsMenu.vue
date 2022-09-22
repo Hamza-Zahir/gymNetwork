@@ -8,7 +8,7 @@
         <div
           class="BTN rounded-50 border border-primary text-ba fw-600 bg-light"
         >
-          {{ sort }}
+          {{ content[sort] }}
           <b-icon
             v-if="!showSort"
             icon="sort-down"
@@ -19,39 +19,41 @@
         <ul v-if="showSort" class="m-0 p-0 fw-600 text-bd">
           <li
             class="border-bottom rounded-15"
-            :class="sort === 'Newest first' ? 'text-secondary' : ''"
+            :class="sort === 'newest_first' ? 'text-secondary' : ''"
             @click="
               () => {
                 blogs = Blogs;
-                sort = 'Newest first';
+                sort = 'newest_first';
               }
             "
           >
-            Newest first
+           {{content.newest_first}}
           </li>
           <li
             class="border-bottom rounded-15"
-            :class="sort === 'Latest articles' ? 'text-secondary' : ''"
+            :class="sort === 'latest_articles' ? 'text-secondary' : ''"
             @click="
               () => {
                 blogs = BlogBlogsLatest;
-                sort = 'Latest articles';
+                sort = 'latest_articles';
               }
             "
           >
-            Latest articles
+          {{content.latest_articles}}
+
           </li>
           <li
             class="border-bottom rounded-15"
-            :class="sort === 'Most popular' ? 'text-secondary' : ''"
+            :class="sort === 'most_popular' ? 'text-secondary' : ''"
             @click="
               () => {
                 blogs = BlogMostPopular;
-                sort = 'Most popular';
+                sort = 'most_popular';
               }
             "
           >
-            Most popular
+          {{content.most_popular}}
+
           </li>
         </ul>
       </div>
@@ -71,6 +73,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 import Blogs from "~/json/Blogs.json";
 
 import BlogCard from "./BlogCard.vue";
@@ -78,13 +82,17 @@ import BlogCard from "./BlogCard.vue";
 const BlogBlogsLatest = [...Blogs].reverse();
 const BlogMostPopular = [...Blogs].sort(() => 0.6 - Math.random());
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
+
   data() {
     return {
       BlogMostPopular,
       Blogs,
       BlogBlogsLatest,
       blogs: Blogs,
-      sort: "Newest first",
+      sort: "newest_first",
       showSort: false,
     };
   },

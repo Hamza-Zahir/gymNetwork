@@ -3,10 +3,10 @@
     <div class="container py-3 py-lg-5">
       <div class="tetxTitle mx-auto">
         <h1 class="my-0 pb-lg-4 fw-bold text-center">
-          The GYM Street Metaverse ecosystem
+         {{content.the_gym_street_metaverse_ecosystem}}
         </h1>
         <p class="text-center pc pt-3">
-          Get access to cutting-edge DeFi technologies.
+          {{content.the_gym_street_metaverse_ecosystem_desc}}
         </p>
       </div>
       <div class="content mx-auto d-md-flex flex-wrap py-5 my-lg-5">
@@ -18,9 +18,9 @@
           <HoverCard
             :_id="item.id"
             :link_url="item.link.url"
-            :link_text="item.link.text"
-            :title="item.title"
-            :text="item.text"
+            :link_text="content[item.link.text]"
+            :title="content[item.title]"
+            :text="content[item.text]"
             :img="item.img"
           />
         </div>
@@ -36,70 +36,76 @@
 </template>
 <script>
 import HoverCard from "../cards/GetStartedCard.vue";
+import { mapGetters } from "vuex";
+
 const data = [
   {
     id: "1",
-    title: "Gymstreet.io",
-    text: "Our unique DeFi Metaverse",
+    title: "Gymstreet_io",
+    text: "Gymstreet_io_card_desc",
     img: require("~/assets/images/StreetMetaverse/img-1.png"),
     link: {
       url: "http://gymstreet.io/",
-      text: "More about Gymstreet",
+      text: "more_about_gymstreet",
     },
   },
   {
     id: "2",
-    title: "Metablocks.io",
-    text: "NFT Miner specially designed for metaverses",
+    title: "Metablocks_io",
+    text: "Metablocks_io_card_desc",
     img: require("~/assets/images/StreetMetaverse/img-2.png"),
     link: {
       url: "https://metablocks21.com/",
-      text: "More about metablocks",
+      text: "more_about_metablocks",
     },
   },
   {
     id: "3",
     title: "cashFT",
-    text: "The crypto and NFT debit card",
+    text: "cashFT_card_desc",
     img: require("~/assets/images/StreetMetaverse/img-3.png"),
     link: {
       url: "",
-      text: "Coming Soon",
+      text: "coming_soon",
     },
   },
   {
     id: "4",
-    title: "zuckerland.io",
-    text: "Marketplace for NFTs",
+    title: "zuckerland_io",
+    text: "zuckerland_io_card_desc",
     img: require("~/assets/images/StreetMetaverse/img-4.png"),
 
     link: {
       url: "",
-      text: "Coming Soon",
+      text: "coming_soon",
     },
   },
   {
     id: "5",
-    title: "Exchange",
-    text: "Easily and intuitively exchange coins",
+    title: "gymDex",
+    text: "gymDex_card_desc",
     img: require("~/assets/images/StreetMetaverse/img-5.png"),
     link: {
       url: "https://gymnetwork.io/dashboard/",
-      text: "Go to Gym DEX",
+      text: "go_to_gymDex",
     },
   },
   {
     id: "6",
-    title: "Metaverse Campus",
-    text: "Learn how DeFi, Metaverse and co. work",
+    title: "metaverse_campus",
+    text: "metaverse_campus_card_desc",
     img: require("~/assets/images/StreetMetaverse/img-6.jpg"),
     link: {
       url: "",
-      text: "Coming Soon",
+      text: "coming_soon",
     },
   },
 ];
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
+
   data() {
     return {
       data,

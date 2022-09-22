@@ -3,9 +3,9 @@
 
   <div id="Tokenomics" class="Tokenomics bg-light d-lg-flex">
     <div class="information_box col-lg-6">
-      <h1 class="fw-bold mt-5">Tokenomics</h1>
+      <h1 class="fw-bold mt-5">{{content.tokenomics}}</h1>
       <h3 class="d-sm-flex fw-bold my-4">
-        <span class="text-bd me-3">Total supply</span>
+        <span class="text-bd me-3">{{content.total_supply}}</span>
         <span class="d-flex my-3 my-sm-0 TotalSupply"
           ><img src="~/assets/images/logo.png" class="me-2" />594 000 000</span
         >
@@ -17,7 +17,7 @@
             <span class="point"></span>
             <span class="px-3 px-sm-4">01</span>
             <span class=""
-              >Token holders v 1.5
+              >{{content.token_holders}} v 1.5
               <br />
               <small class="fw-500 text-secondary">21% 124M</small>
             </span>
@@ -27,7 +27,7 @@
 
             <span class="px-3 px-sm-4">02</span>
             <span class=""
-              >Vault BNB
+              >{{content.vault}} BNB
               <br />
               <small class="fw-500 text-secondary">11% 65M</small>
             </span>
@@ -37,7 +37,7 @@
 
             <span class="px-3 px-sm-4">03</span>
             <span class=""
-              >Vault BUSD
+              >{{content.vault}} BUSD
               <br />
               <small class="fw-500 text-secondary">11% 65M</small>
             </span>
@@ -47,7 +47,7 @@
 
             <span class="px-3 px-sm-4">04</span>
             <span class=""
-              >Farm BNB/ Gymnet
+              >{{content.farm}} BNB/ Gymnet
               <br />
               <small class="fw-500 text-secondary">17% 100M</small>
             </span>
@@ -57,7 +57,7 @@
 
             <span class="px-3 px-sm-4">05</span>
             <span class=""
-              >Farm BUSD/ Gymnet
+              >{{content.farm}} BUSD/ Gymnet
               <br />
               <small class="fw-500 text-secondary">17% 100M</small>
             </span>
@@ -67,7 +67,7 @@
 
             <span class="px-3 px-sm-4">06</span>
             <span class=""
-              >Single Pool
+              >{{content.single_pool}}
               <br />
               <small class="fw-500 text-secondary">10% 60M</small>
             </span>
@@ -77,7 +77,7 @@
 
             <span class="px-3 px-sm-4">07</span>
             <span class=""
-              >Launchpad
+              >{{content.launchpad}}
               <br />
               <small class="fw-500 text-secondary">3% 20M</small>
             </span>
@@ -87,7 +87,7 @@
 
             <span class="px-3 px-sm-4">08</span>
             <span class=""
-              >Card APY
+              >{{content.card}} APY
               <br />
               <small class="fw-500 text-secondary">2% 10M</small>
             </span>
@@ -97,7 +97,7 @@
 
             <span class="px-3 px-sm-4">09</span>
             <span class=""
-              >Community Fund
+              >{{content.community_fund}}
               <br />
               <small class="fw-500 text-secondary">8% 50M</small>
             </span>
@@ -113,7 +113,12 @@
 </template>
 
 <script>
+  import { mapGetters } from "vuex";
+
 export default {
+  computed: {
+      ...mapGetters(["content"]),
+    },
   mounted() {
     this.handelScroling();
   },
@@ -128,7 +133,7 @@ export default {
         "#Tokenomics .information_box .listContent .border_left"
       );
 
-      list.addEventListener("scroll", (e) => {
+      list.addEventListener("scroll", () => {
         const listHight = cards[0].offsetHeight * cards.length;
 
         const border_left_height =
@@ -206,6 +211,10 @@ background: #a2c8f867;
             border-radius: 50%;
             z-index: 3;
             box-shadow: 0px 0px 0px 2px #f3f3f3;
+          }
+          small{
+            display: inline-block;
+            padding-top: 10px;
           }
           &::before {
             content: "";

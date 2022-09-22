@@ -9,7 +9,7 @@ import SinglePoolABI from "~/json/SinglePoolABI"
 const Vault_ContractAddress = "0x916ee43Ac5F338364986B9AA86f7962a5779d0a1";
 const Farming_ContractAddress = "0x8229f84384D2B2c0b21bbA1120208a2106b384c8";
 const SinglePool_ContractAddress = "0xD249a1e3EEbae66B6B6C57197146C47e8e67E046";
-
+const url = process.env.URL
 
 const scrolling = () => {
   const flickity = document.querySelector(".flickity");
@@ -33,7 +33,8 @@ const scrolling = () => {
 };
 
 const getVaultTVL = async (BNbPrice, gymnetPrice) => {
-  const web3 = new Web3("https://bsc-dataseed.binance.org/");
+
+  const web3 = new Web3(url);
   const Vault_Contract = new web3.eth.Contract(VaultContractABI, Vault_ContractAddress);
   const poolLength = await Vault_Contract.methods.getPoolLength().call()
 
@@ -58,7 +59,8 @@ const getVaultTVL = async (BNbPrice, gymnetPrice) => {
 }
 
 const getFarmingTVL = async (BNbPrice, gymnetPrice) => {
-  const web3 = new Web3("https://bsc-dataseed.binance.org/");
+
+  const web3 = new Web3(url);
   const farming_Contract = new web3.eth.Contract(farmingContractABI, Farming_ContractAddress);
   const poolLength = await farming_Contract.methods.poolLength().call()
 
@@ -95,7 +97,8 @@ const getFarmingTVL = async (BNbPrice, gymnetPrice) => {
 
 
 const getSinglePoolTVL = async (gymnetPrice) => {
-  const web3 = new Web3("https://bsc-dataseed.binance.org/");
+
+  const web3 = new Web3(url);
   const SinglePool = new web3.eth.Contract(SinglePoolABI, SinglePool_ContractAddress);
   const totalGymnetLoked = await SinglePool.methods.totalGymnetLocked().call()
 
@@ -113,7 +116,10 @@ export default {
   },
 
   async LoadBlockchainData() {
-    const web3 = new Web3("https://bsc-dataseed.binance.org/");
+
+
+    // "https://bsc-dataseed.binance.org/"
+    const web3 = new Web3(url);
     const Contract = new web3.eth.Contract(ContractAbi, contractAddres);
     const decimals = await Contract.methods.decimals().call();
     let GYMNETPrice = await Contract.methods.getGYMNETPrice().call();
@@ -126,7 +132,7 @@ export default {
 
 
 
-    GYMNETPrice = GYMNETPrice / 10 ** decimals;
+GYMNETPrice = GYMNETPrice / 10 ** decimals;
     TotalSupply = TotalSupply / 10 ** decimals;
     MAX_SUPPLY = MAX_SUPPLY / 10 ** decimals;
     minted = minted / 10 ** decimals;
@@ -156,7 +162,7 @@ export default {
 
 
     return {
-      TotalBurnt: TotalBurnt.toFixed(2)
+      TotalBurnt:  TotalBurnt.toFixed(2)
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ","),
       GYMNETPrice: GYMNETPrice.toFixed(4),

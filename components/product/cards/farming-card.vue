@@ -16,15 +16,13 @@
         }
       "
     >
-      <span>{{ data.title }}</span>
+      <span>{{ content[data.title] }}</span>
       <span :style="showContent ? 'transform: rotate(-180deg);' : ''">
         <b-icon icon="chevron-down" class="m-0 p-0"></b-icon>
       </span>
     </h1>
     <div class="bg-bl fw-500 Content" :class="showContent ? 'showContent' : ''">
-      <p class="" v-for="(tex, i) in data.text" :key="`${data.title}-${i + 1}`">
-        {{ tex }}
-      </p>
+      <div class="paragrapf" v-html="content[data.text]"></div>
       <a
         href="https://gymnetwork.io/dashboard/"
         target="_blank"
@@ -39,12 +37,15 @@
           box-sh-l
         "
       >
-        Start now
+        {{ content.start_now }}
       </a>
     </div>
   </div>
 </template>
+
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   props: {
     data: {
@@ -55,6 +56,9 @@ export default {
       required: true,
       type: String,
     },
+  },
+  computed: {
+    ...mapGetters(["content"]),
   },
   data() {
     return {
@@ -82,6 +86,9 @@ export default {
   overflow: hidden;
   * {
     transition: 0.2s ease-out;
+  }
+  .paragrapf{
+color: #153151;
   }
   h1 {
     background: url("~/assets/images/Rectangle.png");

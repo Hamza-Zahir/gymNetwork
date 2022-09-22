@@ -13,12 +13,10 @@
         "
       >
         <h1 class="py-2 pt-lg-3 fw-bold">
-          GYM Network Products The perfect workout for your tokens!
+        {{content.product_header_title}}
         </h1>
         <p class="col-sm-9 col-lg-10 col-xl-9 col-xxl-10 mt-xl-5 pe-xl-3">
-          Lucrative DeFi earnings with Vault, Farming and Single Pool as well as
-          a long-term passive income through our affiliate layer solution.
-          That's what our products can do!
+          {{content.product_header_desc}}
         </p>
         <a
           href="https://gymnetwork.io/dashboard/"
@@ -38,7 +36,7 @@
             box-sh-l
           "
         >
-          Launch APP
+          {{content.launch_to_app}}
         </a>
       </div>
     </div>
@@ -47,6 +45,19 @@
     </div>
   </section>
 </template>
+
+<script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+
+
+  };
+  </script>
+
+
 <style lang="scss" scoped>
 .Landing {
   z-index: 0;

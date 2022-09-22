@@ -1,7 +1,7 @@
 <template>
   <section class="py-5 bg-light">
     <div class="container py-lg-5 my-lg-5">
-      <h1 class="fw-bold text-center pb-lg-4">Appeared on</h1>
+      <h1 class="fw-bold text-center pb-lg-4">{{content.appeared_on}}</h1>
       <div class="mt-4 d-flex flex-wrap mt-5">
         <div
           v-for="(link, i) in links_1"
@@ -29,6 +29,8 @@
 </template>
 
 <script>
+  import { mapGetters } from "vuex";
+
 const links_1 = [
   {
     link: "https://bitcoinist.com/gym-network-gymnet-is-now-available-for-trading-on-lbank-exchange/",
@@ -90,6 +92,9 @@ const links_2 = [
   },
 ];
 export default {
+  computed: {
+      ...mapGetters(["content"]),
+    },
   data() {
     return {
       links_1,

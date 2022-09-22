@@ -2,18 +2,9 @@
   <section class="Vault py-5">
     <div id="Vault" class="content1 py-md-5">
       <div class="container py-3">
-        <h1 class="fw-bolder">Vault</h1>
+        <h1 class="fw-bolder">{{content.vault}}</h1>
         <div class="text pc my-4 col-md-10 col-xl-9">
-          <p>
-            Want to earn high returns while keeping your coins liquid at all
-            times? GYM Network's Vault combines lucrative APY's with maximum
-            security and flexibility.
-          </p>
-          <p>
-            Your BNB or other coins that you use to generate GYMNET earnings are
-            stored at ALPACA, one of the most trusted and secure DeFi Yield
-            farming platforms in the crypto world.
-          </p>
+          <div class="pragraph" v-html="content.vault_desc"></div>
         </div>
       </div>
     </div>
@@ -32,15 +23,7 @@
             <img src="~/assets/images/TotalBalance.png" class="w-100" alt="" />
           </div>
           <div class="text my-2 col col-lg-6">
-            <p>
-              You can transfer your coins from the Vault to your wallet at any
-              time without paying extra fees.
-            </p>
-            <p>
-              Our Vault is for those who attach great importance to security,
-              but at the same time do not want to miss out on good returns. The
-              perfect combination of security, liquidity and high returns.
-            </p>
+          <div class="pragraph" v-html="content.vault_start_desc"></div>
             <a
               href="https://gymnetwork.io/dashboard/"
               target="_blank"
@@ -56,7 +39,7 @@
                 mt-4 mt-lg-5
               "
             >
-              Start now
+              {{content.start_now}}
             </a>
           </div>
         </div>
@@ -64,6 +47,17 @@
     </div>
   </section>
 </template>
+
+<script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+
+
+  };
+  </script>
 <style lang="scss" scoped>
 .Vault {
   .content1 {
@@ -86,7 +80,7 @@
     h1 {
       font-size: 50px;
     }
-    p {
+    .pragraph {
       font-size: 20px;
     }
   }

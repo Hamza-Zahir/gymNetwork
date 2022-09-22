@@ -1,5 +1,5 @@
 export default {
-    /* .................................. start home page ............................... */
+  /* .................................. start home page ............................... */
 
   contract_address: "адрес контракта",
   audited: "АДУИТ ПРОВЕДЕН",
@@ -19,28 +19,28 @@ export default {
   header_info: "Старые участники сообщества могут перенести свои владения и активы в новую версию по ссылке <a href='http://old.gymnetwork.io/dashboard/community-transfer/' target='_blank' class='fw-bold'>Начать перенос</a>",
   listed_on_title: "GYMNET котируется на",
   investment_system_title: "Gym Network — Инвестиционная Система DeFi-Агрегатор",
-  investment_system_description:`GYM Network это Инвестиционная Система DeFi-Агрегатор, которая сочетает в себе наилучшие доходы с высокими наградами для своих пользователей. Это обеспечивает легкий доступ и экономит ваше драгоценное время. Представьте что вы получаете лучшие доходы в пространстве DeFi в свой кошелек. Пришло время воплотить ваши мечты в жизнь!`,
+  investment_system_description: `GYM Network это Инвестиционная Система DeFi-Агрегатор, которая сочетает в себе наилучшие доходы с высокими наградами для своих пользователей. Это обеспечивает легкий доступ и экономит ваше драгоценное время. Представьте что вы получаете лучшие доходы в пространстве DeFi в свой кошелек. Пришло время воплотить ваши мечты в жизнь!`,
   go_to_the_products: "Перейти к продуктам",
   gymstreet_title: "GYM Street — Метавселенная",
-  gymstreet_description:"Место где мы можем всё! Мы делаем GYM Street будущим нашей повседневной жизни. Работа финансы шопинг общение недвижимость — ваша новая жизнь в Метавселенной. Раскройте свой потенциал и создайте новую жизнь в Метавселенной с GYM Street.",
+  gymstreet_description: "Место где мы можем всё! Мы делаем GYM Street будущим нашей повседневной жизни. Работа финансы шопинг общение недвижимость — ваша новая жизнь в Метавселенной. Раскройте свой потенциал и создайте новую жизнь в Метавселенной с GYM Street.",
   go_to_gymstreet: "Перейти в GYM Street",
-  metaverse_desc:`“Мы видим мир в котором каждый является частью цифрового будущего и может формировать собственную финансовую свободу в качестве инвестора. Движимые страстью к блокчейну DeFi и Metaverse мы создаем решения будущего”.`,
+  metaverse_desc: `“Мы видим мир в котором каждый является частью цифрового будущего и может формировать собственную финансовую свободу в качестве инвестора. Движимые страстью к блокчейну DeFi и Metaverse мы создаем решения будущего”.`,
   stability_program: `Программа Стабильности GYMNET`,
   farm_sp: "4% от Фермы и Единого Пула",
   farm_sp_desc: "депозит идет на программу выкупа и сжигания для противодействия инфляции.",
   locking_sp: "Блокировка в едином пуле",
-  locking_sp_desc:"уменьшает GYMNET в обращении что помогает стабилизировать цену в долгосрочной перспективе.",
+  locking_sp_desc: "уменьшает GYMNET в обращении что помогает стабилизировать цену в долгосрочной перспективе.",
   burning_gymnet: "Сжигание GYMNET",
   burning_gymnet_desc: "путем выкупа и сжигания приведет к увеличению цены GYMNET и снижению продажи токена.",
   through_codetermination_rights: "Благодаря праву на совместное определение",
-  through_codetermination_rights_desc:  "сообщество оказывает прямое влияние на будущее GYM Network.",
+  through_codetermination_rights_desc: "сообщество оказывает прямое влияние на будущее GYM Network.",
   gym_network_title: "Как начать работу с GYM Network",
   choose_crypto_wallet: "Выберите криптокошелек",
   choose_crypto_wallet_desc: "например MetaMask или Trust Wallet",
   transfer_bnb: "Перевести BNB",
   transfer_bnb_desc: "на свой кошелек",
   connect_your_wallet: "Подключите свой кошелек",
-  connect_your_wallet_desc:  "к веб-сайту и внесите свой первый депозит в Хранилище (от 0.051 BNB)",
+  connect_your_wallet_desc: "к веб-сайту и внесите свой первый депозит в Хранилище (от 0.051 BNB)",
   watch_tutorial: "смотреть учебник",
   coming_soon: "скоро будет",
   roadmap_title: "План выпуска GYM Network",
@@ -51,9 +51,9 @@ export default {
   ntf_marketplace: "Торговая площадка NFT",
   play_earn_desc: "Играйте в онлайн-игры и получайте награды такие как Лотерея без Потерь абсолютно уникальная лотерея на основе DeFi",
   play_earn: "Играйте и Зарабатывайте",
-  launchpad_desc:"Будьте в числе первых кто получит доступ к новым проектам до их выхода на рынок",
+  launchpad_desc: "Будьте в числе первых кто получит доступ к новым проектам до их выхода на рынок",
   launchpad: "Площадка для запуска",
-  earn_crypto_desc:"Получите немалую прибыль от Bitcoin ETH BNB DOGE Stablecoin и многого другого",
+  earn_crypto_desc: "Получите немалую прибыль от Bitcoin ETH BNB DOGE Stablecoin и многого другого",
   earn_crypto: "Зарабатывайте Крипто",
   gymnet_vault_desc: "Получите максимальную выгоду от самых популярных криптоактивов и получите уникальные награды в виде токенов",
   gymnet_vault: "Хранилище Gymnet",
@@ -65,7 +65,7 @@ export default {
   read_more: "читать далее",
   learn_more: "Узнать больше",
 
- // .................     start Questions  ...........................................
+  // .................     start Questions  ...........................................
 
 
   what_defi: "Что такое DeFi?",
@@ -121,7 +121,7 @@ export default {
       <p>Годовая комиссия представляет собой ежегодную комиссию, взимаемую за заработок или ссуду денег.</p>
       <p>APY учитывает состав, а APR — нет.</p>
     `,
-  where_rewords_vaults_come_from:"Откуда берутся награды в Хранилище?",
+  where_rewords_vaults_come_from: "Откуда берутся награды в Хранилище?",
   where_rewords_vaults_come_from_desc:
     `
       <p> Каждое хранилище подключено к известному и установленному протоколу DeFi. В этом случае хранилище BNB/GYMNET подключено к платформе ALPCA. </p>
@@ -159,31 +159,31 @@ export default {
 
   // .................     end Questions  ...........................................
 
-join_telegram_group: "Присоединяйтесь к нашей группе телеграмм",
-join_telegram_group_desc: "Получите все последние новости и ответы на ваши вопросы о GYM Network!",
-join_now: "Присоединяйтесь сейчас",
-footer_info:"Объединение Metaverse и DeFi Aggregator Investment System. Доходность в DeFi, Yield Farming, Staking, NFTs и многое другое.",
-vault: "Хранилище",
-farming: "Сельское хозяйство",
-single_pool: "Единый пул",
-buy_GYMNET: "Купить GYMNET",
-gymstreet: "Тренажерный зал",
-metablocks: "Метаблоки",
-cashFT: "Денежный ФТ",
-zuckerland: "Цукерланд",
-gymDex: "Спортзал Декс",
-metaverse_campus: "Метавселенная Кампус",
-whitepaper: "Белая книга",
-blog_news: "Блог и новости",
-support: "Поддерживать",
-guide: "Гид",
-tokenContract: "Токен Контракт",
-gym_network: "Спортзал",
+  join_telegram_group: "Присоединяйтесь к нашей группе телеграмм",
+  join_telegram_group_desc: "Получите все последние новости и ответы на ваши вопросы о GYM Network!",
+  join_now: "Присоединяйтесь сейчас",
+  footer_info: "Объединение Metaverse и DeFi Aggregator Investment System. Доходность в DeFi, Yield Farming, Staking, NFTs и многое другое.",
+  vault: "Хранилище",
+  farming: "Сельское хозяйство",
+  single_pool: "Единый пул",
+  buy_GYMNET: "Купить GYMNET",
+  gymstreet: "Тренажерный зал",
+  metablocks: "Метаблоки",
+  cashFT: "Денежный ФТ",
+  zuckerland: "Цукерланд",
+  gymDex: "Спортзал Декс",
+  metaverse_campus: "Метавселенная Кампус",
+  whitepaper: "Белая книга",
+  blog_news: "Блог и новости",
+  support: "Поддерживать",
+  guide: "Гид",
+  tokenContract: "Токен Контракт",
+  gym_network: "Спортзал",
 
 
- /* .................................. end home page ............................... */
+  /* .................................. end home page ............................... */
 
-    /*  Starting from here to the last variable that has not yet been translated */
+  /*  Starting from here to the last variable that has not yet been translated */
 
 
   /* ................................ start product page ............................*/
@@ -220,6 +220,12 @@ gym_network: "Спортзал",
      <p>You lock GYMNET in the Single Pool for a certain period of time and thereby increase your GYMNET with high APY.</p>
      <p>Additionally, earn Governance Tokens for different locking periods, which even allow you to participate in NFT earnings.</p>
      `,
+  easy_way_to_buy_crypto: "GYM Networks easy way to buy crypto",
+  easy_way_to_buy_crypto_desc:
+    `
+       <p> Use our Buy and Sell Crypto Service - almost 50 % of the Fees will be used to Buy and Burn 🔥 GYMNET token and support the price!</p>
+       <p> Users can easily buy BNB and other cryptocurrencies using a wide range of payment options, Apple Pay, Google Pay, credit and debit card.</p>
+     `,
   gymnet_holder_benefits: `GYMNET Holder Benefits`,
   three_percent_gymnet: "3% GYMNET",
   three_percent_gymnet_desc: "from DEX fees on each sale for GYM holders by pools of 2500 GYM or more",
@@ -245,6 +251,7 @@ gym_network: "Спортзал",
   more_about_gymstreet: `More about Gymstreet`,
   Metablocks_io: `Metablocks.io`,
   Metablocks_io_card_desc: `NFT Miner specially designed for metaverses`,
+  more_about_metablocks: `More about metablocks`,
   cashFT_card_desc: `The crypto and NFT debit card`,
   zuckerland_io: `zuckerland.io`,
   zuckerland_io_card_desc: `Marketplace for NFTs`,
@@ -298,6 +305,7 @@ gym_network: "Спортзал",
        <p>If you want to educate yourself in the new digital world, you can do it easily and intuitively with GYM Street.</p>
     `,
   srtart_directly: `Start directly`,
+  video_tutorial : `Video tutorial`,
 
   /* ................................. end ecosystem page ............................. */
 
@@ -313,11 +321,18 @@ gym_network: "Спортзал",
   our_mission_desc_4: `We want to live in a world where everyone can successfully create their own financial future through easy access to future technologies, such as DeFi, NFTs and Metaverse. This is our mission!`,
   decentralized_autonomous_organization: `Decentralized Autonomous Organization`,
   decentralized_autonomous_organization_desc:
-    `
-       <p>GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.</p>
-       <p>Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.</p>
-       <p>This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.</p>
-    `,
+  `
+    <p>
+      GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.
+    </p>
+    <p class="col-lg-11 col-xxl-12">
+      Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.
+    </p>
+    <p class="col-md-9 col-xxl-12">
+      This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.
+    </p>
+  `,
+team : "Team",
   gym_network_team: `GYM Network Team`,
   gym_network_team_desc: `There are many more team members working in programming, web development, marketing, HR management, and tech recruitment to ensure the success of GYM NETWORK.`,
   system_designer: `System Designer`,
@@ -331,7 +346,7 @@ gym_network: "Спортзал",
   tokenomics: `Tokenomics`,
   token_holders: `Token holders`,
   card: `Card `,
-  community_fund: "Community Fund",  //////////////////////////
+  community_fund: "Community Fund",
   even_more_about_GYM_network: `Even more about GYM Network `,
   even_more_about_GYM_network: `Even more about GYM Network `,
   guide_desc: `Detailed tutorials, guides, promotion material and much more can be found in our documentation on Gitbook `,
@@ -343,6 +358,7 @@ gym_network: "Спортзал",
   twitter_desc: `On our Twitter account, you will get the fastest news and changes around GYM Network`,
   Support_desc: `Our support is available 24 hours a day for important questions`,
   to_support: `To support`,
+  go_to_blog: "Go to Blog",
 
   /* ................................. end about page ............................. */
 
@@ -1008,7 +1024,7 @@ gym_network: "Спортзал",
     `,
 
 
-WIGN_affiliate_layer_solution_content:
+  WIGN_affiliate_layer_solution_content:
     `
       <p>
         If you are enthusiastic about GYM Network and its services, you can even build your own passive income with the <b>comprehensive Affiliate Layer Solution. </b>

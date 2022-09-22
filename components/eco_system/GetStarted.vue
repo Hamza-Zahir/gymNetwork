@@ -35,7 +35,7 @@
               target="_blank"
               class="fs-14 text-end mt-4 text-light"
             >
-              Video tutorial
+              {{content.video_tutorial}}
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </a>
           </div>
@@ -94,7 +94,7 @@
               target="_blank"
               class="fs-14 text-end mt-4 pc"
             >
-              Video tutorial
+            {{content.video_tutorial}}
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </a>
           </div>
@@ -115,7 +115,7 @@
             box-sh-l
           "
         >
-          Start directly
+          {{content.srtart_directly}}
         </nuxt-link>
       </div>
     </div>

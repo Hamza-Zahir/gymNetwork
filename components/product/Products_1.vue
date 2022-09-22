@@ -2,7 +2,7 @@
   <section class="Products text-center">
     <div class="container py-5">
       <div class="py-5">
-        <h1 class="my-2 fw-bold mb-md-4">Products and earnings</h1>
+        <h1 class="my-2 fw-bold mb-md-4">{{content.products_and_earnings}}</h1>
         <div class="mt-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto py-5">
           <div class="bg-ba rounded-20 box">
             <img src="~/assets/images/Certik.png" class="" alt="" />
@@ -26,6 +26,17 @@
     </div>
   </section>
 </template>
+
+<script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+
+
+  };
+  </script>
 <style lang="scss" scoped>
 .Products {
   background: white;

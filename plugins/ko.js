@@ -1,5 +1,5 @@
 export default {
-    /* .................................. start home page ............................... */
+  /* .................................. start home page ............................... */
 
   contract_address: "계약 주소",
   audited: "감사",
@@ -180,9 +180,9 @@ export default {
   gym_network: "체육관 네트워크",
 
 
- /* .................................. end home page ............................... */
+  /* .................................. end home page ............................... */
 
-    /*  Starting from here to the last variable that has not yet been translated */
+  /*  Starting from here to the last variable that has not yet been translated */
 
 
 
@@ -220,6 +220,12 @@ export default {
      <p>You lock GYMNET in the Single Pool for a certain period of time and thereby increase your GYMNET with high APY.</p>
      <p>Additionally, earn Governance Tokens for different locking periods, which even allow you to participate in NFT earnings.</p>
      `,
+  easy_way_to_buy_crypto: "GYM Networks easy way to buy crypto",
+  easy_way_to_buy_crypto_desc:
+    `
+       <p> Use our Buy and Sell Crypto Service - almost 50 % of the Fees will be used to Buy and Burn 🔥 GYMNET token and support the price!</p>
+       <p> Users can easily buy BNB and other cryptocurrencies using a wide range of payment options, Apple Pay, Google Pay, credit and debit card.</p>
+     `,
   gymnet_holder_benefits: `GYMNET Holder Benefits`,
   three_percent_gymnet: "3% GYMNET",
   three_percent_gymnet_desc: "from DEX fees on each sale for GYM holders by pools of 2500 GYM or more",
@@ -245,6 +251,7 @@ export default {
   more_about_gymstreet: `More about Gymstreet`,
   Metablocks_io: `Metablocks.io`,
   Metablocks_io_card_desc: `NFT Miner specially designed for metaverses`,
+  more_about_metablocks: `More about metablocks`,
   cashFT_card_desc: `The crypto and NFT debit card`,
   zuckerland_io: `zuckerland.io`,
   zuckerland_io_card_desc: `Marketplace for NFTs`,
@@ -298,7 +305,7 @@ export default {
        <p>If you want to educate yourself in the new digital world, you can do it easily and intuitively with GYM Street.</p>
     `,
   srtart_directly: `Start directly`,
-
+  video_tutorial : `Video tutorial`,
   /* ................................. end ecosystem page ............................. */
 
   /* ................................. start about page ............................. */
@@ -313,11 +320,18 @@ export default {
   our_mission_desc_4: `We want to live in a world where everyone can successfully create their own financial future through easy access to future technologies, such as DeFi, NFTs and Metaverse. This is our mission!`,
   decentralized_autonomous_organization: `Decentralized Autonomous Organization`,
   decentralized_autonomous_organization_desc:
-    `
-       <p>GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.</p>
-       <p>Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.</p>
-       <p>This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.</p>
-    `,
+  `
+    <p>
+      GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.
+    </p>
+    <p class="col-lg-11 col-xxl-12">
+      Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.
+    </p>
+    <p class="col-md-9 col-xxl-12">
+      This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.
+    </p>
+  `,
+team : "Team",
   gym_network_team: `GYM Network Team`,
   gym_network_team_desc: `There are many more team members working in programming, web development, marketing, HR management, and tech recruitment to ensure the success of GYM NETWORK.`,
   system_designer: `System Designer`,
@@ -331,7 +345,7 @@ export default {
   tokenomics: `Tokenomics`,
   token_holders: `Token holders`,
   card: `Card `,
-  community_fund: "Community Fund",  //////////////////////////
+  community_fund: "Community Fund",  
   even_more_about_GYM_network: `Even more about GYM Network `,
   even_more_about_GYM_network: `Even more about GYM Network `,
   guide_desc: `Detailed tutorials, guides, promotion material and much more can be found in our documentation on Gitbook `,
@@ -343,6 +357,7 @@ export default {
   twitter_desc: `On our Twitter account, you will get the fastest news and changes around GYM Network`,
   Support_desc: `Our support is available 24 hours a day for important questions`,
   to_support: `To support`,
+  go_to_blog: "Go to Blog",
 
   /* ................................. end about page ............................. */
 
@@ -1008,7 +1023,7 @@ export default {
     `,
 
 
-WIGN_affiliate_layer_solution_content:
+  WIGN_affiliate_layer_solution_content:
     `
       <p>
         If you are enthusiastic about GYM Network and its services, you can even build your own passive income with the <b>comprehensive Affiliate Layer Solution. </b>

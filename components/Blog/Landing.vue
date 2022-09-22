@@ -10,9 +10,9 @@
       "
     >
       <div class="text-box col-lg-4 col-xl-4 pe-lg-3">
-        <h1 class="fw-bold">Blog</h1>
+        <h1 class="fw-bold">{{content.blog}}</h1>
         <p class="pc my-3 pb-lg-0 col-lg-12 col-xl-11">
-          Latest news and information about GYM Network and its ecosystem
+          {{content.blog_desc}}
         </p>
       </div>
       <nuxt-link
@@ -45,8 +45,8 @@
         </div>
         <div class="text col-md-7 col-lg-12 col-xl-7 ps-md-5 p-lg-2 ps-xl-4">
           <div class="">
-            <h4 class="my-3 text-dark fw-600">{{ Blog[0].title }}</h4>
-            <p class="pc">{{ Blog[0].text }}</p>
+            <h4 class="my-3 text-dark fw-600">{{ content[Blog[0].title] }}</h4>
+            <p class="pc">{{ content[Blog[0].text] }}</p>
           </div>
           <div class="foter pc text-end fw-600 px-2 p-sm-0">
             <small>{{ Blog[0].date }}</small>
@@ -59,8 +59,13 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 import Blog from "~/json/Blogs.json";
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
   data() {
     return {
       Blog,

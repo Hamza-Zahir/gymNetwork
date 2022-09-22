@@ -2,7 +2,7 @@
   <div class="MoreAboutGN py-5">
     <div class="py-4">
       <h1 class="container text-center fw-bold mx-auto">
-        Even more about GYM Network
+        {{content.even_more_about_GYM_network}}
       </h1>
       <div
         class="
@@ -18,26 +18,24 @@
       >
         <div class="box box-1 d-flex flex-column rounded-20 text-light bg-bd">
           <div class="p-3 p-lg-4">
-            <h2 class="fw-bold">Guide</h2>
+            <h2 class="fw-bold">{{content.guide}}</h2>
             <p>
-              Detailed tutorials, guides, promotion material and much more can
-              be found in our documentation on Gitbook
+             {{content.guide_desc}}
             </p>
           </div>
           <a
             href="https://docs.gymnetwork.io/"
             target="_blank"
             class="text-light p-3 p-lg-4 fw-600"
-            >Go to guide
+            >{{content.go_to_guide}}
             <b-icon icon="arrow-up-right" class="m-0"></b-icon>
           </a>
         </div>
         <div class="box box-2 d-flex flex-column rounded-20 text-dark light-bg">
           <div class="p-3 p-lg-4">
-            <h2 class="fw-bold">Telegram</h2>
+            <h2 class="fw-bold">{{content.telegram}}</h2>
             <p class="pc">
-              You can get important information and answers to your questions in
-              our official Telegram group
+              {{content.telegram_desc}}
             </p>
           </div>
           <div class="d-flex justify-content-between align-items-end">
@@ -45,7 +43,7 @@
               href="https://t.me/gymnetwork_english"
               target="_blank"
               class="text-ba p-3 p-lg-4 fw-600"
-              >Join now
+              >{{content.join_now}}
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </a>
             <img src="~/assets/images/Telegram-bg.png" alt="" />
@@ -53,22 +51,20 @@
         </div>
         <div class="box box-3 d-flex flex-column rounded-20 text-light bg-bd">
           <div class="p-3 p-lg-4">
-            <h2 class="fw-bold">Blog & News</h2>
+            <h2 class="fw-bold">{{content.blog_news}}</h2>
             <p>
-              Read the latest topics and important knowledge for crypto
-              investors on our blog
+              {{content.blog_news_desc}}
             </p>
           </div>
           <nuxt-link to="/blog" class="text-light p-3 p-lg-4 fw-600">
-            Go to Blog
+            {{content.go_to_blog}}
           </nuxt-link>
         </div>
         <div class="box box-4 d-flex flex-column rounded-20 text-dark light-bg">
           <div class="p-3 p-lg-4">
-            <h2 class="fw-bold">Twitter</h2>
+            <h2 class="fw-bold">{{content.twitter}}</h2>
             <p class="pc">
-              On our Twitter account, you will get the fastest news and changes
-              around GYM Network
+           {{content.twitter_desc}}
             </p>
           </div>
           <div class="d-flex justify-content-between align-items-end">
@@ -76,7 +72,7 @@
               href="https://twitter.com/GymNet_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
               target="_blank"
               class="text-ba p-3 p-lg-4 fw-600"
-              >Join now
+              > {{content.join_now}}
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </a>
             <img src="~/assets/images/Twitter-bg.png" alt="" />
@@ -85,9 +81,9 @@
 
         <div class="box box-6 d-flex flex-column rounded-20 text-dark light-bg">
           <div class="p-3 p-lg-4">
-            <h2 class="fw-bold">Support</h2>
+            <h2 class="fw-bold">{{content.support}}</h2>
             <p class="pc">
-              Our support is available 24 hours a day for important questions
+              {{content.Support_desc}}
             </p>
           </div>
           <div class="d-flex justify-content-between align-items-end">
@@ -95,7 +91,7 @@
               href="https://gymnetwork.gitbook.io/english/support-and-contact-us/costumer-support"
               target="_blank"
               class="col text-ba p-3 p-lg-4 fw-600"
-              >To support
+              >{{content.to_support}}
               <b-icon icon="arrow-up-right" class="m-0"></b-icon>
             </a>
             <img src="~/assets/images/Support.png" alt="" />
@@ -107,8 +103,14 @@
 </template>
 
 <script>
-export default {};
-</script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+
+  };
+  </script>
 
 <style lang="scss" scoped>
 .MoreAboutGN {

@@ -5,32 +5,32 @@
         <a href="#Gymstreet" class="Gymstreet">
           <span class="Border"></span>
           <span class="rounded-circle me-2 point"></span>
-          <span class="text"> Gymstreet.io</span>
+          <span class="text">{{content.Gymstreet_io}}</span>
         </a>
         <a href="#Metablocks" class="Metablocks">
           <span class="Border"></span>
           <span class="rounded-circle me-2 point"></span>
-          <span class="text"> Metablocks.io</span>
+          <span class="text"> {{content.Metablocks_io}}</span>
         </a>
         <a href="#CashFT" class="CashFT">
           <span class="Border"></span>
           <span class="rounded-circle me-2 point"></span>
-          <span class="text"> CashFT </span>
+          <span class="text"> {{content.cashFT}}</span>
         </a>
         <a href="#zuckerland" class="zuckerland">
           <span class="Border"></span>
           <span class="rounded-circle me-2 point"></span>
-          <span class="text"> zuckerland.io </span>
+          <span class="text"> {{content.zuckerland_io}}</span>
         </a>
         <a href="#GymDex" class="GymDex">
           <span class="Border"></span>
           <span class="rounded-circle me-2 point"></span>
-          <span class="text"> GYM DEX </span>
+          <span class="text"> {{content.gymDex}}</span>
         </a>
         <a href="#MetaverseCampus" class="MetaverseCampus">
           <span class=""></span>
           <span class="rounded-circle me-2 point"></span>
-          <span class="text w-75"> Metaverse Campus</span>
+          <span class="text w-75">{{content.metaverse_campus}}</span>
         </a>
       </div>
     </div>
@@ -48,6 +48,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 import Gymstreet from "./AffiliateSystemSections/Gymstreet.vue";
 import Metablocks from "./AffiliateSystemSections/Metablocks.vue";
 import CashFT from "./AffiliateSystemSections/CashFT.vue";
@@ -55,6 +57,9 @@ import Zuckerland from "./AffiliateSystemSections/zuckerland.vue";
 import GymDex from "./AffiliateSystemSections/GymDex.vue";
 import MetaverseCampus from "./AffiliateSystemSections/MetaverseCampus.vue";
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
   components: {
     Gymstreet,
     Metablocks,

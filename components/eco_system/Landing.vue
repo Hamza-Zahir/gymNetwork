@@ -4,12 +4,10 @@
       <div class="d-lg-flex align-items-lg-center pb-lg-5">
         <div class="text col-sm-12 col-lg-6 mx-auto mx-md-0 px-lg-2 my-lg-5">
           <h1 class="py-2 pt-lg-3 mt-md-3 fw-bold col-md-9 col-lg-12">
-            GYM Street ecosystem
+          {{content.ecosystem_header_title}}
           </h1>
           <p class="col col-lg-11 mt-md-4 col-md-7">
-            We offer much more than a DeFi aggregator! The GYM Street ecosystem
-            ranges from NFT Market, NFT Miner, crypto debit card and DEX, to its
-            own metaverse.
+            {{content.ecosystem_header_desc}}
           </p>
           <a
             href="https://gymnetwork.io/dashboard"

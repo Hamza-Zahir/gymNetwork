@@ -1,7 +1,9 @@
 <template>
   <section class="Section2 py-5 bg-light">
     <div class="container py-md-5">
-      <h1 class="my-2 text-center fw-bolder">Products and earnings</h1>
+      <h1 class="my-2 text-center fw-bolder">
+        {{ content.products_and_earnings }}
+      </h1>
       <div class="content">
         <div class="boxes mt-5 pt-3 col-md-10 col-lg-9 mx-auto pb-5">
           <div
@@ -26,9 +28,9 @@
                 <img :src="box.img" alt="" />
               </div>
               <div class="text mt-3 mt-md-0 col-md-7 ms-md-3">
-                <h4 class="m-0 fw-bold">{{ box.title }}</h4>
+                <h4 class="m-0 fw-bold text-bd">{{ content[box.title] }}</h4>
                 <p class="text-secondary mt-2 my-sm-1 my-lg-2">
-                  {{ box.text }}
+                  {{ content[box.text] }}
                 </p>
                 <a
                   :href="`#${box.link}`"
@@ -46,7 +48,7 @@
                     box-sh-l
                   "
                 >
-                  Read more</a
+                  {{ content.read_more }}</a
                 >
               </div>
             </div>
@@ -57,38 +59,45 @@
   </section>
 </template>
 
+
 <script>
+import { mapGetters } from "vuex";
+
 export default {
+  computed: {
+    ...mapGetters(["content"]),
+  },
+
   data() {
     return {
       boxes: [
         {
           id: 1,
           img: require("~/assets/images/vault.png"),
-          title: "Vault",
-          text: "Get lucrative returns in GYMNET with your coins without having to lock away your cryptos.",
+          title: "vault",
+          text: "earnings_vault_desc",
           link: "Vault",
         },
         {
           id: 2,
           img: require("~/assets/images/Farm.png"),
-          title: "Farm",
-          text: "Ensure profitable yields and high APYs by combining BNB with GYMNET in the farm.",
+          title: "farm",
+          text: "earnings_farm_desc",
           link: "Farming",
         },
         {
           id: 3,
           img: require("~/assets/images/SinglePool.png"),
-          title: "Single Pool",
-          text: "ncrease your GYMNET tokens by locking them for a period of time.",
+          title: "single_pool",
+          text: "earnings_single_pool_desc",
           link: "SinglePool",
         },
 
         {
           id: 4,
           img: require("~/assets/images/BuyGYMNET.png"),
-          title: "Buy GYMNET",
-          text: "Buy GYMNET at attractive fees easily through all major payment methods.",
+          title: "buy_GYMNET",
+          text: "earnings_buy_GYMNET_desc",
           link: "BuyCrypto",
         },
       ],
@@ -123,13 +132,12 @@ export default {
     position: relative;
     margin: 0 auto;
     .BTN {
-      padding: 10px 30px;
+      padding: 9px 25px;
     }
     .label {
       display: flex;
       align-items: center;
       justify-content: center;
-      // border: 1px solid #65cbfa;
       width: 34px;
       height: 34px;
       color: white;

@@ -141,7 +141,7 @@ export default {
       width: 30px;
     }
   }
- 
+
   a {
     img {
       width: 35px;
@@ -161,7 +161,7 @@ export default {
 
       &:hover {
         transform: scale(1.1);
-        color: blue;
+        color: #0d6efd;
       }
     }
   }

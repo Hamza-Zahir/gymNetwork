@@ -3,9 +3,9 @@
     <div class="container mb-5 pb-5 pt-3 mt-md-4 my-lg-5">
       <div class="mt-lg-5">
         <div class="text mx-auto mx-sm-0 px-md-2">
-          <h1 class="py-2 pt-lg-3 mt-md-3 fw-bold">About GYM Network</h1>
+          <h1 class="py-2 pt-lg-3 mt-md-3 fw-bold">{{content.about_header_title}}</h1>
           <p class="col col-sm-8 col-md-6 col-lg-5 my-3 mt-md-4">
-            We make DeFi, Crypto, finance and Metaverse easy to use for everyone
+            {{content.about_header_desc}}
           </p>
           <a
             href="https://gymnetwork.io/dashboard/"
@@ -22,13 +22,22 @@
               box-sh-l
             "
           >
-            Start now
+          {{content.start_now}}
           </a>
         </div>
       </div>
     </div>
   </section>
 </template>
+<script>
+  import { mapGetters } from "vuex";
+  export default {
+    computed: {
+      ...mapGetters(["content"]),
+    },
+
+  };
+  </script>
 <style lang="scss" scoped>
 .Landing {
   z-index: 0;

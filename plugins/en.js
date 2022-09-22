@@ -51,7 +51,7 @@ export default {
   connect_your_wallet_desc:
     "to the website and make your first deposit into the Vault (from 0.051 BNB)",
   watch_tutorial: "Watch tutorial",
-  coming_soon: "coming soon",
+  coming_soon: "Coming soon",
   roadmap_title: "GYM Network Roadmap",
   roadmap_desc:
     "Our vision for the future and what we have implemented to date",
@@ -84,25 +84,21 @@ export default {
 
   /*.................     start Questions  ...........................................*/
 
-
   what_defi: "What is DeFi?",
-  what_defi_desc:
-    `
+  what_defi_desc: `
      <p> DeFi stands for “decentralized finance” which is an overall term to describe a variety of financial applications in cryptocurrency or blockchain – enabling application of decentralization on financial intermediaries such as banks. You’re all aware of how centralized financial institutions operate. They hold all the money deposited by you and other customers and whenever you need to send the money to someone or a loan from the bank you’re subjected to a long, bureaucratic, and tedious process. Other than the inefficiency, the bank takes some percentage of the money in terms of transaction fee. </p>
      <p> What DeFi does is to make financial transactions faster, cheaper, and generally more efficient.</p>
      <p> A DeFi application makes it easy for people to transact money without the need to trust one another. That is, DeFi platforms are built on blockchain to help facilitate financial transactions with the help of smart contracts. </p>
      <p> DeFi is allowing crypto entrepreneurs to recreate traditional financial instruments in a decentralized architecture, outside of banks or central authorities’ control. </p>
    `,
   what_smart_contract: "What are Smart Contracts?",
-  what_smart_contract_desc:
-    `
+  what_smart_contract_desc: `
      <p>Smart Contracts are automated applications that act as intermediaries.</p>
      <p>This is a piece of code in the blockchain that helps peers (humans and applications such as other smart contracts) to interact on the platform without the need to trust each other.</p>
      <p>The code of Smart Contracts is always available to the public, that’s why the blockchain technology is often called “trustless”</p>
    `,
   what_liquidity_meaning: "What Is Liquidity Mining?",
-  what_liquidity_meaning_desc:
-    `
+  what_liquidity_meaning_desc: `
      <p>Liquidity mining means adding tokens to liquidity pools of DEXs (decentralized exchanges) such as Uniswap, Sushiswap or PancakeSwap.</p>
      <p> By providing liquidity to the market, you allow the decentralized exchange to function, and in return you are rewarded with cryptocurrency.</p>
      <p> Adding liquidity to decentralized exchanges is called “liquidity mining” because it can bring you profits just like mining cryptocurrencies such as Bitcoin or Ethereum.</p>
@@ -111,21 +107,18 @@ export default {
   what_liquidity_pool: "What exactly are “liquidity pools”?",
   what_liquidity_pool_desc: `When you use a centralized exchange like Binance or Coinbase, the liquidity is provided by the company which owns the exchange. Since decentralized exchanges don’t have their own reserves, liquidity is provided by the users who lock their own funds in liquidity pools. Simply put, liquidity pools are what allows you to buy and sell crypto on DEXs.`,
   what_dao: "What is a Decentralized Autonomous Organization (DAO)?",
-  what_dao_desc:
-    `
+  what_dao_desc: `
        <p> A decentralized autonomous organization (DAO) is a software running on a blockchain that offers users a built-in model for the collective management of its code. </p>
        <p> DAOs differ from traditional organizations managed by boards, committees and executives. Rather than being governed by a limited group, DAOs use a set of rules written down in code and enforced by the network of computers running a shared software. </p>
        <p> To become a member of a DAO, users need to first join the DAO by buying its cryptocurrency. Holding the asset then generally gives users the power to vote on proposals and updates, proportional to the amount they hold. </p>
      `,
   what_dao_governance: "What is DAO Governance?",
-  what_dao_governance_desc:
-    `
+  what_dao_governance_desc: `
      <p>DAO governance is coordinated using tokens or NFTs that grant voting powers.</p>
      <p>Admission to a DAO is limited to people who have a confirmed ownership of these governance tokens in a cryptocurrency wallet, and membership can be exchanged. Governance is conducted through a series of proposals that members vote on through the blockchain, and the possession of more governance tokens often translates to greater voting power.</p>
    `,
   how_use_network: "How can I use GYM NETWORK?",
-  how_use_network_desc:
-    `
+  how_use_network_desc: `
        <p> You can use it as a Vault, as a Single Farm, and as Liquidity Mining. So you have three ways to get more out of your tokens. </p>
        <p> In parallel we are always working on the utility of the GYMNET Token. The more GYMNET Tokens you hold, the better access you get to future projects! See the Meta-networks.io roadmap. You will need GYMNET Token to get exclusive benefits and at the same time GYMNET Rewards. </p>
        <p> In summary it means: You can use GYM NETWORK as a DeFi platform and also as a constantly evolving metaverse. And of course, to make an affiliate career and earn lucrative commissions! </p>
@@ -133,21 +126,19 @@ export default {
   which_wallet_use_to_connect: "Which wallets can I use to connect?",
   which_wallet_use_to_connect_desc: `You can use Metamask, Trust Wallet and all offered wallets under the item WALLET CONNECT.`,
   what_apy_apr: "What is APY and APR?",
-  what_apy_apr_desc:
-    `
+  what_apy_apr_desc: `
        <p>APR represents the annual rate charged for earning or borrowing money.</p>
        <p>APY takes into account compounding, but APR does not.</p>
      `,
-  where_rewords_vaults_come_from: "Where do the rewards in the Vault come from?",
-  where_rewords_vaults_come_from_desc:
-    `
+  where_rewords_vaults_come_from:
+    "Where do the rewards in the Vault come from?",
+  where_rewords_vaults_come_from_desc: `
        <p> Each Vault is connected to a well-known and already established DeFi protocol. In this case, the BNB/GYMNET Vault is connected to the ALPACAplatform. </p>
        <p> There, for example, users can borrow money against an interest. This interest is the return for you as a user and comes from there. In addition, you get GYMNET tokens as a reward from our platform.  </p>
        <p>  This gives you an unbeatable advantage over users who use e.g. <b>ALPACA</b> directly without GYM NETWORK!  </p>
      `,
   who_what_alpaca: "Who or what is ALPACA?",
-  who_what_alpaca_desc:
-    `
+  who_what_alpaca_desc: `
        <p>
          <a href='https://www.alpacafinance.org/' target='_blank'>Alpaca Finance <a/>
          is the largest lending protocol allowing leveraged yield farming on Binance Smart Chain. It helps lenders earn safe and stable yields, and offers borrowers undercollateralized loans for leveraged yield farming positions, vastly multiplying their farming principals and resulting profits.
@@ -156,8 +147,7 @@ export default {
   what_binance: "What is Binance Smart Chain?",
   what_binance_desc: `Binance Chain was launched by Binance in April 2019. Its primary focus is to facilitate fast, decentralized (or non-custodial) trading. Perhaps unsurprisingly, the biggest decentralized application (or DApp) on it is Binance DEX, one of the friendliest decentralized exchanges out there. You can use it via a web interface at binance.org or through its native integration with Trust Wallet.`,
   what_do_with_gymnet: "What can I do with GYMNET Token?",
-  what_do_with_gymnet_desc:
-    `
+  what_do_with_gymnet_desc: `
        <p> The more GYMNET Tokens you hold, the better access you get to future projects! See the Meta-networks.io roadmap. You will need GYMNET Token to get exclusive benefits and at the same time GYMNET Rewards. </p>
        <p> The use cases are: You can use GYM NETWORK and its Reward Token GYMNET as a DeFi platform in the VAULT, the Single Farm, and for Liquidity Mining, as well as a constantly evolving metaverse. </p>
      `,
@@ -166,8 +156,7 @@ export default {
   where_find_tutorials: "Where can I find Tutorials?",
   where_find_tutorials_desc: `You can access all our video tutorials on our YouTube channel and also in the documentation on Gitbook.`,
   how_affiliate_work: "How does the affiliate system work?",
-  how_affiliate_work_desc:
-    `
+  how_affiliate_work_desc: `
        <p> The affiliate system works directly through your wallet. Each wallet must be linked to a Telegram account when you sign up (only by invitation with an affiliate link). This is important for support requests and much more! </p>
        <p> After that you will be assigned your own affiliate link which you can use to become a member. If someone now signs up and invests in the Vault and gets rewards, you also get "passive" commissions. </p>
        <p> So whenever your referred investor (you have a referrer status) decides to use GYM NETWORK and gets his first VAULT rewards, you will get a commission. Over and over again, as long as the user leaves his investment in the Vault. This way you can build up a lucrative passive income.</p>
@@ -177,9 +166,11 @@ export default {
   /* .................     end Questions  ...........................................*/
 
   join_telegram_group: "Join our telegram group",
-  join_telegram_group_desc: "Get all the latest news and answers to your questions about GYM Network!",
+  join_telegram_group_desc:
+    "Get all the latest news and answers to your questions about GYM Network!",
   join_now: "Join now",
-  footer_info: "The union of Metaverse and DeFi Aggregator Investment System. Lucrative returns in DeFi, Yield Farming, Staking, NFTs and more.",
+  footer_info:
+    "The union of Metaverse and DeFi Aggregator Investment System. Lucrative returns in DeFi, Yield Farming, Staking, NFTs and more.",
   vault: "Vault",
   farming: "Farming",
   single_pool: "Single Pool",
@@ -199,44 +190,52 @@ export default {
 
   /* .................................. end home page ............................... */
 
-
+  // Launch APP
   /* ................................ start product page ............................*/
 
-  product_header_title: "GYM Network Products The perfect workout for your tokens!",
-  product_header_desc: "Lucrative DeFi earnings with Vault, Farming and Single Pool as well as a long-term passive income through our affiliate layer solution. That's what our products can do!",
+  product_header_title:
+    "GYM Network Products The perfect workout for your tokens!",
+  product_header_desc:
+    "Lucrative DeFi earnings with Vault, Farming and Single Pool as well as a long-term passive income through our affiliate layer solution. That's what our products can do!",
   products_and_earnings: "Products and earnings",
-  earnings_vault_desc: "Get lucrative returns in GYMNET with your coins without having to lock away your cryptos.",
-  farm: "Farm",////////////////////////
-  earnings_farm_desc: "Ensure profitable yields and high APYs by combining BNB with GYMNET in the farm",
-  earnings_single_pool_desc: "ncrease your GYMNET tokens by locking them for a period of time.",
-  earnings_buy_GYMNET_desc: "Buy GYMNET at attractive fees easily through all major payment methods.",
-  vault_desc:
-    `
+  earnings_vault_desc:
+    "Get lucrative returns in GYMNET with your coins without having to lock away your cryptos.",
+  farm: "Farm",
+  earnings_farm_desc:
+    "Ensure profitable yields and high APYs by combining BNB with GYMNET in the farm",
+  earnings_single_pool_desc:
+    "ncrease your GYMNET tokens by locking them for a period of time.",
+  earnings_buy_GYMNET_desc:
+    "Buy GYMNET at attractive fees easily through all major payment methods.",
+  vault_desc: `
        <p>Want to earn high returns while keeping your coins liquid at all times? GYM Network’s Vault combines lucrative APY’s with maximum security and flexibility.</p>
        <p>Your BNB or other coins that you use to generate GYMNET earnings are stored at ALPACA, one of the most trusted and secure DeFi Yield farming platforms in the crypto world.</p>
      `,
-  vault_start_desc:
-    `
+  vault_start_desc: `
        <p>You can transfer your coins from the Vault to your wallet at any time without paying extra fees.</p>
        <p>Our Vault is for those who attach great importance to security, but at the same time do not want to miss out on good returns. The perfect combination of security, liquidity and high returns.</p>
     `,
   start_now: "Start now",
-  farming_desc:
-    `
+  farming_desc: `
        <p>Earn high returns with GYM Network's Yield farming.</p>
        <p>By connecting GYMNET and BNB and providing them as liquidity, you will receive GYMNET tokens as rewards every day.</p>
        <p>The returns are often higher than in the Vault. Also, in farming, you can transfer your deployed coins and earnings to your wallet at any time.</p>
        <p>A 4% deposit fee goes to the buyback and burn program, which stabilizes the price of GYMNET.</p>
      `,
-  single_pool_desc:
-    `
+  single_pool_desc: `
      <p>Through the Single Pool you can not only use your GYMNET to increase them through staking.</p>
      <p>You lock GYMNET in the Single Pool for a certain period of time and thereby increase your GYMNET with high APY.</p>
      <p>Additionally, earn Governance Tokens for different locking periods, which even allow you to participate in NFT earnings.</p>
      `,
+  easy_way_to_buy_crypto: "GYM Networks easy way to buy crypto",
+  easy_way_to_buy_crypto_desc: `
+    <p> Use our Buy and Sell Crypto Service - almost 50 % of the Fees will be used to Buy and Burn 🔥 GYMNET token and support the price!</p>
+    <p> Users can easily buy BNB and other cryptocurrencies using a wide range of payment options, Apple Pay, Google Pay, credit and debit card.</p>
+  `,
   gymnet_holder_benefits: `GYMNET Holder Benefits`,
   three_percent_gymnet: "3% GYMNET",
-  three_percent_gymnet_desc: "from DEX fees on each sale for GYM holders by pools of 2500 GYM or more",
+  three_percent_gymnet_desc:
+    "from DEX fees on each sale for GYM holders by pools of 2500 GYM or more",
   gymnet_moon_fund: `2% GYMNET Moon Fund`,
   gymnet_moon_fund_desc: `(Marketing, PR, Cooperations, Management) on SELL and BUY on a DE`,
   gymnet_metaverse_development_fund: `3% GYMNET Metaverse Development Fund`,
@@ -244,14 +243,13 @@ export default {
   gymnet_community_support_fund: `1% GYMNET Community Support Fund`,
   gymnet_community_support_fund_desc: `(Airdrop, Bounty, Incentives) on SELL and BUY on a DEX`,
 
-
   /* .................................end prodact page .............................*/
-
 
   /*  ............................... start ecosystem page ............................. */
 
   ecosystem_header_title: "GYM Street ecosystem",
-  ecosystem_header_desc: "We offer much more than a DeFi aggregator! The GYM Street ecosystem ranges from NFT Market, NFT Miner, crypto debit card and DEX, to its own metaverse.",
+  ecosystem_header_desc:
+    "We offer much more than a DeFi aggregator! The GYM Street ecosystem ranges from NFT Market, NFT Miner, crypto debit card and DEX, to its own metaverse.",
   the_gym_street_metaverse_ecosystem: `The GYM Street Metaverse ecosystem`,
   the_gym_street_metaverse_ecosystem_desc: `Get access to cutting-edge DeFi technologies.`,
   Gymstreet_io: `Gymstreet.io`,
@@ -259,6 +257,7 @@ export default {
   more_about_gymstreet: `More about Gymstreet`,
   Metablocks_io: `Metablocks.io`,
   Metablocks_io_card_desc: `NFT Miner specially designed for metaverses`,
+  more_about_metablocks: `More about metablocks`,
   cashFT_card_desc: `The crypto and NFT debit card`,
   zuckerland_io: `zuckerland.io`,
   zuckerland_io_card_desc: `Marketplace for NFTs`,
@@ -268,36 +267,31 @@ export default {
   metaverse_campus_card_desc: `Learn how DeFi, Metaverse and co. work`,
 
   Gymstreet_io_title: `GYM STREET, the DeFi & finance Metaverse`,
-  Gymstreet_io_desc:
-    `
+  Gymstreet_io_desc: `
        <p>We are creating a metaverse with the best crypto financial services and easily accessible DeFi products for everyone in the world.</p>
        <p>Experience the Wall Street of the future with GYM Street, buy virtual land and generate sustainable revenue with NFT miners</p>
        <p>The Metaverse will change the way people are understanding and using money.</p>
        <p>Just as the Internet changed the world, the Metaverse will change it even more significantly. Everything we do in the real world today, we will do in the Metaverse in the future.</p>
     `,
   to_gymstreet_io: `To gymstreet.io`,
-  Metablocks_io_desc:
-    `
+  Metablocks_io_desc: `
        <p>Metablock.io develops NFT miners, especially for Metaverses.</p>
        <p>As a Metaverse user, you can buy our miners with the appropriate land in already connected metaverses and mine NFTs this way.</p>
        <p>As an entrepreneur, you can cooperate with us and build a miner series for your own metaverse.</p>
      `,
   CashFT_title: `cashFT (Cards)`,
-  CashFT_desc:
-    `
+  CashFT_desc: `
        <p>The debit card that combines crypto, NFT and FIAT</p>
-       <ul>
-         <li>Pay and withdraw money in real time</li>
-         <li>Mint NFTs and redeem them</li>
-         <li>Transfer money worldwide</li>
-         <li>Control your cash flow in just one app</li>
+       <ul class="ps-2 py-2">
+         <li class="m-3">Pay and withdraw money in real time</li>
+         <li class="m-3">Mint NFTs and redeem them</li>
+         <li class="m-3">Transfer money worldwide</li>
+         <li class="m-3">Control your cash flow in just one app</li>
        </ul>
        <p>cashFT combines traditional banking with the future of finance</p>
      `,
-
   zuckerland_io_title: `Zuckerland.io - NFT marketplace`,
-  zuckerland_io_desc:
-    `
+  zuckerland_io_desc: `
        <p>Zuckerland.io is the world's first NFT marketplace focused on Virtual Land & Real Estate, as well as Infrastructure in the Metaverse.</p>
        <p>We offer our users access to professional tools from the real estate world in combination with the world of virtual assets.</p>
        <p>Thus, we create a platform where new users, professionals, and also real estate agents can easily find their way around.</p>
@@ -305,13 +299,13 @@ export default {
   gymDex_desc: `<p>Through a decentralized exchange (DEX), we enable users to easily exchange their coins in the future.</p> `,
   more_about_gymDex: "More about GYM DEX",
   metaverse_campus_title: `Metaverse Campus - Education`,
-  metaverse_campus_desc:
-    `
+  metaverse_campus_desc: `
        <p>With our Metaverse Campus, we provide educational courses and training around Blockchain, DeFi, NFTs, Finance, and other related topics.</p>
        <p>Our biggest goal is to provide the best possible education on the incredible possibilities of future technologies.</p>
        <p>If you want to educate yourself in the new digital world, you can do it easily and intuitively with GYM Street.</p>
     `,
   srtart_directly: `Start directly`,
+  video_tutorial : `Video tutorial`,
 
   /* ................................. end ecosystem page ............................. */
 
@@ -328,10 +322,17 @@ export default {
   decentralized_autonomous_organization: `Decentralized Autonomous Organization`,
   decentralized_autonomous_organization_desc:
     `
-       <p>GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.</p>
-       <p>Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.</p>
-       <p>This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.</p>
+      <p>
+        GYM NETWORK is owned by the users. Everyone of you has voting power in the measure of your GYMNET token holdings.
+      </p>
+      <p class="col-lg-11 col-xxl-12">
+        Owning GYMNET means that you will be able to propose new “Exercise Routines” (proposals to improve the system) and vote on the routines proposed by others.
+      </p>
+      <p class="col-md-9 col-xxl-12">
+        This is how the Network will be managed once 75% of GYMNET tokens have been distributed to you, the users.
+      </p>
     `,
+  team : "Team",
   gym_network_team: `GYM Network Team`,
   gym_network_team_desc: `There are many more team members working in programming, web development, marketing, HR management, and tech recruitment to ensure the success of GYM NETWORK.`,
   system_designer: `System Designer`,
@@ -345,8 +346,7 @@ export default {
   tokenomics: `Tokenomics`,
   token_holders: `Token holders`,
   card: `Card `,
-  community_fund: "Community Fund",  //////////////////////////
-  even_more_about_GYM_network: `Even more about GYM Network `,
+  community_fund: "Community Fund",
   even_more_about_GYM_network: `Even more about GYM Network `,
   guide_desc: `Detailed tutorials, guides, promotion material and much more can be found in our documentation on Gitbook `,
   go_to_guide: `Go to guide`,
@@ -357,6 +357,7 @@ export default {
   twitter_desc: `On our Twitter account, you will get the fastest news and changes around GYM Network`,
   Support_desc: `Our support is available 24 hours a day for important questions`,
   to_support: `To support`,
+go_to_blog: "Go to Blog",
 
   /* ................................. end about page ............................. */
 
@@ -379,8 +380,7 @@ export default {
 
   /* ................................. start how_can_you_earn_money_with_GYM_Network page ............................. */
 
-  how_can_you_earn_money_with_GYM_Network_intro:
-    `
+  how_can_you_earn_money_with_GYM_Network_intro: `
        <p>
          Smart crypto investors and even curious newbies are always looking for the best
          <a href="https://www.coinbase.com/learn/crypto-basics/what-is-defi" target="_blank" class="fw-600">
@@ -393,8 +393,7 @@ export default {
          through yield farming, staking or other methods. Find out why GYM Network is so exciting when it comes to lucrative coin returns and how you can make money with GYM Network in this post.
        </p>
      `,
-  What_is_GYM_Network_content:
-    `
+  What_is_GYM_Network_content: `
        <p>
          GYM Network is first and foremost a
          <a href="https://coinmarketcap.com/alexandria/article/what-is-a-defi-aggregator-and-why-should-i-care"  target="_blank" class="fw-600">
@@ -408,17 +407,14 @@ export default {
        </p>
      `,
 
-
   Staking_farming_liquidity_mining: `Staking, farming, liquidity mining`,
-  Staking_farming_liquidity_mining_content:
-    `
+  Staking_farming_liquidity_mining_content: `
        <p>
          Before we get to the ways you can <b> make money directly with GYM Network, </b> it is first important for many people to know what staking, farming or liquidity mining even means.
        </p>
      `,
   What_is_staking: `What is Staking?`,
-  What_is_staking_content:
-    `
+  What_is_staking_content: `
        <p>
          You've probably heard of <b>mining</b> before. Especially <b>bitcoin mining</b> has been very popular in recent years. Staking can be understood as a counterpart to mining.
        </p>
@@ -431,8 +427,7 @@ export default {
        </p>
      `,
   What_is_yield_farming: `What is Yield Farming?`,
-  What_is_yield_farming_content:
-    `
+  What_is_yield_farming_content: `
        <p>
          Yield farming is a combination of the terms “yield” and “farming”. You can imagine Yield Farming as the cultivation of vegetables. You sow something and it grows. However, with
          <b>Yield Farming</b> you don't have to water or take care of the plants, because the yields are produced automatically.
@@ -442,8 +437,7 @@ export default {
        </p>
      `,
   What_is_liquidity_mining: `What is Liquidity Mining?`,
-  What_is_liquidity_mining_content:
-    `
+  What_is_liquidity_mining_content: `
        <p>
          <b>Liquidity mining</b> is adding coins or tokens to liquidity pools of
          <a href="https://www.coinbase.com/de/learn/crypto-basics/what-is-a-dex" target="_blank" class="fw-600" >
@@ -453,15 +447,13 @@ export default {
        </p>
      `,
   How_to_earn_crypto_with_GYM: `How to earn crypto with GYM`,
-  How_to_earn_crypto_with_GYM_content:
-    `
+  How_to_earn_crypto_with_GYM_content: `
        <p>
          Now that you know what ways there are to earn earnings and rewards in the form of cryptocurrencies, let's show you what makes <b>GYM Network's services</b> so special. GYM Network currently offers <b>3 ways to earn GYMNET.</b>
        </p>
      `,
   GYM_vault: `GYM Vault`,
-  GYM_vault_content:
-    `
+  GYM_vault_content: `
        <p>
          <b>GYM Network's Vault</b> is the easiest and safest way. You can start with a minimum amount of 0.051 BNB. These BNB will then produce GYMNET.
        </p>
@@ -487,8 +479,7 @@ export default {
      `,
   go_to_the_vault: `Go to the vault`,
   GYM_farming: `GYM Farming`,
-  GYM_farming_content:
-    `
+  GYM_farming_content: `
        <p>
          In <b>GYM Network Farming,</b> you combine the GYMNET with another coin to generate <b>GYMNET earnings.</b> As described above, you provide liquidity, for which you receive <b>GYMNET as a reward.</b>
        </p>
@@ -502,8 +493,7 @@ export default {
          You don't have to go through the hassle of buying coins, combining them, tying them into a token pair, and so on. <b>GYM Network does that for you automatically.</b>
        </p>
      `,
-  single_pool_content:
-    `
+  single_pool_content: `
        <p>
          With the Vault and Farming you produce GYMNET. With the Single Pool, GYM Network has created the benefit of <b>using your GYMNET</b> to multiply them. You can lock your GYMNET for a certain period of time to get profitable rewards.
        </p>
@@ -512,8 +502,7 @@ export default {
        </p>
      `,
   affiliate_layer_solution: `Affiliate Layer Solution`,
-  affiliate_layer_solution_content:
-    `
+  affiliate_layer_solution_content: `
        <p>
          <b>GYM Network's Affiliate Layer solution</b> is another way to produce passive coin earnings. As an affiliate partner, you can earn commission on the earnings of your customers and partners.
        </p>
@@ -525,8 +514,7 @@ export default {
        </p>
      `,
   how_can_you_get_started_with_GYM_Network: `How can you get started with GYM Network?`,
-  how_can_you_get_started_with_GYM_Network_content:
-    `
+  how_can_you_get_started_with_GYM_Network_content: `
        <p>
          Connect your wallet to <b>GYM Network with one click,</b> make your first deposit into the Vault and you're in. You can then put
          BNB and GYMENT directly into the farm or simply buy GYMNET through our website and multiply them in the single pool.
@@ -539,12 +527,10 @@ export default {
 
   how_can_you_earn_money_with_GYM_Network_conclusion: `Get even more interesting info on GYM Network, Blockchain, DeFi, Metaverse and other future technologies in our blog.`,
 
-
   /* ................................. end how_can_you_earn_money_with_GYM_Network page ............................. */
 
   /* ................................. start gym_street_and_its_ecosystem page ............................. */
-  gym_street_and_its_ecosystem_intro:
-    `
+  gym_street_and_its_ecosystem_intro: `
       <p>
         <b>GYM Network</b> offers not only an exceptionally profitable <b>DeFi aggregator,</b> but also its own <b>unique metaverse,</b> GYM Street. An ecosystem is being created
         around GYM Street, with many partners delivering solutions in DeFi and the crypto industry that are unparalleled in the market.
@@ -554,8 +540,7 @@ export default {
       </p>
     `,
   What_is_GYM_Street: `What is GYM Street?`,
-  What_is_GYM_Street_content:
-    `
+  What_is_GYM_Street_content: `
       <p>
         Before we look at the individual partners, we first need to answer the question of <b> what exactly GYM Street is.</b>
       </p>
@@ -582,8 +567,7 @@ export default {
     `,
 
   The_growth_potential_of_metaverse: `The growth potential of metaverse`,
-  The_growth_potential_of_metaverse_content:
-    `
+  The_growth_potential_of_metaverse_content: `
       <p>  You already know how strongly the industry of
         <a href="https://academy.binance.com/en/articles/what-is-nft-virtual-land-in-the-metaverse" target="blank" class="fw-600">
           NFTs is growing as virtual land
@@ -604,8 +588,7 @@ export default {
     `,
 
   earn_money_with_virtual_land_from_GYM_Street: `Earn money with virtual land from GYM Street`,
-  earn_money_with_virtual_land_from_GYM_Street_content:
-    `
+  earn_money_with_virtual_land_from_GYM_Street_content: `
       <p>
         Virtual land is becoming increasingly popular, especially for people for whom <b>real property is too expensive</b> but still want to participate in the market.
       </p>
@@ -618,15 +601,13 @@ export default {
     `,
 
   The_ecosystem_around_GYM_Street: `The ecosystem around GYM Street`,
-  The_ecosystem_around_GYM_Street_content:
-    `
+  The_ecosystem_around_GYM_Street_content: `
       <p>
         The individual partners in the <b>GYM Street ecosystem</b> extend the Metaverse experience and the <b>value of GYM Street</b> with additional unique solutions.
       </p>
     `,
 
-  Metablocks_io_content:
-    `
+  Metablocks_io_content: `
       <p>
         The <b>miners</b> you can place on GYM Street's virtual land are developed by Metablock.io.
       </p>
@@ -635,8 +616,7 @@ export default {
       </p>
     `,
 
-  cashFT_content:
-    `
+  cashFT_content: `
       <p>
         cashFT is the <b>debit card that combines crypto, NFT, and FIAT.</b> As one of the world's first debit cards with NFT function, cashFT offers
         exciting solutions especially to people who want to benefit from the NFT market.
@@ -660,8 +640,7 @@ export default {
       </ul>
     `,
 
-  zuckerland_io_content:
-    `
+  zuckerland_io_content: `
       <p>
         As an <b>NFT marketplace,</b> zuckerland.io specializes in <b> virtual land, real estate and infrastructure in the metaverse.</b>
         Thereby, zuckerland.io combines professional tools known from the real estate world with the world of virtual assets.
@@ -671,16 +650,14 @@ export default {
       </p>
     `,
 
-  gymDex_content:
-    `
+  gymDex_content: `
       <p>
         With its own <b>decentralized exchange (DEX), GYM Street</b> enables its users to easily exchange cryptocurrencies in real time. The exchange, like most of the partners' featured products, will be
         <b> embedded in the Metaverse,</b> so you can manage and exchange your cryptocurrencies from there.
       </p>
     `,
 
-  metaverse_campus_content:
-    `
+  metaverse_campus_content: `
       <p>
         Educating our users is especially important to us. Because you can only make good decisions in the crypto world if you have the right know-how.
       </p>
@@ -690,8 +667,7 @@ export default {
     `,
 
   Conclusion_on_the_GYM_Street_ecosystem: `Conclusion on the GYM Street ecosystem`,
-  Conclusion_on_the_GYM_Street_ecosystem_content:
-    `
+  Conclusion_on_the_GYM_Street_ecosystem_content: `
       <p>
         Many of the projects presented are still in development. Some are already implemented and delivering their <b> solutions in the DeFi world.</b> Nonetheless, all the partners
         in the <b>GYM Street ecosystem</b> are significant components that make GYM Street so unique in the market.
@@ -713,8 +689,7 @@ export default {
 
   /* ................................. start metaverse_and_its_potential page ............................. */
 
-  metaverse_and_its_potential_intro:
-    `
+  metaverse_and_its_potential_intro: `
       <p>
         <b>Metaverse</b> is the future! It will change the world as  as the Internet did back then. If you believe some experts on new technology, such as
         <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank" class="fw-600" >
@@ -732,8 +707,7 @@ export default {
     `,
 
   Metaverse_the_hype_is_on: `Metaverse, the hype is on!`,
-  Metaverse_the_hype_is_on__content:
-    `
+  Metaverse_the_hype_is_on__content: `
       <p>
         The hype around the <b>Metaverse</b> really took off when Facebook changed its name to Meta. Even though some companies had already built up their own metaverses, such as
         <a href="https://en.wikipedia.org/wiki/Decentraland" target="_blank" class="fw-600">
@@ -751,8 +725,7 @@ export default {
     `,
 
   What_is_the_Metaverse: `What is the Metaverse?`,
-  What_is_the_Metaverse_content:
-    `
+  What_is_the_Metaverse_content: `
       <p>
         The <b>Metaverse</b> is a virtual world where everything is possible. Entertainment, sports, education, finance and much more meet there. It is supposed to represent the future of our daily lives. A future that we will spend more than ever online.
       </p>
@@ -765,8 +738,7 @@ export default {
     `,
 
   There_is_not_the_one_metaverse: `There is not the one metaverse`,
-  There_is_not_the_one_metaverse_content:
-    `
+  There_is_not_the_one_metaverse_content: `
       <p>
         Whenever we talk about Metaverse, we should keep in mind that there is not one Metaverse. Even though Meta (Facebook) is currently investing a lot of money
         in its Metaverse, there are plenty of other <b>big players</b> who are currently <b>developing their own Metaverse.</b>
@@ -774,8 +746,7 @@ export default {
     `,
 
   The_best_known_Metaverse_projects: `The best known Metaverse projects`,
-  The_best_known_Metaverse_projects_content:
-    `
+  The_best_known_Metaverse_projects_content: `
       <p>
         Among the most well-known Metaverse projects are <b>The Sandbox</b> and <b>Decentraland.</b>
       </p>
@@ -806,8 +777,7 @@ export default {
     `,
 
   The_world_of_finance_in_metaverse: `The world of finance in metaverse`,
-  The_world_of_finance_in_metaverse_content:
-    `
+  The_world_of_finance_in_metaverse_content: `
       <p>
         Metaverse has not been a vision or a concept for a long time. <b>Millions of people invest</b> in new and also established <b>Metaverse projects</b> every day because they recognize the potential behind them.
       </p>
@@ -824,8 +794,7 @@ export default {
     `,
 
   The_potential_of_Metaverse: `The potential of Metaverse`,
-  The_potential_of_Metaverse_content:
-    `
+  The_potential_of_Metaverse_content: `
       <p>
         Just as the <b>Internet</b> and the <b>smartphone</b> have <b>fundamentallychanged our daily lives,</b> the Metaverse has the potential to do the same. In the past, people would never have
         imagined that they could organize their relationships, finances, health, in short, their entire lives from a small, handy device.
@@ -840,8 +809,7 @@ export default {
     `,
 
   Invest_in_Metaverse: `Invest in Metaverse`,
-  Invest_in_Metaverse_content:
-    `
+  Invest_in_Metaverse_content: `
       <p>
         Many people have already recognized this potential and are always looking for new <b>up-and-coming Metaverse projects</b> to get in
         early to take advantage of the big price increases of the virtual land and their own cryptocurrency.
@@ -852,8 +820,7 @@ export default {
     `,
 
   GYM_Street_the_exceptional_metaverse: `GYM Street, the exceptional metaverse`,
-  GYM_Street_the_exceptional_metaverse_content:
-    `
+  GYM_Street_the_exceptional_metaverse_content: `
       <p>
         Are you looking for a <b>sustainably developed</b> and <b>independently audited project?</b>
       </p>
@@ -872,8 +839,7 @@ export default {
     `,
 
   Conclusion_Metaverse_and_its_potential: `Conclusion Metaverse and its potential`,
-  Conclusion_Metaverse_and_its_potential_content:
-    `
+  Conclusion_Metaverse_and_its_potential_content: `
       <p>
         One thing is clear, the Metaverse is already <b>the next big thing.</b> It will play a major role in shaping our future, as long as companies like Meta,
         Disney, Microsoft and many more continue to invest so much in this new technology of the future. <b>The hype around the metaverse</b> has become a real investment opportunity that many people are already using to earn a living.
@@ -891,21 +857,16 @@ export default {
       </p>
     `,
 
-
-  metaverse_and_its_potential_conclusion:
-    `
+  metaverse_and_its_potential_conclusion: `
       <p>
         Want more exciting info on GYM Network, Blockchain, DeFi, Metaverse and other future technologies? Then check out our blog:
       </p>
     `,
 
-
   /* ................................. end metaverse_and_its_potential page ............................. */
 
-
   /* ................................. start What_is_GYM_Network page ............................. */
-  What_is_GYM_Network_intro:
-    `
+  What_is_GYM_Network_intro: `
       <p>
         <b>DeFi, Yield Farming</b> and <b>Staking</b> are more popular than ever. But unfortunately for the normal user also quite complicated. <b>GYM Network's</b>
         mission is to combine lucrative <b>DeFi returns</b> with easy access to the crypto world and passive crypto wealth building.
@@ -916,8 +877,7 @@ export default {
     `,
 
   GYM_Network_A_DeFi_Aggregator_Investment_System: `GYM Network - A DeFi Aggregator Investment System`,
-  GYM_Network_A_DeFi_Aggregator_Investment_System_content:
-    `
+  GYM_Network_A_DeFi_Aggregator_Investment_System_content: `
       <p>
         As a
         <a href="https://coinmarketcap.com/alexandria/article/what-is-a-defi-aggregator-and-why-should-i-care" target="_blank" class="fw-600" >
@@ -960,8 +920,7 @@ export default {
     `,
 
   The_mission_of_GYM_Network: `The mission of GYM Network`,
-  The_mission_of_GYM_Network_content:
-    `
+  The_mission_of_GYM_Network_content: `
       <p>
         GYM Network's mission is to co-create a world where everyone can be a part of the digital future and create their own <b>financial freedom</b> as an investor.
       </p>
@@ -971,15 +930,13 @@ export default {
     `,
 
   solutions_from_GYM_Network: `Solutions from GYM Network`,
-  solutions_from_GYM_Network_content:
-    `
+  solutions_from_GYM_Network_content: `
       <p>
         Tomorrow's solutions are reflected in GYM Network's unique services.
       </p>
     `,
 
-  WIGN_GYM_vault_content:
-    `
+  WIGN_GYM_vault_content: `
       <p>
         With the Vault from <b>GYM Network,</b> you can generate income with your coins at the same time and also transfer them back to your wallet at any time without having to pay extra fees.
         The Vault is the most flexible <b>GYM Network product</b> and especially suitable for people who care about <b> security and liquidity. </b>
@@ -1001,8 +958,7 @@ export default {
       </p>
     `,
 
-  WIGN_GYM_vault_content_content:
-    `
+  WIGN_GYM_vault_content_content: `
       <p>
         Farming from <b>GYM Network</b> is another lucrative way to generate GYMNET. In farming, you combine GYMNET with, e.g., BNB and <b>provide them as liquidity</b> to the platform. In return, you get <b>daily rewards</b> in GYMNET.
       </p>
@@ -1011,8 +967,7 @@ export default {
       </p>
     `,
 
-  WIGN_single_pool_content:
-    `
+  WIGN_single_pool_content: `
       <p>
         The Single Pool of GYM Network offers the possibility to multiply your GYMNET. By locking them for a certain period of time and making them available for staking, you will receive profitable rewards.
       </p>
@@ -1021,9 +976,7 @@ export default {
       </p>
     `,
 
-
-WIGN_affiliate_layer_solution_content:
-    `
+  WIGN_affiliate_layer_solution_content: `
       <p>
         If you are enthusiastic about GYM Network and its services, you can even build your own passive income with the <b>comprehensive Affiliate Layer Solution. </b>
       </p>
@@ -1039,8 +992,7 @@ WIGN_affiliate_layer_solution_content:
     `,
 
   What_makes_GYM_Network_so_unique: `What makes GYM Network so unique?`,
-  What_makes_GYM_Network_so_unique_content:
-    `
+  What_makes_GYM_Network_so_unique_content: `
       <p>
         <b>Security, transparency, flexibility, and high DeFi yields</b> are the focus of GYM Network. Only independently verified audits and security protocols, such as from
         <a href="https://www.certik.com/projects/gym-network" target="_blank" class="fw-600">
@@ -1074,30 +1026,26 @@ WIGN_affiliate_layer_solution_content:
     `,
 
   How_do_I_get_started_with_GYM_Network: `How do I get started with GYM Network?`,
-  How_do_I_get_started_with_GYM_Network_content:
-    `
+  How_do_I_get_started_with_GYM_Network_content: `
       <p>
         It's very simple: by clicking on the button, you will immediately get to the GYM Network application, which you can connect to your wallet and directly put your first coins into the Vault.
       </p>
    `,
 
   conclusion_about_GYM_Network: `Conclusion about GYM Network`,
-  conclusion_about_GYM_Network_content:
-    `
+  conclusion_about_GYM_Network_content: `
 
       <p>
         GYM Network is one of the <b>most exciting crypto and DeFi projects</b> of our time. For both experienced crypto investors and newcomers to the crypto
         world, <b>GYM Network</b> is absolutely unique with its combination of transparency, security, flexibility and high returns.
       </p>
     `,
-  What_is_GYM_Network_conclusion:
-    `
+  What_is_GYM_Network_conclusion: `
       <p>
        Want more exciting info on GYM Network, Blockchain, DeFi, Metaverse and other future technologies? Then check out our blog:
       </p>
     `,
   /* ................................. end What_is_GYM_Network page ............................. */
-
 
   about_the_roadmap: `About the roadmap`,
   To_the_Vault: `To the Vault`,
@@ -1116,6 +1064,4 @@ WIGN_affiliate_layer_solution_content:
   go_to_metaverses_campus: `Go to Metaverses Campus`,
   go_to_GYM_Street: `Go to GYM Street`,
   you_might_also_be_interested_in_these_articles: `You might also be interested in these articles:`,
-
 };
-

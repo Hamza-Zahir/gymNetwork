@@ -2,11 +2,9 @@
   <section class="Team py-5">
     <div class="Team-container mx-auto pt-5">
       <div class="title mx-auto text-center">
-        <h1 class="text-center fw-bold">GYM Network Team</h1>
+        <h1 class="text-center fw-bold">{{content.gym_network_team}}</h1>
         <p class="pc mt-4">
-          There are many more team members working in programming, web
-          development, marketing, HR management, and tech recruitment to ensure
-          the success of GYM NETWORK.
+          {{content.gym_network_team_desc}}
         </p>
       </div>
 
@@ -42,10 +40,10 @@
               </div>
               <div class="p-3">
                 <h5 class="text-bd fw-bold m-0 mb-2">{{ developer.name }}</h5>
-                <span class="text-secondary">{{ developer.jobTitle }}</span>
+                <span class="text-secondary">{{ content[developer.jobTitle] }}</span>
               </div>
             </a>
-             
+
             <div v-if="developerAccess == developer" class="Signal bg-bl d-none d-lg-block"> </div>
           </div>
         </div>
@@ -61,12 +59,14 @@
 </template>
 
 <script>
+  import { mapGetters } from "vuex";
+
 import TeamOfModerator from "./TeamOfModerator.vue";
 const team = [
   {
     id: 1,
     name: "Alberto Mera",
-    jobTitle: "System Designer",
+    jobTitle: "system_designer",
     img: require("~/assets/images/team/AlbertoMera.png"),
     title: "",
     team: [],
@@ -74,7 +74,7 @@ const team = [
   {
     id: 2,
     name: "Lewis Mhlanga",
-    jobTitle: "Moderator",
+    jobTitle: "moderator",
     img: require("~/assets/images/team/LewisMhlanga.png"),
     title: "",
     team: [],
@@ -82,7 +82,7 @@ const team = [
   {
     id: 3,
     name: "Timur Öztürk",
-    jobTitle: "Moderator",
+    jobTitle: "moderator",
     img: require("~/assets/images/team/TimurÖztürk.png"),
     title: "",
     team: [],
@@ -90,36 +90,39 @@ const team = [
   {
     id: 4,
     name: "Diana Kasprovych",
-    jobTitle: "Lead designer UX/UI",
+    jobTitle: "lead_designer_UX_UI",
     img: require("~/assets/images/team/diana.jpg"),
     title: "UX/UI",
     team: [
       {
         id: 1,
         name: "Diana Kasprovych",
-        jobTitle: "Lead designer UX/UI",
+        jobTitle: "lead_designer_UX_UI",
         img: require("~/assets/images/team/DianaKasprovych.png"),
-        text: "Lead UX/UI designer for Gym Network Platform and website, CashFT and Marketplace. Diana has experience in finances projects, crypto platforms, branding. Her mission is to think about the logic and UX of the project. Build a brand for CashFT with her team.",
+        text: "Diana_Kasprovych_desc",
       },
       {
         id: 2,
         name: "Jacob Oblasser",
-        jobTitle: "Projectmanger UX/UI",
+        jobTitle: "projectmanger_UX_UI",
         img: require("~/assets/images/team/JacobOblasser.png"),
-        text: "Marketing Projectmanager Trendda briefs and monitors the requirements between the Gym team and Trendda due to his experience in online marketing and branding. His mission is to build the concept behind the websites.",
+        text: "Jacob_Oblasser_desc",
       },
       {
         id: 3,
         name: "Ania Bodariuk",
-        jobTitle: "UX/UI Designer",
+        jobTitle: "UX_UI_designer",
         img: require("~/assets/images/team/AniaBodariuk.png"),
-        text: "Lead UX/UI Designer of Gym Street and UX/UI Designer of Gym Network. She has a background in branding and e-commerce projects. Lately, she is deeply into designing for Web 3.0. Her mission is to make your interaction with both platforms native and exciting.",
+        text: "Ania_Bodnariuk_desc",
       },
     ],
   },
 ];
 
 export default {
+  computed: {
+      ...mapGetters(["content"]),
+    },
   data() {
     return {
       team,
