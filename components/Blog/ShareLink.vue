@@ -1,15 +1,15 @@
 <template>
   <div class="ShareBtn my-5">
-    <h3
+    <div
       class="BTN cp d-flex align-items-center border text-bd rounded-50"
       @click="showlinks = !showlinks"
       :class="!showlinks ? 'box-sh-l' : ''"
     >
       <span class="icon rounded-circle me-2">
-        <b-icon icon="share-fill" class="h3 m-0"></b-icon>
+        <b-icon icon="share-fill" class="h5 m-0"></b-icon>
       </span>
-      <span class="fw-bold"> Share it</span>
-    </h3>
+      <span class="fw-bold"> {{content.share_it}}</span>
+    </div>
     <div v-if="showlinks" class="links d-flex justify-content-evenly py-3">
       <div class="me-2 cp" @click="openTwitter()">
         <img src="~/assets/images/twitter-blue.png" alt="" />
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
@@ -38,6 +40,9 @@ export default {
       required: true,
       type: String,
     },
+  },
+  computed: {
+    ...mapGetters(["content"]),
   },
   mounted() {
     this.getPhat();
@@ -71,10 +76,10 @@ export default {
   }
 }
 .BTN {
-  background: rgb(235, 247, 252);
-  padding: 12px 30px;
+  background: #ebf7fc;
+  padding: 10px 25px;
 }
 img {
-  width: 55px;
+  width: 45px;
 }
 </style>

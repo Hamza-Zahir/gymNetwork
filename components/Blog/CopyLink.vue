@@ -1,14 +1,14 @@
 <template>
   <div v-if="showlink" class="w-fc box-sh p-3 rounded-15 mx-auto">
     <h5 class="d-flex fw-bold justify-content-between py-2 border-bottom">
-      Share link
+      {{content.share_link}}
       <b-icon
         icon="x-circle-fill"
         class="h4 m-0 ms-sm-2 text-bl cp"
         @click="showlink = false"
       ></b-icon>
     </h5>
-    <div class="p-1 fw-500">Copy and share link</div>
+    <div class="p-1 fw-500">{{content.copy_and_share_link}}</div>
 
     <div class="phat d-flex bg-light py-3 px-2 rounded-15">
       <span class="me-2">{{ url }}</span>
@@ -22,13 +22,15 @@
         class="p-1 rounded"
         :class="linkCopied ? 'linkCopied' : ''"
       >
-        link Copied
+        {{content.copied}}
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
@@ -36,6 +38,9 @@ export default {
       linkCopied: false,
       showlink: true,
     };
+  },
+  computed: {
+    ...mapGetters(["content"]),
   },
   mounted() {
     this.getPhat();

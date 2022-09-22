@@ -20,7 +20,7 @@
           align-items-center
         "
       >
-        <div class="links col-8 d-flex">
+        <div class="links col-7 d-flex">
           <nuxt-link to="/Product" class="ms-4 ms-xl-5">
             {{ content.products }}
           </nuxt-link>
@@ -34,11 +34,11 @@
             {{ content.blog }}
           </nuxt-link>
         </div>
-        <div class="d-flex ms-4 ms-xl-5">
+        <div class="d-flex col ms-xl-5">
           <a
             href="https://gymnetwork.io/dashboard"
             target="_blank"
-            class="fw-600"
+            class="fw-600 col text-center"
             >{{ content.launch_to_app }}</a
           >
           <div

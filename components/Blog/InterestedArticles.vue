@@ -1,7 +1,7 @@
 <template>
   <div class="mb-5">
     <h1 class="container text-center fw-bold py-3 mx-auto">
-      You might also be interested in these articles:
+      {{content.you_might_also_be_interested_in_these_articles}}
     </h1>
 
     <div
@@ -31,6 +31,7 @@
 <script>
 import Blogs from "~/json/Blogs.json";
 import BlogCard from "./BlogCard.vue";
+import { mapGetters } from "vuex";
 
 export default {
   data() {
@@ -46,6 +47,9 @@ export default {
   },
   components: {
     BlogCard,
+  },
+  computed: {
+    ...mapGetters(["content"]),
   },
 };
 </script>
