@@ -50,6 +50,5 @@ export default {
   },
   publicRuntimeConfig: {
     API_KEY: process.env.API_KEY,
-    // URL: process.env.URL,
   },
 };
